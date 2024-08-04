@@ -37,6 +37,12 @@
 --#endregion
 
 --#region Items
+    --#region Backpacks
+        -- Medium Firepower
+        -- /Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_2.BP_BackPack_Medium_2_C
+        -- Medium Pouch
+        -- /Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_1.BP_BackPack_Medium_1_C
+    --#endregion
     --Notes:
     --When modifying Items you should use NotifyOnNewObject after level has been loaded
 --#endregion
