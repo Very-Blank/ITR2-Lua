@@ -1,3 +1,7 @@
+local ITR2 = {}
+ITR2.version = "0.10.2" -- version this was last updated for
+ITR2.Hooks = {}
+
 --#region Levels
     --#region Forest
 
@@ -13,24 +17,34 @@
         --#region Functions
 
         ---@param LevelTag FGameplayTag
-        RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:OnLoadLevel", function(LevelTag)
-        end, function()
-        end)
+        ---@param func function
+        function ITR2.Hooks.OnLoadLevel(LevelTag, func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:OnLoadLevel", function(LevelTag)
+                func()
+            end, function()
+            end)
+        end
 
-        RegisterHook("/Script/IntoTheRadius2.RadiusGameInstance:OnLevelLoaded", function()
-        end, function ()
-        end)
+        ---@param func function
+        function ITR2.Hooks.OnLevelLoaded(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusGameInstance:OnLevelLoaded", func, function()
+            end)
+            
+            RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:OnLevelLoaded", func, function()
+            end)
+        end
 
-        RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:OnLevelLoaded", function()
-        end, function()
-        end)
-        
-        RegisterHook("/Script/IntoTheRadius2.RadiusGameInstance:OnGameStart", function()
-        end, function ()
-        end)
-        RegisterHook("/Script/IntoTheRadius2.RadiusGameInstance:ExitGame", function()
-        end, function ()
-        end)
+        ---@param func function
+        function ITR2.Hooks.OnGameStart(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusGameInstance:OnGameStart", func, function()
+            end)
+        end
+
+        ---@param func function
+        function ITR2.Hooks.ExitGame(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusGameInstance:ExitGame", func, function()
+            end)
+        end
         --#endregion
     --#endregion
 
@@ -50,7 +64,13 @@
 --#region Player
     --#region Functions
     ---@param Controller AController
-    RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:Server_RespawnPlayer", function(Controller)
-    end)
+    ---@param func function
+    function ITR2.Hooks.RespawnPlayer(Controller, func)
+        RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:Server_RespawnPlayer", function(Controller)
+            func()
+        end)
+    end
     --#endregion
 --#endregion
+
+return ITR2
