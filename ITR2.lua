@@ -32,8 +32,163 @@ local ITR2 = {
         end
     },
 
-    EventSystem = {
+    EventSubSystem = {
+        ---@param func function
+        OnSwitchLoadingScreen = function(func)
+            ---@param bShow boolean
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireSwitchLoadingScreen", func, function() end)
+        end,
 
+        OnTutorialStarted = function(func)
+            ---@param TutorialTag FString
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnTutorialStarted", func, function() end)
+        end,
+
+        OnTutorialFinished = function(func)
+            ---@param TutorialID FString
+            ---@param CompletedStepsNum int32
+            ---@param Seconds int32
+            ---@param IsTutorialSkipped boolean
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnTutorialFinished", func, function() end)
+        end,
+
+        OnSplashScreenShown = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnSplashScreenShown", func, function() end)
+        end,
+
+        OnSleep = function(func)
+            ---@param Location FVector
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnSleep", func, function() end)
+        end,
+
+        OnSettingsChanged = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnSettingsChanged", func, function() end)
+        end,
+
+        OnReplicatorCreated = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnReplicatorCreated", func, function() end)
+        end,
+
+        OnPlayerRunning = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnPlayerRunning", func, function() end)
+        end,
+
+        OnPlayerKill = function(func)
+            ---@param NPCTag FGameplayTag
+            ---@param Weapon AActor
+            ---@param Location FVector
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnPlayerKill", func, function() end)
+        end,
+
+        OnPlayerInventoryChanged = function(func)
+            ---@param PlayerUID FString
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnPlayerInventoryChanged", func, function() end)
+        end,
+
+        OnPlayerDisconnected = function(func)
+            ---@param UniqueNetId FUniqueNetIdRepl
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnPlayerDisconnected", func, function() end)
+        end,
+
+        OnPlayerDeathPointsChanged = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnPlayerDeathPointsChanged", func, function() end)
+        end,
+
+        OnPlayerConnected = function(func)
+            ---@param UniqueNetId FUniqueNetIdRepl
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnPlayerConnected", func, function() end)
+        end,
+
+        OnMissionStarted = function(func)
+            ---@param Mission UAvailableMission
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnMissionStarted", func, function() end)
+        end,
+
+        OnMissionListUpdate = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnMissionListUpdate", func, function() end)
+        end,
+
+        OnMissionFinished = function(func)
+            ---@param Mission UAvailableMission
+            ---@param State EMissionCompleteState
+            ---@param CurrentObjectiveIndex int32
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnMissionFinished", func, function() end)
+        end,
+
+        OnMainMenuLoaded = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnMainMenuLoaded", func, function() end)
+        end,
+
+        OnLvlPointsChanged = function(func)
+            ---@param NewLvlPoints int32
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnLvlPointsChanged", func, function() end)
+
+        end,
+
+        OnLoadLevel = function(func)
+            ---@param LevelTag FGameplayTag
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnLoadLevel", func, function() end)
+
+        end,
+
+        OnLevelLoaded = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnLevelLoaded", func, function() end)
+        end,
+
+        OnIngameMenuOpened = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnIngameMenuOpened", func, function() end)
+        end,
+
+        OnIngameMenuClosed = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnIngameMenuClosed", func, function() end)
+        end,
+
+        OnHostGame = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnHostGame", func, function() end)
+        end,
+
+        OnGlobalTriggersChange = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnGlobalTriggersChange", func, function() end)
+        end,
+
+        OnGameStart = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnGameStart", func, function() end)
+        end,
+
+        OnGameDataSaved = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnGameDataSaved", func, function() end)
+        end,
+
+        OnGameDataLoaded = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnGameDataLoaded", func, function() end)
+        end,
+
+        OnFirstPlayerEnteredShop = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnFirstPlayerEnteredShop", func, function() end)
+        end,
+
+        OnCommonGameDataSaved = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnCommonGameDataSaved", func, function() end)
+        end,
+
+        OnCommonGameDataLoaded = function(func)
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnCommonGameDataLoaded", func, function() end)
+        end,
+
+        OnArtefactNestSpawned = function(func)
+            ---@param Nest AActor
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnArtefactNestSpawned", func, function() end)
+        end,
+
+        OnArtefactNestDestroyed = function(func)
+            ---@param Nest AActor
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnArtefactNestDestroyed", func, function() end)
+        end,
+
+        OnAccessLevelChanged = function(func)
+            ---@param NewLevel int32
+            RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnAccessLevelChanged", func, function() end)
+        end,
     },
 
     Levels = {
