@@ -107,7 +107,22 @@ local ITR2 = {
         },
         
         Attachments = {
-
+            POSD = "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_PSO.BP_Scope_PSO_C",
+            CobraD = "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_Cobra.BP_RDS_Cobra_C",
+            --45 degree rail left
+            DegRailL45 = "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_45deg.BP_Rail_45deg_C",
+            --45 degree rail right
+            DegRailR45 = "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_45deg.BP_Rail_45deg_C",
+            PG6R = "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_PK6.BP_RDS_PK6_C",
+            ScopeHG = "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_HG.BP_Scope_HG_C",
+            Flashlight ="/Game/ITR2/BPs/Items/Firearms/Attachments/Illumination/BP_Att_Flashlight_small.BP_Att_Flashlight_small_C",
+            Laser = "/Game/ITR2/BPs/Items/Firearms/Attachments/Illumination/BP_Att_Pointer_small.BP_Att_Pointer_small_C",
+            BaseAK74Muzzle = "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_Base.BP_MuzzleAK_Base_C",
+            DTK2AK = "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_DTK2.BP_MuzzleAK_DTK2_C",
+            DTK1AK = "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_DTK1.BP_MuzzleAK_DTK1_C",
+            AKM11Muzzle = "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_M11.BP_MuzzleAK_M11_C",
+            AKSilencer = "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_5_45.BP_Silencer_5_45_C",
+            PistolSilencer = "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_Pistol.BP_Silencer_Pistol_C",
         }
       },
 
