@@ -31,7 +31,7 @@ ITR2.GameInstance.OnLevelLoaded(function()
     end)
 end)
 
--- Functions with a parameter
+-- a Function with a parameter
 ITR2.GameMode.OnLoadLevel(function (LevelTag)
    print(LevelTag) 
 end)
