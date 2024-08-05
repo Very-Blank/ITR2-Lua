@@ -10,6 +10,8 @@ local ITR2 = {
         build = ""
     },
 
+    Paths = paths,
+
     GameInstance = {
         ---@param func function
         OnLevelLoaded = function(func)
