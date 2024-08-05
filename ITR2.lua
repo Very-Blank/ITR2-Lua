@@ -47,6 +47,15 @@ local ITR2 = {
     Items = {
         -- Notes:
         -- When modifying Items you should use NotifyOnNewObject after the level has been loaded
+        Consumables = {
+            CigPack = "/Game/ITR2/BPs/Items/Consumable/BP_CigPack.BP_CigPack_C",
+            CrackerPack = "/Game/ITR2/BPs/Items/Consumable/BP_CrackerPack.BP_CrackerPack_C",
+        },
+
+        Utilitys = {
+            ProbePackSmall = "/Game/ITR2/BPs/Items/Probes/BP_ProbeSack.BP_ProbeSack_C",
+        },
+
         Backpacks = {
             Medium2 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_2.BP_BackPack_Medium_2_C",
             Medium1 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_1.BP_BackPack_Medium_1_C",
@@ -70,16 +79,31 @@ local ITR2 = {
         SecondaryFirearms = {
             Pm = "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_PM.BP_PM_C",
             Gsh18 = "/Game/ITR2/BPs/Items/Firearms/Secondary/Gsh18/BP_Gsh18.BP_Gsh18_C",
-            --Put it here since the game uses it more like an secondary
+            --Put it here since the game uses it more like a secondary
             SawnOffShotgun = "/Game/ITR2/BPs/Items/Firearms/Primary/IZh-27/BP_Iz27_SawOff.BP_Iz27_SawOff_C",
             Glock18C = "/Game/ITR2/BPs/Items/Firearms/Secondary/Glock_18/BP_Glock_18.BP_Glock_18_C",
             Beretta = "/Game/ITR2/BPs/Items/Firearms/Secondary/Beretta/BP_Beretta.BP_Beretta_C",
             TestWeapon = "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_PM_Replica.BP_PM_Replica_C",
         },
 
-        Magazines = {
+        PrimaryMagazines = {
             SaigaShort = "/Game/ITR2/BPs/Items/Firearms/Primary/Saiga/BP_Saiga_Mag_Short2.BP_Saiga_Mag_Short2_C",
             SaigaLong = "/Game/ITR2/BPs/Items/Firearms/Primary/Saiga/BP_Saiga_Mag_Long.BP_Saiga_Mag_Long_C",
+            AK74Red = "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/BP_AK_74_Mag_Red.BP_AK_74_Mag_Red_C", 
+            AK74Black = "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/BP_AK_74_Mag_Black.BP_AK_74_Mag_Black_C",
+            SKSShort = "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS_Mag_Short.BP_SKS_Mag_Short_C",
+            Groza = "/Game/ITR2/BPs/Items/Firearms/Primary/Groza/BP_Groza_Mag.BP_Groza_Mag_C",
+            ASValShort = "/Game/ITR2/BPs/Items/Firearms/Primary/Val_and_VSS/BP_VSS_Mag_Short.BP_VSS_Mag_Short_C",
+            ASValMedium = "/Game/ITR2/BPs/Items/Firearms/Primary/Val_and_VSS/BP_AS_Val_Mag_Med.BP_AS_Val_Mag_Med_C",
+            Bizon = "/Game/ITR2/BPs/Items/Firearms/Primary/Bizon/BP_Bizon_Mag.BP_Bizon_Mag_C",
+        },
+
+        SecondaryMagazines = {
+            PmShort = "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_Mag_PM.BP_Mag_PM_C",
+            PmLong = "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_Mag_PM_Long.BP_Mag_PM_Long_C",
+            Gsh18 = "/Game/ITR2/BPs/Items/Firearms/Secondary/Gsh18/BP_Mag_Gsh18.BP_Mag_Gsh18_C",
+            Beretta = "/Game/ITR2/BPs/Items/Firearms/Secondary/Beretta/BP_Mag_Beretta.BP_Mag_Beretta_C",
+            Glock18C = "/Game/ITR2/BPs/Items/Firearms/Secondary/Glock_18/BP_Mag_Glock_18.BP_Mag_Glock_18_C",
         },
         
         Attachments = {
