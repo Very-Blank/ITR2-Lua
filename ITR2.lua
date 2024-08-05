@@ -79,6 +79,8 @@ local ITR2 = {
             FrontGunOnly = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_Only.BP_Vest_FrontGun_Only_C",
             ClassicExpanded = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_ClassicExpanded.BP_Vest_ClassicExpanded_C",
             FrontGun = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_n_Pistol.BP_Vest_FrontGun_n_Pistol_C",
+            ClassicL = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Classic_L.BP_Vest_Classic_L_C",
+            ClassicExpandedL = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_ClassicExpanded_L.BP_Vest_ClassicExpanded_L_C",
         },
 
         PrimaryFirearms = {
