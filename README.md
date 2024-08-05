@@ -3,25 +3,37 @@ This repository provides common functions and item names to facilitate starting 
 
 If you find something missing, please contribute by making a pull request. Include proof to support your suggestion, unless you have an established good reputation.
 
-To use as a library and not a reference, just `local ITR2 = require("ITR2")` and put the file next to your code.
-The "hook" functions take an function input, and whatever input they normally require 
+To use the ITR2 library locally, simply place the ITR2 file in the same directory as your code and include it with local ITR2 = require("ITR2"). 
+The provided hooks offer parameters that you can utilize within your mod, look at "ITR2.GameMode.OnLoadLevel".
 
 ```lua
 local ITR2 = require("ITR2")
 
--- Define the hook function
-local function myLevelLoadHook() -- these functions can be renamed however you like
-    print("Level Loaded")
-end
+ITR2.GameInstance.OnLevelLoaded(function()
+    NotifyOnNewObject(ITR2.Items.Magazines.SaigaShort, function(mag)
+        ExecuteWithDelay(100, function ()
+            print("Saiga short mag")
+            print(#mag.BulletComponentArr)
+        end)
+    end)
 
--- Register the hook
-ITR2.Hooks.OnLevelLoaded(myLevelLoadHook) -- func goes here
+    NotifyOnNewObject(ITR2.Items.Magazines.SaigaLong, function(mag)
+        ExecuteWithDelay(100, function ()
+            print("Saiga long mag")
+            print(#mag.BulletComponentArr)
+        end)
+    end)
 
--- Define another hook function
-local function myGameStartHook()
-    print("Game Started")
-end
+    NotifyOnNewObject(ITR2.Items.Guns.Saiga, function(context)
+        ExecuteWithDelay(100, function ()
+            print("Saiga")
+        end)
+    end)
+end)
 
--- Register the hook
-ITR2.Hooks.OnGameStart(myGameStartHook)
+-- Functions with a parameter
+ITR2.GameMode.OnLoadLevel(function (LevelTag)
+   print(LevelTag) 
+end)
+
 ```
