@@ -7,7 +7,7 @@ local paths = {
 local ITR2 = {
     version = {
         game = "0.10.2",
-        build = ""
+        build = "26200"
     },
 
     Paths = paths,
