@@ -4,8 +4,11 @@ local sFirearms = "/Game/ITR2/BPs/Items/Firearms"
 local sScript = "/Script/IntoTheRadius2."
 
 local ITR2 = {
-    version = "0.10.2", -- version this was last updated for
-
+    version = {
+        game = "0.10.2",
+        build = ""
+    },
+    
     GameInstance = {
         ---@param func function
         OnLevelLoaded = function(func)
