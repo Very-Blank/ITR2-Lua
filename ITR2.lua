@@ -50,15 +50,35 @@ local ITR2 = {
         Consumables = {
             CigPack = "/Game/ITR2/BPs/Items/Consumable/BP_CigPack.BP_CigPack_C",
             CrackerPack = "/Game/ITR2/BPs/Items/Consumable/BP_CrackerPack.BP_CrackerPack_C",
-        },
-
+            Injector1 = "/Game/ITR2/BPs/Items/Consumable/BP_Injector_QuickHeal.BP_Injector_QuickHeal_C",
+            Injector2 = "/Game/ITR2/BPs/Items/Consumable/BP_Injector_SlowHeal.BP_Injector_SlowHeal_C",
+            Injector3 = "/Game/ITR2/BPs/Items/Consumable/BP_Injector_FullHeal.BP_Injector_FullHeal_C",
+          },
+        
         Utilitys = {
             ProbePackSmall = "/Game/ITR2/BPs/Items/Probes/BP_ProbeSack.BP_ProbeSack_C",
+            Flashlight = "/Game/ITR2/BPs/Items/Flashlights/BP_Flashlight_Handheld.BP_Flashlight_Handheld_C",
+            Detector = "/Game/ITR2/BPs/Items/Artefacts/BP_Detector.BP_Detector_C",
+            Tablet = "/Game/ITR2/BPs/Items/Equipment/Tablet/BP_Tablet.BP_Tablet_C",
+            Lighter = "/Game/ITR2/BPs/Items/Misc/BP_Lighter.BP_Lighter_C",
         },
 
         Backpacks = {
-            Medium2 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_2.BP_BackPack_Medium_2_C",
+            Starter = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Start_Small.BP_BackPack_Start_Small_C",
+            Small1 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Small_1.BP_BackPack_Small_1_C",
+            Small2 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Small_2.BP_BackPack_Small_2_C",
             Medium1 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_1.BP_BackPack_Medium_1_C",
+            Medium2 = "/Game/ITR2/BPs/Items/Equipment/Backpacks/BP_BackPack_Medium_2.BP_BackPack_Medium_2_C",
+        },
+
+        Vests = {
+            Starter = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Start.BP_Vest_Start_C",
+            VestHeavy1 = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Heavy_1.BP_Vest_Heavy_1_C",
+            Classic = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Classic.BP_Vest_Classic_C",
+            Pistol = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Pistols.BP_Vest_Pistols_C",
+            FrontGunOnly = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_Only.BP_Vest_FrontGun_Only_C",
+            ClassicExpanded = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_ClassicExpanded.BP_Vest_ClassicExpanded_C",
+            FrontGun = "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_n_Pistol.BP_Vest_FrontGun_n_Pistol_C",
         },
 
         PrimaryFirearms = {
