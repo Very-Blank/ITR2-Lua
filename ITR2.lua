@@ -149,7 +149,7 @@ local ITR2 = {
     Player = {
         --Register hook calls this with Controller
         ---@param func function
-        RespawnPlayer = function(func)
+        OnRespawn = function(func)
             ---@param Controller AController
             RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:Server_RespawnPlayer", func)
         end
