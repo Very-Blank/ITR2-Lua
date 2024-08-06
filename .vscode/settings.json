@@ -1,7 +1,0 @@
-{
-    "editor.defaultFormatter": "sumneko.lua",
-    "Lua.codeLens.enable": true,
-    "Lua.diagnostics.globals": [
-        "RegisterHook"
-    ]
-}
