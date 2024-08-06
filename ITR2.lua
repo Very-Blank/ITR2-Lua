@@ -31,13 +31,6 @@ local ITR2 = {
     },
 
     GameMode = {
-        --Register hook calls this with LevelTag
-        ---@param func function
-        OnLoadLevel = function(func)
-            ---@param LevelTag FGameplayTag
-            RegisterHook(paths.Script .. "RadiusGameMode:OnLoadLevel", func, function() end)
-        end,
-
         ---@param func function
         OnLevelLoaded = function(func)
             RegisterHook(paths.Script .. "RadiusGameMode:OnLevelLoaded", func, function() end)
