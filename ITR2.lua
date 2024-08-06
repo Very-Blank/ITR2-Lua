@@ -205,6 +205,12 @@ local ITR2 = {
     Items = {
         -- Notes:
         -- When modifying Items you should use NotifyOnNewObject after the level has been loaded
+        Loot = {
+            AshSmall = "/Game/ITR2/BPs/Items/Valuables/Ashes/BP_Ash_small.BP_Ash_small_C",
+            AshMedium = "/Game/ITR2/BPs/Items/Valuables/Ashes/BP_Ash_Medium.BP_Ash_Medium_C",
+            AshBig = "/Game/ITR2/BPs/Items/Valuables/Ashes/BP_Ash_Big.BP_Ash_Big_C",
+        },
+
         Consumables = {
             CigPack = paths.Item .. "Consumable/BP_CigPack.BP_CigPack_C",
             CrackerPack = paths.Item .. "Consumable/BP_CrackerPack.BP_CrackerPack_C",
