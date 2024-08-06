@@ -220,9 +220,23 @@ local ITR2 = {
         -- Notes:
         -- When modifying Items you should use NotifyOnNewObject after the level has been loaded
         Loot = {
-            AshSmall = "/Game/ITR2/BPs/Items/Valuables/Ashes/BP_Ash_small.BP_Ash_small_C",
-            AshMedium = "/Game/ITR2/BPs/Items/Valuables/Ashes/BP_Ash_Medium.BP_Ash_Medium_C",
-            AshBig = "/Game/ITR2/BPs/Items/Valuables/Ashes/BP_Ash_Big.BP_Ash_Big_C",
+            AshSmall = paths.Item .."Valuables/Ashes/BP_Ash_small.BP_Ash_small_C",
+            AshMedium = paths.Item .."Valuables/Ashes/BP_Ash_Medium.BP_Ash_Medium_C",
+            AshBig = paths.Item .."Valuables/Ashes/BP_Ash_Big.BP_Ash_Big_C",
+        },
+
+        Artifacts = {
+            A011 = paths.Item .. "Valuables/Arts/BP_ValuableArt_1.BP_ValuableArt_1_C",
+            A023 = paths.Item .. "Valuables/Arts/BP_ValuableArt_2.BP_ValuableArt_2_C",
+            A035 = paths.Item .. "Valuables/Arts/BP_ValuableArt_3.BP_ValuableArt_3_C",
+            A047 = paths.Item .. "Valuables/Arts/BP_ValuableArt_4.BP_ValuableArt_4_C",
+            A058 = paths.Item .. "Valuables/Arts/BP_ValuableArt_5.BP_ValuableArt_5_C",
+        },
+
+        ArtifactNests = {
+            Sticky =  paths.Item .."Artefacts/Nests/BP_StickyNest.0",
+            Mirror =  paths.Item .."Artefacts/Nests/BP_MirrorShardsNest.1",
+            Fragile =  paths.Item .."Artefacts/Nests/BP_FragileNest.0",
         },
 
         Consumables = {
