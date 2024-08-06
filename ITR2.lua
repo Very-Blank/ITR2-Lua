@@ -37,6 +37,20 @@ local ITR2 = {
         end
     },
 
+    Enemy = {
+        OnHumanoidDeath = function(func)
+            ---@param DeathInstigator AController
+            ---@param DiedPawn AActor
+            RegisterHook(paths.Script .. "RadiusAICharacterBase:OnDeath", func)
+        end,
+
+        OnNonHumanoidDeath = function(func)
+            ---@param DeathInstigator AController
+            ---@param DiedPawn AActor
+            RegisterHook(paths.Script .. "RadiusNonHumanAICharacter:OnDeath", func)
+        end,
+    },
+
     EventSubSystem = {
         ---@param func function
         OnSwitchLoadingScreen = function(func)
