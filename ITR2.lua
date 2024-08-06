@@ -1,3 +1,4 @@
+-- repo: https://github.com/Very-Blank/ITR2-Lua/
 -- define shorthand paths for common paths
 local paths = {
     Item = "/Game/ITR2/BPs/Items/",
