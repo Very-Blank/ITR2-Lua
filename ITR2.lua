@@ -275,6 +275,29 @@ local ITR2 = {
             ClassicExpandedL = paths.Item .. "Equipment/Vests/BP_Vest_ClassicExpanded_L.BP_Vest_ClassicExpanded_L_C",
         },
 
+        AmmoBoxes = {
+            Tracer9x39 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_9x39_Tracer.BP_AmmoBox_9x39_Tracer_C",
+            Tracer9x19 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_9x19_Tracer.BP_AmmoBox_9x19_Tracer_C",
+            Tracer9x18 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_9x18_Tracer.BP_AmmoBox_9x18_Tracer_C",
+            SlugTracer = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_12x70_SlugTracer.BP_AmmoBox_12x70_SlugTracer_C",
+            Tracer7_62x54 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_7-62x54R_Tracer.BP_AmmoBox_7-62x54R_Tracer_C",
+            Tracer7_62x51 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_7-62x51_Tracer.BP_AmmoBox_7-62x51_Tracer_C",
+            Tracer7_62x39 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_7-62x39_Tracer.BP_AmmoBox_7-62x39_Tracer_C",
+            Tracer5_56x45 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_5-56x45_Tracer.BP_AmmoBox_5-56x45_Tracer_C",
+            Tracer5_45x39 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_545x39_Tracer.BP_AmmoBox_545x39_Tracer_C",
+
+            Normal9x39 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_9x39_FMJ.BP_AmmoBox_9x39_FMJ_C",
+            Normal9x19 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_9x19_FMJ.BP_AmmoBox_9x19_FMJ_C",
+            Normal9x18 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_9x18_FMJ.BP_AmmoBox_9x18_FMJ_C",
+            SlugNormal = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_12x70_Slug.BP_AmmoBox_12x70_Slug_C",
+            BuckNormal = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_12x70_BuckShot.BP_AmmoBox_12x70_BuckShot_C",
+            Normal7_62x54 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_7-62x54R_FMJ.BP_AmmoBox_7-62x54R_FMJ_C",
+            Normal7_62x51 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_7-62x51_FMJ.BP_AmmoBox_7-62x51_FMJ_C",
+            Normal7_62x39 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_7-62x39_FMJ.BP_AmmoBox_7-62x39_FMJ_C",
+            Normal5_56x45 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_5-56x45_FMJ.BP_AmmoBox_5-56x45_FMJ_C",
+            Normal5_45x39 = paths.Item .. "Ammo/AmmoBox/BP_AmmoBox_545x39_FMJ.BP_AmmoBox_545x39_FMJ_C",
+        },
+
         PrimaryFirearms = {
             Saiga = paths.Firearms .. "Primary/Saiga/BP_Saiga.BP_Saiga_C",
             Izh27 = paths.Firearms .. "Primary/IZh-27/BP_Iz27.BP_Iz27_C",
@@ -305,7 +328,7 @@ local ITR2 = {
             SaigaLong = paths.Firearms .. "Primary/Saiga/BP_Saiga_Mag_Long.BP_Saiga_Mag_Long_C",
             AK74Red = paths.Firearms .. "Primary/AK74/BP_AK_74_Mag_Red.BP_AK_74_Mag_Red_C",
             AK74Black = paths.Firearms .. "Primary/AK74/BP_AK_74_Mag_Black.BP_AK_74_Mag_Black_C",
-            SKSShort = paths.Firearms .. "Primary/SKS/BP_SKS_Mag_sBP_SKS_Mag_Short_C",
+            SKSShort = paths.Firearms .. "Primary/SKS/BP_SKS_Mag_s.BP_SKS_Mag_Short_C",
             Groza = paths.Firearms .. "Primary/Groza/BP_Groza_Mag.BP_Groza_Mag_C",
             ASValShort = paths.Firearms .. "Primary/Val_and_VSS/BP_VSS_Mag_sBP_VSS_Mag_Short_C",
             ASValMedium = paths.Firearms .. "Primary/Val_and_VSS/BP_AS_Val_Mag_Med.BP_AS_Val_Mag_Med_C",
