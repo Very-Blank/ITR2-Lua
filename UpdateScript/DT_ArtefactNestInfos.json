@@ -1,0 +1,60 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_ArtefactNestInfos",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'ArtefactNestInfo'",
+        "ObjectPath": "/Script/IntoTheRadius2"
+      }
+    },
+    "Rows": {
+      "NewRow": {
+        "NestType": {
+          "TagName": "ArtefactNest.Type.Sticky"
+        },
+        "NestClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_StickyNest_C'",
+          "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_StickyNest.0"
+        },
+        "NestName": {
+          "CultureInvariantString": "Sticky"
+        },
+        "Description": {
+          "CultureInvariantString": " - untitled - "
+        }
+      },
+      "NewRow_0": {
+        "NestType": {
+          "TagName": "ArtefactNest.Type.Fragile"
+        },
+        "NestClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_FragileNest_C'",
+          "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_FragileNest.0"
+        },
+        "NestName": {
+          "CultureInvariantString": "Fragile"
+        },
+        "Description": {
+          "CultureInvariantString": " - untitled - "
+        }
+      },
+      "NewRow_1": {
+        "NestType": {
+          "TagName": "ArtefactNest.Type.Mirror"
+        },
+        "NestClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_MirrorShardsNest_C'",
+          "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_MirrorShardsNest.1"
+        },
+        "NestName": {
+          "CultureInvariantString": "Broken mirror"
+        },
+        "Description": {
+          "CultureInvariantString": " - untitled - "
+        }
+      }
+    }
+  }
+]

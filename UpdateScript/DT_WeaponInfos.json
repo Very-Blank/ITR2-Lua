@@ -1,0 +1,2035 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_WeaponInfos",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'WeaponStaticData'",
+        "ObjectPath": "/Script/IntoTheRadius2"
+      }
+    },
+    "Rows": {
+      "PM": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x18"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.65
+        },
+        "bCockedOnSafety": false,
+        "DisplayReliability": 45.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -0.9,
+            "Max": -1.1
+          },
+          "HorizontalRecoil": {
+            "Min": 0.2,
+            "Max": 0.3
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.25,
+            "Max": -0.3
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.1,
+            "Max": 0.1
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 45.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.11,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E692B536424D7B9DCBA7BFB5DAFF6673",
+          "SourceString": "PM",
+          "LocalizedString": "PM"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Secondary.PM"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_PM.BP_PM_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 80.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 90.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "PM_M": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x18"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.65
+        },
+        "bCockedOnSafety": false,
+        "DisplayReliability": 45.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -0.7,
+            "Max": -0.9
+          },
+          "HorizontalRecoil": {
+            "Min": 0.15,
+            "Max": 0.2
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.2,
+            "Max": -0.25
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.08,
+            "Max": 0.08
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 35.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.1,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "4FE7109A4F6345999270E29523886C9A",
+          "SourceString": "PM Mod.",
+          "LocalizedString": "PM-M"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Secondary.PMmod"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_PM_mod.BP_PM_mod_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 85.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1200.0,
+        "ItemSellPrice": 360.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "GSH_18": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x18"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.4,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.65
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 65.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -0.5,
+            "Max": -0.7
+          },
+          "HorizontalRecoil": {
+            "Min": 0.1,
+            "Max": 0.14
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.12,
+            "Max": -0.17
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.05,
+            "Max": 0.06
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 30.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.05,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "5BB89412448D048CB92FDC996E51C9FD",
+          "SourceString": "GSh-18",
+          "LocalizedString": "GSh-18"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Secondary.Gsh18"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/Gsh18/BP_Gsh18.BP_Gsh18_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 85.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1800.0,
+        "ItemSellPrice": 540.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "Kedr": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x18"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 800.0,
+          "ShotLoudness": 0.55
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 60.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -1.5,
+            "Max": -2.0
+          },
+          "HorizontalRecoil": {
+            "Min": -1.5,
+            "Max": 1.5
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.5,
+            "Max": -0.8
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.5,
+            "Max": 0.5
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 45.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.1,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "8982143B4743DE2A56473D89229C9BF8",
+          "SourceString": "PP-91 Kedr",
+          "LocalizedString": "PP-91 Kedr"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Kedr"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Kedr/BP_Kedr.BP_Kedr_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 250.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 3500.0,
+        "ItemSellPrice": 1050.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "IZ-27_SawOff": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.12g"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 2,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.85
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 1.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -40.0,
+            "Max": -45.0
+          },
+          "HorizontalRecoil": {
+            "Min": -1.5,
+            "Max": 1.0
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -20.0,
+            "Max": -25.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.8,
+            "Max": 0.5
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 90.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.4,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "754F01694EAFA5881AD8B7B2BB1BFF3C",
+          "SourceString": "Compact IZh-27",
+          "LocalizedString": "Compact IZh-27"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Iz27_SawOff"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/IZh-27/BP_Iz27_SawOff.BP_Iz27_SawOff_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 300.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 450.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "IZ-27": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.12g"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 2,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.8
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 1.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -10.0,
+            "Max": -15.0
+          },
+          "HorizontalRecoil": {
+            "Min": -1.0,
+            "Max": 0.5
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -4.0,
+            "Max": -6.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.5,
+            "Max": 0.3
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 80.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.2,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E480F8C949792867DBF3E09D720703B6",
+          "SourceString": "IZh-27",
+          "LocalizedString": "IZh-27"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Iz27"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/IZh-27/BP_Iz27.BP_Iz27_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 550.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 3000.0,
+        "ItemSellPrice": 900.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "IZ-27_M": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.12g"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 2,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.1,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.8
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 1.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -6.0,
+            "Max": -10.0
+          },
+          "HorizontalRecoil": {
+            "Min": -0.8,
+            "Max": 0.3
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -1.5,
+            "Max": -2.5
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.4,
+            "Max": 0.2
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 70.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.15,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "205205CE46AE637626911E880D8344D9",
+          "SourceString": "IZh-27 Mod.",
+          "LocalizedString": "IZh-27 Mod."
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Iz27_M"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/IZh-27/BP_Iz27_M.BP_Iz27_M_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 450.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 4500.0,
+        "ItemSellPrice": 1350.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "Glock_18": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x19"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Single"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 1200.0,
+          "ShotLoudness": 0.6
+        },
+        "bCockedOnSafety": false,
+        "DisplayReliability": 40.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -0.08,
+            "Max": -0.1
+          },
+          "HorizontalRecoil": {
+            "Min": -0.07,
+            "Max": 0.07
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.06,
+            "Max": -0.08
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.03,
+            "Max": 0.03
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 25.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.07,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "B186C6F9442D1D3AD5C814B288A11370",
+          "SourceString": "Glock 18C",
+          "LocalizedString": "Glock 18C"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Secondary.Glock18"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/Glock_18/BP_Glock_18.BP_Glock_18_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 85.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 4000.0,
+        "ItemSellPrice": 1200.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "Beretta": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x19"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.2,
+          "BulletInitialVelocityModifier": 1.2,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.65
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 45.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -2.0,
+            "Max": -2.5
+          },
+          "HorizontalRecoil": {
+            "Min": -0.15,
+            "Max": -0.2
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.2,
+            "Max": -0.3
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.08,
+            "Max": -0.1
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 50.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.1,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "A932A02040302C3C76E911B50D17D0D6",
+          "SourceString": "Beretta M9",
+          "LocalizedString": "Beretta M9"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Secondary.Beretta"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/Beretta/BP_Beretta.BP_Beretta_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 90.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 3000.0,
+        "ItemSellPrice": 900.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "Bizon": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x18"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.4,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 680.0,
+          "ShotLoudness": 0.6
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 55.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -0.5,
+            "Max": -1.0
+          },
+          "HorizontalRecoil": {
+            "Min": -0.7,
+            "Max": 0.5
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.2,
+            "Max": -0.5
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.2,
+            "Max": 0.1
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 50.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.12,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E5EA524B471298619AD645B33A4A99B3",
+          "SourceString": "PP-19 Bizon",
+          "LocalizedString": "PP-19 Bizon"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Bizon"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Bizon/BP_Bizon.BP_Bizon_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 250.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 5000.0,
+        "ItemSellPrice": 1500.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "Saiga": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.12g"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 0.75,
+          "FireRate": 300.0,
+          "ShotLoudness": 0.75
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 50.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -2.5,
+            "Max": -3.0
+          },
+          "HorizontalRecoil": {
+            "Min": 0.3,
+            "Max": 0.5
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -1.2,
+            "Max": -1.5
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.15,
+            "Max": 0.25
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 80.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.25,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "EB51AED849B1B6A5FF0174A3FA4D2C6A",
+          "SourceString": "Saiga-12",
+          "LocalizedString": "Saiga-12"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Saiga"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Saiga/BP_Saiga.BP_Saiga_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 540.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 5000.0,
+        "ItemSellPrice": 1500.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "AKSu74": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.5-45x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 0.7,
+          "BulletInitialVelocityModifier": 0.7,
+          "FireRate": 650.0,
+          "ShotLoudness": 0.75
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 65.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -3.0,
+            "Max": -4.0
+          },
+          "HorizontalRecoil": {
+            "Min": -1.0,
+            "Max": 1.0
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -1.5,
+            "Max": -2.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.5,
+            "Max": 0.5
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 70.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.13,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "4673A61143938314CE6CF682552CEE86",
+          "SourceString": "AKS-74U",
+          "LocalizedString": "AKS-74U"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.AKSu74"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/BP_AKSu74N.BP_AKSu74N_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 310.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 6000.0,
+        "ItemSellPrice": 1800.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "SKS": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.7-62x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 0.8,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.8
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 50.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -2.5,
+            "Max": -3.5
+          },
+          "HorizontalRecoil": {
+            "Min": -0.15,
+            "Max": -0.3
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -1.0,
+            "Max": -1.5
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.07,
+            "Max": -0.1
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 75.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.1,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "3C95BE8646F5CBF86A53138809A130EE",
+          "SourceString": "SKS",
+          "LocalizedString": "SKS"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.SKS"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS.BP_SKS_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 540.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 8000.0,
+        "ItemSellPrice": 2400.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "SKS_M": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.7-62x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.8
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 50.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -1.8,
+            "Max": -2.8
+          },
+          "HorizontalRecoil": {
+            "Min": -0.1,
+            "Max": -0.25
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.6,
+            "Max": -1.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.05,
+            "Max": -0.08
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 65.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.08,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "428F4C6C439D991A48E01B833277853F",
+          "SourceString": "SKS Mod.",
+          "LocalizedString": "SKS Mod."
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.SKS_M"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS_M.BP_SKS_M_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 500.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 12000.0,
+        "ItemSellPrice": 3600.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "AK74": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.5-45x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 0.8,
+          "FireRate": 600.0,
+          "ShotLoudness": 0.7
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 80.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -1.0,
+            "Max": -1.2
+          },
+          "HorizontalRecoil": {
+            "Min": -0.25,
+            "Max": 0.2
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.4,
+            "Max": -0.5
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.15,
+            "Max": 0.15
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 50.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.09,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C35E77E9499F2CF36972A1BB42BB94CD",
+          "SourceString": "AK-74N",
+          "LocalizedString": "AK-74"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.AK74"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/BP_AK74N.BP_AK74N_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 360.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 8000.0,
+        "ItemSellPrice": 2400.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "AK74_M": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.5-45x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 700.0,
+          "ShotLoudness": 0.7
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 70.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -0.5,
+            "Max": -0.8
+          },
+          "HorizontalRecoil": {
+            "Min": -0.15,
+            "Max": 0.15
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.2,
+            "Max": -0.3
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.1,
+            "Max": 0.1
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 40.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.07,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "1AF7541343E4C529AA4DACAECDBB5E46",
+          "SourceString": "AK-74M",
+          "LocalizedString": "SimpleButton"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.AK74M"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/BP_AK74M.BP_AK74M_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 320.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 12000.0,
+        "ItemSellPrice": 3600.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "Groza": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 0.85,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 700.0,
+          "ShotLoudness": 0.7
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 50.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -5.0,
+            "Max": -6.0
+          },
+          "HorizontalRecoil": {
+            "Min": 1.0,
+            "Max": 2.0
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -3.0,
+            "Max": -4.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.2,
+            "Max": 0.4
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 50.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.09,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "3EDA671E4BB0F987C550249D85140BBD",
+          "SourceString": "OTs-14 Groza",
+          "LocalizedString": "OTs-14 Groza"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.Groza"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Groza/BP_Groza.BP_Groza_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 540.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 7000.0,
+        "ItemSellPrice": 2100.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "VSS": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 0.6
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 45.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -1.0,
+            "Max": -1.2
+          },
+          "HorizontalRecoil": {
+            "Min": 0.2,
+            "Max": 0.25
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.5,
+            "Max": -0.7
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.08,
+            "Max": 0.12
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 35.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.03,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "BB90DFFB489AE2EDCD337E9477BD817F",
+          "SourceString": "VSS Vintorez",
+          "LocalizedString": "VSS Vintorez"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.VSS"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Val_and_VSS/BP_VSS.BP_VSS_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 360.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 16000.0,
+        "ItemSellPrice": 4800.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "AS_Val": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x39"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Auto"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": true,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 1.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 900.0,
+          "ShotLoudness": 0.6
+        },
+        "bCockedOnSafety": true,
+        "DisplayReliability": 40.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {
+            "Min": -1.0,
+            "Max": -1.2
+          },
+          "HorizontalRecoil": {
+            "Min": -0.1,
+            "Max": 0.1
+          },
+          "RecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "StabilizedVerticalRecoil": {
+            "Min": -0.3,
+            "Max": -0.4
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": -0.05,
+            "Max": 0.05
+          },
+          "StabilizedRecoilLocationOffset": {
+            "X": -500.0,
+            "Y": -500.0,
+            "Z": -500.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilLocationAutoFireCoefficient": 1.0,
+          "DisplayRecoil": 50.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.12,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "88E8C6D746191506EC393CB7E5AB7969",
+          "SourceString": "AS Val",
+          "LocalizedString": "AS Val"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Primary.AS_Val"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Val_and_VSS/BP_AS_VAL.BP_AS_VAL_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 340.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 16000.0,
+        "ItemSellPrice": 4800.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      },
+      "PM_Replica": {
+        "AmmoCaliber": {
+          "TagName": "Item.Ammo.9x18.Test"
+        },
+        "bIsSemiAuto": true,
+        "FireModes": [
+          {
+            "TagName": "Weapon.FireMode.Safety"
+          },
+          {
+            "TagName": "Weapon.FireMode.Single"
+          }
+        ],
+        "BurstModeCount": 3,
+        "bUseVirtualStock": false,
+        "bDisableSmoothing": false,
+        "DurabilityDamageAutoFireCoefficient": 0.0,
+        "DurabilityToJamChance": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "WeaponParameters": {
+          "InternalMagCapacity": 1,
+          "FleshDamageModifier": 1000.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 180.0,
+          "ShotLoudness": 1.0
+        },
+        "bCockedOnSafety": false,
+        "DisplayReliability": 1.0,
+        "RecoilParameters": {
+          "VerticalRecoil": {},
+          "HorizontalRecoil": {},
+          "RecoilLocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "StabilizedVerticalRecoil": {},
+          "StabilizedHorizontalRecoil": {},
+          "StabilizedRecoilLocationOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RecoilAutoFireCoefficient": 0.0,
+          "RecoilLocationAutoFireCoefficient": 0.0,
+          "DisplayRecoil": 1.0
+        },
+        "bAimSmoothing": false,
+        "AimSmoothingAlpha": 1.0,
+        "AimSmoothingDistance": 1.0,
+        "AccuracyParameters": {
+          "AccuracyMax": 0.0,
+          "AccuracyMultiplier": 0.0,
+          "AccuracyDurabilityCoefficient": 0.0
+        },
+        "PossibleUpgrades": [],
+        "PossibleParts": [],
+        "ItemName": {
+          "CultureInvariantString": "Test Weapon"
+        },
+        "ItemDescription": {
+          "CultureInvariantString": "For QA"
+        },
+        "ItemId": {
+          "TagName": "Item.Weapon.Secondary.PMReplica"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/PM/BP_PM_Replica.BP_PM_Replica_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 400.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 0.0,
+        "ItemSellPrice": 0.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        }
+      }
+    }
+  }
+]
