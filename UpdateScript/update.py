@@ -1,4 +1,6 @@
 import json
+import os
+import argparse
 from dataclasses import dataclass
 
 @dataclass
@@ -27,24 +29,25 @@ def add_to_tree(root: PathList, path: list[str], item: str):
     
     current_node.items.append(item)
 
-def getPathAndName(assetPath : str, doubleSlash: bool):
+def getPathAndName(assetPath : str):
     start = assetPath.find("/BPs/") + 4
     end = assetPath.rfind("/", start)
-    if doubleSlash:
-        end = assetPath.rfind("/", start, end)
+
+    if assetPath[end + 1] == '/':
+        end += 1
+    
     part1 = assetPath[start+1:end].split('/')
-    part2 = assetPath.split('.')[0]
-    part2 = part2[part2.find("BP_") + 3:]
+    part2 = assetPath.split('.')[0].split("BP_")[-1]
+
     if(part2[0].isnumeric()):
         part2 = "_" + part2
+
     part2 = part2.replace('-', '_')
+    for i in range(0, len(part1)):
+        part1[i] = part1[i].replace('-', '_')
+
     return part1, part2
 
-def addJsonContents(pathlists: PathList, actor: str, path: str, json : json, double : bool):
-    for dictionary in json[0]["Rows"]:
-        paths, name = getPathAndName(json[0]["Rows"][dictionary][actor][path], double)
-        fullname = name + " = \"" + json[0]["Rows"][dictionary][actor][path] + "\""
-        add_to_tree(pathlists, paths, fullname)
 
 def generate_lua_string(node: PathList, indent: int = 0) -> str:
     indent_str = '      ' * indent
@@ -66,21 +69,70 @@ def generate_lua_string(node: PathList, indent: int = 0) -> str:
     lua_str += "\n"
     return lua_str
 
-pathlists : PathList = PathList(name="Items", items=[], paths=[])
+def addJsonContents(pathlists: PathList, jsonFile):
+    knowActors = ["ItemActor", "NestClass"]
+    knowPaths = ["AssetPathName", "ObjectPath"]
+    actor = "";
+    path = ""
+    firstkey = list(jsonFile[0]["Rows"])[0]
+    for act in knowActors:
+        try: 
+            jsonFile[0]["Rows"][firstkey][act]
+        except:
+            print(act + " failed trying another one")
+        else:
+            actor = act 
+            break
 
-weaponJson = json.loads(open("UpdateScript\DT_WeaponInfos.json", "r").read())
-generalItemInfos = json.loads(open("UpdateScript\DT_GeneralItemInfos.json", "r").read())
-attachments = json.loads(open("UpdateScript\DT_AttachmentInfos.json", "r").read())
-ammo = json.loads(open("UpdateScript\DT_AmmoInfos.json", "r").read())
-ammoContainer = json.loads(open("UpdateScript\DT_AmmoContainerInfos.json", "r").read())
-artifacts = json.loads(open("UpdateScript\DT_ArtefactNestInfos.json", "r").read())
+    if actor == "":
+        raise KeyError("Actor not know")
 
-addJsonContents(pathlists=pathlists, actor="ItemActor", path="AssetPathName", json=weaponJson, double=True)
-addJsonContents(pathlists=pathlists, actor="ItemActor", path="AssetPathName", json=generalItemInfos, double=False)
-addJsonContents(pathlists=pathlists, actor="ItemActor", path="AssetPathName", json=attachments, double=False)
-addJsonContents(pathlists=pathlists, actor="ItemActor", path="AssetPathName", json=ammo, double=False)
-addJsonContents(pathlists=pathlists, actor="ItemActor", path="AssetPathName", json=ammoContainer, double=False)
-addJsonContents(pathlists=pathlists, actor="NestClass", path="ObjectPath", json=artifacts, double=False)
+    for pat in knowPaths:
+        try: 
+            jsonFile[0]["Rows"][firstkey][actor][pat]
+        except:
+            print(pat + " failed trying another one")
+        else:
+            path = pat 
+            break
 
-finalFile = open("ITR2_Items.lua", "w")
-finalFile.write("local " + generate_lua_string(pathlists))
+    if actor == "":
+        raise KeyError("Path not know")
+
+    for dictionary in jsonFile[0]["Rows"]:
+        paths, name = getPathAndName(jsonFile[0]["Rows"][dictionary][actor][path])
+        fullname = name + " = \"" + jsonFile[0]["Rows"][dictionary][actor][path] + "\""
+        add_to_tree(pathlists, paths, fullname)
+
+def main():
+    # Create the argument parser
+    parser = argparse.ArgumentParser(description="Auto generate ITR2 Items file, given path to a folder that has json files.")
+    parser.add_argument(
+        "folder",
+        type=str,
+        help="Path to the folder to process."
+    )
+
+    args = parser.parse_args()
+
+    # Ensure the provided folder exists
+    if not os.path.exists(args.folder) or not os.path.isdir(args.folder):
+        print(f"Error: The folder '{args.folder}' does not exist or is not a directory.")
+        return
+
+    pathlists = PathList(name="Items", items=[], paths=[])
+
+    # Iterate over files in the specified folder
+    for filename in os.listdir(args.folder):
+        file_path = os.path.join(args.folder, filename)  # Construct the full path to the file
+        if os.path.isfile(file_path) and filename.endswith(".json"):  # Process only JSON files
+            with open(file_path, "r") as f:
+                jsonFile = json.load(f)  # Parse JSON file
+            addJsonContents(pathlists=pathlists, jsonFile=jsonFile)
+
+    # Generate the output file
+    with open("ITR2_Items.lua", "w") as finalFile:
+        finalFile.write("local " + generate_lua_string(pathlists))
+
+if __name__ == "__main__":
+    main()
