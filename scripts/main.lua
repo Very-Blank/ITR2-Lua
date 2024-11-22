@@ -1,4 +1,4 @@
-local ITR2 = require("shared.ITR2")
+local ITR2 = require("ITR2-Lua.shared.ITR2")
 
 local function dummyFunc()
 end
