@@ -6,7 +6,7 @@ local paths = {
 
 local ITR2 = {
     version = {
-        game = "0.11.0",
+        game = "0.11.2",
         build = "26200"
     },
 
@@ -140,15 +140,6 @@ local ITR2 = {
         OnLvlPointsChanged = function(func)
             ---@param NewLvlPoints int32
             RegisterHook(paths.Script .. "RadiusEventsSubsystem:FireOnLvlPointsChanged", func, function() end)
-        end,
-
-        OnLoadLevel = function(func)
-            ---@param LevelTag FGameplayTag
-            RegisterHook(paths.Script .. "RadiusEventsSubsystem:FireOnLoadLevel", func, function() end)
-        end,
-
-        OnLevelLoaded = function(func)
-            RegisterHook(paths.Script .. "RadiusEventsSubsystem:FireOnLevelLoaded", func, function() end)
         end,
 
         OnIngameMenuOpened = function(func)

@@ -6,10 +6,11 @@ end
 local function testLibrary(library)
     for key, value in pairs(library) do
         if type(value) == "function" then
-            print("Testing function:", key)
+            print("Testing function: " .. key .. "\n")
             value(dummyFunc)
         elseif type(value) == "table" then
-            print("Entering table:", key)
+            print("----------\n")
+            print("Entering table: " .. key .. '\n')
             testLibrary(value)
         end
     end
