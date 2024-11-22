@@ -1,13 +1,12 @@
 -- repo: https://github.com/Very-Blank/ITR2-Lua/
 -- define shorthand paths for common paths
 local paths = {
-    Item = "/Game/ITR2/BPs/Items/",
-    Firearms = "/Game/ITR2/BPs/Items/Firearms/",
     Script = "/Script/IntoTheRadius2."
 }
+
 local ITR2 = {
     version = {
-        game = "0.10.2",
+        game = "0.11.0",
         build = "26200"
     },
 
@@ -206,14 +205,6 @@ local ITR2 = {
             ---@param NewLevel int32
             RegisterHook(paths.Script .. "RadiusEventsSubsystem:FireOnAccessLevelChanged", func, function() end)
         end,
-    },
-
-    Levels = {
-        Forest = {},
-
-        Peninsula = {},
-
-        Hub = {}
     },
 
     Player = {
