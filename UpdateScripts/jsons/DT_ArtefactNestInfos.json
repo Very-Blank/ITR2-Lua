@@ -19,7 +19,10 @@
           "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_StickyNest.0"
         },
         "NestName": {
-          "CultureInvariantString": "Sticky"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "EEFA6206439820A0EC4913BE1B5EFD2B",
+          "SourceString": "Tablecloth Nest",
+          "LocalizedString": "Sticky"
         },
         "Description": {
           "CultureInvariantString": " - untitled - "
@@ -34,7 +37,10 @@
           "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_FragileNest.0"
         },
         "NestName": {
-          "CultureInvariantString": "Fragile"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F05A76ED46F77D7F2CF4AE8AD9011270",
+          "SourceString": "Glass Jar Nest",
+          "LocalizedString": "Sell all for"
         },
         "Description": {
           "CultureInvariantString": " - untitled - "
@@ -49,7 +55,10 @@
           "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_MirrorShardsNest.1"
         },
         "NestName": {
-          "CultureInvariantString": "Broken mirror"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "ECAC11CD41AD617AFD902CB7A4D2244E",
+          "SourceString": "Mirror Shards Nest",
+          "LocalizedString": "Load Multiplayer"
         },
         "Description": {
           "CultureInvariantString": " - untitled - "

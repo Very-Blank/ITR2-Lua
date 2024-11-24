@@ -45,7 +45,9 @@
           "AssetPathName": "/Game/ITR2/BPs/Items/Probes/BP_ProbeSack.BP_ProbeSack_C",
           "SubPathString": ""
         },
-        "ItemDurability": 1.0,
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
@@ -54,7 +56,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AK-74.Mag.Red": {
         "IgnoreChamberCountInInspect": false,
@@ -92,6 +96,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -100,7 +106,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AK-74.Mag.Black": {
         "IgnoreChamberCountInInspect": false,
@@ -138,6 +146,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -146,7 +156,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "PM.MagShort": {
         "IgnoreChamberCountInInspect": false,
@@ -184,6 +196,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
@@ -192,7 +206,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "PM.MagLong": {
         "IgnoreChamberCountInInspect": false,
@@ -213,8 +229,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "8A6481944B603FA133771C859035B60E",
-          "SourceString": "PM Long Magazine",
-          "LocalizedString": "PM Long Magazine"
+          "SourceString": "Long PM Magazine",
+          "LocalizedString": "Long PM Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -230,6 +246,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
@@ -238,7 +256,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.12g.Buckshot": {
         "IgnoreChamberCountInInspect": false,
@@ -276,6 +296,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -284,7 +306,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x18.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -322,15 +346,19 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 100.0,
+        "ItemPurchasePrice": 150.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x19.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -368,15 +396,19 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 200.0,
+        "ItemPurchasePrice": 210.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.5.45x39.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -414,6 +446,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -422,7 +456,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.5-56x45.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -460,6 +496,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -468,7 +506,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.7-62x54R.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -506,6 +546,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -514,7 +556,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.7-62x51.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -552,6 +596,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -560,7 +606,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.7.62x39.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -598,6 +646,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -606,7 +656,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x39.FMJ": {
         "IgnoreChamberCountInInspect": false,
@@ -644,6 +696,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -652,7 +706,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.12g.Slug": {
         "IgnoreChamberCountInInspect": false,
@@ -690,6 +746,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -698,7 +756,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.12g.SlugTracer": {
         "IgnoreChamberCountInInspect": false,
@@ -736,6 +796,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -744,53 +806,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
-      },
-      "CigPack": {
-        "IgnoreChamberCountInInspect": false,
-        "Parameters": {
-          "AcceptedAmmoTypes": [
-            {
-              "TagName": "Item.Ammo.Cig"
-            }
-          ],
-          "ChamberCapacity": 0,
-          "HolderCapacity": 20,
-          "MaxVisibleAmmo": -1,
-          "DurabilityDamagePerAmmo": 0.0,
-          "CapacityDurabilityCoefficient": 0.0,
-          "DamageToReliability": 0.0
         },
-        "PossibleUpgrades": [],
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "92FD401C43AFEE4A52C566A2F86920C9",
-          "SourceString": "Cigarette Pack",
-          "LocalizedString": "Cigarette Pack"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Consumable.CigPack"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CigPack.BP_CigPack_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 1.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 15.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 150.0,
-        "ItemSellPrice": 5.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        }
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x18.+P": {
         "IgnoreChamberCountInInspect": false,
@@ -828,6 +846,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
@@ -836,7 +856,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.5.45x39.BP": {
         "IgnoreChamberCountInInspect": false,
@@ -874,6 +896,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -882,7 +906,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Gsh18.Mag": {
         "IgnoreChamberCountInInspect": false,
@@ -920,6 +946,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
@@ -928,7 +956,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Beretta.Mag": {
         "IgnoreChamberCountInInspect": false,
@@ -966,6 +996,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
@@ -974,7 +1006,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Glock.Mag.Short": {
         "IgnoreChamberCountInInspect": false,
@@ -995,8 +1029,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "0EA2BBC140715F5F438E22AF0F16A2F1",
-          "SourceString": "Glock 18C Short Magazine",
-          "LocalizedString": "Glock 18C Short Magazine"
+          "SourceString": "Short Glock 18C Magazine",
+          "LocalizedString": "Short Glock 18C Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1012,6 +1046,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
@@ -1020,7 +1056,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "SKS.Mag.Short": {
         "IgnoreChamberCountInInspect": false,
@@ -1041,8 +1079,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "188C4D2343EB0D35CE5603B73502DFEC",
-          "SourceString": "SKS Short Magazine",
-          "LocalizedString": "SKS Short Magazine"
+          "SourceString": "Short SKS Magazine",
+          "LocalizedString": "Short SKS Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1058,6 +1096,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
@@ -1066,7 +1106,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Groza.Mag": {
         "IgnoreChamberCountInInspect": false,
@@ -1104,6 +1146,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -1112,7 +1156,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Saiga.Mag.Short": {
         "IgnoreChamberCountInInspect": false,
@@ -1133,8 +1179,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "0527824B463CCF29AF2C8CAEC9276E6B",
-          "SourceString": "Saiga-12 Short Magazine",
-          "LocalizedString": "Saiga-12 Short Magazine"
+          "SourceString": "Short Saiga-12 Magazine",
+          "LocalizedString": "Short Saiga-12 Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1150,6 +1196,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
@@ -1158,7 +1206,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Saiga.Mag.Long": {
         "IgnoreChamberCountInInspect": false,
@@ -1179,8 +1229,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "90244A954607630CF1B0F0BC5390DE9D",
-          "SourceString": "Saiga-12 Long Magazine",
-          "LocalizedString": "Saiga-12 Long Magazine"
+          "SourceString": "Long Saiga-12 Magazine",
+          "LocalizedString": "Long Saiga-12 Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1196,6 +1246,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -1204,7 +1256,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AS_Val.Mag.Short": {
         "IgnoreChamberCountInInspect": false,
@@ -1225,8 +1279,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "47C41CEF470EA40DF474F2A7A99D4C32",
-          "SourceString": "AS Val Short Magazine",
-          "LocalizedString": "AS Val Short Magazine"
+          "SourceString": "Short AS Val Magazine",
+          "LocalizedString": "Short AS Val Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1242,6 +1296,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
@@ -1250,7 +1306,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AS_Val.Mag.Medium": {
         "IgnoreChamberCountInInspect": false,
@@ -1271,8 +1329,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "242D32234431D9C7A7CC3285B6D285B7",
-          "SourceString": "AS Val Medium Magazine",
-          "LocalizedString": "AS Val Medium Magazine"
+          "SourceString": "Medium AS Val Magazine",
+          "LocalizedString": "Medium AS Val Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1288,6 +1346,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -1296,53 +1356,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
-      },
-      "CrackerPack": {
-        "IgnoreChamberCountInInspect": false,
-        "Parameters": {
-          "AcceptedAmmoTypes": [
-            {
-              "TagName": "Item.Ammo.Cracker"
-            }
-          ],
-          "ChamberCapacity": 0,
-          "HolderCapacity": 15,
-          "MaxVisibleAmmo": -1,
-          "DurabilityDamagePerAmmo": 0.0,
-          "CapacityDurabilityCoefficient": 0.0,
-          "DamageToReliability": 0.0
         },
-        "PossibleUpgrades": [],
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "6286F9C64E8AF007FE075CAD348D87C1",
-          "SourceString": "Cracker Pack",
-          "LocalizedString": "Cracker Pack"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Consumable.CrackerPack"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CrackerPack.BP_CrackerPack_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 1.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 20.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 300.0,
-        "ItemSellPrice": 10.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        }
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Kedr.Mag": {
         "IgnoreChamberCountInInspect": false,
@@ -1380,6 +1396,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -1388,7 +1406,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "Bizon.Mag": {
         "IgnoreChamberCountInInspect": false,
@@ -1426,6 +1446,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 18.0,
         "ItemWeightCapacity": 0.0,
@@ -1434,7 +1456,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x18.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1472,15 +1496,19 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 110.0,
+        "ItemPurchasePrice": 170.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x19.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1518,15 +1546,19 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 220.0,
+        "ItemPurchasePrice": 230.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.5.45x39.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1564,6 +1596,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -1572,7 +1606,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.5-56x45.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1610,6 +1646,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -1618,7 +1656,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.7.62x39.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1656,6 +1696,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -1664,7 +1706,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.7-62x51.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1702,6 +1746,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -1710,7 +1756,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.7-62x54R.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1748,6 +1796,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -1756,7 +1806,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "AmmoBox.Small.9x39.Tracer": {
         "IgnoreChamberCountInInspect": false,
@@ -1794,6 +1846,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
@@ -1802,7 +1856,1259 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.12g.Buckshot": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.12g.buckshot"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "FD701E1740BC2CB87372C0AC2AD3CF73",
+          "SourceString": "12x70 Buckshot Shells Large Box",
+          "LocalizedString": "9999"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.12g.Buckshot"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_12x70_BuckShot.BP_AmmoBoxLarge_12x70_BuckShot_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.12g.Slug": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.12g.Slug"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "FD4CAAE048F9E7BF1512519C8915BB32",
+          "SourceString": "12x70 Slug Shells Large Box",
+          "LocalizedString": "Build version:"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.12g.Slug"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_12x70_Slug.BP_AmmoBoxLarge_12x70_Slug_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2000.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.12g.Slug_TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.12g.SlugTracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "6CD21A3B49E7EC4CE33875B7FF6B90A9",
+          "SourceString": "12x70 Tracer Slug Shells Large Box",
+          "LocalizedString": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.12g.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_12x70_SlugTR.BP_AmmoBoxLarge_12x70_SlugTR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2200.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.9x18.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 200,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "39FB040549ECC080232A7B880E6EB187",
+          "SourceString": "9x18 FMJ Ammo Large Box",
+          "LocalizedString": "9x19"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x18.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x18_FMJ.BP_AmmoBoxLarge_9x18_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1000.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.9x18.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 200,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "5325A47E4B67C6D3574D5F9A812797DE",
+          "SourceString": "9x18 Tracer Ammo Large Box",
+          "LocalizedString": "5"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x18.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x18_TR.BP_AmmoBoxLarge_9x18_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1130.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.9x19.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x19.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 200,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "5BF78BBD44336F613E0C348E912466DD",
+          "SourceString": "9x19 FMJ Ammo Large Box",
+          "LocalizedString": "5.56x45"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x19.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x19_FMJ.BP_AmmoBoxLarge_9x19_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1400.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.9x19.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x19.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 200,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "612D56AE4E0303F7DEE17B8C00337555",
+          "SourceString": "9x19 Tracer Ammo Large Box",
+          "LocalizedString": "7.62x54"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x19.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x19_TR.BP_AmmoBoxLarge_9x19_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1530.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.5.45x39.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.5-45x39.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 150,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "8DF713D54A760234C138F9A6DDF445A1",
+          "SourceString": "5.45x39 FMJ Ammo Large Box",
+          "LocalizedString": "AmmoType: 7,62x39"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.5-45x39.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_5_45x39_FMJ.BP_AmmoBoxLarge_5_45x39_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.5.45x39.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.5-45x39.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 150,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "9C7A76AB47ABAA47CC1295BE037E3F4A",
+          "SourceString": "5.45x39 Tracer Ammo Large Box",
+          "LocalizedString": "AO"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.5-45x39.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_5_45x39_TR.BP_AmmoBoxLarge_5_45x39_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1650.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.5-56x45.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.5-56x45.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 150,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "1E8E0A3F4C4DD60603378EB09CCCD590",
+          "SourceString": "5.56x45 FMJ Ammo Large Box",
+          "LocalizedString": "Current Task: Find items over the road"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.5-56x45.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_5_56x45_FMJ.BP_AmmoBoxLarge_5_56x45_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.5-56x45.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.5-56x45.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 150,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378F29184A9CBAFD011E2594DBAC0507",
+          "SourceString": "5.56x45 Tracer Ammo Large Box",
+          "LocalizedString": "Money:"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.5-56x45.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_5_56x45_TR.BP_AmmoBoxLarge_5_56x45_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1650.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.7.62x39.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x39.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 120,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "2336317B4FCE5B1056829882F3A13FFD",
+          "SourceString": "7.62x39 FMJ Ammo Large Box",
+          "LocalizedString": "9x18"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.7-62x39.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_7_62x39_FMJ.BP_AmmoBoxLarge_7_62x39_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1440.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.7.62x39.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x39.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 120,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0B09E12C43FDF9E905125B9FAF9972F0",
+          "SourceString": "7.62x39 Tracer Ammo Large Box",
+          "LocalizedString": "9x39"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.7-62x39.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_7_62x39_TR.BP_AmmoBoxLarge_7_62x39_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1600.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.7-62x51.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x51.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 120,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "7F042A004D0ADEDCDA3ECDAD49C8CA38",
+          "SourceString": "7.62x51 FMJ Ammo Large Box",
+          "LocalizedString": "Difficult preset"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.7-62x51.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_7_62x51_FMJ.BP_AmmoBoxLarge_7_62x51_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1680.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.7-62x51.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x51.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 120,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "692B69BA430FDFE20CBE26B58B157F68",
+          "SourceString": "7.62x51 Tracer Ammo Large Box",
+          "LocalizedString": "Do you confirm?"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.7-62x51.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_7_62x51_TR.BP_AmmoBoxLarge_7_62x51_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1840.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.7-62x54R.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x54R.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "47D44E8F4789BFF7A8509F90BF04E9D5",
+          "SourceString": "7.62x54R FMJ Ammo Large Box",
+          "LocalizedString": "Mission A"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.7-62x54.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_7_62x54_FMJ.BP_AmmoBoxLarge_7_62x54_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1400.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.7-62x54R.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x54R.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "2B3E78D54678F18F4C51E68431CE0BF6",
+          "SourceString": "7.62x54R Tracer Ammo Large Box",
+          "LocalizedString": "0"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.7-62x54.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_7_62x54_TR.BP_AmmoBoxLarge_7_62x54_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1530.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.9x39.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x39.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "74B314D84CB4E0A33838848EE9413DBE",
+          "SourceString": "9x39 FMJ Ammo Large Box",
+          "LocalizedString": "Scope.Cobra"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x39.FMJ"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x39_FMJ.BP_AmmoBoxLarge_9x39_FMJ_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AmmoBox.Large.9x39.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x39.Tracer"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "7BE2D1F34CEE5C96C3FBCF97D119ADBC",
+          "SourceString": "9x39 Tracer Ammo Large Box",
+          "LocalizedString": "7.62x51"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x39.TR"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x39_TR.BP_AmmoBoxLarge_9x39_TR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1670.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AK-74.Mag.Long": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.5-45x39"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 45,
+          "MaxVisibleAmmo": 30,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "8D41D8124E509C45109A95981193757C",
+          "SourceString": "Long AK-74 Magazine",
+          "LocalizedString": "Weight: 100 kg"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.AK-74.Long"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/BP_AK_74_Mag_Long.BP_AK_74_Mag_Long_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 680.0,
+        "ItemSellPrice": 204.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Glock.Mag.Long": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x19"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 33,
+          "MaxVisibleAmmo": 30,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "A1D38577429DACA153FBC0A39EFC8C36",
+          "SourceString": "Long Glock 18C Magazine",
+          "LocalizedString": "Food and Medicine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.Glock.Long"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/Glock_18/BP_Mag_Glock_18_Long.BP_Mag_Glock_18_Long_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 15.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 400.0,
+        "ItemSellPrice": 120.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "AKM.Mag": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x39"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": 30,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "007BDD774E99BF77679AC8956DD94E1C",
+          "SourceString": "AKM Magazine",
+          "LocalizedString": "Anomaly cluster ahead. Use the detector to help locate it."
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.AKM.Basic"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AKM/BP_AKM_Mag.BP_AKM_Mag_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 15.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 450.0,
+        "ItemSellPrice": 135.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "CigPack": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.Cig"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 20,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "92FD401C43AFEE4A52C566A2F86920C9",
+          "SourceString": "Cigarette Pack",
+          "LocalizedString": "Cigarette Pack"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Consumable.CigPack"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CigPack.BP_CigPack_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 15.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 150.0,
+        "ItemSellPrice": 5.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "CrackerPack": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.Cracker"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 15,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "6286F9C64E8AF007FE075CAD348D87C1",
+          "SourceString": "Cracker Pack",
+          "LocalizedString": "Cracker Pack"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Consumable.CrackerPack"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CrackerPack.BP_CrackerPack_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 20.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 250.0,
+        "ItemSellPrice": 5.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "CannedCan_Fish": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Consumable.Can_Fish"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 6,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "53BA8DB84A0CA4CA0B84B3B3357F6BB4",
+          "SourceString": "Can of Sprats",
+          "LocalizedString": "Can of Sprats"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Consumable.CannedCan_Fish"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CannedCan_Fish.BP_CannedCan_Fish_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 20.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 450.0,
+        "ItemSellPrice": 3.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       }
     }
   }

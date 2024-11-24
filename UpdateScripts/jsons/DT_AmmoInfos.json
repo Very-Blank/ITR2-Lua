@@ -61,6 +61,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "50DA4FB44AC433995F8A51A6B692677E",
@@ -81,6 +83,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 0.0,
         "ItemWeightCapacity": 0.0,
@@ -89,7 +93,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "5.45x39.FMJ": {
         "AmmoTypeID": {
@@ -142,6 +148,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "5.45x39"
         },
@@ -159,6 +167,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
@@ -167,7 +177,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "5.45x39.BP": {
         "AmmoTypeID": {
@@ -220,6 +232,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "5.45x39 BP"
         },
@@ -237,6 +251,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
@@ -245,7 +261,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "5.45x39.TR": {
         "AmmoTypeID": {
@@ -298,6 +316,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C0AA9A484B481EDDAC944E9EF6E8D74A",
@@ -318,6 +338,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
@@ -326,7 +348,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x18.FMJ": {
         "AmmoTypeID": {
@@ -379,6 +403,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "9x18"
         },
@@ -396,6 +422,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
@@ -404,7 +432,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x18.TR": {
         "AmmoTypeID": {
@@ -457,6 +487,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "4599CED0417DD73FBCAD96900639F2D4",
@@ -477,6 +509,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
@@ -485,7 +519,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x18.+P": {
         "AmmoTypeID": {
@@ -538,6 +574,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "9x18 +P"
         },
@@ -555,6 +593,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
@@ -563,7 +603,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "12g.Buckshot": {
         "AmmoTypeID": {
@@ -616,6 +658,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "4EB87EDC4556F8863A24A9815FA29B9E",
@@ -636,6 +680,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -644,7 +690,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "12g.Slug": {
         "AmmoTypeID": {
@@ -697,6 +745,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "DFD717B74D1BA06CB8F6F5A94DFD9B91",
@@ -717,6 +767,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -725,7 +777,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "12g.SlugTracer": {
         "AmmoTypeID": {
@@ -778,6 +832,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "B42F24A343DEB4054D470AB2E4FDFCAF",
@@ -798,6 +854,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -806,88 +864,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
-      },
-      "Cig": {
-        "AmmoTypeID": {
-          "TagName": "Item.Ammo.Cig"
         },
-        "AmmoType": {
-          "TagName": "None"
-        },
-        "BulletShellMesh": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "AmmoWholeMesh": {
-          "AssetPathName": "/Game/ITR1/ART/Items/Cigarette/SM_Cigarette_SM_Cigarette_01.SM_Cigarette_SM_Cigarette_01",
-          "SubPathString": ""
-        },
-        "BulletFleshDamage": 0.0,
-        "AmmoFleshDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletArmorDamage": 0.0,
-        "AmmoArmorDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletInitialVelocity": 750.0,
-        "SpeedDropCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletCritChance": 0.05,
-        "CriticalDamageMultiplier": 4.0,
-        "ArmorIgnoreChance": 0.05,
-        "AmmoPenetration": 1.0,
-        "PenetrableMaterials": [],
-        "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 1.0,
-        "AmmoAccuracyModifier": 1.0,
-        "AmmoWeaponDurabilityModifier": 1.0,
-        "DisplayAmmoReliabilityModifier": 1.0,
-        "AmmoRecoilModifier": {
-          "X": 1.0,
-          "Y": 1.0,
-          "Z": 1.0
-        },
-        "DisplayAmmoRecoilModifier": 1.0,
-        "ShellEjectVelocity": {
-          "X": -1.0,
-          "Y": 0.0,
-          "Z": 1.0
-        },
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "27A1BDC94ED09F05E671D89A283C0C66",
-          "SourceString": "Cigarette",
-          "LocalizedString": "Cigarette"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Ammo.Cig"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cig.BP_Cig_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 0.5,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 1.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        }
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x19.FMJ": {
         "AmmoTypeID": {
@@ -940,6 +919,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "9x19"
         },
@@ -957,6 +938,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
@@ -965,7 +948,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x19.Tracer": {
         "AmmoTypeID": {
@@ -1018,6 +1003,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D517548A489D3C4DCBD3488B09C0D54B",
@@ -1038,6 +1025,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
@@ -1046,7 +1035,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "7.62x39.FMJ": {
         "AmmoTypeID": {
@@ -1099,6 +1090,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "7.62x39"
         },
@@ -1116,6 +1109,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.5,
         "ItemWeightCapacity": 0.0,
@@ -1124,7 +1119,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "7.62x39.Tracer": {
         "AmmoTypeID": {
@@ -1177,6 +1174,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "A279107745DDD5DD020732A9BF4C4B84",
@@ -1197,6 +1196,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.5,
         "ItemWeightCapacity": 0.0,
@@ -1205,7 +1206,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x39.FMJ": {
         "AmmoTypeID": {
@@ -1258,6 +1261,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "9x39"
         },
@@ -1275,6 +1280,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -1283,7 +1290,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "9x39.Tracer": {
         "AmmoTypeID": {
@@ -1336,6 +1345,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "AC417D314C9DEADEC68FD781420E5523",
@@ -1356,6 +1367,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -1364,7 +1377,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "7.62x54R.FMJ": {
         "AmmoTypeID": {
@@ -1417,6 +1432,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "7.62x54R"
         },
@@ -1434,6 +1451,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -1442,7 +1461,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "7.62x54R.Tracer": {
         "AmmoTypeID": {
@@ -1495,6 +1516,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C54CCE9D46375B4337618399864A87D5",
@@ -1515,6 +1538,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
@@ -1523,7 +1548,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "5.56x45.FMJ": {
         "AmmoTypeID": {
@@ -1576,6 +1603,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "5.56x45"
         },
@@ -1593,6 +1622,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
@@ -1601,7 +1632,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "5.56x45.Tracer": {
         "AmmoTypeID": {
@@ -1654,6 +1687,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "E78DAD354B42E6CAB61E28840EA46675",
@@ -1674,6 +1709,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
@@ -1682,7 +1719,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "7.62x51.FMJ": {
         "AmmoTypeID": {
@@ -1735,6 +1774,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "CultureInvariantString": "7.62x51"
         },
@@ -1752,6 +1793,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.5,
         "ItemWeightCapacity": 0.0,
@@ -1760,7 +1803,9 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
       },
       "7.62x51.Tracer": {
         "AmmoTypeID": {
@@ -1813,6 +1858,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 2,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "57415CAC4C2EF179CDF6A5B35165F0EB",
@@ -1833,6 +1880,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "ItemWeight": 1.5,
         "ItemWeightCapacity": 0.0,
@@ -1841,7 +1890,183 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Cig": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.Cig"
+        },
+        "AmmoType": {
+          "TagName": "None"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR1/ART/Items/Cigarette/SM_Cigarette_SM_Cigarette_01.SM_Cigarette_SM_Cigarette_01",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 0.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 750.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.05,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 1.0,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0,
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "27A1BDC94ED09F05E671D89A283C0C66",
+          "SourceString": "Cigarette",
+          "LocalizedString": "Cigarette"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.Cig"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cig.BP_Cig_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "ItemWeight": 0.5,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": 1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Fish": {
+        "AmmoTypeID": {
+          "TagName": "Item.Consumable.Can_Fish"
+        },
+        "AmmoType": {
+          "TagName": "None"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/CannedFood/Fish/SM_CannedFood_Fish_01_a.SM_CannedFood_Fish_01_a",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 30.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 750.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.05,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 1.0,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0,
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "867E165E4F08186C6967DBB5F7810FDA",
+          "SourceString": "Canned Sprat",
+          "LocalizedString": "Canned Sprat"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Consumable.Can_Fish"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CanFish.BP_CanFish_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": true,
+        "ItemWeight": 1.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": 1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 14000.0
       },
       "Cracker": {
         "AmmoTypeID": {
@@ -1894,6 +2119,8 @@
           "Y": 0.0,
           "Z": 1.0
         },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "E93A0DD04EA478CDEBD2E999C256014A",
@@ -1914,6 +2141,8 @@
           "SubPathString": ""
         },
         "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
         "DestroyOnZeroDurability": true,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
@@ -1922,7 +2151,183 @@
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
-        }
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 4500.0
+      },
+      "Cracker_Bitten_1": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.Cracker.Bitten_1"
+        },
+        "AmmoType": {
+          "TagName": "None"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Crackers/SM_Cracker_01_b.SM_Cracker_01_b",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 30.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 750.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.05,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 1.0,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0,
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E93A0DD04EA478CDEBD2E999C256014A",
+          "SourceString": "Cracker",
+          "LocalizedString": "Cracker"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.Cracker.Bitten_1"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_1.BP_Cracker_bitten_1_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": true,
+        "ItemWeight": 0.5,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": 1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 3500.0
+      },
+      "Cracker_Bitten_2": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.Cracker.Bitten_2"
+        },
+        "AmmoType": {
+          "TagName": "None"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Crackers/SM_Cracker_01_c.SM_Cracker_01_c",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 30.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 750.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.05,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 1.0,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0,
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E93A0DD04EA478CDEBD2E999C256014A",
+          "SourceString": "Cracker",
+          "LocalizedString": "Cracker"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.Cracker.Bitten_2"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_2.BP_Cracker_bitten_2_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 1.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DurabilityDamageMultiplier": 0.0,
+        "DestroyOnZeroDurability": true,
+        "ItemWeight": 0.5,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": 1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 2000.0
       }
     }
   }

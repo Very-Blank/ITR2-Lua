@@ -1,4 +1,4 @@
-local ITR2 = require("ITR2-Lua.shared.ITR2")
+local ITR2 = require("ITR2")
 
 local function dummyFunc()
 end
@@ -17,6 +17,6 @@ local function testLibrary(library)
 end
 
 ExecuteWithDelay(3000, function ()
-    testLibrary(ITR2)
+    testLibrary(ITR2.Events)
 end)
 
