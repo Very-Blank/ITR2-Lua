@@ -1,7 +1,6 @@
 local ITR2 = require("ITR2")
 
-local function dummyFunc()
-end
+local function dummyFunc() end
 
 local function testLibrary(library)
     for key, value in pairs(library) do
@@ -16,7 +15,4 @@ local function testLibrary(library)
     end
 end
 
-ExecuteWithDelay(3000, function ()
-    testLibrary(ITR2.Events)
-end)
-
+ExecuteWithDelay(3000, function() testLibrary(ITR2.Events) end)

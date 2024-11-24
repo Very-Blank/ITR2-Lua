@@ -1,0 +1,13 @@
+{
+    "Lua.diagnostics.globals": [
+        "ExecuteWithDelay",
+        "RegisterHook"
+    ],
+    "[lua]": {
+        "editor.defaultFormatter": "Koihik.vscode-lua-format"
+    },
+    "Lua.diagnostics.disable": [
+        "undefined-doc-param",
+        "undefined-doc-name"
+    ],
+}
