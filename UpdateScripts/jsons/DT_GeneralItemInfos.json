@@ -32,9 +32,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 50.0,
+        "DisplayDurability": false,
+        "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 50.0,
         "ItemSellPrice": 5.0,
@@ -45,12 +46,12 @@
         "DamageResistances": [],
         "NutritionalValue": 0.0
       },
-      "Helmet.SH40": {
+      "Helmet.SSH94_Sphere": {
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "81C7B7ED446637E76B11638CC20BA6C6",
-          "SourceString": "SSh-40 WIP",
-          "LocalizedString": "SH40"
+          "Key": "3A2255C84CFF5324BB554BBC8633FBC9",
+          "SourceString": "Sfera Helmet",
+          "LocalizedString": "Go to the location"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -59,33 +60,39 @@
           "LocalizedString": "-undefined-"
         },
         "ItemId": {
-          "TagName": "Item.Equipment.Helmets.Battle.SH40"
+          "TagName": "Item.Equipment.Helmets.Battle.SSH_94"
         },
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_SH40.BP_Helmet_SH40_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_SSH_94.BP_Helmet_SSH_94_C",
           "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.25,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 200.0,
+        "DisplayDurability": true,
+        "ItemWeight": 100.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 300.0,
-        "ItemSellPrice": 100.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 200.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
-        "DamageResistances": [],
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Physical",
+            "Value": 3.0
+          }
+        ],
         "NutritionalValue": 0.0
       },
-      "Helmet.BH2": {
+      "Helmet.Pasgt": {
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "7574CF894699457B40136D989BB83360",
-          "SourceString": "Battle Helmet 2 WIP",
-          "LocalizedString": "BH2"
+          "Key": "3B2098A7436CF3FBFC91138E5FDEE311",
+          "SourceString": "PASGT Helmet",
+          "LocalizedString": "Go to the location"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -94,25 +101,72 @@
           "LocalizedString": "-undefined-"
         },
         "ItemId": {
-          "TagName": "Item.Equipment.Helmets.Battle.BH2"
+          "TagName": "Item.Equipment.Helmets.Battle.PASGT"
         },
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_BH2.BP_Helmet_BH2_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_Pasgt.BP_Helmet_Pasgt_C",
           "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.2,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 250.0,
+        "DisplayDurability": true,
+        "ItemWeight": 70.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 500.0,
-        "ItemSellPrice": 150.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 300.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
-        "DamageResistances": [],
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Physical",
+            "Value": 2.0
+          }
+        ],
+        "NutritionalValue": 0.0
+      },
+      "Helmet.Fast": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "4323EFFD45DB1EAF7888789D97F52D0D",
+          "SourceString": "FAST Helmet",
+          "LocalizedString": "Go to the location"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Helmets.Battle.FAST"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_FAST.BP_Helmet_FAST_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.15,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": true,
+        "ItemWeight": 40.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 3500.0,
+        "ItemSellPrice": 400.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Physical",
+            "Value": 2.0
+          }
+        ],
         "NutritionalValue": 0.0
       },
       "Equipment.Tablet": {
@@ -137,8 +191,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 0.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -172,9 +227,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 20.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 200.0,
         "ItemSellPrice": 20.0,
@@ -207,8 +263,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -242,12 +299,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 25.0,
+        "ItemSellPrice": 15.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -277,12 +335,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 80.0,
+        "ItemSellPrice": 40.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -312,8 +371,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 100.0,
@@ -335,8 +395,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "A557239C45EBFAA3DA72E4AD42792DCF",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Mission.Neon"
@@ -347,8 +407,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 40.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -382,8 +443,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 300.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -405,8 +467,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "F89F68D04B42084395830595F078AE08",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Valuables.V1"
@@ -417,12 +479,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 100.0,
+        "ItemSellPrice": 200.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableArt1.T_ItemPreview_ValuableArt1",
           "SubPathString": ""
@@ -440,8 +503,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "A55730C94D9A61BFD14CDCAFB19D5871",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Valuables.V2"
@@ -452,12 +515,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 35.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 150.0,
+        "ItemSellPrice": 250.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableArt2.T_ItemPreview_ValuableArt2",
           "SubPathString": ""
@@ -475,8 +539,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "4E1429754EEAB2449102C9A96E7206E1",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Valuables.V3"
@@ -487,12 +551,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 40.0,
+        "DisplayDurability": false,
+        "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 300.0,
+        "ItemSellPrice": 400.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableArt3.T_ItemPreview_ValuableArt3",
           "SubPathString": ""
@@ -510,8 +575,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "43343BB6431395060C40E69BFA900D7E",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Valuables.V4"
@@ -522,12 +587,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 45.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 400.0,
+        "ItemSellPrice": 500.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableArt5.T_ItemPreview_ValuableArt5",
           "SubPathString": ""
@@ -545,8 +611,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "E6CAEDA844B0EA38F39E26B6C22333B5",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Valuables.V5"
@@ -557,9 +623,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 20.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": 1000.0,
@@ -592,12 +659,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 50.0,
-        "ItemWeightCapacity": 300.0,
-        "ItemPurchasePrice": 300.0,
-        "ItemSellPrice": 90.0,
+        "DisplayDurability": false,
+        "ItemWeight": 200.0,
+        "ItemWeightCapacity": 700.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -627,12 +695,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 75.0,
-        "ItemWeightCapacity": 1000.0,
-        "ItemPurchasePrice": 1000.0,
-        "ItemSellPrice": 300.0,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 900.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 450.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -662,12 +731,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 100.0,
-        "ItemWeightCapacity": 1800.0,
-        "ItemPurchasePrice": 2000.0,
-        "ItemSellPrice": 600.0,
+        "DisplayDurability": false,
+        "ItemWeight": 150.0,
+        "ItemWeightCapacity": 1600.0,
+        "ItemPurchasePrice": 3500.0,
+        "ItemSellPrice": 1050.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -697,12 +767,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 100.0,
+        "DisplayDurability": false,
+        "ItemWeight": 150.0,
         "ItemWeightCapacity": 1600.0,
-        "ItemPurchasePrice": 2000.0,
-        "ItemSellPrice": 600.0,
+        "ItemPurchasePrice": 3500.0,
+        "ItemSellPrice": 1050.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -732,12 +803,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 700.0,
-        "ItemWeightCapacity": 3000.0,
-        "ItemPurchasePrice": 5000.0,
-        "ItemSellPrice": 1500.0,
+        "DisplayDurability": false,
+        "ItemWeight": 200.0,
+        "ItemWeightCapacity": 2400.0,
+        "ItemPurchasePrice": 6000.0,
+        "ItemSellPrice": 1800.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -767,8 +839,9 @@
         },
         "ItemDurability": 1.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 0.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -802,11 +875,12 @@
         },
         "ItemDurability": 30.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 180.0,
+        "ItemPurchasePrice": 200.0,
         "ItemSellPrice": 20.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
@@ -837,11 +911,12 @@
         },
         "ItemDurability": 50.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 300.0,
+        "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 30.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
@@ -872,117 +947,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 700.0,
         "ItemSellPrice": 70.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Checkers_White": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "66A5ABCC468CFAD5960A9FBAF52CC712",
-          "SourceString": "White Checker",
-          "LocalizedString": "White Checker"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Misc.WhiteChecker"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Checker_White_Item.BP_Checker_White_Item_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 1.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 5.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": -1.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Checkers_Black": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "F543E7304D1D6115E3B82C96DDEAF05D",
-          "SourceString": "Black Checker",
-          "LocalizedString": "Black Checker"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Misc.BlackChecker"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Checker_Black_Item.BP_Checker_Black_Item_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 1.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 5.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": -1.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Checkers_Board": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "AAF6FE6E4F7FD4C15EC35E9E231AB265",
-          "SourceString": "Checkers Board",
-          "LocalizedString": "Checkers Board"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Misc.CheckerBoard"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_CheckersBoard.BP_CheckersBoard_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 1.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 50.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": -1.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -1006,8 +977,9 @@
         },
         "ItemDurability": 1.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 1.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -1029,8 +1001,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "97297AC349A3EB87840E53A8C96142D1",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Mission.M2"
@@ -1041,8 +1013,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 45.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -1064,8 +1037,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "30EC45534B1EDEFE298EC88BD58897C4",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Mission.M3"
@@ -1076,8 +1049,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 50.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -1099,8 +1073,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "24E758554453034CF76FA2B9E8F47BA4",
-          "SourceString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments.",
-          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, lacking any obvious useful properties, but potentially of interest for the Committee's scientists in their experiments."
+          "SourceString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments.",
+          "LocalizedString": "A strange endemic product of the Pechorsk Anomaly, with no obvious useful properties, but potentially of interest to the Committee's scientists in their experiments."
         },
         "ItemId": {
           "TagName": "Item.Artefacts.Mission.M4"
@@ -1111,8 +1085,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 55.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -1146,9 +1121,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 5.0,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": -1.0,
@@ -1169,7 +1145,7 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D8499C8E4455FBB50F43E99D0250BD40",
-          "SourceString": "A secured case containing essential equipment for the operation of the Committee's new monitoring system for the Pechorsk Anomaly and its entities. It can only be carried by hand.",
+          "SourceString": "A secured case containing essential equipment for operating the Committee's new monitoring system for the Pechorsk Anomaly and its entities. It can only be carried by hand.",
           "LocalizedString": "Hide Trees"
         },
         "ItemId": {
@@ -1181,9 +1157,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 300.0,
+        "DisplayDurability": false,
+        "ItemWeight": 200.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": -1.0,
@@ -1204,7 +1181,7 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "DF133B664904B3C46F4E93A7DE34C86D",
-          "SourceString": "A modernized weather sensor used by the Committee in the 1990s to monitor the Pechorsk Anomaly. It was phased out after the introduction of the new monitoring system.",
+          "SourceString": "A modernized weather sensor used by the Committee in the 1990s to monitor the Pechorsk Anomaly. It was phased out after the introduction of a new monitoring system.",
           "LocalizedString": "Quit the game?"
         },
         "ItemId": {
@@ -1216,9 +1193,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 150.0,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": -1.0,
@@ -1251,12 +1229,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 75.0,
+        "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableCup.T_ItemPreview_ValuableCup",
           "SubPathString": ""
@@ -1286,12 +1265,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 45.0,
+        "DisplayDurability": false,
+        "ItemWeight": 25.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 100.0,
+        "ItemSellPrice": 75.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableSugar.T_ItemPreview_ValuableSugar",
           "SubPathString": ""
@@ -1321,12 +1301,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 40.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 150.0,
+        "ItemSellPrice": 200.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableWrench.T_ItemPreview_ValuableWrench",
           "SubPathString": ""
@@ -1356,12 +1337,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 40.0,
+        "DisplayDurability": false,
+        "ItemWeight": 14.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 200.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableSoap.T_ItemPreview_ValuableSoap",
           "SubPathString": ""
@@ -1391,12 +1373,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 350.0,
+        "ItemSellPrice": 200.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableSpoon.T_ItemPreview_ValuableSpoon",
           "SubPathString": ""
@@ -1426,9 +1409,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 35.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": 60.0,
@@ -1461,12 +1445,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 45.0,
+        "DisplayDurability": false,
+        "ItemWeight": 20.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 450.0,
+        "ItemSellPrice": 275.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ValuableLock.T_ItemPreview_ValuableLock",
           "SubPathString": ""
@@ -1496,9 +1481,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
+        "DisplayDurability": false,
+        "ItemWeight": 50.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": -1.0,
@@ -1531,9 +1517,10 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 50.0,
+        "DisplayDurability": false,
+        "ItemWeight": 85.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
         "ItemSellPrice": -1.0,
@@ -1566,8 +1553,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 300.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -1589,7 +1577,7 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C92F103B47FD13CC7B3D50BF41F83D2B",
-          "SourceString": "A sensor on a folding tripod, designed as part of the Committee's new system for monitoring and researching the Pechorsk Anomaly and its entities. It can be carried in the primary weapon holster.",
+          "SourceString": "A broken sensor for monitoring and researching the Pechorsk Anomaly. It can be carried in the primary weapon holster.",
           "LocalizedString": "Exit Game"
         },
         "ItemId": {
@@ -1601,8 +1589,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 300.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -1636,222 +1625,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 50.0,
-        "ItemWeightCapacity": 250.0,
-        "ItemPurchasePrice": 50.0,
-        "ItemSellPrice": 10.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_Classic": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "872CB54E4136A7D11991E9BD5E6F484B",
-          "SourceString": "Standard Chest Rig (R)",
-          "LocalizedString": "Vest Medium 2"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.Classic"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Classic.BP_Vest_Classic_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 100.0,
-        "ItemWeightCapacity": 1500.0,
-        "ItemPurchasePrice": 1000.0,
-        "ItemSellPrice": 300.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_Pistols": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "30512D494531C4BDA68CD3A69F027850",
-          "SourceString": "Gunman Chest Rig (R)",
-          "LocalizedString": "Gunman Chest Rig (R)"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.Pistols"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Pistols.BP_Vest_Pistols_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 75.0,
-        "ItemWeightCapacity": 1200.0,
-        "ItemPurchasePrice": 1400.0,
-        "ItemSellPrice": 420.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_FrontGun_Only": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "F6A39E3F4DBC7B840BE907B5A3EB0FF1",
-          "SourceString": "Patrol Chest Rig (R)",
-          "LocalizedString": "Patrol Chest Rig (R)"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.FrontGun_Only"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_Only.BP_Vest_FrontGun_Only_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 75.0,
-        "ItemWeightCapacity": 700.0,
-        "ItemPurchasePrice": 300.0,
-        "ItemSellPrice": 90.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_Classic_Expanded": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "754EA3634B0588E2E5719A99800E7AF1",
-          "SourceString": "Heavy Chest Rig (R)",
-          "LocalizedString": "Vest Medium 1"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.ClassicExpanded"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_ClassicExpanded.BP_Vest_ClassicExpanded_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 100.0,
-        "ItemWeightCapacity": 2000.0,
-        "ItemPurchasePrice": 2000.0,
-        "ItemSellPrice": 600.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_FrontGun_n_Pistol": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "CEE6605343619DDAAEFBDEB2991C6AF3",
-          "SourceString": "Operator Chest Rig (R)",
-          "LocalizedString": "Operator Chest Rig (R)"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.FrontGun_n_Pistol"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_n_Pistol.BP_Vest_FrontGun_n_Pistol_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 100.0,
-        "ItemWeightCapacity": 1500.0,
-        "ItemPurchasePrice": 1000.0,
-        "ItemSellPrice": 300.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Flashlight.Pocket": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "6DD47EC140E46D25C8A38BABE496449C",
-          "SourceString": "Pocket Flashlight",
-          "LocalizedString": "Pocket Flashlight"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Flashlight.Pocket"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Flashlights/BP_Flashlight_Pocket.BP_Flashlight_Pocket_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "ItemWeight": 30.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 200.0,
-        "ItemSellPrice": 20.0,
+        "ItemWeightCapacity": 220.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -1881,47 +1661,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 50.0,
-        "ItemWeightCapacity": 250.0,
-        "ItemPurchasePrice": 50.0,
-        "ItemSellPrice": 10.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_Pistols_L": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "B7BE8853463FF29DECD6EDAB46E2B4FF",
-          "SourceString": "Gunman Chest Rig (L)",
-          "LocalizedString": "Gunman Chest Rig (L)"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.Pistols.L"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Pistols_L.BP_Vest_Pistols_L_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 75.0,
-        "ItemWeightCapacity": 1200.0,
-        "ItemPurchasePrice": 1400.0,
-        "ItemSellPrice": 420.0,
+        "ItemWeightCapacity": 220.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -1929,12 +1675,12 @@
         "DamageResistances": [],
         "NutritionalValue": 0.0
       },
-      "Vest_FrontGun_Only_L": {
+      "Vest_Classic": {
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "2040C7074198DE1B80E235A0AE9D5653",
-          "SourceString": "Patrol Chest Rig (L)",
-          "LocalizedString": "Patrol Chest Rig (L)"
+          "Key": "872CB54E4136A7D11991E9BD5E6F484B",
+          "SourceString": "Standard Chest Rig (R)",
+          "LocalizedString": "Vest Medium 2"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1943,55 +1689,21 @@
           "LocalizedString": "-undefined-"
         },
         "ItemId": {
-          "TagName": "Item.Equipment.Vests.FrontGun_Only.L"
+          "TagName": "Item.Equipment.Vests.Classic"
         },
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_Only_L.BP_Vest_FrontGun_Only_L_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Classic.BP_Vest_Classic_C",
           "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 75.0,
-        "ItemWeightCapacity": 700.0,
-        "ItemPurchasePrice": 300.0,
-        "ItemSellPrice": 90.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Vest_FrontGun_n_Pistol_L": {
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "25D23AFF4A898DD0234C1D9B76219D5C",
-          "SourceString": "Operator Chest Rig (L)",
-          "LocalizedString": "Operator Chest Rig (L)"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Equipment.Vests.FrontGun_n_Pistol.L"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_n_Pistol_L.BP_Vest_FrontGun_n_Pistol_L_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 100.0,
-        "ItemWeightCapacity": 1500.0,
-        "ItemPurchasePrice": 1000.0,
-        "ItemSellPrice": 300.0,
+        "ItemWeightCapacity": 750.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 450.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2021,12 +1733,193 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 100.0,
-        "ItemWeightCapacity": 1500.0,
+        "ItemWeightCapacity": 750.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 450.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_Pistols": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "30512D494531C4BDA68CD3A69F027850",
+          "SourceString": "Gunman Chest Rig (R)",
+          "LocalizedString": "Gunman Chest Rig (R)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.Pistols"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Pistols.BP_Vest_Pistols_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 500.0,
         "ItemPurchasePrice": 1000.0,
         "ItemSellPrice": 300.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_Pistols_L": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "B7BE8853463FF29DECD6EDAB46E2B4FF",
+          "SourceString": "Gunman Chest Rig (L)",
+          "LocalizedString": "Gunman Chest Rig (L)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.Pistols.L"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Pistols_L.BP_Vest_Pistols_L_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 500.0,
+        "ItemPurchasePrice": 1000.0,
+        "ItemSellPrice": 300.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_FrontGun_Only": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F6A39E3F4DBC7B840BE907B5A3EB0FF1",
+          "SourceString": "Patrol Chest Rig (R)",
+          "LocalizedString": "Patrol Chest Rig (R)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.FrontGun_Only"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_Only.BP_Vest_FrontGun_Only_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 650.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_FrontGun_Only_L": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "2040C7074198DE1B80E235A0AE9D5653",
+          "SourceString": "Patrol Chest Rig (L)",
+          "LocalizedString": "Patrol Chest Rig (L)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.FrontGun_Only.L"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_Only_L.BP_Vest_FrontGun_Only_L_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 650.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_Classic_Expanded": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "754EA3634B0588E2E5719A99800E7AF1",
+          "SourceString": "Heavy Chest Rig (R)",
+          "LocalizedString": "Vest Medium 1"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.ClassicExpanded"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_ClassicExpanded.BP_Vest_ClassicExpanded_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 150.0,
+        "ItemWeightCapacity": 1200.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2056,12 +1949,121 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 150.0,
+        "ItemWeightCapacity": 1200.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_FrontGun_n_Pistol": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "CEE6605343619DDAAEFBDEB2991C6AF3",
+          "SourceString": "Operator Chest Rig (R)",
+          "LocalizedString": "Operator Chest Rig (R)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.FrontGun_n_Pistol"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_n_Pistol.BP_Vest_FrontGun_n_Pistol_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 100.0,
-        "ItemWeightCapacity": 2000.0,
-        "ItemPurchasePrice": 2000.0,
-        "ItemSellPrice": 600.0,
+        "ItemWeightCapacity": 750.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 450.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest_FrontGun_n_Pistol_L": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "25D23AFF4A898DD0234C1D9B76219D5C",
+          "SourceString": "Operator Chest Rig (L)",
+          "LocalizedString": "Operator Chest Rig (L)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.FrontGun_n_Pistol.L"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_FrontGun_n_Pistol_L.BP_Vest_FrontGun_n_Pistol_L_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 750.0,
+        "ItemPurchasePrice": 1500.0,
+        "ItemSellPrice": 450.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Flashlight.Pocket": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "6DD47EC140E46D25C8A38BABE496449C",
+          "SourceString": "Pocket Flashlight",
+          "LocalizedString": "Pocket Flashlight"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Flashlight.Pocket"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Flashlights/BP_Flashlight_Pocket.BP_Flashlight_Pocket_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 200.0,
+        "ItemSellPrice": 20.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2079,7 +2081,7 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C92F103B47FD13CC7B3D50BF41F83D2B",
-          "SourceString": "A sensor on a folding tripod, designed as part of the Committee's new system for monitoring and researching the Pechorsk Anomaly and its entities. It can be carried in the primary weapon holster.",
+          "SourceString": "A broken sensor for monitoring and researching the Pechorsk Anomaly. It can be carried in the primary weapon holster.",
           "LocalizedString": "Exit Game"
         },
         "ItemId": {
@@ -2091,8 +2093,9 @@
         },
         "ItemDurability": 0.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 300.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
@@ -2126,12 +2129,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 150.0,
-        "ItemWeightCapacity": 1000.0,
-        "ItemPurchasePrice": 1500.0,
-        "ItemSellPrice": 450.0,
+        "ItemWeightCapacity": 950.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2161,12 +2165,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 150.0,
-        "ItemWeightCapacity": 1000.0,
-        "ItemPurchasePrice": 1500.0,
-        "ItemSellPrice": 450.0,
+        "ItemWeightCapacity": 950.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2174,7 +2179,7 @@
         "DamageResistances": [],
         "NutritionalValue": 0.0
       },
-      "ArmorMedium_Classic": {
+      "ArmorLight_FrontWeaponAndPistol": {
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "7599BC434F34E8F3267B508B06C1A502",
@@ -2188,20 +2193,21 @@
           "LocalizedString": "-undefined-"
         },
         "ItemId": {
-          "TagName": "Item.Equipment.Armor.Medium.Classic"
+          "TagName": "Item.Equipment.Armor.Light.FrontGunAndPistol"
         },
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Armors/BP_ArmorMedium_Classic.BP_ArmorMedium_Classic_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Armors/BP_ArmorLight_FrontWeaponAndPistol.BP_ArmorLight_FrontWeaponAndPistol_C",
           "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 150.0,
-        "ItemWeightCapacity": 1000.0,
-        "ItemPurchasePrice": 1500.0,
-        "ItemSellPrice": 450.0,
+        "ItemWeightCapacity": 950.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2209,7 +2215,7 @@
         "DamageResistances": [],
         "NutritionalValue": 0.0
       },
-      "ArmorMedium_Classic_L": {
+      "ArmorLight_FrontWeaponAndPistol_L": {
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "77DBD20C4B97FDA79E35558DEBC8182E",
@@ -2223,20 +2229,21 @@
           "LocalizedString": "-undefined-"
         },
         "ItemId": {
-          "TagName": "Item.Equipment.Armor.Medium.Classic.L"
+          "TagName": "Item.Equipment.Armor.Light.FrontGunAndPistol.L"
         },
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Armors/BP_ArmorMedium_Classic_L.BP_ArmorMedium_Classic_L_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Armors/BP_ArmorLight_FrontWeaponAndPistol_L.BP_ArmorLight_FrontWeaponAndPistol_L_C",
           "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 150.0,
-        "ItemWeightCapacity": 1000.0,
-        "ItemPurchasePrice": 1500.0,
-        "ItemSellPrice": 450.0,
+        "ItemWeightCapacity": 950.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2266,12 +2273,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 200.0,
-        "ItemWeightCapacity": 1500.0,
-        "ItemPurchasePrice": 2500.0,
-        "ItemSellPrice": 600.0,
+        "DisplayDurability": false,
+        "ItemWeight": 300.0,
+        "ItemWeightCapacity": 1400.0,
+        "ItemPurchasePrice": 5000.0,
+        "ItemSellPrice": 1500.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2301,12 +2309,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
-        "ItemWeight": 200.0,
-        "ItemWeightCapacity": 1500.0,
-        "ItemPurchasePrice": 2500.0,
-        "ItemSellPrice": 600.0,
+        "DisplayDurability": false,
+        "ItemWeight": 300.0,
+        "ItemWeightCapacity": 1400.0,
+        "ItemPurchasePrice": 5000.0,
+        "ItemSellPrice": 1500.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2336,12 +2345,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.55,
-        "DestroyOnZeroDurability": true,
+        "DamageToDurabilityMultiplier": 0.25,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": true,
         "ItemWeight": 100.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 200.0,
-        "ItemSellPrice": 60.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2349,7 +2359,7 @@
         "DamageResistances": [
           {
             "Key": "EDamageCategory::Physical",
-            "Value": 3.0
+            "Value": 2.0
           }
         ],
         "NutritionalValue": 0.0
@@ -2376,12 +2386,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.45,
-        "DestroyOnZeroDurability": true,
-        "ItemWeight": 200.0,
+        "DamageToDurabilityMultiplier": 0.2,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": true,
+        "ItemWeight": 150.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 600.0,
-        "ItemSellPrice": 180.0,
+        "ItemPurchasePrice": 750.0,
+        "ItemSellPrice": 225.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2389,7 +2400,7 @@
         "DamageResistances": [
           {
             "Key": "EDamageCategory::Physical",
-            "Value": 5.0
+            "Value": 4.0
           }
         ],
         "NutritionalValue": 0.0
@@ -2416,12 +2427,13 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
-        "DurabilityDamageMultiplier": 0.4,
-        "DestroyOnZeroDurability": true,
-        "ItemWeight": 300.0,
+        "DamageToDurabilityMultiplier": 0.15,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": true,
+        "ItemWeight": 200.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 1200.0,
-        "ItemSellPrice": 360.0,
+        "ItemPurchasePrice": 1000.0,
+        "ItemSellPrice": 300.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2429,7 +2441,7 @@
         "DamageResistances": [
           {
             "Key": "EDamageCategory::Physical",
-            "Value": 8.0
+            "Value": 6.0
           }
         ],
         "NutritionalValue": 0.0
@@ -2456,8 +2468,9 @@
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DurabilityDamageMultiplier": 0.0,
+        "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
@@ -2468,6 +2481,698 @@
         },
         "DamageResistances": [],
         "NutritionalValue": 35000.0
+      },
+      "OilSpary": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "047CEB7944D3B32B0C939EB1C7AC0DEA",
+          "SourceString": "Cleaning Oil",
+          "LocalizedString": "Delete Anomalies"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Cleaning.Oil"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Cleaning/BP_OilSpray.BP_OilSpray_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": true,
+        "ItemWeight": 15.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 400.0,
+        "ItemSellPrice": 40.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "CleaningBrush": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "DB07A87746E2FE1AE354E1AA87769E52",
+          "SourceString": "Brush",
+          "LocalizedString": "Delete All Items"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Cleaning.Brush"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Cleaning/BP_CleaningBrush.BP_CleaningBrush_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": true,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 200.0,
+        "ItemSellPrice": 20.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Pick_coin": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0F038ABD46BB62EAECD7E0832FAA092B",
+          "SourceString": "Guitar Pick",
+          "LocalizedString": "ContainerName"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Misc.Coin"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/Guitar/BP_Coin.BP_Coin_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 1.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "guitar": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "12D7195B4D8B36B4CD7CD1AAD0A65A60",
+          "SourceString": "Guitar",
+          "LocalizedString": "Cont-s"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Misc.Guitar"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/Guitar/BP_Guitar.BP_Guitar_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 200.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Head_Flashlight": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "179E11AD4F054C37ED4293B9FCB9B9B8",
+          "SourceString": "Head Flashlight",
+          "LocalizedString": "Church"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Flashlight.Head"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Flashlights/BP_Flashlight_HeadLamp.BP_Flashlight_HeadLamp_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1000.0,
+        "ItemSellPrice": 250.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "ADH_1": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "1194104A48F5390EFAA8D59B8C60CEA2",
+          "SourceString": "Anti-Distortion Headgear",
+          "LocalizedString": "ItemName"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Helmets.Distortion.ADH_1"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Anti_Distortion_Helmets/BP_ADH_1.BP_ADH_1_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.004167,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 70.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 3000.0,
+        "ItemSellPrice": 900.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ADH-1.T_ItemPreview_ADH-1",
+          "SubPathString": ""
+        },
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Distortion",
+            "Value": 20.0
+          }
+        ],
+        "NutritionalValue": 0.0
+      },
+      "Checkers_Board_New": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "AAF6FE6E4F7FD4C15EC35E9E231AB265",
+          "SourceString": "Checkers Board",
+          "LocalizedString": "Checkers Board"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Misc.CheckerBoard"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_CheckersBoard_New.BP_CheckersBoard_New_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 50.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Dictaphone": {
+        "ItemName": {
+          "CultureInvariantString": "Dictaphone"
+        },
+        "ItemDescription": {
+          "CultureInvariantString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Misc.Dictaphone"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/BP_CassettePlayer.BP_CassettePlayer_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 1.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Note": {
+        "ItemName": {
+          "CultureInvariantString": "Note"
+        },
+        "ItemDescription": {
+          "CultureInvariantString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Misc.Note"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/BP_Note.BP_Note_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 1.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "NVG.Mono": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "CEBE991842F8EC86135389BB336825E9",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "686994F34F800B61AAEB55AB35CC62C3",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.NVG.Mono"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/Helmet_Attachments/BPA_NightVision.BPA_NightVision_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 1.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Vest.Modular.Classic": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "55A518654014CEDF046CC08DC53A9B34",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "68DA2825438EA6BBF5FC788BA2FFA74C",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Vests.Modular.Classic"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/BP_Vest_Modular.BP_Vest_Modular_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 500.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "VestModule.DropPouch": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "C83729704D085A576D4131A190EDFC08",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "4E3399EC46620EE3CE71858275DE678E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.VestModules.DropPouch"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/VestModules/BP_VestModule_DropPouch.BP_VestModule_DropPouch_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 50.0,
+        "ItemWeightCapacity": 200.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "VestModule.MagPouch": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "66545AFF49E332749E9FADA1130C321F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "9C6052A84B2235020E0E1F93F8C26EEE",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.VestModules.MagPouch"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/VestModules/BP_VestModule_MagPouch.BP_VestModule_MagPouch_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
+        "ItemWeightCapacity": 10.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "VestModule.ItemSlot": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "082C051540E5D83FD3D578A0BECF8AD0",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "E4A9FE794942E62674C7838CEDC9B034",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.VestModules.ItemSlot"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/VestModules/BP_VestModule_ItemSlot.BP_VestModule_ItemSlot_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
+        "ItemWeightCapacity": 50.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "VestModule.HolsterPistol": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "0727CADE4A4CB3E1D0C0EBBBB694CF2C",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "838E834C4B9CA471C72A3B89AE17818E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.VestModules.HolsterPistol"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/VestModules/BP_VestModule_HolsterPistolR.BP_VestModule_HolsterPistolR_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 200.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "VestModule.HolsterRifle": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "0727CADE4A4CB3E1D0C0EBBBB694CF2C",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "838E834C4B9CA471C72A3B89AE17818E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.VestModules.HolsterRifle"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Vests/VestModules/BP_VestModule_HolsterRifle.BP_VestModule_HolsterRifle_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 100.0,
+        "ItemWeightCapacity": 300.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "NutritionalValue": 0.0
+      },
+      "Helmet_ArmoredVisor": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "099735DD404734E522B684943F752A8E",
+          "SourceString": "Helmet Armored Visor",
+          "LocalizedString": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Helmet.Armored_Visor"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Helmets/Helmet_Attachments/BP_Armored_Visor.BP_Armored_Visor_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.3,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 40.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2000.0,
+        "ItemSellPrice": 200.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Physical",
+            "Value": 2.0
+          }
+        ],
+        "NutritionalValue": 0.0
+      },
+      "ADH_Prototype": {
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "AC43B3EA48D4B63C3D51D990B50523E3",
+          "SourceString": "ADH Prototype",
+          "LocalizedString": "AI Debug Toggle"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C5FE9F25469502A582B312975B877CE6",
+          "SourceString": "The UNPSC prototype headgear designed for protection against the adverse effects of the Distortion Zones.",
+          "LocalizedString": "AnimButton"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Helmets.Distortion.ADH_Prototype"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Anti_Distortion_Helmets/BP_ADH_1_Prototype.BP_ADH_1_Prototype_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.004167,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 70.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": -1.0,
+        "ItemSellPrice": -1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_ADH-1.T_ItemPreview_ADH-1",
+          "SubPathString": ""
+        },
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Distortion",
+            "Value": 20.0
+          }
+        ],
+        "NutritionalValue": 0.0
+      },
+      "ArmorLight_Test": {
+        "ItemName": {
+          "Namespace": "",
+          "Key": "BF8B0EB04705089E78839AA6DA3872C7",
+          "SourceString": "Test Armor (R)",
+          "LocalizedString": "Test Armor (R)"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemId": {
+          "TagName": "Item.Equipment.Armor.Light.Test"
+        },
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Equipment/Armors/BP_ArmorLight_Test.BP_ArmorLight_Test_C",
+          "SubPathString": ""
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 150.0,
+        "ItemWeightCapacity": 950.0,
+        "ItemPurchasePrice": 2500.0,
+        "ItemSellPrice": 750.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [
+          {
+            "Key": "EDamageCategory::Physical",
+            "Value": 1.0
+          }
+        ],
+        "NutritionalValue": 0.0
       }
     }
   }

@@ -48,18 +48,26 @@ function AConditionalHider:OnAccessLevelChanged(AccessLevel) end
 function AConditionalHider:CheckConditions() end
 
 
+---@class ADistortionZoneBase : AActor
+---@field DamageType TSubclassOf<URadiusDamageType>
+ADistortionZoneBase = {}
+
+
+
 ---@class AGripSelectorsController : AActor
 AGripSelectorsController = {}
 
 
 ---@class ALevelGateBase : AActor
 ---@field bIgnoreAsStart boolean
+---@field GateTag FGameplayTag
+---@field LinkGateTag TArray<FGameplayTag>
 ALevelGateBase = {}
 
 ---@return FTransform
 function ALevelGateBase:GetPivotExitTransform() end
 ---@return TArray<FGameplayTag>
-function ALevelGateBase:GetLevels() end
+function ALevelGateBase:GetLinkedGateTags() end
 ---@return FGameplayTag
 function ALevelGateBase:GetGateTag() end
 
@@ -145,10 +153,13 @@ AMonsterSpawnGroup = {}
 ---@field CombatZone TSoftObjectPtr<ACombatZone>
 ---@field AIPaths TArray<AActor>
 ---@field CurrentAIPath AActor
+---@field AttachedSplines TArray<USplineComponent>
 AMonsterSpawnPoint = {}
 
 ---@param bSkipFirst boolean
 function AMonsterSpawnPoint:SpawnNext(bSkipFirst) end
+---@param Spawned AActor
+function AMonsterSpawnPoint:OnSpawned_BP(Spawned) end
 ---@return FTransform
 function AMonsterSpawnPoint:GetSpawnTransform() end
 
@@ -271,12 +282,6 @@ function ARadiusBed:ArePlayersNear() end
 ---@field ParticleScaleOutputRange FVector2D
 ARadiusBulletProjectile = {}
 
----@param HitComponent UPrimitiveComponent
----@param OtherActor AActor
----@param OtherComponent UPrimitiveComponent
----@param NormalImpulse FVector
----@param Hit FHitResult
-function ARadiusBulletProjectile:SphereColliderHit(HitComponent, OtherActor, OtherComponent, NormalImpulse, Hit) end
 ---@param Hit FHitResult
 ---@param ShotDistance float
 ---@param Scale float
@@ -411,6 +416,7 @@ function ARadiusGameplayGameMode:BeginPlay() end
 ---@class ARadiusGrippableActorBase : AGrippableActor
 ---@field OnDistanceGripChanged FRadiusGrippableActorBaseOnDistanceGripChanged
 ---@field OnItemHolstered FRadiusGrippableActorBaseOnItemHolstered
+---@field OnItemRemovedFromHolster FRadiusGrippableActorBaseOnItemRemovedFromHolster
 ---@field SyncTransfromComponent USyncTransformComponent
 ---@field CachedCollisions TMap<UMeshComponent, FName>
 ARadiusGrippableActorBase = {}
@@ -461,8 +467,8 @@ function ARadiusHolder:Continue_SpawnSavedItems(ItemActor) end
 ---@field GS_LerptToHand UGS_LerpToHand
 ARadiusItemBase = {}
 
----@param NewDurability float
-function ARadiusItemBase:Server_SetDurability(NewDurability) end
+---@param DeltaDurability float
+function ARadiusItemBase:Server_ChangeItemDurability(DeltaDurability) end
 function ARadiusItemBase:RetryPlaceContainer() end
 function ARadiusItemBase:PostInitializeComponents() end
 function ARadiusItemBase:OnParenIDReplicated() end
@@ -476,6 +482,20 @@ function ARadiusItemBase:FakeAttachHand(bShouldFakeAttach, AutoDetachIn, GripInf
 function ARadiusItemBase:CreateDynamicData() end
 
 
+---@class ARadiusLineTraceProjectile : AActor
+---@field ProjectileImpactsComponent UActorComponent
+---@field SpeedDropCurve TSoftObjectPtr<UCurveFloat>
+---@field DamageType TSubclassOf<URadiusDamageType>
+---@field ProjectileImpactsComponentClass TSubclassOf<UActorComponent>
+ARadiusLineTraceProjectile = {}
+
+---@param TraceDistance float
+---@param HasMisses boolean
+function ARadiusLineTraceProjectile:Trace(TraceDistance, HasMisses) end
+---@param VelocityPercent float
+function ARadiusLineTraceProjectile:CalculateSpread(VelocityPercent) end
+
+
 ---@class ARadiusNonHumanAICharacter : ACharacter
 ---@field AISightDebug FAISightDebug
 ---@field ConfigTag FGameplayTag
@@ -486,6 +506,8 @@ function ARadiusItemBase:CreateDynamicData() end
 ---@field AnimationTag FGameplayTag
 ARadiusNonHumanAICharacter = {}
 
+---@param Value boolean
+function ARadiusNonHumanAICharacter:SetIsAlive(Value) end
 ---@param NewAnimationTag FGameplayTag
 function ARadiusNonHumanAICharacter:SetAnimState(NewAnimationTag) end
 ---@param NewAnimationTag FGameplayTag
@@ -506,7 +528,8 @@ function ARadiusNonHumanAICharacter:ChangeMoveSpeed(NewSpeed) end
 
 ---@class ARadiusPlayerCharacter : AVRCharacter
 ---@field VRNotificationsComponent UVRNotificationsComponent
----@field RadiusPlayerState TWeakObjectPtr<ARadiusPlayerState>
+---@field OnRadiusPlayerStateChanged FRadiusPlayerCharacterOnRadiusPlayerStateChanged
+---@field CachedRadiusPlayerState TWeakObjectPtr<ARadiusPlayerState>
 ARadiusPlayerCharacter = {}
 
 ---@param Transform FTransform
@@ -519,6 +542,8 @@ function ARadiusPlayerCharacter:ResetOrientationAndPosition() end
 function ARadiusPlayerCharacter:PreTeleport() end
 function ARadiusPlayerCharacter:OnTeleported() end
 function ARadiusPlayerCharacter:OnPlayerStateSet() end
+---@return FVector
+function ARadiusPlayerCharacter:GetShiftedUpCameraLocation() end
 ---@return APlayerController
 function ARadiusPlayerCharacter:GetSelfPlayerController() end
 ---@return ARadiusPlayerState
@@ -543,8 +568,11 @@ function ARadiusPlayerCharacter:Client_TeleportPlayer(Transform, Velocity, bWris
 ---@field RadiusPlayerStateGameplay TWeakObjectPtr<ARadiusPlayerStateGameplay>
 ARadiusPlayerCharacterGameplay = {}
 
+function ARadiusPlayerCharacterGameplay:UpdateBodyCalibration() end
 ---@param Pawn APawn
 function ARadiusPlayerCharacterGameplay:OnPossessed(Pawn) end
+---@param PlayerHeight float
+function ARadiusPlayerCharacterGameplay:HandleOnPlayerHeightChanged(PlayerHeight) end
 ---@return ARadiusPlayerStateGameplay
 function ARadiusPlayerCharacterGameplay:GetRadiusPlayerStateGameplay() end
 ---@return TArray<FGameplayTag>
@@ -560,7 +588,8 @@ ARadiusPlayerController = {}
 ---@param LevelTag FGameplayTag
 function ARadiusPlayerController:Server_TravelTo(LevelTag) end
 ---@param PlayerCharacter ARadiusPlayerCharacterGameplay
-function ARadiusPlayerController:Server_NotifyClientCharacterInitialized(PlayerCharacter) end
+---@param bIsLeftHanded boolean
+function ARadiusPlayerController:Server_NotifyClientCharacterInitialized(PlayerCharacter, bIsLeftHanded) end
 ---@param DeltaMoney int32
 ---@param AnalyticsString FString
 ---@param MoneyChangeReason EMoneyChangeReason
@@ -573,6 +602,12 @@ function ARadiusPlayerController:Server_ChangeMoney(DeltaMoney, AnalyticsString,
 ---@param DamageCauser AActor
 ---@param DamageTypeClass TSubclassOf<UDamageType>
 function ARadiusPlayerController:Server_ApplyPointDamage(Target, Damage, HitFromDirection, HitInfo, EventInstigator, DamageCauser, DamageTypeClass) end
+---@param DamagedActor AActor
+---@param Damage float
+---@param EventInstigator AController
+---@param DamageCauser AActor
+---@param DamageTypeClass TSubclassOf<UDamageType>
+function ARadiusPlayerController:Server_ApplyDamage(DamagedActor, Damage, EventInstigator, DamageCauser, DamageTypeClass) end
 ---@param P APawn
 function ARadiusPlayerController:OnPostPossess(P) end
 ---@return APawn
@@ -584,15 +619,33 @@ function ARadiusPlayerController:GetRadiusPawn() end
 ---@field OnPlayerNameChange FRadiusPlayerStateOnPlayerNameChange
 ---@field PlayerHeight float
 ---@field OnPlayerHeightChange FRadiusPlayerStateOnPlayerHeightChange
+---@field BodyHeight float
+---@field OnBodyHeightChanged FRadiusPlayerStateOnBodyHeightChanged
+---@field bIsSittingMode boolean
+---@field OnIsSittingModeChanged FRadiusPlayerStateOnIsSittingModeChanged
 ARadiusPlayerState = {}
 
 ---@param NewPlayerHeight float
 function ARadiusPlayerState:SetPlayerHeight(NewPlayerHeight) end
+---@param bNewIsSittingMode boolean
+function ARadiusPlayerState:SetIsSittingMode(bNewIsSittingMode) end
+---@param NewBodyHeight float
+function ARadiusPlayerState:SetBodyHeight(NewBodyHeight) end
 ---@param NewPlayerHeight float
 function ARadiusPlayerState:Server_SetPlayerHeight(NewPlayerHeight) end
+---@param bNewIsSittingMode boolean
+function ARadiusPlayerState:Server_SetIsSittingMode(bNewIsSittingMode) end
+---@param NewBodyHeight float
+function ARadiusPlayerState:Server_SetBodyHeight(NewBodyHeight) end
 function ARadiusPlayerState:OnRep_PlayerHeight() end
+function ARadiusPlayerState:OnRep_IsSittingMode() end
+function ARadiusPlayerState:OnRep_BodyHeight() end
+---@return boolean
+function ARadiusPlayerState:IsSittingMode() end
 ---@return float
 function ARadiusPlayerState:GetPlayerHeight() end
+---@return float
+function ARadiusPlayerState:GetBodyHeight() end
 
 
 ---@class ARadiusPlayerStateGameplay : ARadiusPlayerState
@@ -615,6 +668,7 @@ function ARadiusProjectile:Dispose() end
 ---@field AttachedPoints TArray<ASpawnPoint>
 ---@field SpawnerUniqueId FString
 ---@field GroupID uint8
+---@field SpawnerType ERadiusSpawnerType
 ARadiusSpawnGroup = {}
 
 function ARadiusSpawnGroup:CollectAttachedSpawners() end
@@ -672,6 +726,9 @@ function ARadiusTutorialStep:Execute() end
 ---@field BillboardTexture TSoftObjectPtr<UTexture2D>
 ---@field PointUniqueId FString
 ---@field GroupID uint8
+---@field SpawnerType ERadiusSpawnerType
+---@field NeedDestroyOnClient boolean
+---@field HideOnStart boolean
 ASpawnPoint = {}
 
 
@@ -750,6 +807,12 @@ FActionRenderReplicationInfo = {}
 
 
 
+---@class FActionsCooldownInfo
+---@field SoundReleaseTimers TMap<FGameplayTag, FSoundsCooldownInfo>
+FActionsCooldownInfo = {}
+
+
+
 ---@class FActorsArray
 ---@field Actors TArray<AActor>
 ---@field InUseFlags TArray<boolean>
@@ -818,7 +881,7 @@ FAmmoContainerStaticData = {}
 ---@field DisplayAmmoRecoilModifier float
 ---@field ShellEjectVelocity FVector
 ---@field AmmoFlatness int32
----@field WeaponDurabilityDamage int32
+---@field WeaponDurabilityDamage float
 FAmmoStaticData = {}
 
 
@@ -992,8 +1055,29 @@ FDistanceGripCandidate = {}
 
 
 
+---@class FDysfucntionMessageArray
+---@field Messages TArray<FDysfucntionMessageGroup>
+FDysfucntionMessageArray = {}
+
+
+
+---@class FDysfucntionMessageGroup
+---@field Message FText
+---@field Weapons FGameplayTagContainer
+FDysfucntionMessageGroup = {}
+
+
+
 ---@class FEnemyInfo
 FEnemyInfo = {}
+
+
+---@class FExplosionReceiverPointInfo
+---@field PointName FName
+---@field Location FVector
+---@field Percent float
+FExplosionReceiverPointInfo = {}
+
 
 
 ---@class FFirearm
@@ -1074,6 +1158,7 @@ FIDsList = {}
 
 ---@class FItemConfiguration
 ---@field bShopItem boolean
+---@field Attachments TMap<FGameplayTag, UAttachmentConfig>
 ---@field UniqueID FString
 ---@field StartDurabilityRatio float
 ---@field StackAmount int32
@@ -1117,6 +1202,7 @@ FItemShopInfo = {}
 
 ---@class FLevelConfig
 ---@field LevelName FText
+---@field GateLinks TArray<FGameplayTagsTuple>
 ---@field LevelRef TSoftObjectPtr<UWorld>
 ---@field bAutosave boolean
 ---@field bSaveOnEnter boolean
@@ -1405,6 +1491,13 @@ FNPCStatsStaticData = {}
 FNpcSpawnData = {}
 
 
+---@class FObstacleInfo
+---@field ObstacleActor AActor
+---@field PhysMaterial UPhysicalMaterial
+FObstacleInfo = {}
+
+
+
 ---@class FPIDConfig
 ---@field Controller UGripMotionControllerComponent
 ---@field PhysicsHand USkeletalMeshComponent
@@ -1475,6 +1568,16 @@ FProfileInfo = {}
 FPropsCache = {}
 
 
+---@class FRVPContext
+---@field StaticMeshComponent UStaticMeshComponent
+---@field SkeletalMeshComponent USkeletalMeshComponent
+---@field VertexColorsArray TArray<FVertexColorsArray>
+---@field bSingleLOD boolean
+---@field LODIndex int32
+FRVPContext = {}
+
+
+
 ---@class FRadiusAINoiseEvent
 ---@field NoiseLocation FVector
 ---@field Loudness float
@@ -1503,8 +1606,10 @@ FRadiusAITeamStimulusEvent = {}
 ---@field SpawnerUniqueId FString
 ---@field AnomalyUniqueId FString
 ---@field Tag FGameplayTag
+---@field SplineIndex int32
 ---@field Transform FTransform
 ---@field AnomalyActorRef TSoftObjectPtr<AActor>
+---@field bWasAddedToSpawnIterationPool boolean
 FRadiusAnomalyGameData = {}
 
 
@@ -1548,8 +1653,9 @@ FRadiusImpactAssetRow = {}
 ---@field ItemActor TSoftClassPtr<AActor>
 ---@field ItemDurability float
 ---@field DurabilityIndependentOfDifficulty boolean
----@field DurabilityDamageMultiplier float
+---@field DamageToDurabilityMultiplier float
 ---@field DestroyOnZeroDurability boolean
+---@field DisplayDurability boolean
 ---@field ItemWeight float
 ---@field ItemWeightCapacity float
 ---@field ItemPurchasePrice float
@@ -1621,6 +1727,7 @@ FRadiusNPCStaticData = {}
 ---@field Aggro float
 ---@field BBDataMap TMap<FName, FBBRawData>
 ---@field NPCActorRef TSoftObjectPtr<AActor>
+---@field bWasAddedToSpawnIterationPool boolean
 FRadiusNpcGameData = {}
 
 
@@ -1654,7 +1761,8 @@ FRadiusPlayerGameData = {}
 ---@field Upgrades TArray<FGameplayTag>
 ---@field ContainingItemTagsStack TArray<FGameplayTag>
 ---@field ContainingShellsInStack TArray<boolean>
----@field bWeaponCocked boolean
+---@field StackedItems TArray<FStackedItem>
+---@field FloatData TMap<FString, float>
 FRadiusSavedItem = {}
 
 
@@ -1741,6 +1849,10 @@ FSightShapeInfo = {}
 
 
 
+---@class FSoundsCooldownInfo
+FSoundsCooldownInfo = {}
+
+
 ---@class FSpawnGroupConfig
 ---@field MaxActivatedNum int32
 FSpawnGroupConfig = {}
@@ -1752,6 +1864,13 @@ FSpawnGroupConfig = {}
 ---@field MaxSpawnedCount int32
 ---@field SpawnDelay FMinMaxFloat
 FSpawnPointConfig = {}
+
+
+
+---@class FStackedItem
+---@field ItemTag FGameplayTag
+---@field bIsShell boolean
+FStackedItem = {}
 
 
 
@@ -1770,6 +1889,7 @@ FStateTransitionInfo = {}
 ---@field AggroPoints float
 ---@field MaxState ENPCState
 ---@field MaxDistance float
+---@field LocationSpreadModifier float
 ---@field IgnoredInStates TArray<ENPCState>
 ---@field StimuliToOverride FGameplayTagContainer
 FStimuliData = {}
@@ -1844,6 +1964,12 @@ FUpgradeStaticData = {}
 
 
 
+---@class FVertexColorsArray
+---@field VertexColors TArray<FColor>
+FVertexColorsArray = {}
+
+
+
 ---@class FVisitedCoopGame
 ---@field GameID FString
 ---@field HostID FString
@@ -1872,10 +1998,13 @@ FWeaponParameters = {}
 ---@field bUseVirtualStock boolean
 ---@field bDisableSmoothing boolean
 ---@field DurabilityDamageAutoFireCoefficient float
----@field DurabilityToJamChance TSoftClassPtr<UCurveFloat>
 ---@field WeaponParameters FWeaponParameters
 ---@field bCockedOnSafety boolean
 ---@field DisplayReliability float
+---@field DurabilityToBulletInitialVelocity TSoftObjectPtr<UCurveFloat>
+---@field DurabilityToAccuracy TSoftObjectPtr<UCurveFloat>
+---@field DurabilityToDysfunctionChance TSoftObjectPtr<UCurveFloat>
+---@field Dysfunctions TMap<FGameplayTag, float>
 ---@field RecoilParameters FRecoilParameters
 ---@field bAimSmoothing boolean
 ---@field AimSmoothingAlpha float
@@ -1903,6 +2032,20 @@ function IArtefactNestInterface:GetSaveData() end
 ---@return int32
 function IArtefactNestInterface:GetNestLevel() end
 function IArtefactNestInterface:GenerateUniqueId() end
+
+
+---@class IDistortionZoneInterface : IInterface
+IDistortionZoneInterface = {}
+
+---@param bIsInside boolean
+---@param InDistortionZone ADistortionZoneBase
+function IDistortionZoneInterface:SetInsideDistortionZone(bIsInside, InDistortionZone) end
+---@return boolean
+function IDistortionZoneInterface:IsInsideDistortionZone() end
+---@return ADistortionZoneBase
+function IDistortionZoneInterface:GetDistortionZone() end
+---@param Event FBindOnDistortionZoneChangedEvent
+function IDistortionZoneInterface:BindOnDistortionZoneChanged(Event) end
 
 
 ---@class IGripSelectorsInterface : IInterface
@@ -1946,6 +2089,7 @@ function IItemContainerInterface:PutItemToContainer(ItemActor) end
 ---@param ParentContainerUid FString
 ---@param Transform FTransform
 function IItemContainerInterface:PlaceInsideContainer(ParentContainerUid, Transform) end
+function IItemContainerInterface:NotifyAttachFailure() end
 ---@param DistanceToItem float
 ---@param ItemActor AActor
 ---@return boolean
@@ -1953,6 +2097,11 @@ function IItemContainerInterface:IsWithinDistance(DistanceToItem, ItemActor) end
 ---@param ItemTag FGameplayTag
 ---@return boolean
 function IItemContainerInterface:IsSuitableByTags(ItemTag) end
+---@param ItemActor AActor
+---@return boolean
+function IItemContainerInterface:IsEnoughWeightForItem(ItemActor) end
+---@return boolean
+function IItemContainerInterface:IsDependsWeight() end
 ---@return boolean
 function IItemContainerInterface:IsContainerValid() end
 ---@param MotionController UGripMotionControllerComponent
@@ -1970,6 +2119,10 @@ function IItemContainerInterface:GetParentContainerObject() end
 function IItemContainerInterface:GetItemOwningPawn() end
 ---@return TArray<AActor>
 function IItemContainerInterface:GetHolstered() end
+---@return FGameplayTag
+function IItemContainerInterface:GetContainerTag() end
+---@return FGameplayTag
+function IItemContainerInterface:GetContainerSoundType() end
 ---@return USceneComponent
 function IItemContainerInterface:GetContainerSceneComponent() end
 ---@return FString
@@ -1983,6 +2136,9 @@ function IItemContainerInterface:DropHolsteredActor(ItemActor) end
 function IItemContainerInterface:DropHolstered() end
 ---@return boolean
 function IItemContainerInterface:CanBeArmored() end
+---@param MotionController UGripMotionControllerComponent
+---@return boolean
+function IItemContainerInterface:AllowsInteraction(MotionController) end
 ---@param GripTags FGameplayTagContainer
 ---@param MotionController UGripMotionControllerComponent
 ---@return boolean
@@ -1996,7 +2152,7 @@ ILootGenerateInterface = {}
 ---@param LootTableConfig FLootTableConfig
 ---@param Excluded TArray<FName>
 ---@return int32
-function ILootGenerateInterface:Generate(LootTableConfig, Excluded) end
+function ILootGenerateInterface:GenerateLoot(LootTableConfig, Excluded) end
 
 
 ---@class IPhysicalHandInterface : IInterface
@@ -2149,6 +2305,12 @@ IRadiusDamageDealerInterface = {}
 ---@param DamageCauser AActor
 ---@param DamageTypeClass TSubclassOf<UDamageType>
 function IRadiusDamageDealerInterface:ApplyPointDamage(Target, Damage, HitFromDirection, HitInfo, DamageCauser, DamageTypeClass) end
+---@param DamagedActor AActor
+---@param Damage float
+---@param EventInstigator AController
+---@param DamageCauser AActor
+---@param DamageTypeClass TSubclassOf<UDamageType>
+function IRadiusDamageDealerInterface:ApplyDamage(DamagedActor, Damage, EventInstigator, DamageCauser, DamageTypeClass) end
 
 
 ---@class IRadiusDataComponentInterface : IInterface
@@ -2174,16 +2336,23 @@ function IRadiusDataComponentInterface:GetAmmoStaticData(OutAmmoStaticData) end
 function IRadiusDataComponentInterface:GetAmmoContainerStaticData(OutAmmoContainerStaticData) end
 
 
+---@class IRadiusExplosionReceiver : IInterface
+IRadiusExplosionReceiver = {}
+
+---@return TArray<FExplosionReceiverPointInfo>
+function IRadiusExplosionReceiver:GetDamagePoints() end
+
+
 ---@class IRadiusFirearmComponentInterface : IInterface
 IRadiusFirearmComponentInterface = {}
 
 function IRadiusFirearmComponentInterface:UpdateRelevantMuzzle() end
 ---@return EWeaponFireMode
 function IRadiusFirearmComponentInterface:GetCurrentFireMode() end
----@param ChamberNumber int32
+---@param InternalBullet UActorComponent
 ---@param GameplayTag FGameplayTag
 ---@return boolean
-function IRadiusFirearmComponentInterface:GetAmmoInChamberTag(ChamberNumber, GameplayTag) end
+function IRadiusFirearmComponentInterface:GetAmmoInChamberTag(InternalBullet, GameplayTag) end
 
 
 ---@class IRadiusGameInstanceInterface : IInterface
@@ -2206,7 +2375,6 @@ function IRadiusGameInstanceInterface:AddToSeamlessTravel(Actor) end
 ---@class IRadiusGameModeInterface : IInterface
 IRadiusGameModeInterface = {}
 
-function IRadiusGameModeInterface:UpdateVolumes() end
 ---@param Controller AController
 function IRadiusGameModeInterface:RespawnPlayer(Controller) end
 
@@ -2231,8 +2399,6 @@ function IRadiusItemInterface:SetItemStabilization(On) end
 function IRadiusItemInterface:SetItemHighlight(On) end
 ---@param NewConfiguration FItemConfiguration
 function IRadiusItemInterface:SetItemConfiguration(NewConfiguration) end
----@param NewDurability float
-function IRadiusItemInterface:SetDurability(NewDurability) end
 ---@param bDeny boolean
 function IRadiusItemInterface:SetDenyItemUse(bDeny) end
 ---@param bAttached boolean
@@ -2241,11 +2407,15 @@ function IRadiusItemInterface:RequestItemChangeCollisionProfile(bAttached) end
 function IRadiusItemInterface:RemoveGameplayTag(TagToRemove) end
 function IRadiusItemInterface:ReconfigureItem() end
 ---@param Holster URadiusHolsterComponent
+function IRadiusItemInterface:OnUnholstered(Holster) end
+---@param Holster URadiusHolsterComponent
 function IRadiusItemInterface:OnHolstered(Holster) end
 function IRadiusItemInterface:ItemUseEnd() end
 function IRadiusItemInterface:ItemUseBegin() end
 function IRadiusItemInterface:ItemTertiaryUseEnd() end
 function IRadiusItemInterface:ItemTertiaryUseBegin() end
+---@return boolean
+function IRadiusItemInterface:IsInPlayerHands() end
 ---@return boolean
 function IRadiusItemInterface:IsDenyItemUse() end
 ---@return boolean
@@ -2265,6 +2435,8 @@ function IRadiusItemInterface:GetItemConfiguration() end
 ---@param ItemBaseStaticData FRadiusItemStaticData
 ---@return boolean
 function IRadiusItemInterface:GetItemBaseStaticData(ItemBaseStaticData) end
+---@return USoundBase
+function IRadiusItemInterface:GetItemAttachToPanelSound() end
 ---@param GunTools UGS_GunTools
 ---@return boolean
 function IRadiusItemInterface:GetGSGunTools(GunTools) end
@@ -2291,9 +2463,16 @@ function IRadiusItemInterface:ForceEndSecondaryGrip() end
 ---@return boolean
 function IRadiusItemInterface:ForceEndPrimaryGrip() end
 function IRadiusItemInterface:CreateBlockedDynamicDataOnGrip() end
+---@param DamageType URadiusDamageType
+---@return float
+function IRadiusItemInterface:CountDamageMitigation(DamageType) end
 ---@param Tag FGameplayTag
 ---@return boolean
 function IRadiusItemInterface:CheckGameplayTag(Tag) end
+---@param DeltaDurability float
+function IRadiusItemInterface:ChangeDurability(DeltaDurability) end
+---@return boolean
+function IRadiusItemInterface:CanTakeDamage() end
 ---@param GripTags FGameplayTagContainer
 ---@param MotionController UGripMotionControllerComponent
 ---@return boolean
@@ -2343,7 +2522,7 @@ function IRadiusItemStackComponentInterface:AddItemToStack(ItemToAdd) end
 ---@class IRadiusMuzzleComponentInterface : IInterface
 IRadiusMuzzleComponentInterface = {}
 
----@param Other URadiusMuzzleComponent
+---@param Other USceneComponent
 function IRadiusMuzzleComponentInterface:SwitchWith(Other) end
 ---@param GameplayTag FGameplayTag
 ---@param bIsLastRound boolean
@@ -2366,6 +2545,16 @@ function IRadiusNpcSaveInterface:GetNPCHealth() end
 function IRadiusNpcSaveInterface:FillSaveData(SaveData) end
 
 
+---@class IRadiusPhysicsAnimationInterface : IInterface
+IRadiusPhysicsAnimationInterface = {}
+
+---@param HitResult FHitResult
+---@param Impulse FVector
+---@param BulletLocation FVector
+---@param IsCritical boolean
+function IRadiusPhysicsAnimationInterface:HitReaction(HitResult, Impulse, BulletLocation, IsCritical) end
+
+
 ---@class IRadiusPlayerControllerInterface : IInterface
 IRadiusPlayerControllerInterface = {}
 
@@ -2384,6 +2573,8 @@ IRadiusPlayerInterface = {}
 ---@param bProjectOnGround boolean
 ---@param Adjust EPlayerTeleportAdjustType
 function IRadiusPlayerInterface:TeleportPlayer(Transform, Velocity, bWristMenuHidden, bProjectOnGround, Adjust) end
+---@param bNewIsSittingMode boolean
+function IRadiusPlayerInterface:SetIsSittingMode(bNewIsSittingMode) end
 function IRadiusPlayerInterface:RespawnDeadPlayer() end
 ---@param isLeft boolean
 ---@param HapticsTag FGameplayTag
@@ -2423,6 +2614,9 @@ function IRadiusPlayerInterface:GetGripControllerRefs(Left, Right) end
 ---@param OutTransform FTransform
 function IRadiusPlayerInterface:GetForearmTransform(isRight, OutTransform) end
 function IRadiusPlayerInterface:DropAllGrips() end
+---@param HelmetMesh USkeletalMesh
+---@param IsOn boolean
+function IRadiusPlayerInterface:DistortionHelmetChanged(HelmetMesh, IsOn) end
 ---@param Amount double
 function IRadiusPlayerInterface:ChangeHealth(Amount) end
 function IRadiusPlayerInterface:CalibratePlayerHeight() end
@@ -2436,6 +2630,16 @@ function IRadiusPooledObjectInterface:OnPushToPool() end
 function IRadiusPooledObjectInterface:OnPopFromPool(Transform) end
 ---@return boolean
 function IRadiusPooledObjectInterface:IsExcludedFromPool() end
+
+
+---@class IRadiusProjectileImpactsComponentInterface : IInterface
+IRadiusProjectileImpactsComponentInterface = {}
+
+---@param HitResult FHitResult
+---@param Distance float
+---@param IsCritical boolean
+---@param ImpactScale float
+function IRadiusProjectileImpactsComponentInterface:Impact(HitResult, Distance, IsCritical, ImpactScale) end
 
 
 ---@class IRadiusProjectileInterface : IInterface
@@ -2463,10 +2667,19 @@ function IRadiusResourceInterface:RequestExchangeResources() end
 IRadiusShutterComponentInterface = {}
 
 
+---@class IRadiusSoundPlayerInterface : IInterface
+IRadiusSoundPlayerInterface = {}
+
+function IRadiusSoundPlayerInterface:StopSound() end
+---@param Sound USoundBase
+function IRadiusSoundPlayerInterface:PlaySound(Sound) end
+
+
 ---@class IRadiusSpawnerInterface : IInterface
 IRadiusSpawnerInterface = {}
 
-function IRadiusSpawnerInterface:SpawnGenerated() end
+---@param bRecursive boolean
+function IRadiusSpawnerInterface:SpawnGenerated(bRecursive) end
 ---@return boolean
 function IRadiusSpawnerInterface:ShouldWaitTideToGenerate() end
 ---@param bEnabled boolean
@@ -2474,6 +2687,11 @@ function IRadiusSpawnerInterface:SetEnabled(bEnabled) end
 function IRadiusSpawnerInterface:SaveEmpty() end
 function IRadiusSpawnerInterface:Reset() end
 function IRadiusSpawnerInterface:KillAllSpawned() end
+---@return boolean
+function IRadiusSpawnerInterface:IsInitialized() end
+---@param SpawnerId FString
+---@return boolean
+function IRadiusSpawnerInterface:HasChildSpawner(SpawnerId) end
 ---@return FString
 function IRadiusSpawnerInterface:GetId() end
 ---@return uint8
@@ -2481,10 +2699,20 @@ function IRadiusSpawnerInterface:GetGroupId() end
 ---@param Conditions TArray<URadiusCondition>
 function IRadiusSpawnerInterface:CollectConditions(Conditions) end
 ---@param Location FVector
+---@param bRecursive boolean
 ---@return boolean
-function IRadiusSpawnerInterface:CheckSpawnDistanceRelevance(Location) end
+function IRadiusSpawnerInterface:CheckSpawnDistanceRelevance(Location, bRecursive) end
 ---@return boolean
 function IRadiusSpawnerInterface:CheckConditions() end
+
+
+---@class IRadiusSplineFollowInterface : IInterface
+IRadiusSplineFollowInterface = {}
+
+---@param Spline USplineComponent
+function IRadiusSplineFollowInterface:SetSplineToFollow(Spline) end
+---@param Speed float
+function IRadiusSplineFollowInterface:SetMoveSpeed(Speed) end
 
 
 ---@class IRadiusWeaponComponentInterface : IInterface
@@ -2492,6 +2720,15 @@ IRadiusWeaponComponentInterface = {}
 
 ---@return boolean
 function IRadiusWeaponComponentInterface:IsComponentReadyToShoot() end
+
+
+---@class IRadiusWidgetInterface : IInterface
+IRadiusWidgetInterface = {}
+
+---@param ParentActor AActor
+function IRadiusWidgetInterface:SetParentActor(ParentActor) end
+---@return AActor
+function IRadiusWidgetInterface:GetParentActor() end
 
 
 ---@class ISpawnerGenerateInterface : IInterface
@@ -2590,11 +2827,19 @@ function UAggroComponent:AddAggroSetup(StimuliTag, AggroModifier) end
 
 ---@class UAnomalySaveData : UObject
 ---@field DistanceAlongSpline float
+---@field SplineMoveSpeed float
 ---@field TeleportPosition int32
 UAnomalySaveData = {}
 
 ---@return UAnomalySaveData
 function UAnomalySaveData:CreateAnomalySaveData() end
+
+
+---@class UAttachmentConfig : UObject
+---@field AttachmentClass TSubclassOf<ARadiusItemBase>
+---@field ItemConfig FItemConfiguration
+UAttachmentConfig = {}
+
 
 
 ---@class UAvailableMission : UObject
@@ -2604,10 +2849,12 @@ function UAnomalySaveData:CreateAnomalySaveData() end
 ---@field Objectives TArray<URadiusMissionObjectiveBase>
 ---@field bIsActivated boolean
 ---@field StartTimeInRealMinutes float
+---@field ReadyToUnlock boolean
 ---@field LegacyConfig USingleMissionConfig
 ---@field CurrentObjectiveIndex int32
 UAvailableMission = {}
 
+function UAvailableMission:SetMissionUnlocked() end
 function UAvailableMission:OnRep_CurrentObjectiveIndex() end
 function UAvailableMission:OnRep_bIsActivated() end
 function UAvailableMission:OnObjectiveCompleted() end
@@ -2627,6 +2874,8 @@ function UAvailableMission:GetRequiredMissionItemsInCurrentStep(TaggedItems, Uid
 ---@param UidItems TArray<FString>
 ---@return boolean
 function UAvailableMission:GetRequiredItemsInInventory(TagItems, UidItems) end
+---@return EMissionUIState
+function UAvailableMission:GetMissionUIState() end
 ---@return FText
 function UAvailableMission:GetMissionLocationName() end
 ---@param bHasRequiredItems boolean
@@ -2642,9 +2891,6 @@ function UAvailableMission:GetCurrentObjective() end
 ---@param TaggedItems TArray<FGameplayTag>
 ---@param UidItems TArray<FString>
 function UAvailableMission:GetAllRequiredMissionItems(TaggedItems, UidItems) end
----@param bOutHasItems boolean
----@return boolean
-function UAvailableMission:CanFinishMission(bOutHasItems) end
 
 
 ---@class UBallLightningAnomalySaveData : UAnomalySaveData
@@ -2794,6 +3040,16 @@ UEnvQueryTest_Trace_StanceHeight = {}
 
 
 
+---@class UExplosionConfig : URadiusConfigurationAssetBase
+---@field FullCoverDamageBonusModifier float
+---@field MinObstacleWidthToMitigateDamage float
+---@field DefaultMaterialDamageModifier float
+---@field MaterialDamageModifiers TMap<UPhysicalMaterial, float>
+---@field PlayerDamageSockets TMap<FName, float>
+UExplosionConfig = {}
+
+
+
 ---@class UFLGeneral : UBlueprintFunctionLibrary
 UFLGeneral = {}
 
@@ -2818,6 +3074,10 @@ function UFLGeneral:ShowMessage(Message, Title) end
 ---@param Component UExponentialHeightFogComponent
 ---@param Distance float
 function UFLGeneral:SetVolumetricFogStartDistance(Component, Distance) end
+---@param SceneComponent USceneComponent
+---@param NewLocation FVector
+---@param NewRotation FRotator
+function UFLGeneral:SetSceneComponentWorldLocationAndRotationNoPhysics(SceneComponent, NewLocation, NewRotation) end
 ---@param Light ULightComponent
 ---@param IsVisible boolean
 function UFLGeneral:SetLightVisibility(Light, IsVisible) end
@@ -2875,9 +3135,12 @@ function UFLGeneral:PointBoxDist(Point, BoxOrigin, BoxExtend, BoxRotation) end
 ---@param bIncludeFromChildActors boolean
 ---@return float
 function UFLGeneral:PointActorDist(Point, Actor, bOnlyCollidingComponents, bIncludeFromChildActors) end
+---@param Value int32
+---@return int32
+function UFLGeneral:Negate_Int(Value) end
 ---@param Value float
 ---@return float
-function UFLGeneral:Negate(Value) end
+function UFLGeneral:Negate_Float(Value) end
 ---@param Value FMinMaxInt
 ---@return int32
 function UFLGeneral:MinMaxInt_Random(Value) end
@@ -2999,6 +3262,14 @@ function UFLGeneral:AddComponentToActor(BaseActor, AttachedComponent) end
 ---@class UFLHelpers : UBlueprintFunctionLibrary
 UFLHelpers = {}
 
+---@param TagsArray TArray<FGameplayTag>
+---@param Tag FGameplayTag
+---@param bExactMatch boolean
+---@return boolean
+function UFLHelpers:TagsArrayContains(TagsArray, Tag, bExactMatch) end
+---@param Widget UUserWidget
+---@param Result EBlueprintResultSwitch
+function UFLHelpers:StopWidgetSound(Widget, Result) end
 ---@param inArray TArray<int32>
 ---@return TArray<int32>
 function UFLHelpers:SortIntArray(inArray) end
@@ -3016,6 +3287,10 @@ function UFLHelpers:RadiusLogStacks(WorldContextObject, Message) end
 ---@param Message FString
 ---@param LogLevelType ELogTypeBP
 function UFLHelpers:RadiusLog(WorldContextObject, Message, LogLevelType) end
+---@param Widget UUserWidget
+---@param Sound USoundBase
+---@param Result EBlueprintResultSwitch
+function UFLHelpers:PlayWidgetSound(Widget, Sound, Result) end
 ---@param WidgetUpper UWidget
 ---@param WidgetBelow UWidget
 ---@return boolean
@@ -3024,6 +3299,13 @@ function UFLHelpers:IsWidgetUnderWidget(WidgetUpper, WidgetBelow) end
 ---@param WidgetWithCenter UWidget
 ---@return boolean
 function UFLHelpers:IsWidgetUnderCenterOfAnotherWidget(Widget, WidgetWithCenter) end
+---@param WorldContextObject UObject
+---@param LevelTag FGameplayTag
+---@return boolean
+function UFLHelpers:IsValidLevelTag(WorldContextObject, LevelTag) end
+---@param WorldContextObject UObject
+---@return boolean
+function UFLHelpers:IsStandalone(WorldContextObject) end
 ---@param WidgetObject UWidget
 ---@param WidgetTargetObject UWidget
 ---@param CurrentScroll float
@@ -3040,9 +3322,19 @@ function UFLHelpers:IsInTutorial(WorldContextObject) end
 ---@param WorldContextObject UObject
 ---@return boolean
 function UFLHelpers:IsInMainMenu(WorldContextObject) end
+---@param WorldContextObject UObject
+---@return boolean
+function UFLHelpers:IsInCoop(WorldContextObject) end
 ---@param PlayerStateToCheck APlayerState
 ---@return boolean
 function UFLHelpers:IsHostPlayerState(PlayerStateToCheck) end
+---@param WorldContextObject UObject
+---@return boolean
+function UFLHelpers:IsClient(WorldContextObject) end
+---@param Actor AActor
+---@param RangeDistance float
+---@return boolean
+function UFLHelpers:IsAllPlayersInRange(Actor, RangeDistance) end
 ---@param Target AActor
 ---@param DamageCategory EDamageCategory
 ---@return boolean
@@ -3050,9 +3342,16 @@ function UFLHelpers:IsActorProtectedFromDamage(Target, DamageCategory) end
 ---@param Actor AActor
 ---@return boolean
 function UFLHelpers:IsActorLocallyOwned(Actor) end
+---@param Container UObject
+---@return boolean
+function UFLHelpers:HasAnyParentWithCapacity(Container) end
 ---@param TargetWidget UWidget
 ---@return FVector2f
 function UFLHelpers:GetPosition(TargetWidget) end
+---@param Widget UUserWidget
+---@param Result EBlueprintResultSwitch
+---@return AActor
+function UFLHelpers:GetOwnerActor(Widget, Result) end
 ---@param Obj UObject
 ---@return TArray<UObject>
 function UFLHelpers:GetObjectReferences(Obj) end
@@ -3063,6 +3362,10 @@ function UFLHelpers:GetNumericalTags(WorldContextObject, NumberOfTags) end
 ---@param WorldContextObject UObject
 ---@return APlayerController
 function UFLHelpers:GetLocalPlayerController(WorldContextObject) end
+---@param WorldContextObject UObject
+---@param GateTag FGameplayTag
+---@return FGameplayTag
+function UFLHelpers:GetLevelTagFromGateTag(WorldContextObject, GateTag) end
 ---@param Controller UGripMotionControllerComponent
 ---@return FString
 function UFLHelpers:GetHandHolsterName(Controller) end
@@ -3073,6 +3376,10 @@ function UFLHelpers:GetHandByController(Controller) end
 ---@param Tags TArray<FGameplayTag>
 ---@return FGameplayTag
 function UFLHelpers:GetFireModeFromTags(WorldContextObject, Tags) end
+---@param WorldContextObject UObject
+---@param Tags TArray<FGameplayTag>
+---@return FGameplayTag
+function UFLHelpers:GetDisfunctionFromTags(WorldContextObject, Tags) end
 ---@param OptionTag FGameplayTag
 ---@param DifficultyConfig FDifficultyConfigFloat
 ---@param OutOption FDifficultyOptionFloat
@@ -3087,6 +3394,10 @@ function UFLHelpers:GetDifficultyOptionFromDifficultyConfigByFloat(OptionTag, Di
 ---@param DynamicData URadiusItemDynamicData
 ---@return FText
 function UFLHelpers:GetCurrentFireModeName(WorldContextObject, DynamicData) end
+---@param A float
+---@param B float
+---@return float
+function UFLHelpers:GetAngleBetweenAngles(A, B) end
 ---@param WorldContextObject UObject
 ---@param AmmoTypeTag FGameplayTag
 ---@return FText
@@ -3095,6 +3406,9 @@ function UFLHelpers:GetAmmoTypeName(WorldContextObject, AmmoTypeTag) end
 ---@param AmmoTag FGameplayTag
 ---@return FText
 function UFLHelpers:GetAmmoCaliberName(WorldContextObject, AmmoTag) end
+---@param WorldContextObject UObject
+---@return TArray<APawn>
+function UFLHelpers:GetAllPlayerPawns(WorldContextObject) end
 ---@param TargetWidget UWidget
 ---@return FVector2f
 function UFLHelpers:GetAbsolutePositionAtPosition(TargetWidget) end
@@ -3113,6 +3427,10 @@ function UFLHelpers:CheckScrollForButtons(CurrentScrollBox, TitleWidgetToCategor
 ---@param Conditions FConditionsList
 ---@return boolean
 function UFLHelpers:CheckConditions(Conditions) end
+---@param ContainerParentActor AActor
+---@param Item AActor
+---@return boolean
+function UFLHelpers:CanPutItemInContainerWithoutOverweight(ContainerParentActor, Item) end
 ---@param DataTable UDataTable
 ---@param RowName FName
 ---@param Transforms TArray<FTransform>
@@ -3144,6 +3462,17 @@ function UFLItems:GetPrimaryControllerForActor(Actor) end
 ---@param Actor AActor
 ---@return AActor
 function UFLItems:GetParentItemActor(Actor) end
+---@param WorldContextObject UObject
+---@param WeaponStaticData FWeaponStaticData
+---@return float
+function UFLItems:GetMaxDurabilityFromWeaponData(WorldContextObject, WeaponStaticData) end
+---@param WorldContextObject UObject
+---@param ItemStaticData FRadiusItemStaticData
+---@return float
+function UFLItems:GetMaxDurability(WorldContextObject, ItemStaticData) end
+---@param Item AActor
+---@return float
+function UFLItems:GetItemMaxDurability(Item) end
 ---@param Item AActor
 ---@return float
 function UFLItems:GetItemDurabilityRatio(Item) end
@@ -3156,6 +3485,12 @@ function UFLItems:FindParentContainerByOverlap(PrimitiveToCheck) end
 ---@param WeaponDynamicData URadiusItemDynamicData
 ---@return URadiusItemDynamicData
 function UFLItems:FindAttachedMagazine(WeaponDynamicData) end
+---@param WorldContextObject UObject
+---@param ArmorInstanceID FString
+---@return URadiusItemDynamicData
+function UFLItems:FindAttachedArmorPlate(WorldContextObject, ArmorInstanceID) end
+---@param ItemActor AActor
+function UFLItems:DisableItemPrimitivesCollision(ItemActor) end
 ---@param ItemActor AActor
 ---@return URadiusItemDynamicData
 function UFLItems:CreateNewDynamicDataFromActor(ItemActor) end
@@ -3183,12 +3518,16 @@ function UFLItems:CalculateContainerItemsWeight(WorldContext, ContainerID) end
 ---@param Capacity float
 function UFLItems:CalculateChildItemsWeightAndCapacity(ItemActor, TotalWeight, Capacity) end
 ---@param PlayerPawn APawn
+---@param bIsLeftHanded boolean
 ---@return TArray<USceneComponent>
-function UFLItems:AddStartingGearToDynamicData(PlayerPawn) end
+function UFLItems:AddStartingGearToDynamicData(PlayerPawn, bIsLeftHanded) end
 
 
 ---@class UFLOpenXRExpansion : UBlueprintFunctionLibrary
 UFLOpenXRExpansion = {}
+
+---@return boolean
+function UFLOpenXRExpansion:IsValveIndex() end
 
 
 ---@class UFLProjectiles : UBlueprintFunctionLibrary
@@ -3225,6 +3564,118 @@ function UFLRadiusConsole:CloseConsole(WorldContextObject) end
 
 ---@class UFLRadiusSerialization : UBlueprintFunctionLibrary
 UFLRadiusSerialization = {}
+
+
+---@class UFLRuntimeVertexPainter : UBlueprintFunctionLibrary
+UFLRuntimeVertexPainter = {}
+
+---@param SkeletalMeshComponent USkeletalMeshComponent
+---@param LODIndex int32
+---@param VertexColors TArray<FColor>
+function UFLRuntimeVertexPainter:SkeletalMeshOverrideVertexColors(SkeletalMeshComponent, LODIndex, VertexColors) end
+---@param SkeletalMeshComponent USkeletalMeshComponent
+---@param LODIndex int32
+---@return TArray<FColor>
+function UFLRuntimeVertexPainter:SkeletalMeshGetVertexColorsInLOD(SkeletalMeshComponent, LODIndex) end
+---@param SkeletalMeshComponent USkeletalMeshComponent
+---@return TArray<FVertexColorsArray>
+function UFLRuntimeVertexPainter:SkeletalMeshGetVertexColorsInAllLOD(SkeletalMeshComponent) end
+---@param StaticMeshComponent UStaticMeshComponent
+---@param Position FVector
+---@param Radius float
+---@param ChannelMask int32
+---@param Color FLinearColor
+---@param Opacity float
+---@param Falloff UCurveFloat
+---@param bPaintInSingleLOD boolean
+---@param LODIndex int32
+function UFLRuntimeVertexPainter:QuickPaintStaticMeshVertexColor(StaticMeshComponent, Position, Radius, ChannelMask, Color, Opacity, Falloff, bPaintInSingleLOD, LODIndex) end
+---@param SkeletalMeshComponent USkeletalMeshComponent
+---@param Position FVector
+---@param Radius float
+---@param ChannelMask int32
+---@param Color FLinearColor
+---@param Opacity float
+---@param Falloff UCurveFloat
+---@param bPaintInSingleLOD boolean
+---@param LODIndex int32
+function UFLRuntimeVertexPainter:QuickPaintSkeletalMeshVertexColor(SkeletalMeshComponent, Position, Radius, ChannelMask, Color, Opacity, Falloff, bPaintInSingleLOD, LODIndex) end
+---@param StaticMeshComponent UStaticMeshComponent
+---@param LODIndex int32
+---@param VertexColors TArray<FColor>
+function UFLRuntimeVertexPainter:OverrideVertexColors(StaticMeshComponent, LODIndex, VertexColors) end
+---@param StaticMeshComponent UStaticMeshComponent
+---@param LODIndex int32
+---@return int32
+function UFLRuntimeVertexPainter:GetVerticesNum(StaticMeshComponent, LODIndex) end
+---@param StaticMeshComponent UStaticMeshComponent
+---@param LODIndex int32
+---@return TArray<FColor>
+function UFLRuntimeVertexPainter:GetVertexColorsInLOD(StaticMeshComponent, LODIndex) end
+---@param StaticMeshComponent UStaticMeshComponent
+---@return TArray<FVertexColorsArray>
+function UFLRuntimeVertexPainter:GetVertexColorsInAllLOD(StaticMeshComponent) end
+---@param SkeletalMesh USkeletalMeshComponent
+---@param LODIndex int32
+---@return int32
+function UFLRuntimeVertexPainter:GetSkeletalMeshVerticesNum(SkeletalMesh, LODIndex) end
+---@param Context FRVPContext
+function UFLRuntimeVertexPainter:EndPaintVertexColor(Context) end
+---@param Context FRVPContext
+---@param Position FVector
+---@param Extent FVector
+---@param Rotation FRotator
+---@param PaintShape EPaintShape
+---@param ChannelMask int32
+---@param Color FLinearColor
+---@param Opacity float
+---@param Falloff UCurveFloat
+---@param bConvertToSRGB boolean
+function UFLRuntimeVertexPainter:ContextPaintVertexColorInShape(Context, Position, Extent, Rotation, PaintShape, ChannelMask, Color, Opacity, Falloff, bConvertToSRGB) end
+---@param Context FRVPContext
+---@param ChannelMask int32
+---@param Color FLinearColor
+---@param Opacity float
+---@param bConvertToSRGB boolean
+function UFLRuntimeVertexPainter:ContextPaintAllVerticesColor(Context, ChannelMask, Color, Opacity, bConvertToSRGB) end
+---@param Context FRVPContext
+---@param Position FVector
+---@param Extent FVector
+---@param Rotation FRotator
+---@param PaintShape EPaintShape
+---@param ChannelMask int32
+---@return float
+function UFLRuntimeVertexPainter:ContextMinimumVertexColorInShape(Context, Position, Extent, Rotation, PaintShape, ChannelMask) end
+---@param Context FRVPContext
+---@param Value int32
+---@param Position FVector
+---@param Extent FVector
+---@param Rotation FRotator
+---@param PaintShape EPaintShape
+---@param ChannelMask int32
+---@param FilterMask int32
+---@param ThresholdBoundsMin int32
+---@param ThresholdBoundsMax int32
+---@return float
+function UFLRuntimeVertexPainter:ContextAddVertexColorInShape(Context, Value, Position, Extent, Rotation, PaintShape, ChannelMask, FilterMask, ThresholdBoundsMin, ThresholdBoundsMax) end
+---@param Context FRVPContext
+---@param Value int32
+---@param ChannelMask int32
+---@param FilterMask int32
+---@param FilterThreshold int32
+function UFLRuntimeVertexPainter:ContextAddAllVerticesColor(Context, Value, ChannelMask, FilterMask, FilterThreshold) end
+---@param StaticMeshComponent UStaticMeshComponent
+---@param OutContext FRVPContext
+---@param bPaintInSingleLOD boolean
+---@param LODIndex int32
+---@return boolean
+function UFLRuntimeVertexPainter:BeginPaintVertexColor(StaticMeshComponent, OutContext, bPaintInSingleLOD, LODIndex) end
+---@param SkeletalMeshComponent USkeletalMeshComponent
+---@param OutContext FRVPContext
+---@param bPaintInSingleLOD boolean
+---@param LODIndex int32
+---@return boolean
+function UFLRuntimeVertexPainter:BeginPaintSkeletalMeshVertexColor(SkeletalMeshComponent, OutContext, bPaintInSingleLOD, LODIndex) end
 
 
 ---@class UFLSpawn : UBlueprintFunctionLibrary
@@ -3407,7 +3858,6 @@ function UGS_StickyNest:SetBreakDistance(NewDistance) end
 ---@field LevelDefaultTag FGameplayTag
 ---@field LevelMainMenuTag FGameplayTag
 ---@field LevelTutorialTag FGameplayTag
----@field GateLinks TArray<FGameplayTagsTuple>
 ---@field TimeGameStart FDateTime
 ---@field CoopSyncTimeSeconds float
 ---@field bPauseGameInIngameMenuInStandalone boolean
@@ -3416,9 +3866,13 @@ function UGS_StickyNest:SetBreakDistance(NewDistance) end
 ---@field TideAlarmStartSeconds float
 ---@field DayStartAt int32
 ---@field NightStartAt int32
----@field SpawnDistance float
+---@field SpawnDistanceForLoot float
+---@field SpawnDistanceForArtefactNests float
+---@field SpawnDistanceForMonsters float
+---@field SpawnDistanceForAnomalies float
 ---@field CommonNpcTag FGameplayTag
 ---@field CommonAnomalyTag FGameplayTag
+---@field AnomalyBlockingArea TSubclassOf<UNavArea>
 ---@field MultiplePlayersSpawnShiftRadius float
 ---@field MapConfigs TMap<FGameplayTag, FMapConfig>
 ---@field MarkerConfigs TArray<FMarkerConfig>
@@ -3465,6 +3919,9 @@ UHS_GrabLocation = {}
 ---@field bUseComplexCollision boolean
 ---@field bIgnoreSelf boolean
 ---@field TraceTargetCubeSideHalfLength float
+---@field bCheckObstacleAhead boolean
+---@field CheckObstacleAheadDistance float
+---@field CheckObstacleAheadRadius float
 ---@field DrawDebugType EDrawDebugTrace::Type
 ---@field DebugColor FLinearColor
 ---@field DebugHitColor FLinearColor
@@ -3500,13 +3957,23 @@ UHTNDecorator_DoesPathExist = {}
 
 
 
+---@class UHTNDecorator_HasAttackRole : UHTNDecorator
+UHTNDecorator_HasAttackRole = {}
+
+
+---@class UHTNDecorator_IsTagCooldownInactive : UHTNDecorator
+---@field CooldownTag FGameplayTag
+UHTNDecorator_IsTagCooldownInactive = {}
+
+
+
 ---@class UHTNDecorator_RadiusFocusScope : UHTNDecorator
 ---@field bSetNewFocus boolean
 ---@field FocusTarget FBlackboardKeySelector
 ---@field bObserveBlackboardValue boolean
----@field bUpdateFocalPointFromRotatorKeyEveryFrame boolean
 ---@field bUpdateFocalPointFromVectorKeyEveryFrame boolean
 ---@field bRestoreOldFocusOnExecutionFinish boolean
+---@field RotationSpeed float
 ---@field FocusPriority uint8
 ---@field RotationKeyLookAheadDistance float
 UHTNDecorator_RadiusFocusScope = {}
@@ -3569,11 +4036,28 @@ UHTNTask_EQSQueryCover = {}
 
 
 
+---@class UHTNTask_Log : UHTNTask
+---@field Message FString
+UHTNTask_Log = {}
+
+
+
+---@class UHTNTask_RotateTo : UHTNTask_BlackboardBase
+---@field RotationSpeed float
+UHTNTask_RotateTo = {}
+
+
+
 ---@class UHealthComponent : UActorComponent
+---@field NearDeathThreshold float
+---@field OnNearDeath FHealthComponentOnNearDeath
 ---@field OnDeath FHealthComponentOnDeath
 ---@field DifficultySettingsSubsystem URadiusDifficultySettingsSubsystem
 UHealthComponent = {}
 
+---@param Value float
+function UHealthComponent:SetHealth(Value) end
+function UHealthComponent:RestoreHealth() end
 ---@param Actor AActor
 ---@param Damage float
 ---@param DamageType UDamageType
@@ -3680,6 +4164,7 @@ UInputModifierBlockInput = {}
 ---@field OnlyOwnerInteractionTag FGameplayTag
 ---@field DistanceGripTag FGameplayTag
 ---@field DetachGripTag FGameplayTag
+---@field AttachmentInteractionTag FGameplayTag
 ---@field DenyItemUseTag FGameplayTag
 ---@field ShopItemMarkTag FGameplayTag
 ---@field TrashItemTag FGameplayTag
@@ -3688,6 +4173,7 @@ UInputModifierBlockInput = {}
 ---@field ItemAmmoTag FGameplayTag
 ---@field ItemAmmoBoxTag FGameplayTag
 ---@field ItemMagazineTag FGameplayTag
+---@field ItemArmorPlateTag FGameplayTag
 ---@field MissionContainerTag FGameplayTag
 ---@field LostAndFoundContainerTag FGameplayTag
 UItemsConfig = {}
@@ -3863,15 +4349,23 @@ function UMissionsConfig:FindCategoryByMissionId(MissionId) end
 ---@field TeamTag FGameplayTag
 ---@field LastKnownPositionTag FGameplayTag
 ---@field TargetPositionPredictionTag FGameplayTag
+---@field BothInDistortionZoneVisibilityDistanceModifier float
+---@field OneInDistortionZoneVisibilityDistanceModifier float
+---@field BothInDistortionZoneSpotTimeModifier float
+---@field OneInDistortionZoneSpotTimeModifier float
+---@field BothInDistortionZoneHearingDistModifier float
+---@field OneInDistortionZoneHearingDistModifier float
 ---@field FriendDeathSpottedTag FGameplayTag
----@field MinTracesNumNonBlockedForFullBody int32
 ---@field LightSourceOnTag FGameplayTag
 ---@field bEnablePredictionPointDebug boolean
 ---@field SightSockets TArray<FName>
+---@field FoliageCollisionChannel ECollisionChannel
+---@field VegetationCollisionProfileNames TArray<FName>
+---@field DistortionZoneCollisionProfileName FName
 ---@field NotifyDistance float
----@field EnemyWarningTag FGameplayTag
 ---@field TeamLastKnownPositionTag FGameplayTag
----@field PointNotificationTag FGameplayTag
+---@field AlarmedPointNotificationTag FGameplayTag
+---@field CombatPointNotificationTag FGameplayTag
 ---@field NoAttackTag FGameplayTag
 ---@field AddAggroPtsMaxPerState TMap<ENPCState, float>
 ---@field ReduceAggroPtsMaxPerState TMap<ENPCState, float>
@@ -3896,6 +4390,12 @@ function UMissionsConfig:FindCategoryByMissionId(MissionId) end
 ---@field TraceTargetCubeSideHalfLength float
 ---@field CreepAmbushes TMap<FString, FCreepAmbushData>
 ---@field AmbushChooseDist float
+---@field ShouldUseApproximateTargetLoc boolean
+---@field NPCAudibleDist float
+---@field CommonVoiceCooldown float
+---@field MaxAudioSlots int32
+---@field AudioSlotCooldown float
+---@field ActionSoundCooldown float
 UNPCConfig = {}
 
 
@@ -4000,6 +4500,7 @@ UPhysicalMaterialWithTags = {}
 ---@field DefaultSprintSpeed float
 ---@field DefaultCrouchSpeed float
 ---@field JumpZVelocity float
+---@field BackwardSpeedMultiplier float
 ---@field WeightToMovementDecreasePercentSteps TMap<float, float>
 ---@field WeightToHungerSpeedIncreasePercentSteps TMap<float, float>
 ---@field WeightToStaminaConsumptionSpeedIncreasePercentSteps TMap<float, float>
@@ -4027,13 +4528,14 @@ UPhysicalMaterialWithTags = {}
 ---@field CalibrationBodyHeight float
 ---@field MaxCapsuleHeight float
 ---@field MinCapsuleHeight float
----@field MinBodyHeightToCrouch float
----@field MinBodyHeightToJump float
----@field MinStandingBodyHeight float
+---@field MinBodyHeightPercentageToCrouch float
+---@field MinBodyHeightPercentageToJump float
+---@field MinStandingBodyHeightPercentage float
 ---@field MinCameraHeightToMove float
 ---@field MaxCameraHeight float
 ---@field MinCameraHeight float
 ---@field DistFromCameraBaseToCrown float
+---@field MinBodyHeightToScaleBody float
 ---@field CameraShiftForward float
 ---@field CameraShiftUp float
 ---@field LookDownAngle float
@@ -4059,14 +4561,21 @@ UPhysicalMaterialWithTags = {}
 ---@field VestHolsterTag FGameplayTag
 ---@field BackpackHolsterTag FGameplayTag
 ---@field TabletHolsterTag FGameplayTag
----@field SubtitlesDistanceFromCamera float
+---@field MouthHolsterTag FGameplayTag
+---@field SubtitlesVecrticalOffset float
+---@field SubtitlesForwardOffset float
 ---@field SubtitlesMinAngleToReact float
 ---@field SubtitlesTimeToReact float
 ---@field SubtitlesRotationSpeed float
 ---@field SaveSubtitleDuration float
 ---@field SaveIconColor FLinearColor
 ---@field AutoSaveIconColor FLinearColor
----@field PlayerColors TMap<FGameplayTag, FLinearColor>
+---@field OverweightMessageTime float
+---@field PlayerColorsByIndex TArray<FLinearColor>
+---@field PlayerIndexKey FString
+---@field PlayerNameKey FString
+---@field DropOnlyBackpackTag FGameplayTag
+---@field DropNothingTag FGameplayTag
 UPlayerConfig = {}
 
 ---@param TotalWeight float
@@ -4144,6 +4653,9 @@ function UPlayerGripComponent:LockGrip(Hand, GripActor, HandSocket, bUseFakeGrip
 ---@param HandSocket URadiusHandSocketComponent
 ---@return boolean
 function UPlayerGripComponent:IsGripLocked(Hand, GripQueryType, HandSocket) end
+---@param Hand EVRHand
+---@return boolean
+function UPlayerGripComponent:IsAltInteraction(Hand) end
 ---@return ACharacter
 function UPlayerGripComponent:GetOwnerCharacter() end
 ---@param OverlappedActors TArray<AActor>
@@ -4288,8 +4800,9 @@ function UPlayerStatsComponent:GetHungerLevel() end
 function UPlayerStatsComponent:GetHunger() end
 ---@return float
 function UPlayerStatsComponent:GetHealth() end
----@param TimeChangeInSeconds float
-function UPlayerStatsComponent:Client_UpdateHungerAfterTimeChange(TimeChangeInSeconds) end
+---@param Location FVector
+---@param Seconds int32
+function UPlayerStatsComponent:Client_UpdateHungerAfterTimeChange(Location, Seconds) end
 ---@param ChangedPlayerContainerID FString
 function UPlayerStatsComponent:Client_OnWeightRecalculated(ChangedPlayerContainerID) end
 ---@param Stamina float
@@ -4310,12 +4823,14 @@ UPreferHigherCover = {}
 
 ---@class URadiusAICoordinationSubsystem : URadiusWorldSubsystem
 ---@field NPCCoordinationMap TMap<ARadiusAIControllerBase, FNPCCoordinationInfo>
+---@field AudibleAgents TArray<AController>
 ---@field NPCConfig UNPCConfig
 ---@field AttackRoleReserveTimerHandle FTimerHandle
 ---@field OptimizationTimerHandle FTimerHandle
 ---@field AmbushInfo TArray<FCreepAmbushInfo>
 ---@field VantageCoverVolumeInfos TMap<AActor, FCoverVolumeInfo>
 ---@field VantageCoverManager AVantageCoverManager
+---@field ActionSoundTimers TMap<USoundBase, FActionsCooldownInfo>
 URadiusAICoordinationSubsystem = {}
 
 ---@param AIController ARadiusAIControllerBase
@@ -4325,14 +4840,19 @@ function URadiusAICoordinationSubsystem:UnOccupyAmbush(InController) end
 function URadiusAICoordinationSubsystem:SetAgentsStateIdleBeforeSave() end
 ---@param AIController ARadiusAIControllerBase
 ---@param AttackRoleDelegate FRequestAttackRoleAttackRoleDelegate
+---@return boolean
 function URadiusAICoordinationSubsystem:RequestAttackRole(AIController, AttackRoleDelegate) end
 ---@param AIController ARadiusAIControllerBase
 function URadiusAICoordinationSubsystem:RegisterNpc(AIController) end
+function URadiusAICoordinationSubsystem:OptimizeAndSelectAudibleAgents() end
 ---@param InController AController
 ---@param AmbushIdx int32
 function URadiusAICoordinationSubsystem:OccupyAmbush(InController, AmbushIdx) end
 ---@param InVantageCoverManager AVantageCoverManager
 function URadiusAICoordinationSubsystem:InitVantageCoverManager(InVantageCoverManager) end
+---@param AIController ARadiusAIControllerBase
+---@return boolean
+function URadiusAICoordinationSubsystem:HasAttackRole(AIController) end
 ---@param QuerierPawn AActor
 ---@param MaxAttackDist float
 ---@param bIsVantageVolume boolean
@@ -4345,6 +4865,9 @@ function URadiusAICoordinationSubsystem:GetAmbush(QuerierPawn) end
 ---@param QuerierPawn AActor
 ---@return TArray<APawn>
 function URadiusAICoordinationSubsystem:GetAgentsInRadius(Radius, QuerierPawn) end
+---@param GroupID uint8
+---@return TArray<APawn>
+function URadiusAICoordinationSubsystem:GetAgentsInGroup(GroupID) end
 ---@param AIController ARadiusAIControllerBase
 function URadiusAICoordinationSubsystem:FreeAttackRole(AIController) end
 
@@ -4553,6 +5076,15 @@ function URadiusBodyComponent:SetInitialized() end
 ---@param Angle float
 ---@return FVector
 function URadiusBodyComponent:GetHeadLocationAfterTurn(BodyLocation, OldHeadLocation, Angle) end
+---@param HeadBotToCamZ float
+---@param HeadCenToCamXY float
+function URadiusBodyComponent:GetHeadDistances(HeadBotToCamZ, HeadCenToCamXY) end
+
+
+---@class URadiusBoxComponent : UBoxComponent
+---@field CustomTransform FTransform
+URadiusBoxComponent = {}
+
 
 
 ---@class URadiusBulletComponent : UActorComponent
@@ -4675,6 +5207,7 @@ function URadiusCheatSubsystem:TravelTo(LevelTag) end
 function URadiusCheatSubsystem:ToggleControllerVisibility() end
 function URadiusCheatSubsystem:SwitchNoClip() end
 function URadiusCheatSubsystem:SpawnStartingGear() end
+function URadiusCheatSubsystem:SpawnMissionArtefacts() end
 function URadiusCheatSubsystem:SetTideTime() end
 ---@param Value float
 function URadiusCheatSubsystem:SetSpeedCheatValue(Value) end
@@ -4698,8 +5231,16 @@ function URadiusCheatSubsystem:SetInfiniteAmmoCheat(bEnable) end
 function URadiusCheatSubsystem:SetImmortalMode(bEnable) end
 ---@param bEnable boolean
 function URadiusCheatSubsystem:SetGodMode(bEnable) end
+---@param bEnable boolean
+function URadiusCheatSubsystem:SetAIDebug(bEnable) end
 ---@param AccessLevel int32
 function URadiusCheatSubsystem:SetAccessLevel(AccessLevel) end
+---@param TypeTag FGameplayTag
+---@param SpawnTransform FTransform
+function URadiusCheatSubsystem:Server_SpawnItemByTypeTag(TypeTag, SpawnTransform) end
+---@param InClass UClass
+---@param SpawnTransform FTransform
+function URadiusCheatSubsystem:Server_SpawnActorByClass(InClass, SpawnTransform) end
 function URadiusCheatSubsystem:RegenerateLoot() end
 ---@return boolean
 function URadiusCheatSubsystem:IsSpeedCheat() end
@@ -4717,6 +5258,8 @@ function URadiusCheatSubsystem:IsInfiniteAmmoCheat() end
 function URadiusCheatSubsystem:IsImmortalMode() end
 ---@return boolean
 function URadiusCheatSubsystem:IsGodMode() end
+---@return boolean
+function URadiusCheatSubsystem:IsAIDebug() end
 ---@return float
 function URadiusCheatSubsystem:GetSpeedCheatValue() end
 ---@return boolean
@@ -4768,6 +5311,12 @@ function URadiusCommonGameData:AddTimeStampIfNeeded() end
 URadiusCondition = {}
 
 
+---@class URadiusCondition_ActiveMissionCheck : URadiusCondition_Trigger
+---@field bExactMatch boolean
+URadiusCondition_ActiveMissionCheck = {}
+
+
+
 ---@class URadiusCondition_FloatCheck : URadiusCondition
 ---@field ValueCheck UMathCondition_Float
 URadiusCondition_FloatCheck = {}
@@ -4805,6 +5354,12 @@ URadiusCondition_MissionCheck = {}
 
 ---@class URadiusCondition_MoneyCheck : URadiusCondition_FloatCheck
 URadiusCondition_MoneyCheck = {}
+
+
+---@class URadiusCondition_NotCheck : URadiusCondition
+---@field NotCondition URadiusCondition
+URadiusCondition_NotCheck = {}
+
 
 
 ---@class URadiusCondition_ORCheck : URadiusCondition
@@ -4851,7 +5406,7 @@ URadiusConfigurationAssetBase = {}
 
 ---@class URadiusConfigurationSubsystem : URadiusGameInstanceSubsystem
 ---@field ItemsConfig UItemsConfig
----@field MissionConfig UMissionsConfig
+---@field AllMissionsConfig UMissionsConfig
 ---@field GameConfig UGameConfig
 ---@field PlayerConfig UPlayerConfig
 ---@field WeaponConfig UWeaponDefaultsConfig
@@ -4859,6 +5414,7 @@ URadiusConfigurationAssetBase = {}
 ---@field SystemConfig USystemConfig
 ---@field LootConfig ULootConfig
 ---@field DifficultyConfig UDifficultyConfig
+---@field ExplosionConfig UExplosionConfig
 ---@field Configurations TMap<UClass, URadiusConfigurationAssetBase>
 ---@field AIFactors TArray<FAIFactors>
 URadiusConfigurationSubsystem = {}
@@ -5027,6 +5583,7 @@ function URadiusCrashAnalyticsSubsystem:HandleSettingsDelegate(Settings) end
 
 ---@class URadiusDamageType : UDamageType
 ---@field DamageCategory EDamageCategory
+---@field CategoryLevel int32
 ---@field DamageHandler UDamageHandler
 URadiusDamageType = {}
 
@@ -5133,10 +5690,12 @@ function URadiusDifficultySettingsSubsystem:CalcSellPrice(BasePrice) end
 ---@field OnItemGripped FRadiusEventsSubsystemOnItemGripped
 ---@field OnItemGrippedFirstTime FRadiusEventsSubsystemOnItemGrippedFirstTime
 ---@field OnItemDropped FRadiusEventsSubsystemOnItemDropped
+---@field OnItemChangeParent FRadiusEventsSubsystemOnItemChangeParent
 ---@field OnContainerChangeParent FRadiusEventsSubsystemOnContainerChangeParent
 ---@field OnContainerChildrenChange FRadiusEventsSubsystemOnContainerChildrenChange
 ---@field OnPlayerInventoryChanged FRadiusEventsSubsystemOnPlayerInventoryChanged
 ---@field OnItemStackChange FRadiusEventsSubsystemOnItemStackChange
+---@field OnItemSecondaryGripped FRadiusEventsSubsystemOnItemSecondaryGripped
 ---@field OnAssetsLoaded FRadiusEventsSubsystemOnAssetsLoaded
 ---@field OnGameTimeChanged FRadiusEventsSubsystemOnGameTimeChanged
 ---@field OnGameTimeChangedSignificantly FRadiusEventsSubsystemOnGameTimeChangedSignificantly
@@ -5168,7 +5727,8 @@ function URadiusEventsSubsystem:FireOnTutorialFinished(TutorialID, CompletedStep
 function URadiusEventsSubsystem:FireOnStartLoadLevel(LevelTag) end
 function URadiusEventsSubsystem:FireOnSplashScreenShown() end
 ---@param Location FVector
-function URadiusEventsSubsystem:FireOnSleep(Location) end
+---@param Seconds int32
+function URadiusEventsSubsystem:FireOnSleep(Location, Seconds) end
 function URadiusEventsSubsystem:FireOnSettingsChanged() end
 function URadiusEventsSubsystem:FireOnReplicatorCreated() end
 function URadiusEventsSubsystem:FireOnPlayerRunning() end
@@ -5192,10 +5752,12 @@ function URadiusEventsSubsystem:FireOnMissionListUpdate() end
 ---@param CurrentObjectiveIndex int32
 function URadiusEventsSubsystem:FireOnMissionFinished(Mission, State, CurrentObjectiveIndex) end
 function URadiusEventsSubsystem:FireOnMainMenuLoaded() end
----@param NewLvlPoints int32
-function URadiusEventsSubsystem:FireOnLvlPointsChanged(NewLvlPoints) end
 ---@param Step ELevelLoadedEventStep
 function URadiusEventsSubsystem:FireOnLoadLevelStep(Step) end
+---@param ItemContainerID FString
+function URadiusEventsSubsystem:FireOnItemSecondaryGripped(ItemContainerID) end
+---@param ContainerID FString
+function URadiusEventsSubsystem:FireOnItemChangeParent(ContainerID) end
 function URadiusEventsSubsystem:FireOnIngameMenuOpened() end
 function URadiusEventsSubsystem:FireOnIngameMenuClosed() end
 function URadiusEventsSubsystem:FireOnHostGame() end
@@ -5215,8 +5777,26 @@ function URadiusEventsSubsystem:FireOnCommonGameDataLoaded() end
 function URadiusEventsSubsystem:FireOnArtefactNestSpawned(Nest) end
 ---@param Nest AActor
 function URadiusEventsSubsystem:FireOnArtefactNestDestroyed(Nest) end
+---@param NewLvlPoints int32
+function URadiusEventsSubsystem:FireOnAccessLvlPointsChanged(NewLvlPoints) end
 ---@param NewLevel int32
 function URadiusEventsSubsystem:FireOnAccessLevelChanged(NewLevel) end
+
+
+---@class URadiusExplosionComponent : UActorComponent
+---@field ExplosionRadius float
+---@field ExplosionDamage float
+---@field CurveDamageFalloff UCurveFloat
+---@field DamageTypeClass TSubclassOf<URadiusDamageType>
+---@field bDebug boolean
+---@field OnExploded FRadiusExplosionComponentOnExploded
+---@field InstigatorController AController
+URadiusExplosionComponent = {}
+
+---@param Controller AController
+function URadiusExplosionComponent:SetInstigatorController(Controller) end
+function URadiusExplosionComponent:MulticastOnExploded() end
+function URadiusExplosionComponent:Explode() end
 
 
 ---@class URadiusFirearmComponent : UBoxComponent
@@ -5225,8 +5805,8 @@ function URadiusEventsSubsystem:FireOnAccessLevelChanged(NewLevel) end
 ---@field bCanLoadToChamber boolean
 ---@field EjectForceMultipliers FMinMaxVector
 ---@field bDrawEjectionDebug boolean
+---@field bLeaveUnshotAmmoInside boolean
 ---@field bCanShootCacheForABP boolean
----@field bShouldEject boolean
 ---@field OnFireModeChanged FRadiusFirearmComponentOnFireModeChanged
 ---@field OnShootInputChanged FRadiusFirearmComponentOnShootInputChanged
 ---@field OnSliderLock FRadiusFirearmComponentOnSliderLock
@@ -5234,7 +5814,6 @@ function URadiusEventsSubsystem:FireOnAccessLevelChanged(NewLevel) end
 ---@field RelevantMuzzle UActorComponent
 ---@field RelevantMagazine UActorComponent
 ---@field bHasShootInput boolean
----@field InternalBullets TArray<UActorComponent>
 URadiusFirearmComponent = {}
 
 function URadiusFirearmComponent:TryShoot() end
@@ -5255,16 +5834,21 @@ function URadiusFirearmComponent:ShootNext() end
 function URadiusFirearmComponent:SetSliderLock(bSet, bForce) end
 ---@param NewFireMode FGameplayTag
 function URadiusFirearmComponent:SetCurrentFireMode(NewFireMode) end
+---@param BulletComponent UActorComponent
 ---@param AmmoTag FGameplayTag
----@param Index int32
+---@param bSetShell boolean
 ---@return boolean
-function URadiusFirearmComponent:SetAmmoInChamberTag(AmmoTag, Index) end
+function URadiusFirearmComponent:SetAmmoInChamberTag(BulletComponent, AmmoTag, bSetShell) end
 ---@param BulletTag FGameplayTag
 function URadiusFirearmComponent:Server_ShootProjectile(BulletTag) end
 ---@param NewInput boolean
 function URadiusFirearmComponent:Server_SetShootingInput(NewInput) end
----@param Index int32
-function URadiusFirearmComponent:ReplaceBulletWithShell(Index) end
+---@param PreRolledTag FGameplayTag
+function URadiusFirearmComponent:Server_RollDysfunction(PreRolledTag) end
+---@param DysfunctionToClear FGameplayTag
+function URadiusFirearmComponent:Server_ClearDysfunction(DysfunctionToClear) end
+---@param BulletComponent UActorComponent
+function URadiusFirearmComponent:ReplaceBulletWithShell(BulletComponent) end
 function URadiusFirearmComponent:OnRep_bHasShootInput() end
 ---@param Tag FGameplayTag
 ---@param bAdded boolean
@@ -5290,14 +5874,25 @@ function URadiusFirearmComponent:IsOnSafety() end
 function URadiusFirearmComponent:IsAcceptsAmmoType(AmmoType) end
 function URadiusFirearmComponent:InitializeMagazine() end
 ---@return boolean
-function URadiusFirearmComponent:HasAmmoInBarrel() end
+function URadiusFirearmComponent:HasDysfunction() end
+---@param bIsShell boolean
+---@return boolean
+function URadiusFirearmComponent:HasAmmoInBarrel(bIsShell) end
+---@param bOnlyNotShell boolean
+---@return UActorComponent
+function URadiusFirearmComponent:GetUnejectedBulletComponent(bOnlyNotShell) end
 ---@return FGameplayTag
 function URadiusFirearmComponent:GetCurrentFireModeTag() end
-function URadiusFirearmComponent:EndFire() end
 ---@return FGameplayTag
-function URadiusFirearmComponent:EjectChamber() end
+function URadiusFirearmComponent:GetCurrentDysfunction() end
+function URadiusFirearmComponent:EndFire() end
+---@param bIsManual boolean
+---@return FGameplayTag
+function URadiusFirearmComponent:EjectChamber(bIsManual) end
 ---@return boolean
 function URadiusFirearmComponent:DeliverAmmoFromMagToChamber() end
+---@param DysfunctionToClear FGameplayTag
+function URadiusFirearmComponent:ClearDysfunction(DysfunctionToClear) end
 ---@return boolean
 function URadiusFirearmComponent:CanShoot() end
 
@@ -5307,6 +5902,7 @@ URadiusFirearmProjectileInfo = {}
 
 
 ---@class URadiusGameData : ULocalPlayerSaveGame
+---@field SaveBuildRevision int32
 ---@field ProfileNr int32
 ---@field bSinglePlayer boolean
 ---@field SingleGameID FString
@@ -5338,7 +5934,6 @@ URadiusFirearmProjectileInfo = {}
 ---@field SavedSpawners TMap<FString, FPointSpawnDataContainer>
 ---@field SavedNpc TMap<FString, FRadiusNpcGameDataContainer>
 ---@field SavedAnomaly TMap<FString, FRadiusAnomalyGameDataContainer>
----@field SavedArtefactNest TMap<FString, FRadiusAnomalyGameDataContainer>
 ---@field SavedLootSpawnGroup TMap<FString, FLootSpawnGroupDataContainer>
 ---@field SavedLootSpawnPoint TMap<FString, FLootSpawnPointDataContainer>
 ---@field SavedArtefactSpawnPoint TMap<FString, FArtefactSpawnPointDataContainer>
@@ -5351,6 +5946,9 @@ URadiusGameData = {}
 function URadiusGameData:GetRealPlaytimeMinutes() end
 ---@return float
 function URadiusGameData:GetPlaytimeMinutes() end
+---@param PlayerState APlayerState
+---@return int32
+function URadiusGameData:GetPlayerDataIndex(PlayerState) end
 ---@return TMap<FGameplayTag, FGameplayTag>
 function URadiusGameData:GetDifficultySettings() end
 ---@param WorldContextObject UObject
@@ -5376,7 +5974,6 @@ function URadiusGameData:ClearDynamicDatas(WorldContextObject) end
 ---@field PrintLogs boolean
 ---@field GameData URadiusGameData
 ---@field CommonGameData URadiusCommonGameData
----@field GameDataReplicator ARadiusGameDataReplicator
 URadiusGameDataSubsystem = {}
 
 function URadiusGameDataSubsystem:UnloadGameData() end
@@ -5568,6 +6165,7 @@ function URadiusHandSocketComponent:GetHandSocketTransformBP(QueryController, bI
 ---@field bOnlyOwnerCanInteract boolean
 ---@field bDisableWhenOnPlayer boolean
 ---@field bDisableWhenNotInHands boolean
+---@field bAllowInteractionWhenDisabled boolean
 ---@field bCanBeArmored boolean
 ---@field bCanDistanceGripStoredItems boolean
 ---@field AllowedGripTags FGameplayTagContainer
@@ -5700,6 +6298,7 @@ function URadiusItemConditionalComponent:CheckCondition() end
 ---@field InstanceUid FString
 ---@field ActorReference TWeakObjectPtr<AActor>
 ---@field Attachments TArray<URadiusItemDynamicData>
+---@field StackedItems TArray<FStackedItem>
 ---@field ContainingItemTagsStack TArray<FGameplayTag>
 ---@field ContainingShellsInStack TArray<boolean>
 ---@field DynamicLocation FVector_NetQuantize
@@ -5713,20 +6312,29 @@ function URadiusItemConditionalComponent:CheckCondition() end
 ---@field OnAdditionalTagChanged FRadiusItemDynamicDataOnAdditionalTagChanged
 ---@field OnParentIDChanged FRadiusItemDynamicDataOnParentIDChanged
 ---@field AdditionalTags TArray<FGameplayTag>
+---@field AdditionalData TArray<FString>
+---@field FloatData TMap<FString, float>
 URadiusItemDynamicData = {}
 
 ---@param ItemActor ARadiusItemBase
 ---@return boolean
 function URadiusItemDynamicData:TryGetItemActor(ItemActor) end
+---@param PropertyName FString
+---@param PropertyValue float
+function URadiusItemDynamicData:SetFloatProperty(PropertyName, PropertyValue) end
 ---@param NewDurability float
 function URadiusItemDynamicData:SetDurability(NewDurability) end
 ---@param Tag FGameplayTag
 ---@return boolean
 function URadiusItemDynamicData:RemoveAdditionalTag(Tag) end
+---@param Key FString
+---@return boolean
+function URadiusItemDynamicData:RemoveAdditionalData(Key) end
 function URadiusItemDynamicData:OnRep_ParentContainerUid() end
-function URadiusItemDynamicData:OnRep_Durability() end
----@param PreviousStack TArray<FGameplayTag>
-function URadiusItemDynamicData:OnRep_ContainingItemTagsStack(PreviousStack) end
+---@param PreviousDurability float
+function URadiusItemDynamicData:OnRep_Durability(PreviousDurability) end
+---@param PreviousAmmos TArray<FStackedItem>
+function URadiusItemDynamicData:OnRep_ChamberAmmos(PreviousAmmos) end
 ---@param PreviousTags TArray<FGameplayTag>
 function URadiusItemDynamicData:OnRep_AdditionalTags(PreviousTags) end
 ---@param ItemIndex int32
@@ -5738,8 +6346,14 @@ function URadiusItemDynamicData:GetItemTagFromStack(ItemIndex) end
 ---@param OutData FRadiusItemStaticData
 ---@return boolean
 function URadiusItemDynamicData:GetItemBasicStaticData(OutData) end
+---@param PropertyName FString
+---@return float
+function URadiusItemDynamicData:GetFloatProperty(PropertyName) end
 ---@return TArray<FGameplayTag>
 function URadiusItemDynamicData:GetAdditionalTags() end
+---@param Key FString
+---@return FString
+function URadiusItemDynamicData:GetAdditionalData(Key) end
 ---@param Tag FGameplayTag
 ---@return boolean
 function URadiusItemDynamicData:ContainsAdditionalTag(Tag) end
@@ -5748,6 +6362,10 @@ function URadiusItemDynamicData:CheckItem() end
 ---@param Tag FGameplayTag
 ---@return boolean
 function URadiusItemDynamicData:AddAdditionalTag(Tag) end
+---@param Key FString
+---@param Value FString
+---@return boolean
+function URadiusItemDynamicData:AddAdditionalData(Key, Value) end
 
 
 ---@class URadiusItemStackComponent : UBoxComponent
@@ -5778,8 +6396,21 @@ function URadiusLevelSubsystem:OnLevelLoaded_DoAutosave() end
 ---@param bTransitionBetweenLevels boolean
 function URadiusLevelSubsystem:LoadLevel(LevelTag, bHardTravel, bDisconnect, bTransitionBetweenLevels) end
 ---@param LevelTag FGameplayTag
+---@return boolean
+function URadiusLevelSubsystem:IsLevelAvailable(LevelTag) end
+---@param GateFromTag FGameplayTag
+---@param GateToTag FGameplayTag
+---@return boolean
+function URadiusLevelSubsystem:IsGateLinkAvailable(GateFromTag, GateToTag) end
+---@param GateTag FGameplayTag
+---@return boolean
+function URadiusLevelSubsystem:IsGateAvailable(GateTag) end
+---@param LevelTag FGameplayTag
 ---@return FText
 function URadiusLevelSubsystem:GetLevelName(LevelTag) end
+---@param FromGateTag FGameplayTag
+---@return TArray<FGameplayTag>
+function URadiusLevelSubsystem:GetGateLinks(FromGateTag) end
 ---@return FText
 function URadiusLevelSubsystem:GetCurrentLevelName() end
 ---@return FGameplayTag
@@ -5880,11 +6511,16 @@ function URadiusMissionSubsystem:CancelMission(Mission) end
 ---@class URadiusMuzzleComponent : USceneComponent
 ---@field GameplayTags FGameplayTagContainer
 ---@field ComponentPriority int32
+---@field SoundDryShot USoundCue
 ---@field OnBulletFired FRadiusMuzzleComponentOnBulletFired
 ---@field ItemOwner AActor
 ---@field ParticleComponent UActorComponent
 URadiusMuzzleComponent = {}
 
+---@param BulletTag FGameplayTag
+---@param IsLastRound boolean
+---@return boolean
+function URadiusMuzzleComponent:ShootBullet(BulletTag, IsLastRound) end
 function URadiusMuzzleComponent:PlayParticleFX() end
 ---@param WeaponStaticData FWeaponStaticData
 ---@return boolean
@@ -5999,7 +6635,7 @@ function URadiusPoolSubsystem:Server_ReturnActor(Actor) end
 ---@param Actor AActor
 ---@return boolean
 function URadiusPoolSubsystem:ReturnActor(Actor) end
-function URadiusPoolSubsystem:PrefillPoolFromConfig() end
+function URadiusPoolSubsystem:PrintPools() end
 ---@param Actor AActor
 ---@return boolean
 function URadiusPoolSubsystem:IsActorInPool(Actor) end
@@ -6014,6 +6650,7 @@ function URadiusPoolSubsystem:GetSeamlessTravelActorList(ActorList, bReplicated,
 ---@param ItemConfiguration FItemConfiguration
 ---@return AActor
 function URadiusPoolSubsystem:GetActor(ActorClass, Transform, Owner, Instigator, ItemConfiguration) end
+function URadiusPoolSubsystem:FillingPoolsStep() end
 
 
 ---@class URadiusProjectileInfo : UObject
@@ -6153,6 +6790,7 @@ function URadiusSettingsSubsystem:SetAmbientVolume(Value) end
 ---@param Value float
 function URadiusSettingsSubsystem:SetAimSmoothingIntensity(Value) end
 function URadiusSettingsSubsystem:ResetVolume() end
+function URadiusSettingsSubsystem:OnGameStartSetup() end
 ---@return boolean
 function URadiusSettingsSubsystem:IsVoiceChatEnabled() end
 ---@return boolean
@@ -6254,6 +6892,7 @@ function URadiusSettingsSubsystem:GetAimSmoothingIntensity() end
 function URadiusSettingsSubsystem:BraceletOnLeft() end
 ---@return boolean
 function URadiusSettingsSubsystem:BackpackOnLeft() end
+function URadiusSettingsSubsystem:ApplyVolumeSettings() end
 function URadiusSettingsSubsystem:ApplyAllGraphicsSettings() end
 
 
@@ -6342,13 +6981,15 @@ function URadiusSliderComponent:OnRep_InitialRelativeTransform() end
 function URadiusSliderComponent:CalculateSliderProgress() end
 
 
----@class URadiusSpawnControlSubsystem : URadiusWorldSubsystem
+---@class URadiusSpawnControlSubsystem : URadiusTickableWorldSubsystem
 ---@field CollectedSpawners TArray<AActor>
----@field AvailableSpawners TArray<TScriptInterface<IRadiusSpawnerInterface>>
----@field DisabledSpawners TArray<TScriptInterface<IRadiusSpawnerInterface>>
+---@field InitializedSpawners TArray<AActor>
+---@field AvailableSpawners TArray<AActor>
+---@field DisabledSpawners TArray<AActor>
+---@field DisabledSpawnersAndChildrenIdHashSet TSet<uint32>
 URadiusSpawnControlSubsystem = {}
 
-function URadiusSpawnControlSubsystem:Tick() end
+function URadiusSpawnControlSubsystem:Update() end
 function URadiusSpawnControlSubsystem:OnTideEvent() end
 ---@param Mission UAvailableMission
 ---@param State EMissionCompleteState
@@ -6362,11 +7003,20 @@ function URadiusSpawnControlSubsystem:OnGlobalTriggersChange() end
 function URadiusSpawnControlSubsystem:OnAccessLevelOrPointsChanged(LevelOrPoints) end
 ---@param SpawnerId FString
 function URadiusSpawnControlSubsystem:KillAllActors(SpawnerId) end
+---@param WorldContextObject UObject
+---@param Origin FVector
+---@param Radius float
+---@param bOnGround boolean
+---@param RandomLocation FVector
+---@return boolean
+function URadiusSpawnControlSubsystem:GetRandomSpawnLocation(WorldContextObject, Origin, Radius, bOnGround, RandomLocation) end
+function URadiusSpawnControlSubsystem:CheckSpawnersInitializationsAndGenerate() end
 
 
 ---@class URadiusStoreItemPointComponent : USceneComponent
+---@field OnItemTaken FRadiusStoreItemPointComponentOnItemTaken
 ---@field ItemActorClass TSubclassOf<ARadiusItemBase>
----@field Attachments TArray<FAttachableItemInfo>
+---@field Attachments TMap<FGameplayTag, UAttachmentConfig>
 ---@field ItemRelativeTransform FTransform
 ---@field TimeToRespawn float
 ---@field NumberOfRespawns int32
@@ -6383,6 +7033,8 @@ function URadiusStoreItemPointComponent:ResetRespawn() end
 ---@param Controller UGripMotionControllerComponent
 ---@param GripInfo FBPActorGripInformation
 function URadiusStoreItemPointComponent:ItemTaken(Controller, GripInfo) end
+---@return ARadiusItemBase
+function URadiusStoreItemPointComponent:GetCurrentItem() end
 
 
 ---@class URadiusTextBlock : UTextBlock
@@ -6482,6 +7134,34 @@ function URadiusVoiceSubsystem:DisableVoiceInput() end
 function URadiusVoiceSubsystem:ApplyVoiceChanges() end
 
 
+---@class URadiusWeaponCleanerComponent : UActorComponent
+---@field RadiusItemOwner ARadiusItemBase
+---@field SkeletalMeshComponents TArray<USkeletalMeshComponent>
+---@field StaticMeshComponents TArray<UStaticMeshComponent>
+---@field bSingleLOD boolean
+---@field LODIndex int32
+---@field bConvertToSRGB boolean
+---@field PaintShape EPaintShape
+---@field OilPaintFallOff UCurveFloat
+---@field ChannelMaskOil int32
+---@field ChannelMaskOilTick int32
+---@field ChannelMaskBrush int32
+---@field TagsToIgnore TArray<FName>
+---@field MeshesToIgnore TArray<UStaticMesh>
+---@field ComponentsToIgnore TArray<TSubclassOf<UPrimitiveComponent>>
+URadiusWeaponCleanerComponent = {}
+
+---@param TimerValue int32
+---@param OilValue int32
+function URadiusWeaponCleanerComponent:OilTickNative(TimerValue, OilValue) end
+---@param Location FVector
+---@param Extent FVector
+---@return boolean
+function URadiusWeaponCleanerComponent:OilPaintNative(Location, Extent) end
+---@return ARadiusItemBase
+function URadiusWeaponCleanerComponent:GetRadiusItemOwner() end
+
+
 ---@class URadiusWidgetComponent : UWidgetComponent
 ---@field bDisableWhileIngameMenu boolean
 ---@field bDisableWhileDead boolean
@@ -6564,8 +7244,10 @@ function UResourceComponent:ChangeResource(DeltaAmount) end
 ---@field bMarkTutorialFinished boolean
 ---@field TriggersUnsetOnFinish TArray<FGameplayTag>
 ---@field TriggersUnsetOnCancel TArray<FGameplayTag>
+---@field TriggersSetOnFinish TArray<FGameplayTag>
 ---@field MissionIcon TSoftObjectPtr<UTexture2D>
 ---@field ObjectiveConfigs TArray<URadiusMissionObjectiveConfigBase>
+---@field bDefaultPlayerLocationIfInvalid boolean
 USingleMissionConfig = {}
 
 ---@param WorldContextObject UObject
@@ -6633,6 +7315,14 @@ function USyncTransformComponent:OnDistanceGripChanged(bIsDistanceLerping) end
 ---@class USystemConfig : URadiusConfigurationAssetBase
 ---@field PoolActorConfigs TArray<FPoolActorConfig>
 ---@field ContainerCollisionChannels TArray<ECollisionChannel>
+---@field Master_SoundMixModifier TSoftObjectPtr<USoundMix>
+---@field Master_SoundClass TSoftObjectPtr<USoundClass>
+---@field Sounds_SoundMixModifier TSoftObjectPtr<USoundMix>
+---@field Sounds_SoundClass TSoftObjectPtr<USoundClass>
+---@field Music_SoundMixModifier TSoftObjectPtr<USoundMix>
+---@field Music_SoundClass TSoftObjectPtr<USoundClass>
+---@field VoiceChat_SoundMixModifier TSoftObjectPtr<USoundMix>
+---@field VoiceChat_SoundClass TSoftObjectPtr<USoundClass>
 ---@field MicThreshold float
 ---@field SilenceDetectionThreshold float
 ---@field DefaultAttenuation USoundAttenuation
@@ -6651,13 +7341,17 @@ function USyncTransformComponent:OnDistanceGripChanged(bIsDistanceLerping) end
 ---@field HighQualityCPUs TArray<FString>
 ---@field HighQualityGPUs TArray<FString>
 ---@field NumericalTags TArray<FGameplayTag>
+---@field RevisionToTeleportPlayer int32
+---@field RevisionToClearDenyItemUseTags int32
+---@field RevisionToResetItemsDurability int32
+---@field RevisionWhereStackedItemsIntroduced int32
+---@field PlayerLevelToGateUnlockTags TMap<int32, FGameplayTagContainer>
 USystemConfig = {}
 
 
 
 ---@class UTargetVisibilityComponent : UActorComponent
 ---@field CollisionChannel ECollisionChannel
----@field VegetationCollisionProfileNameArr TArray<FName>
 ---@field VegetationMultiplierDecreasePerUnit float
 ---@field GameConfigSubsystem URadiusConfigurationSubsystem
 ---@field DifficultySettingsSubsystem URadiusDifficultySettingsSubsystem
@@ -6668,6 +7362,10 @@ USystemConfig = {}
 ---@field Owner AActor
 UTargetVisibilityComponent = {}
 
+---@param bIsInside boolean
+function UTargetVisibilityComponent:SetInsideDistortionZone(bIsInside) end
+---@return boolean
+function UTargetVisibilityComponent:IsInsideDistortionZone() end
 
 
 ---@class UTexture2DArrayWrapper : UObject
@@ -6699,12 +7397,33 @@ function UUnderwaterBehaviorComponent:BeginPlay() end
 ---@field AmmoCaliberNames TMap<FGameplayTag, FText>
 ---@field AmmoTypeNames TMap<FGameplayTag, FText>
 ---@field BulletClassActor TSubclassOf<AActor>
+---@field ShotgunDamageType TSubclassOf<URadiusDamageType>
+---@field ProjectileImpactsComponentClass TSubclassOf<UActorComponent>
 ---@field BulletsFlyBySoundDistance float
 ---@field BulletCollisionStimuliTag FGameplayTag
 ---@field DamageStimuliTag FGameplayTag
+---@field DysfunctionCategoryTag FGameplayTag
+---@field DysfunctionMisfiredTag FGameplayTag
+---@field DysfunctionJammedTag FGameplayTag
+---@field DysfunctionLoadFailureTag FGameplayTag
+---@field DysfunctionMessages TMap<FGameplayTag, FDysfucntionMessageArray>
+---@field DysfunctionMessageTime float
 ---@field ImpactDataTable UDataTable
 ---@field WeaponCockedTag FGameplayTag
+---@field OilSprayWorkSeconds float
+---@field OilDryOutSeconds float
+---@field CleaningDurabilityRange FMinMaxFloat
+---@field BrushDurabilityPerClean float
+---@field BrushCleanRatio float
+---@field CleanedPercentToDurabilityMultiplier TMap<FGameplayTag, float>
+---@field TotalVerticesMultiplier TMap<FGameplayTag, float>
 UWeaponDefaultsConfig = {}
 
+---@param ItemTypeTag FGameplayTag
+---@return float
+function UWeaponDefaultsConfig:GetTotalVerticesMultiplier(ItemTypeTag) end
+---@param ItemTypeTag FGameplayTag
+---@return float
+function UWeaponDefaultsConfig:GetCleanedPercentToDurabilityMultiplier(ItemTypeTag) end
 
 

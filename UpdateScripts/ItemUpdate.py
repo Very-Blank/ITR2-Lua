@@ -37,7 +37,11 @@ def getPathAndName(assetPath : str):
         end += 1
     
     part1 = assetPath[start+1:end].split('/')
-    part2 = assetPath.split('.')[0].split("BP_")[-1]
+    part2 = ""
+    if 'BP_' in assetPath:
+        part2 = assetPath.split('.')[0].split("BP_")[-1]
+    else:
+        part2 = assetPath.split('.')[0].split("BPA")[-1]
 
     if(part2[0].isnumeric()):
         part2 = "_" + part2
