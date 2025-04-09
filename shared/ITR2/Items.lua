@@ -357,10 +357,7 @@ local Items = {
 			Helmet_Pasgt = "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_Pasgt.BP_Helmet_Pasgt_C",
 			Helmet_FAST = "/Game/ITR2/BPs/Items/Equipment/Helmets/BP_Helmet_FAST.BP_Helmet_FAST_C",
 
-			Helmet_Attachments = {
-				NightVision = "/Game/ITR2/BPs/Items/Equipment/Helmets/Helmet_Attachments/BPA_NightVision.BPA_NightVision_C",
-				Armored_Visor = "/Game/ITR2/BPs/Items/Equipment/Helmets/Helmet_Attachments/BP_Armored_Visor.BP_Armored_Visor_C",
-			},
+			-- SPOILERS
 		},
 
 		Tablet = {
