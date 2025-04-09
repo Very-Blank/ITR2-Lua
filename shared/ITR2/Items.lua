@@ -85,36 +85,7 @@ local Items = {
 				M4A1 = "/Game/ITR2/BPs/Items/Firearms/Primary/M4A1/BP_M4A1.BP_M4A1_C",
 			},
 
-			SVD = {
-				SVD_Mag = "/Game/ITR2/BPs/Items/Firearms/Primary/SVD/BP_SVD_Mag.BP_SVD_Mag_C",
-				SVD_M = "/Game/ITR2/BPs/Items/Firearms/Primary/SVD/BP_SVD_M.BP_SVD_M_C",
-			},
-
-			G36 = {
-				G36_Mag = "/Game/ITR2/BPs/Items/Firearms/Primary/G36/BP_G36_Mag.BP_G36_Mag_C",
-				G36_M1 = "/Game/ITR2/BPs/Items/Firearms/Primary/G36/BP_G36_M1.BP_G36_M1_C",
-			},
-
-			BenelliM2 = {
-				BenelliM2_6_Mag = "/Game/ITR2/BPs/Items/Firearms/Primary/BenelliM2/BP_BenelliM2_6_Mag.BP_BenelliM2_6_Mag_C",
-				BenelliM2_8_Mag = "/Game/ITR2/BPs/Items/Firearms/Primary/BenelliM2/BP_BenelliM2_8_Mag.BP_BenelliM2_8_Mag_C",
-				BenelliM2 = "/Game/ITR2/BPs/Items/Firearms/Primary/BenelliM2/BP_BenelliM2.BP_BenelliM2_C",
-			},
-
-			SR25 = {
-				SR25_Mag = "/Game/ITR2/BPs/Items/Firearms/Primary/SR25/BP_SR25_Mag.BP_SR25_Mag_C",
-				SR25_M = "/Game/ITR2/BPs/Items/Firearms/Primary/SR25/BP_SR25_M.BP_SR25_M_C",
-			},
-
-			MP9 = {
-				MP9_Mag30 = "/Game/ITR2/BPs/Items/Firearms/Primary/MP9/BP_MP9_Mag30.BP_MP9_Mag30_C",
-				MP9_Black = "/Game/ITR2/BPs/Items/Firearms/Primary/MP9/BP_MP9_Black.BP_MP9_Black_C",
-			},
-
-			Vityaz = {
-				Vityaz_Mag = "/Game/ITR2/BPs/Items/Firearms/Primary/Vityaz/BP_Vityaz_Mag.BP_Vityaz_Mag_C",
-				Vityaz_M = "/Game/ITR2/BPs/Items/Firearms/Primary/Vityaz/BP_Vityaz_M.BP_Vityaz_M_C",
-			},
+			-- SPOILERS
 
 			IZh_27 = {
 				Iz27_SawOff_S = "/Game/ITR2/BPs/Items/Firearms/Primary/IZh-27/BP_Iz27_SawOff_S.BP_Iz27_SawOff_S_C",
