@@ -71,16 +71,48 @@
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "Key": "649A5F5C4D427DEBC2366A8945EEB763",
+          "SourceString": "Throw to locate or discharge an anomaly.",
+          "LocalizedString": "Throw to locate or discharge an anomaly."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "4FC07E4740ADC53E005B64AFBC53F151",
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.Explorers.Tools"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "00DE77A7469A7C2F4F28338311C1353C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "73327D3C48842739DA2AA685F80F4231",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "90444B5941411B2AFD9E43AD402392F0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.probe"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Probes/BP_RadiusAmmo_Probe.BP_RadiusAmmo_Probe_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
@@ -96,7 +128,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Probes/BP_RadiusAmmo_Probe.BP_RadiusAmmo_Probe_C",
+          "SubPathString": ""
+        }
       },
       "9x18.FMJ": {
         "AmmoTypeID": {
@@ -160,12 +197,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "48C748F34CB77185F2F70491ADD30644",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1B4BC0BC4248B68EFE434E9157D0A0D1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "39DA70C64189576F10F8B1AD533E0050",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "BE2FBD754447BD5EFBEF96B13346B4C5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x18.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x18_FMJ.BP_9x18_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -181,7 +272,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x18_FMJ.BP_9x18_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "9x18.TR": {
         "AmmoTypeID": {
@@ -248,12 +344,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "9C32CB3040EEE7FC9F510899EEA05272",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1CB925084C7EBF59AC575EB5768020F9",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "FB6B61FA46C8538F5DC7D29EEE32D82E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "DF4EFF5B45B2ADFBD059298282FAABE6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x18.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x18_TR.BP_9x18_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -269,7 +419,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x18_TR.BP_9x18_TR_C",
+          "SubPathString": ""
+        }
       },
       "9x18.+P": {
         "AmmoTypeID": {
@@ -333,12 +488,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "A6C60C7947E95A3B1060B38982765ADF",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "BB9EA3C44C18787579B50B81B7CCEE41",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "22BE9FBB43AD9A22ADD415854358FBD9",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "960EB8AF4850F8C9BD344CA74073C20A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x18.+P"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x18_PlusP.BP_9x18_PlusP_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -354,7 +563,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x18_PlusP.BP_9x18_PlusP_C",
+          "SubPathString": ""
+        }
       },
       "9x19.FMJ": {
         "AmmoTypeID": {
@@ -418,12 +632,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "ED827E99494724339B251BADC5A9B256",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A43509914F2ADDAC5DE12DA11F0108BE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "CCB2755F4877D115E020CB900D5DCC28",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "B6286240440F4BCD694143911C379A6C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x19.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x19_FMJ.BP_9x19_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -439,7 +707,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x19_FMJ.BP_9x19_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "9x19.Tracer": {
         "AmmoTypeID": {
@@ -506,12 +779,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "F9F318C24615A242CB1C6192BE7D9C1C",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "02F0C83C4BCE599927593D80B54DEBCA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "9E34C51A44B6FE673119B5BAD111A3DE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "141CC2214943B1C6AB609BBB97F8D7C0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x19.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x19_TR.BP_9x19_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -527,7 +854,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x19_TR.BP_9x19_TR_C",
+          "SubPathString": ""
+        }
       },
       "12g.Buckshot": {
         "AmmoTypeID": {
@@ -544,7 +876,7 @@
           "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/12x70/WP_Ammo_12X70_WP_Ammo_12x70_full.WP_Ammo_12X70_WP_Ammo_12x70_full",
           "SubPathString": ""
         },
-        "BulletFleshDamage": 70.0,
+        "BulletFleshDamage": 90.0,
         "AmmoFleshDamageCurve": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -566,7 +898,7 @@
         "PenetrableMaterials": [],
         "BulletBounceMax": 2,
         "AmmoLoudnessModifier": 1.0,
-        "AmmoAccuracyModifier": 5.0,
+        "AmmoAccuracyModifier": 3.0,
         "AmmoWeaponDurabilityModifier": 1.0,
         "DisplayAmmoReliabilityModifier": 1.0,
         "AmmoRecoilModifier": {
@@ -594,12 +926,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "7B233C784776062B0DEAE798769631FF",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "23323D744183FBBD4B5D9D9991926925",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "3637489B4FCFE62B5E0F4A88C48E551F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "DE71075941EBD84DC22FC1828F73F6EC",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.12g.buckshot"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_12g_Buckshot.BP_12g_Buckshot_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -615,7 +1001,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_12g_Buckshot.BP_12g_Buckshot_C",
+          "SubPathString": ""
+        }
       },
       "12g.Slug": {
         "AmmoTypeID": {
@@ -632,7 +1023,7 @@
           "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/12x70/WP_Ammo_12X70_WP_Ammo_12x70_full.WP_Ammo_12X70_WP_Ammo_12x70_full",
           "SubPathString": ""
         },
-        "BulletFleshDamage": 70.0,
+        "BulletFleshDamage": 90.0,
         "AmmoFleshDamageCurve": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -682,12 +1073,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "E3E883F541AD0963530110B7E66D8770",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "B76CA71D421C047DE9319E8CDBF59B3C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "B514D5A84418B795EA38DA93F75E1836",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8331A60B4C0B6F0677EF39A975A6478A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.12g.Slug"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_12g_Slug.BP_12g_Slug_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -703,7 +1148,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_12g_Slug.BP_12g_Slug_C",
+          "SubPathString": ""
+        }
       },
       "12g.SlugTracer": {
         "AmmoTypeID": {
@@ -720,7 +1170,7 @@
           "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/12x70/WP_Ammo_12X70_WP_Ammo_12x70_full.WP_Ammo_12X70_WP_Ammo_12x70_full",
           "SubPathString": ""
         },
-        "BulletFleshDamage": 70.0,
+        "BulletFleshDamage": 90.0,
         "AmmoFleshDamageCurve": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -770,12 +1220,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "048700B54B241424A79B1BB32B4B4094",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A7E0490145311F9087C18CAD54DC2BBB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "0479ADCB4BD30CB77F798983E8ACB108",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "F96619CE43F5B5DEAC5D50B7B1527768",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.12g.SlugTracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_12g_SlugTracer.BP_12g_SlugTracer_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -791,7 +1295,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_12g_SlugTracer.BP_12g_SlugTracer_C",
+          "SubPathString": ""
+        }
       },
       "5.45x39.FMJ": {
         "AmmoTypeID": {
@@ -855,12 +1364,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "C11A97EC48F37A7DF4BC50AF257F4024",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1362BCCB4B201C0976F558B2455DC1BA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "5B8E15AF4699A8837BB9C2A89D42BB79",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "5005D6BE4EE8D0BE2812128BAFBE6398",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.5-45x39.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-45x39_FMJ.BP_5-45x39_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -876,7 +1439,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-45x39_FMJ.BP_5-45x39_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "5.45x39.TR": {
         "AmmoTypeID": {
@@ -943,12 +1511,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "C80F355D4FE32BC3AEEB8AAFA755766B",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "944B59704B9839D1927BBB902C0A117C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "D35F02D64146115BDAF847A0F4A768EE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "39C53F994914637AD9CC2F8A6D3F2B7B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.5-45x39.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-45x39_TR.BP_5-45x39_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -964,7 +1586,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-45x39_TR.BP_5-45x39_TR_C",
+          "SubPathString": ""
+        }
       },
       "5.45x39.BP": {
         "AmmoTypeID": {
@@ -1028,12 +1655,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "43C6D8DE424CB41D4C9EF29C83C8029E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "382EF6434ADEFC36B4CA15A748D01D90",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "98F35FC54B22AA3BE888D5B56B7B5F09",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "C44F749443F5D3103A03C49E70AD71F0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.5-45x39.BP"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-45x39_BP.BP_5-45x39_BP_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1049,7 +1730,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-45x39_BP.BP_5-45x39_BP_C",
+          "SubPathString": ""
+        }
       },
       "5.56x45.FMJ": {
         "AmmoTypeID": {
@@ -1113,12 +1799,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "1985411043FDC20F604AB89E698DF00E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "F88CE193415C1A4C4288C5A27D4B5264",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "A5398B0349508EB7E1DF9681BB12809B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "940D412E4D5E512027C9349EB2A225AF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.5-56x45.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-56x45_FMJ.BP_5-56x45_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1134,7 +1874,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-56x45_FMJ.BP_5-56x45_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "5.56x45.Tracer": {
         "AmmoTypeID": {
@@ -1201,12 +1946,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "9AA68C174DD289F37C804CAB40EB832C",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "E0F0F3A64715AA501937E28BA19CFD8F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "51B147F84A8827CF0410AA967FE44B7C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "65BC65AC420171C3160C8C946CA3055D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.5-56x45.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-56x45_TR.BP_5-56x45_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1222,7 +2021,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_5-56x45_TR.BP_5-56x45_TR_C",
+          "SubPathString": ""
+        }
       },
       "7.62x39.FMJ": {
         "AmmoTypeID": {
@@ -1286,12 +2090,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "187406064E28B4D33ECA9881D5F762E3",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "16C16C3B4B02AC0AA7EA2F9EDFF4145B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "B5A09B60469B8E7A7670A68D92494782",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "6221FC4D42860A32CC9AE3966E1ED69F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.7-62x39.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x39_FMJ.BP_7-62x39_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1307,7 +2165,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x39_FMJ.BP_7-62x39_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "7.62x39.Tracer": {
         "AmmoTypeID": {
@@ -1374,12 +2237,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "9FE3B4D944AEC4A7BACA6C87A10DE342",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "BE702FB2487619CFCABFD1BEAD08EE38",
+              "SourceString": "Medium",
+              "LocalizedString": "Master Volume"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "9C9CF2314F79E640F68312895EE56EDD",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "AF757F4E4EFFC60CE57C85BA2A19ED39",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "9A17FDED4023CEED78AAF49297254599",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.7-62x39.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x39_TR.BP_7-62x39_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1395,7 +2312,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x39_TR.BP_7-62x39_TR_C",
+          "SubPathString": ""
+        }
       },
       "7.62x51.FMJ": {
         "AmmoTypeID": {
@@ -1448,7 +2370,7 @@
           "Y": 0.0,
           "Z": 1.0
         },
-        "AmmoFlatness": 2,
+        "AmmoFlatness": 3,
         "WeaponDurabilityDamage": 0.17,
         "ItemName": {
           "CultureInvariantString": "7.62x51"
@@ -1459,28 +2381,87 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "31AAAD0F4ED305AFB6A22A894E813C1F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "9B73D9EC437B905E8767F89E18AD9D7C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "B7E3ECF04587DD23EE19B692FC7620B6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "5172CF7E4BE747AD7B6594B50A832748",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.7-62x51.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x51_FMJ.BP_7-62x51_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 1.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 1.5,
+        "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 1.5,
+        "ItemSellPrice": 2.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x51_FMJ.BP_7-62x51_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "7.62x51.Tracer": {
         "AmmoTypeID": {
@@ -1533,7 +2514,7 @@
           "Y": 0.0,
           "Z": 1.0
         },
-        "AmmoFlatness": 2,
+        "AmmoFlatness": 3,
         "WeaponDurabilityDamage": 0.17,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1547,28 +2528,87 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "05B1254B4653654C62C6999FFE6513A5",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A5BABAA44CF66A6C57206D863705AD59",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E3FA93774EEBCB44461AE8BEA0E19C46",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "B7D9224E42F13495B8140895D14176AA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.7-62x51.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x51_TR.BP_7-62x51_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 1.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 1.5,
+        "ItemWeight": 2.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 1.5,
+        "ItemSellPrice": 2.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x51_TR.BP_7-62x51_TR_C",
+          "SubPathString": ""
+        }
       },
       "7.62x54R.FMJ": {
         "AmmoTypeID": {
@@ -1621,7 +2661,7 @@
           "Y": 0.0,
           "Z": 1.0
         },
-        "AmmoFlatness": 2,
+        "AmmoFlatness": 3,
         "WeaponDurabilityDamage": 0.22,
         "ItemName": {
           "CultureInvariantString": "7.62x54R"
@@ -1632,12 +2672,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "99BC4FFA41515618A34ABDBE2110FC85",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "C3FEA7A643198B7AEEB1279F1E994D88",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6459F20A42D64F75D417378F488CC5E6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "298776764E40AB09FA24A0B8279FD799",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.7-62x54R.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x54R_FMJ.BP_7-62x54R_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1653,7 +2747,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x54R_FMJ.BP_7-62x54R_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "7.62x54R.Tracer": {
         "AmmoTypeID": {
@@ -1706,7 +2805,7 @@
           "Y": 0.0,
           "Z": 1.0
         },
-        "AmmoFlatness": 2,
+        "AmmoFlatness": 3,
         "WeaponDurabilityDamage": 0.22,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1720,12 +2819,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "C95A924E411F97F40F4917965E9595D1",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "264057754CE2F04172D63F9A816490E9",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "485A27E24EB6AECC32965091E75A891F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "60411FD7434C41069AF095916ADB5D53",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.7-62x54R.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x54R_TR.BP_7-62x54R_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1741,7 +2894,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_7-62x54R_TR.BP_7-62x54R_TR_C",
+          "SubPathString": ""
+        }
       },
       "9x39.FMJ": {
         "AmmoTypeID": {
@@ -1805,12 +2963,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "8C7F86CF4765D77CB60165B8184C3CD7",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "FEC15C9545A79B5AF796E9BD8017B3E5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "B6E0F69A45275FED80C398B96A02D011",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "5DB1868F48E816613F24088E9BA77DD1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x39.FMJ"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x39_FMJ.BP_9x39_FMJ_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1826,7 +3038,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x39_FMJ.BP_9x39_FMJ_C",
+          "SubPathString": ""
+        }
       },
       "9x39.Tracer": {
         "AmmoTypeID": {
@@ -1893,12 +3110,66 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "1C32A9A44CC6CA246887F5B411BFA9CB",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "BBEA6866475FC17C2F79BD87D7684C64",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "354F9C0F4DC80CFAF0BB1497E3DE249C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "0450E84E446889CC569822A5613DDD77",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.9x39.Tracer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x39_TR.BP_9x39_TR_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1914,7 +3185,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_9x39_TR.BP_9x39_TR_C",
+          "SubPathString": ""
+        }
       },
       "Cig": {
         "AmmoTypeID": {
@@ -1981,12 +3257,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "70CB19544498521793834B86BD282B77",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.Explorers.Supplies"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "9EADDE5F4D9124F9EBB4FAB3CFE115F8",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "063D2EBD42CFA3E4605D9BB8D3CC60DD",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "221A23D54861351DD51318BC1DC36FFE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.Cig"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cig.BP_Cig_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
@@ -2002,7 +3310,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 500.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 500.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cig.BP_Cig_C",
+          "SubPathString": ""
+        }
       },
       "Fish": {
         "AmmoTypeID": {
@@ -2069,12 +3382,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "9651F3AB4C9AE337D10D9F9A606D8DED",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.Explorers.Supplies"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "AB69F4E2488EB0A5AEFCF083237EF19D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "9902658B4D822076FE871C8F0BD7AD67",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "28EE5AA0400D7F0FB36DEB9003984CDA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Consumable.Can_Fish"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CanFish.BP_CanFish_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
@@ -2090,7 +3435,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 14000.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 14000.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CanFish.BP_CanFish_C",
+          "SubPathString": ""
+        }
       },
       "Cracker": {
         "AmmoTypeID": {
@@ -2157,12 +3507,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "6232D3774C098B2C3A67F8A255DCEA66",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.Explorers.Supplies"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "4FB388AD41E3FF87E269F283D152BC31",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6D797531479355C4EAC4B98B1936022B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "300D5CA547AC5048A78BE39BAE2461E3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.Cracker"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker.BP_Cracker_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
@@ -2178,7 +3560,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 4500.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 4500.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker.BP_Cracker_C",
+          "SubPathString": ""
+        }
       },
       "Cracker_Bitten_1": {
         "AmmoTypeID": {
@@ -2245,12 +3632,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "8C9581B846117E132265AA96C688923D",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "26C047D44C8DC039F3BC8093B34313D2",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "7A7184FA4BC405F6DF68E58E6A5C12B3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8B0F3B6D4B4D2FCC7C489BAE68187FA0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.Cracker.Bitten_1"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_1.BP_Cracker_bitten_1_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
@@ -2266,7 +3685,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 3500.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 3500.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_1.BP_Cracker_bitten_1_C",
+          "SubPathString": ""
+        }
       },
       "Cracker_Bitten_2": {
         "AmmoTypeID": {
@@ -2333,12 +3757,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "549E0F6B4CAC59573D6FA8A2F40F5106",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "12A9695F43F8423074158DB04CAA8834",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "FF36E380459D2EA1B1E7AABADBFB56EA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "BCCD3B454C72AB314D3AF8ADBCC1C320",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.Cracker.Bitten_2"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_2.BP_Cracker_bitten_2_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
@@ -2354,7 +3810,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 2000.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 2000.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_2.BP_Cracker_bitten_2_C",
+          "SubPathString": ""
+        }
       },
       "White_Checker": {
         "AmmoTypeID": {
@@ -2371,7 +3832,7 @@
           "AssetPathName": "/Game/ITR2/Art/Items/Misc/Checkers_BoardGame/White_Checker.White_Checker",
           "SubPathString": ""
         },
-        "BulletFleshDamage": 30.0,
+        "BulletFleshDamage": 0.0,
         "AmmoFleshDamageCurve": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2421,28 +3882,65 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "271EF07E4240F518DE6B1A82ECE0912E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "11AE540F4B3F3B3EA783FAA99A76DBBD",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "934291FE45AE59CD91CC2D978F4DEE8E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "1E3075B546AC016862696DA5E0AFA9B0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.Checkers.White"
         },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Checker_White_Item_New.BP_Checker_White_Item_New_C",
-          "SubPathString": ""
-        },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DamageToDurabilityMultiplier": 1.0,
-        "DestroyOnZeroDurability": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
+        "ItemPurchasePrice": 5.0,
         "ItemSellPrice": 1.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Checker_White_Item_New.BP_Checker_White_Item_New_C",
+          "SubPathString": ""
+        }
       },
       "Black_Checker": {
         "AmmoTypeID": {
@@ -2459,7 +3957,7 @@
           "AssetPathName": "/Game/ITR2/Art/Items/Misc/Checkers_BoardGame/Black_Checker.Black_Checker",
           "SubPathString": ""
         },
-        "BulletFleshDamage": 30.0,
+        "BulletFleshDamage": 0.0,
         "AmmoFleshDamageCurve": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -2509,28 +4007,190 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "92B78724414508FE7ADE12B9A55540C6",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "6F25D4CD497A1F6E50B87787D390A41D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "5827A56145BBD1D1303727B9C21B16ED",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "247AB3A04769A87A923CB299FC8CDA4F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Ammo.Checkers.Black"
         },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Checker_Black_Item_New.BP_Checker_Black_Item_New_C",
-          "SubPathString": ""
-        },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": true,
-        "DamageToDurabilityMultiplier": 1.0,
-        "DestroyOnZeroDurability": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
         "ItemWeight": 0.5,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
+        "ItemPurchasePrice": 5.0,
         "ItemSellPrice": 1.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Checker_Black_Item_New.BP_Checker_Black_Item_New_C",
+          "SubPathString": ""
+        }
+      },
+      "Dice": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.Checkers.Dice"
+        },
+        "AmmoType": {
+          "TagName": "None"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Misc/Checkers_BoardGame/White_Checker.White_Checker",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 0.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 750.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.05,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 1.0,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 0,
+        "WeaponDurabilityDamage": 0.0,
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "DEA78319497B77E2DB1D08AD7833B0B3",
+          "SourceString": "Dice",
+          "LocalizedString": "You've dropped some items, go pick them up"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F0CD331C4E304B491FBDBC9ABB32A39A",
+          "SourceString": "A set of dice for board games.",
+          "LocalizedString": "A set of dice for board games."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "DA01F8814BFBDBFB993313A3409071A6",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "9BB2A1E144761C17833130A25D9C07C9",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "8AEF781B4150D0B89FAED09153AA21ED",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8838FE37410B7662E3CE46ACA6BECFF6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.Checkers.Dice"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 0.5,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 5.0,
+        "ItemSellPrice": 1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_Dice.BP_Dice_C",
+          "SubPathString": ""
+        }
       }
     }
   }

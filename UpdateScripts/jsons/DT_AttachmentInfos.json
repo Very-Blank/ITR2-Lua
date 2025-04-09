@@ -48,28 +48,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "A48518A2480B1335F43C51B4AD8D7A7F",
-          "SourceString": "OSS-1 Telescopic Sight (D)",
+          "SourceString": "Rifle Scope with D-mount",
           "LocalizedString": "PSO D"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "619A9FBF4D2BB8C05B76A880BF0A0050",
+          "SourceString": "Telescopic sight with medium magnification.\r\nOnly for firearms with dovetail mount.",
+          "LocalizedString": "Mag Reload"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "693685E44555344CA60985932CA6CCCE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "1261070549DA48851F9396928240FDD6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "FCF57707488BC483BA61268F1E9A99A0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Dovetail.Scope.PSO"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_PSO.BP_Scope_PSO_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 45.0,
+        "ItemWeight": 55.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2500.0,
         "ItemSellPrice": 750.0,
@@ -78,7 +110,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_PSO.BP_Scope_PSO_C",
+          "SubPathString": ""
+        }
       },
       "Scope.Cobra": {
         "InfoParametersChange": [],
@@ -118,21 +155,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "38DD39B8451B080F40BD05B42A4282C6",
-          "SourceString": "KCS Sight (D)",
+          "SourceString": "Collimator Sight with D-mount",
           "LocalizedString": "Cobra D"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "Key": "348ADCEF4C776BAC12F92EA36AD2F59B",
+          "SourceString": "\r\nOnly for firearms with dovetail mount.",
+          "LocalizedString": "MAP"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "54632FBC473811471F3312974D4FEC1B",
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "5D082BFB48400EDEAA770B896425AA32",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "8E67BF8641651EE170D689AF11F13362",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "299CFF8B48C1CB8DD6AB21B1E935B925",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Dovetail.Scope.Cobra"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_Cobra.BP_RDS_Cobra_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -148,7 +217,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_Cobra.BP_RDS_Cobra_C",
+          "SubPathString": ""
+        }
       },
       "45DegRail": {
         "InfoParametersChange": [],
@@ -188,21 +262,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D8731D434F420D0AF84CB299AB12BE63",
-          "SourceString": "45 Degree Rail (R)",
+          "SourceString": "45 Degree Rail (L)",
           "LocalizedString": "45 Degree Rail R"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "768F624B443FC67750EDCDAE68B890D9",
+          "SourceString": "A left-side offset rail for placing attachments.\r\nCan be attached to any rail.",
+          "LocalizedString": "Mickey Mouse"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "305D9DDF408AC6BB99AE64847AEDE60A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "FEF3ED69460B3E2C48DE3EB83A7CCC19",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2FA745BB48ED9D97704504AA34CD1D92",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.45deg"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_45deg.BP_Rail_45deg_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -218,7 +324,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_45deg.BP_Rail_45deg_C",
+          "SubPathString": ""
+        }
       },
       "45DegRail_R": {
         "InfoParametersChange": [],
@@ -258,21 +369,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "513CC1564152D42602FC448EF95E0A2C",
-          "SourceString": "45 Degree Rail Right (R)",
+          "SourceString": "45 Degree Rail (R)",
           "LocalizedString": "45 degree rail right R"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "9CCB8D964B741D8A7FAD0FAF5CECFDA7",
+          "SourceString": "A right-side offset rail for placing attachments.\r\nCan be attached to any rail.",
+          "LocalizedString": "Network Players Count: {Num}\r\nPlayer States Count: {States}\r\nPlayer Controllers Count: {Controllers}"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "EC6BD20F48414E74754169B4ED81D78D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "87F35256447B43F9F11C69994580978B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "9EAC486642CFFF7CF9A07585A710F466",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.45deg_R"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_45deg_R.BP_Rail_45deg_R_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -288,7 +431,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_45deg_R.BP_Rail_45deg_R_C",
+          "SubPathString": ""
+        }
       },
       "PK06": {
         "InfoParametersChange": [],
@@ -328,21 +476,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "1B23856E4D678E2EE3C789819B60B50A",
-          "SourceString": "KRS06 Scope (R)",
+          "SourceString": "Collimator Sight",
           "LocalizedString": "PK6 R"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "B9AD80174F44DE9586058F93FB0369ED",
+          "SourceString": "Collimator sight with red reticle.\r\nCan be attached to rail.",
+          "LocalizedString": "Projectile Draw"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "F7F2E1A84BBEB89A824477892BA0EEA7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6C690543413BDD7E14A6E0978403BE67",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "448DFADE4D0295B01EC637A99B9EE91F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.PK6"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_PK6.BP_RDS_PK6_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -358,7 +538,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_PK6.BP_RDS_PK6_C",
+          "SubPathString": ""
+        }
       },
       "Scope.HG": {
         "InfoParametersChange": [],
@@ -398,28 +583,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "DB72D1564F8E2A5F09835F87D0845524",
-          "SourceString": "Scope HG (R)",
+          "SourceString": "Handgun Scope",
           "LocalizedString": "Scope HG R"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "CEF5AA2549BE22CA864E4D8751CA54B5",
+          "SourceString": "Telescopic sight with medium magnification.\r\nCan be attached to rail.",
+          "LocalizedString": "Projectile Log [All]"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "11E6CA754F10FE210D7CA3A6F22DA86A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "4BDF56964BC6B7D3397B108E4484C1D3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "4911681A4FFAD6E36B50538B4AFEA902",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.HG"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_HG.BP_Scope_HG_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 45.0,
+        "ItemWeight": 55.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 3000.0,
         "ItemSellPrice": 900.0,
@@ -428,7 +645,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_HG.BP_Scope_HG_C",
+          "SubPathString": ""
+        }
       },
       "Attachment.Flashlight": {
         "InfoParametersChange": [],
@@ -468,21 +690,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "E54632C24DD58436E4BCD28AD5DA1E62",
-          "SourceString": "Small Flashlight (R)",
+          "SourceString": "Weapon Flashlight",
           "LocalizedString": "Flashlight small R"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "4ADA989344A5B2038419A089C8B5CE76",
+          "SourceString": "A flashlight to be attached to firearms and helmets with rail.",
+          "LocalizedString": "Projectile Log [Player]"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "324C4E354DD25FA11956389B68D6C52A",
+          "SourceString": "<b>Hold #BTN_Top/# + #BTN_Trigger/#</b> to switch on.\r\n<b>Hold #BTN_Bottom/# + Grip</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Top/# + #BTN_Trigger/#</b> to switch on.\r\n<b>Hold #BTN_Bottom/# + Grip</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Others"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "F43ADCC84D74420B14CDD8AF6700331A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "502271324A0C32B0C5B484B5CB09DF49",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "224C03094F737A71DD0863B561BDDFE8",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
-          "TagName": "Item.Attachment.Rail.Illumination.SmallFalshlight"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Illumination/BP_Att_Flashlight_small.BP_Att_Flashlight_small_C",
-          "SubPathString": ""
+          "TagName": "Item.Attachment.Rail.Illumination.SmallFlashlight"
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -498,7 +752,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Illumination/BP_Att_Flashlight_small.BP_Att_Flashlight_small_C",
+          "SubPathString": ""
+        }
       },
       "OverUnder": {
         "InfoParametersChange": [],
@@ -538,28 +797,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "8684868949F5EBE016AEDF8E753C6E4F",
-          "SourceString": "Handgun Rail Mount",
+          "SourceString": "Handgun Rail",
           "LocalizedString": "Blink"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "659CE43B4CBEFF3A13465C9F2EEDE9FC",
+          "SourceString": "A rail for placing attachments.\r\nUse it with modified pistols.",
+          "LocalizedString": "Search Server"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "7B441E1F45697C07226954AB791A0C13",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "853F77C24E2DCFEB3329CF9486C789A2",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "03A6394E4AF5BEA20DCA5C8275AB1663",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.UnderOver"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_PistolOverUnder.BP_Rail_PistolOverUnder_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 15.0,
+        "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1200.0,
         "ItemSellPrice": 360.0,
@@ -568,7 +859,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_PistolOverUnder.BP_Rail_PistolOverUnder_C",
+          "SubPathString": ""
+        }
       },
       "Attach.Pointer.small": {
         "InfoParametersChange": [],
@@ -608,21 +904,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D242166B4F9A76026DA094913BA04ABD",
-          "SourceString": "Small Laser Pointer (R)",
+          "SourceString": "Laser Sight",
           "LocalizedString": "Laser Pointer small R"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "37F8863E4F79E088204E55966D076F8D",
+          "SourceString": "Universal laser sight. Can be attached to firearms with rail.",
+          "LocalizedString": "Select a slot to load the Multiplayer Game"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "324C4E354DD25FA11956389B68D6C52A",
+          "SourceString": "<b>Hold #BTN_Top/# + #BTN_Trigger/#</b> to switch on.\r\n<b>Hold #BTN_Bottom/# + Grip</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Top/# + #BTN_Trigger/#</b> to switch on.\r\n<b>Hold #BTN_Bottom/# + Grip</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Others"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1084C1914D588947EFA96389D9AA06FA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "EE3DEE10481ED4AF444AF4A6BBC12D89",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "F14C22F24ADAE41A55900B951D105059",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Illumination.Pointer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Illumination/BP_Att_Pointer_small.BP_Att_Pointer_small_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -638,7 +966,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Illumination/BP_Att_Pointer_small.BP_Att_Pointer_small_C",
+          "SubPathString": ""
+        }
       },
       "DovetailToRail": {
         "InfoParametersChange": [],
@@ -678,28 +1011,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "813AE1F542373E339D5BD4BF3459D715",
-          "SourceString": "Dovetail Mount to Rail (D)",
+          "SourceString": "Rail with D-mount",
           "LocalizedString": "Mount Dovetail to Rail D"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "9AD8404E43A2443A0AE5DBB692259383",
+          "SourceString": "A rail for placing attachments.\r\nOnly for firearms with dovetail mount.",
+          "LocalizedString": "SomeItemData"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A06501474DFF6ED19C1AED8BFAE83B5C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "A8FD2FEB4359DEC1DB34499868321F9E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "90D667E24269E4BAA9DDD5AC335699C3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Dovetail.ToRail"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_DovetailToRail.BP_DovetailToRail_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 25.0,
+        "ItemWeight": 35.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1500.0,
         "ItemSellPrice": 450.0,
@@ -708,7 +1073,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_DovetailToRail.BP_DovetailToRail_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.545x39.Base": {
         "InfoParametersChange": [
@@ -757,21 +1127,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "65D517BA45B7D0E4ED14408C55C46F23",
-          "SourceString": "Basic AK-74 Muzzle",
+          "SourceString": "AK-74 Muzzle Brake",
           "LocalizedString": "Base AK74 Muzzle"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "F58012C9496AFC1584FE149CB8726EAB",
+          "SourceString": "Little acoustic reduction and medium recoil compensation for AK series of 5.45x39 caliber and OTs-14 Groza rifle.",
+          "LocalizedString": "Little acoustic reduction and medium recoil compensation for AK series of 5.45x39 caliber and OTs-14 Groza rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "968C429240D5AE510D2AC5BCE75F423F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "492604D443AE13264B3D57BB4AA478AC",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "EE7E8D404F15BF051C53FC800A1B23D0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.BaseMuzzle"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_Base.BP_MuzzleAK_Base_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -787,7 +1189,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_Base.BP_MuzzleAK_Base_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.545x39.DTK2": {
         "InfoParametersChange": [
@@ -836,28 +1243,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "509274934B334749F7A6C79A5FA1D09A",
-          "SourceString": "MB-2 Muzzle Brake for AK",
+          "SourceString": "Light Muzzle Brake for 5.45 AKs",
           "LocalizedString": "DTK2 AK"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "10CB83BF464E37C9406EB5B2BA672FAE",
+          "SourceString": "Little acoustic reduction and medium recoil compensation for AK series of 5.45 caliber and OTs-14 Groza rifle.",
+          "LocalizedString": "Little acoustic reduction and medium recoil compensation for AK series of 5.45 caliber and OTs-14 Groza rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "3C15712D4EB034EFC7FE3B90407372A4",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "271CDC854B7962820A04CF8C3D1CBB7E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "ECDB7E7348EA7785D89D3E95D4F65FB1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.DTK2"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_DTK2.BP_MuzzleAK_DTK2_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 20.0,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1000.0,
         "ItemSellPrice": 300.0,
@@ -866,7 +1305,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_DTK2.BP_MuzzleAK_DTK2_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.545x39.DTK1": {
         "InfoParametersChange": [
@@ -919,21 +1363,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "ECA997DF42B5FA87EF7A4E833DDF91A7",
-          "SourceString": "MB-1 Muzzle Brake for AK",
+          "SourceString": "Heavy Muzzle Brake for 5.45 AKs",
           "LocalizedString": "DTK1 AK"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "CF0D570A418BD971419B1FA975EDB031",
+          "SourceString": "Medium acoustic reduction and great recoil compensation for AK series of 5.45 caliber and OTs-14 Groza rifle.",
+          "LocalizedString": "Medium acoustic reduction and great recoil compensation for AK series of 5.45 caliber and OTs-14 Groza rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "F6A236844CE3BAEDAE9F5584791A27F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "597D98AA4669BE4BC78BE0B9F9B8E86A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "6F0AA2144ABEDDB368EE65AEA3FA03A0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.DTK1"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_DTK1.BP_MuzzleAK_DTK1_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -949,7 +1425,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_DTK1.BP_MuzzleAK_DTK1_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.545x39.M11": {
         "InfoParametersChange": [
@@ -1002,21 +1483,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "A61A39AD49F19A3EB041599CBFD1D4ED",
-          "SourceString": "B11 Muzzle Brake for AK",
+          "SourceString": "Adv. Muzzle Brake for 5.45 AKs",
           "LocalizedString": "M11 AK Muzzle"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "00E88BDB4F05B5FBBDF3C09721273800",
+          "SourceString": "Medium acoustic reduction and best recoil compensation for AK series of 5.45x39 caliber and OTs-14 Groza rifle.",
+          "LocalizedString": "Medium acoustic reduction and best recoil compensation for AK series of 5.45x39 caliber and OTs-14 Groza rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1BEBD73C47ADDA779597498AA27F35FD",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "3AE932F24375CD72755D949D3D7E240A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "EC36C2D9497BCF65EF07A6B264896CBA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.M11"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_M11.BP_MuzzleAK_M11_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1032,7 +1545,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAK_M11.BP_MuzzleAK_M11_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.545x39.AKSu": {
         "InfoParametersChange": [
@@ -1085,28 +1603,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "76352AE943F186FDB5E83AAC3A33B385",
-          "SourceString": "Basic AKS-74U Muzzle",
-          "LocalizedString": "Basic AKS-74U Muzzle"
+          "SourceString": "AKS-74U Muzzle Brake",
+          "LocalizedString": "AKS-74U Muzzle Brake"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "D026D0094FBB1D34A81621BEDDD2FB8D",
+          "SourceString": "Little acoustic reduction and recoil compensation for AK series of 5.45x39 caliber and OTs-14 Groza rifle.",
+          "LocalizedString": "Little acoustic reduction and recoil compensation for AK series of 5.45x39 caliber and OTs-14 Groza rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1858D2C24CC4C2F502D38C8AB737B117",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "D15809F9421E848E43D1AF9EE8B05438",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "5BF9C1F7444154F281A937AF1F064D85",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.AKSuBase"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAKSu_Base.BP_MuzzleAKSu_Base_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 20.0,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 500.0,
         "ItemSellPrice": 50.0,
@@ -1115,7 +1665,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAKSu_Base.BP_MuzzleAKSu_Base_C",
+          "SubPathString": ""
+        }
       },
       "Silencer.545x39": {
         "InfoParametersChange": [
@@ -1163,7 +1718,7 @@
           "FleshDamageModifier": 1.0,
           "BulletInitialVelocityModifier": 1.05,
           "FireRate": 1.0,
-          "ShotLoudness": 0.7
+          "ShotLoudness": 0.5
         },
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -1173,23 +1728,55 @@
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "F1AB793540B6035B1B7DEF962CAA90FF",
+          "SourceString": "A silencer for AK series and modified SKS and OTs-14 Groza. Greatly reduces the acoustic intensity and slightly compensates recoil.",
+          "LocalizedString": "Return art to PC"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Silencers"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "DC0662D246CDA837B49A6FAE57730126",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "724AFDBF4E42969CD3DAC79673068F91",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "022365D149EDE2DFBEA82C9E12D2119A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Silencer.5_45x39.Silencer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_5_45.BP_Silencer_5_45_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 45.0,
+        "ItemWeight": 40.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 3000.0,
         "ItemSellPrice": 900.0,
@@ -1198,7 +1785,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_5_45.BP_Silencer_5_45_C",
+          "SubPathString": ""
+        }
       },
       "Silencer.Pistol": {
         "InfoParametersChange": [
@@ -1246,33 +1838,65 @@
           "FleshDamageModifier": 1.0,
           "BulletInitialVelocityModifier": 1.05,
           "FireRate": 1.0,
-          "ShotLoudness": 0.6
+          "ShotLoudness": 0.45
         },
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "0102A4E14C106F27FF73A89EB79CF6E6",
-          "SourceString": "Pistol Silencer",
+          "SourceString": "Handgun Silencer",
           "LocalizedString": "Silencer Pistol"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "9C991E91421943C8FE951AA625D8A373",
+          "SourceString": "Reduces the acoustic intensity and slightly compensates recoil.\r\nOnly for modified handguns.",
+          "LocalizedString": "Stop Time"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Silencers"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "7DD4B5A14C7ED6F94477289E9A4A8244",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "A8789FFF4F8FFCFEA16E79A1A3A0EF5A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8B6646424977A88860B8FF9CCFEF7247",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Silencer.Pistol.Psilencer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_Pistol.BP_Silencer_Pistol_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 30.0,
+        "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2000.0,
         "ItemSellPrice": 600.0,
@@ -1281,7 +1905,132 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_Pistol.BP_Silencer_Pistol_C",
+          "SubPathString": ""
+        }
+      },
+      "Silencer.556x45": {
+        "InfoParametersChange": [
+          {
+            "Key": "EWeaponInfoParameter::Recoil",
+            "Value": -5
+          },
+          {
+            "Key": "EWeaponInfoParameter::Loudness",
+            "Value": -30
+          },
+          {
+            "Key": "EWeaponInfoParameter::Flatness",
+            "Value": 5
+          }
+        ],
+        "AccuracyParametersChange": {
+          "AccuracyMax": 1.0,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 1.0
+        },
+        "RecoilParametersChange": {
+          "MultVerticalRecoil": 1.0,
+          "MultHorizontalRecoil": 1.0,
+          "MultForwardRecoil": 1.0,
+          "StabilizedVerticalRecoil": {
+            "Min": 0.95,
+            "Max": 0.95
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 0.95,
+            "Max": 0.95
+          },
+          "StabilizedForwardRecoil": {
+            "Min": 0.95,
+            "Max": 0.95
+          },
+          "RecoilAutoFireCoefficient": 0.95,
+          "RecoilDecayRate": 1.0,
+          "StabilizedRecoilDecayRate": 1.0,
+          "DisplayRecoil": 1.0
+        },
+        "WeaponParametersChange": {
+          "InternalMagCapacity": 0,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.05,
+          "FireRate": 1.0,
+          "ShotLoudness": 0.5
+        },
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "97BD1FC74CB535914D4909945876BCB8",
+          "SourceString": "NATO Silencer",
+          "LocalizedString": "HMD"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C1B09AEC4666D4551A296EBE84D7C0DB",
+          "SourceString": "Greatly reduces the acoustic intensity and slightly compensates recoil.",
+          "LocalizedString": "Greatly reduces the acoustic intensity and slightly compensates recoil."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Silencers"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "B8133B9C4C5FA213B41FF680864BBCA1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "CE575BEF42AB8F97FE2BFB86183FF017",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "61BB90624C4479AAD666A9AD671E0FEA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Silencer.5_56x45.Silencer"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 40.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 3000.0,
+        "ItemSellPrice": 900.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_5_56.BP_Silencer_5_56_C",
+          "SubPathString": ""
+        }
       },
       "Scope.NF": {
         "InfoParametersChange": [],
@@ -1321,28 +2070,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "ECB66A2C47D78A4C5D348FBAAE7B41CF",
-          "SourceString": "Scope NF",
+          "SourceString": "Variable Magnification Rifle Scope",
           "LocalizedString": "Anomaly cluster ahead. Use the detector to help locate it."
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "6E2FD76F4B41C305AB790DA23A17838A",
+          "SourceString": "Telescopic sight with variable magnification.\r\nCan be attached to rail.",
+          "LocalizedString": "Shop Item Box"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "DA4670F1403EE0E8B6DA148306288EB7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "F8AB15014F85C0036C9F35BE15214BC3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "561FD8944995D6A8570B4EAE5930E2B5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.NF"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_NF.BP_Scope_NF_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 60.0,
+        "ItemWeight": 70.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 5500.0,
         "ItemSellPrice": 1650.0,
@@ -1351,10 +2132,20 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_NF.BP_Scope_NF_C",
+          "SubPathString": ""
+        }
       },
       "Griphandle.Vertgrip": {
-        "InfoParametersChange": [],
+        "InfoParametersChange": [
+          {
+            "Key": "EWeaponInfoParameter::Recoil",
+            "Value": -5
+          }
+        ],
         "AccuracyParametersChange": {
           "AccuracyMax": 1.0,
           "AccuracyMultiplier": 1.0,
@@ -1365,20 +2156,20 @@
           "MultHorizontalRecoil": 1.0,
           "MultForwardRecoil": 1.0,
           "StabilizedVerticalRecoil": {
-            "Min": 1.0,
-            "Max": 1.0
+            "Min": 0.95,
+            "Max": 0.95
           },
           "StabilizedHorizontalRecoil": {
-            "Min": 1.0,
-            "Max": 1.0
+            "Min": 0.95,
+            "Max": 0.95
           },
           "StabilizedForwardRecoil": {
-            "Min": 1.0,
-            "Max": 1.0
+            "Min": 0.95,
+            "Max": 0.95
           },
           "RecoilAutoFireCoefficient": 1.0,
-          "RecoilDecayRate": 1.0,
-          "StabilizedRecoilDecayRate": 1.0,
+          "RecoilDecayRate": 1.05,
+          "StabilizedRecoilDecayRate": 1.05,
           "DisplayRecoil": 1.0
         },
         "WeaponParametersChange": {
@@ -1389,39 +2180,76 @@
           "ShotLoudness": 1.0
         },
         "ItemName": {
-          "Namespace": "",
-          "Key": "C84111234F1F150DE869668FA2F55437",
-          "SourceString": "Vertical Grip Handle",
-          "LocalizedString": "Vertical Grip Handle"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "A42F08564F6C1368597EF6818BA9D5DA",
+          "SourceString": "Vertical Foregrip",
+          "LocalizedString": "Study the map in the tablet. Take a look around the store and get a briefing."
         },
         "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "B966011E4DFC0CB405325DBFC3F7C4C4",
+          "SourceString": "Allows for an alternative grip with the off-hand, slightly reducing recoil.\r\nCan be attached to any rail.",
+          "LocalizedString": "Study the map in the tablet. Take a look around the store and get a briefing."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
           "Namespace": "",
-          "Key": "B6AC96A74A80C2514FF9A7B7C307F789",
+          "Key": "37B3C4DF453623238B32DA9FB006D41D",
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Others"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "AD89E00D468B885475CEE88C188C5160",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "ECE4B07749EDEE2BB4FB2AB30243E844",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "6A54CBFD4FFA2FC94AC300BD08770205",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.GripHandle.VertGrip01"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Grips/BP_VertGrip01.BP_VertGrip01_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 1.0,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": -1.0,
+        "ItemPurchasePrice": 1000.0,
+        "ItemSellPrice": 300.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Grips/BP_VertGrip01.BP_VertGrip01_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Handle.Basic": {
         "InfoParametersChange": [],
@@ -1470,12 +2298,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "41964C97489A83B536E4E596DD0E1916",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "0408B1D94CC6935940BCABAB78B91F0C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "865305744EAC54C53EB1D89FAE9C0829",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8DDA3B8D4150DC18F3BC63B76EDA3FB8",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Handle.AK74.Basic"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handle_Basic.BP_Ak74_Handle_Basic_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1491,7 +2351,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handle_Basic.BP_Ak74_Handle_Basic_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Handle.Ergo": {
         "InfoParametersChange": [],
@@ -1540,12 +2405,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "7524C96340713B943CFA5F9AA9FAC409",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "71B6D99545965CF5EC00C783353214A1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "ECEA39264BDBC508A6B7EAA99B06915C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "C2CAF14B42D4E95D229A619728AAA897",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Handle.AK74.Ergo"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handle_Ergo1.BP_Ak74_Handle_Ergo1_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1561,7 +2458,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handle_Ergo1.BP_Ak74_Handle_Ergo1_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Lid.Basic": {
         "InfoParametersChange": [],
@@ -1610,12 +2512,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "4717AF344AFCCD67CBAF07A73323A66D",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "2DE703D3484AB634BE49C99522756F04",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "97E78C024303A7C22FA050929FF96BAA",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "687B1E944B11B312A951D8A23F78956D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Lid.AK74.Basic"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Lid_Basic.BP_Ak74_Lid_Basic_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1631,7 +2565,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Lid_Basic.BP_Ak74_Lid_Basic_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Lid.Rail01": {
         "InfoParametersChange": [],
@@ -1680,12 +2619,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "ADBF467C487537D2DDE8BDA98F454BA9",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "E0B6F1ED4222DC4319FB429053FC69FB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "89FE8C3A40130FF0CFB3F39AD79FAD0B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "B38D277C4A430828E691A5BC13562536",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Lid.AK74.Rail"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Lid_Rail1.BP_Ak74_Lid_Rail1_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1701,7 +2672,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Lid_Rail1.BP_Ak74_Lid_Rail1_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Stock.Wood": {
         "InfoParametersChange": [],
@@ -1750,12 +2726,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "71D20D1A462D7F38D05CEB8D217EE2E5",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "2BAA950A4698C172F834229C0E7A2EBC",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "C33C7A2043CD384BD00337B5352236BF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "47D3A73440A321B8C3A4CB86FF63CF6B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Stock.Ak74.Wood"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Stock_Wood.BP_Ak74_Stock_Wood_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1771,7 +2779,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Stock_Wood.BP_Ak74_Stock_Wood_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Stock.FoldingFrame": {
         "InfoParametersChange": [],
@@ -1820,12 +2833,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "66F3882541A385E9B63E7B9840701394",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "942717954F8C7F661DDBB18D49EDBFDB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "97EAB6B94CDDB5A9790D29A45D51F778",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "46CF294C440CCB4ACF55D0BE81479C30",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Stock.Ak74.FoldingFrame"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Stock_FoldingFrame.BP_Ak74_Stock_FoldingFrame_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1841,7 +2886,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Stock_FoldingFrame.BP_Ak74_Stock_FoldingFrame_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Handguard.Wood": {
         "InfoParametersChange": [],
@@ -1890,12 +2940,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "5F0129DD4177EC847C4649B51D653B4E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "0CF271714749E8E2E129E396675329FB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6895F70C4B25B848D5B5C795C13D0301",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2D1EB2644BF48F3C5899FB95574E6443",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Handguard.Ak74.Wood"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handguard_Wood.BP_Ak74_Handguard_Wood_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1911,7 +2993,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handguard_Wood.BP_Ak74_Handguard_Wood_C",
+          "SubPathString": ""
+        }
       },
       "Module.Ak74.Handguard.Rail01": {
         "InfoParametersChange": [],
@@ -1960,12 +3047,44 @@
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "F82369C7471A96CB8F4DC3A03EA7BF7E",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1F2D62F040FA7095C5759A9BBB053F66",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "D6013EEB4226AAF5B462289601C2C8C5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "E5125AB1495364670F3899A3BE3EBE77",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
         "ItemId": {
           "TagName": "Item.Attachment.Modules.Handguard.Ak74.Rail"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handguard_Rail1.BP_Ak74_Handguard_Rail1_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -1981,7 +3100,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AK74/AK74Parts/BP_Ak74_Handguard_Rail1.BP_Ak74_Handguard_Rail1_C",
+          "SubPathString": ""
+        }
       },
       "ShotgunDB_RailMiddle": {
         "InfoParametersChange": [],
@@ -2021,21 +3145,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "4AC02E4344332496B64AFC9B08A19A75",
-          "SourceString": "DB Shotguns Middle Rail",
+          "SourceString": "Top Rail for IZh-27",
           "LocalizedString": "Go to the location"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "71D72654483D35624AA69B83A172AEB3",
+          "SourceString": "A rail for placing attachments over the barrel.",
+          "LocalizedString": "System"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "86B2FBC144F8192D632066B71684EED0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "9F4C268049DED93E017EF7ACB5049AC0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "40AC4A0E4B81BA0CC78035AC4F0BDA90",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.ShotgunRail"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_ShotgunDB_Middle.BP_Rail_ShotgunDB_Middle_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -2051,7 +3207,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_ShotgunDB_Middle.BP_Rail_ShotgunDB_Middle_C",
+          "SubPathString": ""
+        }
       },
       "ShotgunsDB_RailUnderBarrel": {
         "InfoParametersChange": [],
@@ -2091,21 +3252,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D9BF01024758AD92042B52A2F7B7EB7F",
-          "SourceString": "DB Shotgun Under Barrel Rail",
+          "SourceString": "Underbarrel Rail for IZh-27",
           "LocalizedString": "Go to the location"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "8FADF83944C349C5755B56B27622266B",
+          "SourceString": "A rail for placing attachments under the barrel.",
+          "LocalizedString": "Tech"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "AE3FCADE43E95A8C13C967BD5DD29BD4",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "8DCE39D74E37C6B2B646E1B40DA9DF4A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "60B37E8643BC31065ED1E89851A8B59B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.UnderBarrelRail"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_ShotgunDB_Underbarrel.BP_Rail_ShotgunDB_Underbarrel_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -2121,160 +3314,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "M4A1_RearSight": {
-        "InfoParametersChange": [],
-        "AccuracyParametersChange": {
-          "AccuracyMax": 1.0,
-          "AccuracyMultiplier": 1.0,
-          "AccuracyDurabilityCoefficient": 1.0
-        },
-        "RecoilParametersChange": {
-          "MultVerticalRecoil": 1.0,
-          "MultHorizontalRecoil": 1.0,
-          "MultForwardRecoil": 1.0,
-          "StabilizedVerticalRecoil": {
-            "Min": 1.0,
-            "Max": 1.0
-          },
-          "StabilizedHorizontalRecoil": {
-            "Min": 1.0,
-            "Max": 1.0
-          },
-          "StabilizedForwardRecoil": {
-            "Min": 1.0,
-            "Max": 1.0
-          },
-          "RecoilAutoFireCoefficient": 1.0,
-          "RecoilDecayRate": 1.0,
-          "StabilizedRecoilDecayRate": 1.0,
-          "DisplayRecoil": 1.0
-        },
-        "WeaponParametersChange": {
-          "InternalMagCapacity": 0,
-          "FleshDamageModifier": 1.0,
-          "BulletInitialVelocityModifier": 1.0,
-          "FireRate": 1.0,
-          "ShotLoudness": 1.0
-        },
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "3BC03C9F4399B71C8CEC5CB0C77EADE1",
-          "SourceString": "M4A1 Rear Sight",
-          "LocalizedString": "In porta eu nunc vitae finibus. Pellentesque ligula nisl, interdum id tempus vel, semper eu risus."
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Attachment.Rail.Scope.M4A1_RearSight"
-        },
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_M4A1_Celik.BP_M4A1_Celik_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_ShotgunDB_Underbarrel.BP_Rail_ShotgunDB_Underbarrel_C",
           "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "DisplayDurability": false,
-        "ItemWeight": 10.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 1000.0,
-        "ItemSellPrice": 300.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
-      },
-      "Silencer.556x45": {
-        "InfoParametersChange": [
-          {
-            "Key": "EWeaponInfoParameter::Recoil",
-            "Value": -5
-          },
-          {
-            "Key": "EWeaponInfoParameter::Loudness",
-            "Value": -30
-          },
-          {
-            "Key": "EWeaponInfoParameter::Flatness",
-            "Value": 5
-          }
-        ],
-        "AccuracyParametersChange": {
-          "AccuracyMax": 1.0,
-          "AccuracyMultiplier": 1.0,
-          "AccuracyDurabilityCoefficient": 1.0
-        },
-        "RecoilParametersChange": {
-          "MultVerticalRecoil": 1.0,
-          "MultHorizontalRecoil": 1.0,
-          "MultForwardRecoil": 1.0,
-          "StabilizedVerticalRecoil": {
-            "Min": 0.95,
-            "Max": 0.95
-          },
-          "StabilizedHorizontalRecoil": {
-            "Min": 0.95,
-            "Max": 0.95
-          },
-          "StabilizedForwardRecoil": {
-            "Min": 0.95,
-            "Max": 0.95
-          },
-          "RecoilAutoFireCoefficient": 0.95,
-          "RecoilDecayRate": 1.0,
-          "StabilizedRecoilDecayRate": 1.0,
-          "DisplayRecoil": 1.0
-        },
-        "WeaponParametersChange": {
-          "InternalMagCapacity": 0,
-          "FleshDamageModifier": 1.0,
-          "BulletInitialVelocityModifier": 1.05,
-          "FireRate": 1.0,
-          "ShotLoudness": 0.7
-        },
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "97BD1FC74CB535914D4909945876BCB8",
-          "SourceString": "M4A1 Silencer",
-          "LocalizedString": "HMD"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemId": {
-          "TagName": "Item.Attachment.Silencer.5_56x45.Silencer"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Silencers/BP_Silencer_5_56.BP_Silencer_5_56_C",
-          "SubPathString": ""
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "DisplayDurability": false,
-        "ItemWeight": 45.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 3000.0,
-        "ItemSellPrice": 900.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "NutritionalValue": 0.0
+        }
       },
       "Muzzle.556x45.Base": {
         "InfoParametersChange": [
@@ -2323,28 +3368,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "03B6A92B45460A81B17809A13C14365A",
-          "SourceString": "Basic M4A1 Muzzle",
+          "SourceString": "M4A1 Muzzle Brake",
           "LocalizedString": "Health: {Value}%"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "E53E82D14B7B2CABA702B89010CFAA60",
+          "SourceString": "Little acoustic reduction and medium recoil compensation for M4A1.",
+          "LocalizedString": "Little acoustic reduction and medium recoil compensation for M4A1."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "FDE5BE3C4384C8A1606CE3A9233DFA98",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "134C90B84CA718565AB99C9B6BD8BAC1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "AA9E45764C31D668C48AEBB85DBE98BF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.M4A1.Base"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/M4A1/BP_MuzzleM4A1_Base.BP_MuzzleM4A1_Base_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 20.0,
+        "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 500.0,
         "ItemSellPrice": 150.0,
@@ -2353,7 +3430,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/M4A1/BP_MuzzleM4A1_Base.BP_MuzzleM4A1_Base_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.762x39.AKM.Base": {
         "InfoParametersChange": [
@@ -2406,21 +3488,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C2158E9741A31780D5D7FAA20F409CE4",
-          "SourceString": "Basic AKM Muzzle",
-          "LocalizedString": "Basic AKM Muzzle"
+          "SourceString": "AKM Muzzle Brake",
+          "LocalizedString": "AKM Muzzle Brake"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "451ECC9F4475EAAB67B5CD87A2973B71",
+          "SourceString": "Little acoustic reduction and recoil compensation for AK series of 7.62x39 caliber and modified SKS rifle.",
+          "LocalizedString": "Little acoustic reduction and recoil compensation for AK series of 7.62x39 caliber and modified SKS rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "09583EE04415CC44A569D1B3B0E26A7B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "9CC94A624BCCCA8010EB49A62F4BD7B2",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "68B3819D45F23F28FD13CBBDBC27BF79",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.AKM_Base"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAKM_Base.BP_MuzzleAKM_Base_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -2436,7 +3550,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleAKM_Base.BP_MuzzleAKM_Base_C",
+          "SubPathString": ""
+        }
       },
       "Muzzle.9x18.Bizon.Base": {
         "InfoParametersChange": [
@@ -2489,28 +3608,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "5BBE916543594896F8B9389084651D1E",
-          "SourceString": "Basic Bizon Muzzle",
-          "LocalizedString": "Basic Bizon Muzzle"
+          "SourceString": "PP-19 Bizon Muzzle Brake",
+          "LocalizedString": "PP-19 Bizon Muzzle Brake"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "2342C51247696A70075B2598CE56BD29",
+          "SourceString": "Little acoustic reduction and recoil compensation for PP-19 Bizon.",
+          "LocalizedString": "Little acoustic reduction and recoil compensation for PP-19 Bizon."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Muzzles"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "822D7A644AE7CC4D1545A182A3B80AC3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "7B81648B4955340B9EEE7196CC91FDC4",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "EDA66FF74642C4C0E8B54792DCC66D9F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Muzzles.AK.Bizon_Base"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleBizon_Base.BP_MuzzleBizon_Base_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 8.0,
+        "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 500.0,
         "ItemSellPrice": 50.0,
@@ -2519,7 +3670,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Muzzles/AK/BP_MuzzleBizon_Base.BP_MuzzleBizon_Base_C",
+          "SubPathString": ""
+        }
       },
       "Sight.Red_Dot": {
         "InfoParametersChange": [],
@@ -2559,28 +3715,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "6579CAD547715C311A572790B4D2F510",
-          "SourceString": "Red Dot Sight (R)",
-          "LocalizedString": "Red Dot Sight (R)"
+          "SourceString": "Reflex Sight",
+          "LocalizedString": "Reflex Sight"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "3E26A1B449631334B81C9584297BBFFE",
+          "SourceString": "Reflex sight with red dot reticle.\r\nCan be attached to rail.",
+          "LocalizedString": "Terminal"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "C53E2CB04D39ED3ECA8C24815190BF71",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "4B2AF57F4F53DD2BE17DFF8F7A95A87E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "6D205B834222D0358C95B99AFD7634D7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.RedDot"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_Red_Dot.BP_RDS_Red_Dot_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 30.0,
+        "ItemWeight": 25.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 4000.0,
         "ItemSellPrice": 1200.0,
@@ -2589,7 +3777,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_Red_Dot.BP_RDS_Red_Dot_C",
+          "SubPathString": ""
+        }
       },
       "Sight.EoDeck": {
         "InfoParametersChange": [],
@@ -2629,21 +3822,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "2C7BB6C247527CA15570B3B9BF62D92D",
-          "SourceString": "Eodeck (R)",
-          "LocalizedString": "Eodeck (R)"
+          "SourceString": "Holographic Sight",
+          "LocalizedString": "Holographic Sight"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "03C2875B408DAB01BCCCEC96CF19F2C9",
+          "SourceString": "Holographic sight with red circle reticle.\r\nCan be attached to rail.",
+          "LocalizedString": "UI Color Scheme"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "6C1CCA604FB0BB4D159D70B3BCDB08AE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "2743221E46EA1619C18991B2FD673885",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "9A7BE9B4461CDA4679393FBCF0CF2807",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.EoDeck"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_EODECK.BP_RDS_EODECK_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -2659,7 +3884,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_EODECK.BP_RDS_EODECK_C",
+          "SubPathString": ""
+        }
       },
       "Sight.OKB71": {
         "InfoParametersChange": [],
@@ -2699,28 +3929,60 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "1CFDA6BD41039740F8547598D240FF06",
-          "SourceString": "ORS7 Reflex Sight (R)",
-          "LocalizedString": "ORS7 Reflex Sight (R)"
+          "SourceString": "Collimator Sight",
+          "LocalizedString": "Collimator Sight"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "2C5B4F0041CAF826A0EAA78C41D9C32D",
+          "SourceString": "Collimator sight with green reticle.\r\nCan be attached to rail.",
+          "LocalizedString": "Upgrade and Repair"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "7BB27D004F97CD6FDBA1E6857A799C9A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "4003A162430F341F1CF506912955F96F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "0C2DE0164802106D7F1F8DBFC8286217",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.OKB71"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_OKB71.BP_RDS_OKB71_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 15.0,
+        "ItemWeight": 20.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2500.0,
         "ItemSellPrice": 750.0,
@@ -2729,7 +3991,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_OKB71.BP_RDS_OKB71_C",
+          "SubPathString": ""
+        }
       },
       "Sight.T4": {
         "InfoParametersChange": [],
@@ -2769,21 +4036,53 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C81D00114B202920DD44B4A890596931",
-          "SourceString": "T4 (R)",
-          "LocalizedString": "T4 (R)"
+          "SourceString": "Reflex Sight",
+          "LocalizedString": "Reflex Sight"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "4E799CD04399C62D122A1694963DD4FF",
+          "SourceString": "Reflex sight with red dot reticle.\r\nCan be attached to rail.",
+          "LocalizedString": "Upgrade\r\nTerminal"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "998D79664243E5854B676B9207A41A2A",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "265F96EB42CC829D6DD718BDDF976E0C",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "C2C6D86E41A12C75CFDF2E9DB67A3249",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.Rail.Scope.T4"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_T4.BP_RDS_T4_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
@@ -2799,7 +4098,12 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_RDS_T4.BP_RDS_T4_C",
+          "SubPathString": ""
+        }
       },
       "ShotgunDB_Bandolier_4": {
         "InfoParametersChange": [],
@@ -2837,39 +4141,76 @@
           "ShotLoudness": 1.0
         },
         "ItemName": {
-          "Namespace": "",
-          "Key": "F54ADB92463252B37C35059F090C44E8",
-          "SourceString": "DB Shotguns Bandolier 4",
-          "LocalizedString": "DB Shotguns Bandolier 4"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F46B7EF749170ED7752B1EAC75296E50",
+          "SourceString": "4x Cartridge Belt for IZh-27",
+          "LocalizedString": "Ground"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "13A96ED44A44136AD27DCBB9D77703C0",
+          "SourceString": "Place it on any IZh-27.",
+          "LocalizedString": "Voice Chat"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Others"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "D9B2EE104ED09AC29D99DAAAD82991B0",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "80635F18478F6451B2581CA314C4D985",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "74E02F4648BD387EB14ADC99D710E6D1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.AdditionalSlots.DB_Bandolier.4"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/AdditionalSlots/BP_Rail_ShotgunDB_Bandolier_4.BP_Rail_ShotgunDB_Bandolier_4_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 10.0,
+        "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 1000.0,
-        "ItemSellPrice": 300.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 90.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/AdditionalSlots/BP_Rail_ShotgunDB_Bandolier_4.BP_Rail_ShotgunDB_Bandolier_4_C",
+          "SubPathString": ""
+        }
       },
       "ShotgunDB_Bandolier_8": {
         "InfoParametersChange": [],
@@ -2907,39 +4248,76 @@
           "ShotLoudness": 1.0
         },
         "ItemName": {
-          "Namespace": "",
-          "Key": "F64EC40F42820999171C0F9BD30573D8",
-          "SourceString": "DB Shotguns Bandolier 8",
-          "LocalizedString": "DB Shotguns Bandolier 8"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C2B5111F41A25248D5370B8E0AD7370C",
+          "SourceString": "8x Cartridge Belt for IZh-27",
+          "LocalizedString": "Google Maps"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "13A96ED44A44136AD27DCBB9D77703C0",
+          "SourceString": "Place it on any IZh-27.",
+          "LocalizedString": "Voice Chat"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Others"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "5F08A5F141B1C27BA811C49202BDF6CE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "D861037E47E19362AE3B67A09E4CC6DE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "D51FCB974A0BDA75CE78CC9DD32867F2",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.AdditionalSlots.DB_Bandolier.8"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/AdditionalSlots/BP_Rail_ShotgunDB_Bandolier_8.BP_Rail_ShotgunDB_Bandolier_8_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 20.0,
+        "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 3000.0,
-        "ItemSellPrice": 900.0,
+        "ItemPurchasePrice": 600.0,
+        "ItemSellPrice": 180.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/AdditionalSlots/BP_Rail_ShotgunDB_Bandolier_8.BP_Rail_ShotgunDB_Bandolier_8_C",
+          "SubPathString": ""
+        }
       },
       "Scope.PU": {
         "InfoParametersChange": [],
@@ -2977,30 +4355,62 @@
           "ShotLoudness": 1.0
         },
         "ItemName": {
-          "Namespace": "",
-          "Key": "365427784FA08A50E1CA0E92D12123B9",
-          "SourceString": "Scope PU (SKS)",
-          "LocalizedString": "Scope PU (SKS)"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "187297BC4A5B2BC736C86E93AAE13E99",
+          "SourceString": "Rifle Scope for SKS",
+          "LocalizedString": "Go to the peninsula and find lost SH40 in the village. Prepare for possible hostile entities."
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "Key": "188C4D2343EB0D35CE5603B73502DFEC",
+          "SourceString": "Medium magnification telescopic sight.\r\nOnly for SKS rifle.",
+          "LocalizedString": "Medium magnification telescopic sight.\r\nOnly for SKS rifle."
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "D4D7657E47FAB2F3193F27B6B5CC6D32",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "56133E4B4A61ED26833A01956D9DEB15",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "E7CD4A604C1172997A3E6B9D7FFCECDE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
         },
         "ItemId": {
           "TagName": "Item.Attachment.PU"
-        },
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_PU.BP_Scope_PU_C",
-          "SubPathString": ""
         },
         "ItemDurability": 100.0,
         "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
         "DestroyOnZeroDurability": false,
         "DisplayDurability": false,
-        "ItemWeight": 30.0,
+        "ItemWeight": 40.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2000.0,
         "ItemSellPrice": 600.0,
@@ -3009,7 +4419,547 @@
           "SubPathString": ""
         },
         "DamageResistances": [],
-        "NutritionalValue": 0.0
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_Scope_PU.BP_Scope_PU_C",
+          "SubPathString": ""
+        }
+      },
+      "M4A1_ForeSight": {
+        "InfoParametersChange": [],
+        "AccuracyParametersChange": {
+          "AccuracyMax": 1.0,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 1.0
+        },
+        "RecoilParametersChange": {
+          "MultVerticalRecoil": 1.0,
+          "MultHorizontalRecoil": 1.0,
+          "MultForwardRecoil": 1.0,
+          "StabilizedVerticalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedForwardRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilDecayRate": 1.0,
+          "StabilizedRecoilDecayRate": 1.0,
+          "DisplayRecoil": 1.0
+        },
+        "WeaponParametersChange": {
+          "InternalMagCapacity": 0,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 1.0,
+          "ShotLoudness": 1.0
+        },
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "CD282C8042B6BBE730B76B951D8DA475",
+          "SourceString": "M4A1 Front Sight",
+          "LocalizedString": "Enable"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "34D8215F43A40F6AD3FFD5B7D74D47F3",
+          "SourceString": "Front iron sight for M4A1 to be used together with M4A1 Rear Sight.\r\nCan be attached to rail.",
+          "LocalizedString": "Bring PM mag"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "DAECB18A42D24B635D49209A268933E9",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "5DA45C844D5B55A414C097AEB146E96B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "9EFC76F84A483EA510FF80AD290C06F1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Rail.Scope.M4A1_ForeSight"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_M4A1_Foresight.BP_M4A1_Foresight_C",
+          "SubPathString": ""
+        }
+      },
+      "M4A1_RearSight": {
+        "InfoParametersChange": [],
+        "AccuracyParametersChange": {
+          "AccuracyMax": 1.0,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 1.0
+        },
+        "RecoilParametersChange": {
+          "MultVerticalRecoil": 1.0,
+          "MultHorizontalRecoil": 1.0,
+          "MultForwardRecoil": 1.0,
+          "StabilizedVerticalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedForwardRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilDecayRate": 1.0,
+          "StabilizedRecoilDecayRate": 1.0,
+          "DisplayRecoil": 1.0
+        },
+        "WeaponParametersChange": {
+          "InternalMagCapacity": 0,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 1.0,
+          "ShotLoudness": 1.0
+        },
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "3BC03C9F4399B71C8CEC5CB0C77EADE1",
+          "SourceString": "M4A1 Rear Sight",
+          "LocalizedString": "In porta eu nunc vitae finibus. Pellentesque ligula nisl, interdum id tempus vel, semper eu risus."
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "39A35DE64A3E007360D6758EF44DD40D",
+          "SourceString": "Rear iron sight for M4A1 to be used together with M4A1 Front Sight.\r\nCan be attached to rail.",
+          "LocalizedString": "Bring PM mag"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0A142080494D8CF3406BB0839ACACECB",
+          "SourceString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove.",
+          "LocalizedString": "<b>Hold #BTN_Bottom/# + #BTN_Grip/#</b> to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Sights"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "DDDCE84147217D36E46A7D9A02EF00B2",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "9A9F9C7A4C447C65DDACE6928833F25F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "696460CB46F1AFBC721592831D15C0A3",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Rail.Scope.M4A1_RearSight"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Scopes/BP_M4A1_Celik.BP_M4A1_Celik_C",
+          "SubPathString": ""
+        }
+      },
+      "Riser_Rail": {
+        "InfoParametersChange": [],
+        "AccuracyParametersChange": {
+          "AccuracyMax": 1.0,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 1.0
+        },
+        "RecoilParametersChange": {
+          "MultVerticalRecoil": 1.0,
+          "MultHorizontalRecoil": 1.0,
+          "MultForwardRecoil": 1.0,
+          "StabilizedVerticalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedForwardRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilDecayRate": 1.0,
+          "StabilizedRecoilDecayRate": 1.0,
+          "DisplayRecoil": 1.0
+        },
+        "WeaponParametersChange": {
+          "InternalMagCapacity": 0,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 1.0,
+          "ShotLoudness": 1.0
+        },
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C707DB164C8367BC871EB28BA099E2E0",
+          "SourceString": "Riser Rail",
+          "LocalizedString": "Explore anomaly cluster"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E6CE11CA471D19AFA1249AAE48115902",
+          "SourceString": "Allows to mount sights higher than the base rail.\r\nCan be attached to any rail.",
+          "LocalizedString": "Bring Pm Mag"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "D04D397B4568AF89D798739534C7C9D1",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "Wiki.Categories.WarGear.Attachments.Rails"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "D8528FE6472BF872F30F10838A24250D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "F5EAC4CB48D9C82B63213A964786A6CF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "F124977E470CDFA7CB47BD9F6665E1E9",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Rail.Riser.A"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": false,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 20.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1000.0,
+        "ItemSellPrice": 300.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Attachments/Rails/BP_Rail_Riser_A.BP_Rail_Riser_A_C",
+          "SubPathString": ""
+        }
+      },
+      "Nardi_Board": {
+        "InfoParametersChange": [],
+        "AccuracyParametersChange": {
+          "AccuracyMax": 1.0,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 1.0
+        },
+        "RecoilParametersChange": {
+          "MultVerticalRecoil": 1.0,
+          "MultHorizontalRecoil": 1.0,
+          "MultForwardRecoil": 1.0,
+          "StabilizedVerticalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedForwardRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilDecayRate": 1.0,
+          "StabilizedRecoilDecayRate": 1.0,
+          "DisplayRecoil": 1.0
+        },
+        "WeaponParametersChange": {
+          "InternalMagCapacity": 0,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 1.0,
+          "ShotLoudness": 1.0
+        },
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "CC28F10643C70A2CC079AD9A4DB6351C",
+          "SourceString": "Backgammon Board",
+          "LocalizedString": "Briefing"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "B243F0A24BECEEDA1B00598D01E194DE",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "93665557492D2CD7CEEF4DBCAF8DD1A8",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "544BEBF9415D447B68C51C8FF4FD0D13",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8A94A8E94EA9B4709FD9BB9302B194DD",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Misc.NardiBoard"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 70.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 200.0,
+        "ItemSellPrice": 20.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_NardiBoard.BP_NardiBoard_C",
+          "SubPathString": ""
+        }
+      },
+      "Chess_Board": {
+        "InfoParametersChange": [],
+        "AccuracyParametersChange": {
+          "AccuracyMax": 1.0,
+          "AccuracyMultiplier": 1.0,
+          "AccuracyDurabilityCoefficient": 1.0
+        },
+        "RecoilParametersChange": {
+          "MultVerticalRecoil": 1.0,
+          "MultHorizontalRecoil": 1.0,
+          "MultForwardRecoil": 1.0,
+          "StabilizedVerticalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedHorizontalRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "StabilizedForwardRecoil": {
+            "Min": 1.0,
+            "Max": 1.0
+          },
+          "RecoilAutoFireCoefficient": 1.0,
+          "RecoilDecayRate": 1.0,
+          "StabilizedRecoilDecayRate": 1.0,
+          "DisplayRecoil": 1.0
+        },
+        "WeaponParametersChange": {
+          "InternalMagCapacity": 0,
+          "FleshDamageModifier": 1.0,
+          "BulletInitialVelocityModifier": 1.0,
+          "FireRate": 1.0,
+          "ShotLoudness": 1.0
+        },
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "AAF6FE6E4F7FD4C15EC35E9E231AB265",
+          "SourceString": "Checkers Board",
+          "LocalizedString": "Checkers Board"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "439324F347B903098945DF82219B9876",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "9D71133247B8E48F2B8E55854018A369",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "47E506B3432F66248501F5AE7AFBA10E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "17A3ECD946271C831D63189B97F4C3E2",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Attachment.Misc.ChessBoard"
+        },
+        "ItemDurability": 100.0,
+        "DurabilityIndependentOfDifficulty": true,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DestroyOnZeroDurability": false,
+        "DisplayDurability": false,
+        "ItemWeight": 50.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 200.0,
+        "ItemSellPrice": 20.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Misc/CheckersBoardGame/BP_CheckersBoard_New.BP_CheckersBoard_New_C",
+          "SubPathString": ""
+        }
       }
     }
   }
