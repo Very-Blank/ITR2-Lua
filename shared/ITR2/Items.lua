@@ -125,11 +125,7 @@ local Items = {
 				Glock_18 = "/Game/ITR2/BPs/Items/Firearms/Secondary/Glock_18/BP_Glock_18.BP_Glock_18_C",
 			},
 
-			FORT17 = {
-				Mag_FORT17 = "/Game/ITR2/BPs/Items/Firearms/Secondary/FORT17/BP_Mag_FORT17.BP_Mag_FORT17_C",
-				FORT17_M = "/Game/ITR2/BPs/Items/Firearms/Secondary/FORT17/BP_FORT17_M.BP_FORT17_M_C",
-			},
-
+			-- SPOILERS
 		},
 
 		Attachments = {
