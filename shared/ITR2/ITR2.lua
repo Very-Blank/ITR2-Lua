@@ -4,7 +4,8 @@ local ITR2 = {
     Version = "0.3",
     Events = require("ITR2.Events"),
     Functions = require("ITR2.Callables"),
-    Items = require("ITR2.Items")
+    Items = require("ITR2.Items"),
+    Tags = require("ITR2.Tags")
 }
 
 return ITR2

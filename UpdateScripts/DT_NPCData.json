@@ -1,0 +1,5217 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_NPCData",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'RadiusNPCStaticData'",
+        "ObjectPath": "/Script/IntoTheRadius2"
+      }
+    },
+    "Rows": {
+      "DummyBlind": {
+        "NPCName": {
+          "CultureInvariantString": "Test Subject"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Default"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/BP_RadiusNPCCharacterBase.BP_RadiusNPCCharacterBase_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 8000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 8000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 100.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1.0
+            }
+          },
+          "Damage": 0.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1.0
+            }
+          },
+          "DefensiveDistance": 0.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 6
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 1
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Idle_PRM'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Idle_PRM.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 0.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "BestAttackDistance": 0.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "FragmentHollow": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C084E4FA4E07DD45C14D3E9A901C8B86",
+          "SourceString": "Fragment",
+          "LocalizedString": "Fragment"
+        },
+        "ID": {
+          "TagName": "NPC.Class.FragmentHollow"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Fragment/BP_RadiusNPCCharacterFragmentBase.BP_RadiusNPCCharacterFragmentBase_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 22.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 54.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 0.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 200.0
+            }
+          },
+          "Damage": 16.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 110000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 6
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Fragment_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Fragment_First/MS_CRT_Fragment_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 10.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 5.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1000.0
+            }
+          },
+          "BestAttackDistance": 2000.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": null
+        },
+        "MovementSpeed": {
+          "Combat": 230.0,
+          "NonCombat": 100.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Fragment'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/Blackboards/BB_Fragment.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_Fragment_StartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Fragment/HTN_Fragment_StartBehavior.0"
+        }
+      },
+      "Creep": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "4B85F14244C617E00707779E398135E1",
+          "SourceString": "Creep Monster",
+          "LocalizedString": "Creep Monster"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Creep"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Spawn/BP_RadiusNPCCharacterCreep.BP_RadiusNPCCharacterCreep_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [
+          "NPC.Stimuli.Sight.TargetAlmostDetected"
+        ],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 180.0,
+              "VerticalAngle": 180.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 180.0,
+              "VerticalAngle": 180.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 5.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 1.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 1.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 1.0,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve_Creep'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve_Creep.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 36.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 700.0
+            }
+          },
+          "Damage": 12.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 15000.0,
+          "CrouchWeaponHeight": 110.0,
+          "StandWeaponHeight": 150.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 0.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "BestAttackDistance": 500.0,
+          "OptimalAttackRangeThreshold": 150.0,
+          "MaxAmmoInClip": 0,
+          "AmmoInClipToReloadRatio": 0.0,
+          "FireSound": null
+        },
+        "MovementSpeed": {
+          "Combat": 600.0,
+          "NonCombat": 500.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Creep'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/Blackboards/BB_Creep.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_Creep_StartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spawn/HTN_Creep_StartBehavior.0"
+        }
+      },
+      "CreepStalker": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E9BEEC084237E4F2DCFADFBEC12E3C7C",
+          "SourceString": "Creep Hunter",
+          "LocalizedString": "Creep Hunter"
+        },
+        "ID": {
+          "TagName": "NPC.Class.CreepChaser"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Spawn/BP_RadiusNPCCharacterCreepBig.BP_RadiusNPCCharacterCreepBig_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [
+          "NPC.Stimuli.Sight.TargetAlmostDetected"
+        ],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 180.0,
+              "VerticalAngle": 180.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 180.0,
+              "VerticalAngle": 180.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 5.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 1.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 1.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 1.0,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve_Creep'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve_Creep.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 45.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 700.0
+            }
+          },
+          "Damage": 15.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 15000.0,
+          "CrouchWeaponHeight": 110.0,
+          "StandWeaponHeight": 150.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 0.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "BestAttackDistance": 500.0,
+          "OptimalAttackRangeThreshold": 150.0,
+          "MaxAmmoInClip": 0,
+          "AmmoInClipToReloadRatio": 0.0,
+          "FireSound": null
+        },
+        "MovementSpeed": {
+          "Combat": 800.0,
+          "NonCombat": 500.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Creep'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/Blackboards/BB_Creep.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_Creep_StartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spawn/HTN_Creep_StartBehavior.0"
+        }
+      },
+      "MimicPoliceman": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "AD06DEAE4ACFC3F5927E07B7A65F64A3",
+          "SourceString": "Militsioner Mimic",
+          "LocalizedString": "Militsioner Mimic"
+        },
+        "ID": {
+          "TagName": "NPC.Class.MimicPoliceman"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Mimic/BP_RadiusNPCCharacterMimicPoliceman.BP_RadiusNPCCharacterMimicPoliceman_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 7000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 29.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 7000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 29.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 5.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 54.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 6000.0
+            }
+          },
+          "Damage": 8.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 12000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 7
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 5
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.AmbushIdle"
+              },
+              "Value": 9
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Test'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Test.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 20.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 120.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 4,
+          "ShotsPerBurstCurve": {
+            "ObjectName": "CurveFloat'CURVE_FireRateByDist'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_FireRateByDist.0"
+          },
+          "BurstFireDistThreshold": 0.4,
+          "bIsAutomatic": true,
+          "BrakeBetweenBursts": 0.5,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 1.0,
+          "BulletSpreadHalfAngleMax": 1.5,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 3000.0,
+          "OptimalAttackRangeThreshold": 0.0,
+          "MaxAmmoInClip": 12,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "MimicJaeger": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "A19A6B404BA62A62B223609A7C073873",
+          "SourceString": "Hunter Mimic",
+          "LocalizedString": "Hunter Mimic"
+        },
+        "ID": {
+          "TagName": "NPC.Class.MimicJaeger"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Mimic/BP_RadiusNPCCharacterMimicJaeger.BP_RadiusNPCCharacterMimicJaeger_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 7000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 7000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 5.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 90.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 30.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 10000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 0.6,
+          "CoverLeftPeekModifier": 1.4
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 7
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 5
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.AmbushIdle"
+              },
+              "Value": 9
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Test'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Test.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 0.0,
+          "FireDuration": 2.0,
+          "ShotsPerBurstDeviationMax": 0,
+          "ShotsPerBurstMax": 2,
+          "ShotsPerBurstCurve": {
+            "ObjectName": "CurveFloat'CURVE_FireRateByDist'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_FireRateByDist.0"
+          },
+          "BurstFireDistThreshold": 0.0,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 2.0,
+          "BulletSpreadHalfAngleMax": 5.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 9999.0
+            }
+          },
+          "BestAttackDistance": 1300.0,
+          "OptimalAttackRangeThreshold": 0.0,
+          "MaxAmmoInClip": 2,
+          "AmmoInClipToReloadRatio": 0.0,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_IZH_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/Mimic_IZH/A_MS_WP_Enemy_IZH_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "FragmentRessurective": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "4F66265941687CC1FA4831ACFFB2E605",
+          "SourceString": "Recovering Fragment",
+          "LocalizedString": "Recovering Fragment"
+        },
+        "ID": {
+          "TagName": "NPC.Class.FragmentResurrective"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Fragment/BP_RadiusNPCCharacterFragmentRessurective.BP_RadiusNPCCharacterFragmentRessurective_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 22.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 180.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 0.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 200.0
+            }
+          },
+          "Damage": 22.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 110000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 6
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Fragment_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Fragment_First/MS_CRT_Fragment_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 10.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 5.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1000.0
+            }
+          },
+          "BestAttackDistance": 2000.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": null
+        },
+        "MovementSpeed": {
+          "Combat": 230.0,
+          "NonCombat": 100.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Fragment'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/Blackboards/BB_Fragment.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_Fragment_StartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Fragment/HTN_Fragment_StartBehavior.0"
+        }
+      },
+      "MimicScout": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E8B99320458B772D834C77B276EBBD48",
+          "SourceString": "Scout Soldier Mimic",
+          "LocalizedString": "Scout Soldier Mimic"
+        },
+        "ID": {
+          "TagName": "NPC.Class.MimicScout"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Mimic/BP_RadiusNPCCharacterMimicScout.BP_RadiusNPCCharacterMimicScout_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 8000.0,
+              "HorizontalAngle": 25.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 8500.0,
+              "HorizontalAngle": 25.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 120.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 8000.0
+            }
+          },
+          "Damage": 10.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 14000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 0.6,
+          "CoverLeftPeekModifier": 1.4
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 7
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 5
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.AmbushIdle"
+              },
+              "Value": 9
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Test'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Test.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 30.0,
+          "FireRateSingleMax": 120.0,
+          "FireRateBurst": 650.0,
+          "FireDuration": 3.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 5,
+          "ShotsPerBurstCurve": {
+            "ObjectName": "CurveFloat'CURVE_FireRateByDist'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_FireRateByDist.0"
+          },
+          "BurstFireDistThreshold": 0.3,
+          "bIsAutomatic": true,
+          "BrakeBetweenBursts": 1.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.75,
+          "BulletSpreadHalfAngleMax": 2.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 3000.0
+            }
+          },
+          "BestAttackDistance": 5000.0,
+          "OptimalAttackRangeThreshold": 0.0,
+          "MaxAmmoInClip": 30,
+          "AmmoInClipToReloadRatio": 0.25,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'MS_Weapon_Mimic_AKSu'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PPSH/MS_Weapon_Mimic_AKSu.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "FragmentExplosive": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "9A1F63F840BFA41E9651DB9981E45A0D",
+          "SourceString": "Loaded Fragment",
+          "LocalizedString": "Loaded Fragment"
+        },
+        "ID": {
+          "TagName": "NPC.Class.FragmentExplosive"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Fragment/BP_RadiusNPCCharacterFragmentExplosive.BP_RadiusNPCCharacterFragmentExplosive_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 22.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.04,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 150.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 0.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 200.0
+            }
+          },
+          "Damage": 22.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 110000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 6
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Fragment_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Fragment_First/MS_CRT_Fragment_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 10.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 5.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1000.0
+            }
+          },
+          "BestAttackDistance": 2000.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": null
+        },
+        "MovementSpeed": {
+          "Combat": 230.0,
+          "NonCombat": 100.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Fragment'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/Blackboards/BB_Fragment.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_Fragment_StartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Fragment/HTN_Fragment_StartBehavior.0"
+        }
+      },
+      "MimicAssault": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "CFFADAA04403926F2B7575B7A95A1AB2",
+          "SourceString": "Storm Trooper Mimic",
+          "LocalizedString": "Storm Trooper Mimic"
+        },
+        "ID": {
+          "TagName": "NPC.Class.MimicAssault"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Mimic/BP_RadiusNPCCharacterMimicAssault.BP_RadiusNPCCharacterMimicAssault_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 9000.0,
+              "HorizontalAngle": 25.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 7.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 9000.0,
+              "HorizontalAngle": 25.0,
+              "VerticalAngle": 25.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.3,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.03,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 200.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 9000.0
+            }
+          },
+          "Damage": 16.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 16000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 0.6,
+          "CoverLeftPeekModifier": 1.4
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 7
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 5
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.AmbushIdle"
+              },
+              "Value": 9
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Test'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Test.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 30.0,
+          "FireRateSingleMax": 90.0,
+          "FireRateBurst": 650.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 3,
+          "ShotsPerBurstMax": 5,
+          "ShotsPerBurstCurve": {
+            "ObjectName": "CurveFloat'CURVE_FireRateByDist'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_FireRateByDist.0"
+          },
+          "BurstFireDistThreshold": 0.25,
+          "bIsAutomatic": true,
+          "BrakeBetweenBursts": 0.5,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 2.5,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 3000.0
+            }
+          },
+          "BestAttackDistance": 8000.0,
+          "OptimalAttackRangeThreshold": 0.0,
+          "MaxAmmoInClip": 40,
+          "AmmoInClipToReloadRatio": 0.25,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'MS_Weapon_Enemy_Fire_AK'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/Enemy_AK/MS_Weapon_Enemy_Fire_AK.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "MimicMarksman": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "34388DC943FD303DA7C9BEB4B8988F04",
+          "SourceString": "Marksman Mimic",
+          "LocalizedString": "Marksman Mimic"
+        },
+        "ID": {
+          "TagName": "NPC.Class.MimicMarksman"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Mimic/BP_RadiusNPCCharacterMimicMarksman.BP_RadiusNPCCharacterMimicMarksman_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 12000.0,
+              "HorizontalAngle": 15.0,
+              "VerticalAngle": 17.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 10.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 12000.0,
+              "HorizontalAngle": 15.0,
+              "VerticalAngle": 17.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 5.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.2,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.025,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 150.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 12000.0
+            }
+          },
+          "Damage": 22.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 18000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 0.6,
+          "CoverLeftPeekModifier": 1.4
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 7
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 5
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.AmbushIdle"
+              },
+              "Value": 9
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Test'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Test.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 90.0,
+          "FireRateSingleMax": 30.0,
+          "FireRateBurst": 0.0,
+          "FireDuration": 5.0,
+          "ShotsPerBurstDeviationMax": 0,
+          "ShotsPerBurstMax": 1,
+          "ShotsPerBurstCurve": {
+            "ObjectName": "CurveFloat'CURVE_FireRateByDist'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_FireRateByDist.0"
+          },
+          "BurstFireDistThreshold": 0.0,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.75,
+          "BulletSpreadHalfAngleMax": 0.25,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5000.0
+            }
+          },
+          "BestAttackDistance": 10000.0,
+          "OptimalAttackRangeThreshold": 0.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.3,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_SVD_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/Mimic_SVD/A_MS_WP_Enemy_SVD_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "MimicHeavy": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "697FE4A0488D972A50E7758272E99961",
+          "SourceString": "Machine Gunner Mimic",
+          "LocalizedString": "Machine Gunner Mimic"
+        },
+        "ID": {
+          "TagName": "NPC.Class.MimicHeavy"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Mimic/BP_RadiusNPCCharacterMimicHeavy.BP_RadiusNPCCharacterMimicHeavy_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 10000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 20.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 10000.0,
+              "HorizontalAngle": 20.0,
+              "VerticalAngle": 20.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 6000.0,
+              "HorizontalAngle": 60.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 3000.0,
+              "HorizontalAngle": 80.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 5.0,
+            "Y": 0.0,
+            "Z": 8.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.2,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.025,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 280.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 10000.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 14000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 0.6,
+          "CoverLeftPeekModifier": 1.4
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 19
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 7
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Reload"
+              },
+              "Value": 5
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.AmbushIdle"
+              },
+              "Value": 9
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Mimic_Test'",
+            "ObjectPath": "/Game/Sound/Creatures/Mimic/Idle/MS_CRT_Mimic_Test.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 90.0,
+          "FireRateSingleMax": 180.0,
+          "FireRateBurst": 700.0,
+          "FireDuration": 5.0,
+          "ShotsPerBurstDeviationMax": 5,
+          "ShotsPerBurstMax": 15,
+          "ShotsPerBurstCurve": {
+            "ObjectName": "CurveFloat'CURVE_FireRateByDist_Heavy'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_FireRateByDist_Heavy.0"
+          },
+          "BurstFireDistThreshold": 0.0,
+          "bIsAutomatic": true,
+          "BrakeBetweenBursts": 1.5,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 1.25,
+          "BulletSpreadHalfAngleMax": 3.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 9999.0
+            }
+          },
+          "BestAttackDistance": 6500.0,
+          "OptimalAttackRangeThreshold": 0.0,
+          "MaxAmmoInClip": 75,
+          "AmmoInClipToReloadRatio": 0.25,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'MS_Weapon_Mimic_RPK'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/Mimic_RPK/MS_Weapon_Mimic_RPK.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 0.0,
+          "NonCombat": 0.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Mimic'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/BB_Mimic.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_MimicStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/HTN_MimicStartBehavior.0"
+        }
+      },
+      "Abstraction": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "FB106695432EB9B84AB13AB486072502",
+          "SourceString": "Sky Cube",
+          "LocalizedString": "Sky Cube"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Abstraction"
+        },
+        "ActorClass": {
+          "AssetPathName": "/Game/ITR2/BPs/AI/Enemies/Boss/BP_NPCAbstraction.BP_NPCAbstraction_C",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [
+          "NPC.Stimuli.Sight.TargetAlmostDetected"
+        ],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 10000.0,
+              "HorizontalAngle": 35.0,
+              "VerticalAngle": 35.0,
+              "ZoneDetectTime": {
+                "Min": 2.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 10000.0,
+              "HorizontalAngle": 35.0,
+              "VerticalAngle": 35.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 0.0,
+              "VerticalAngle": 0.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 4.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 0.0,
+              "VerticalAngle": 0.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 0.0,
+              "VerticalAngle": 0.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 0.0,
+              "HorizontalAngle": 0.0,
+              "VerticalAngle": 0.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": -100.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 999.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 0.0,
+          "bShouldPatrol": false
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 10000.0
+            }
+          },
+          "Damage": 22.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 2.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 5.0
+            }
+          },
+          "DefensiveDistance": 110000.0,
+          "CrouchWeaponHeight": 103.0,
+          "StandWeaponHeight": 155.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 3
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Idle"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_CRT_Monster_Boss_Signals'",
+            "ObjectPath": "/Game/Sound/Creatures/Monster_Boss/Signals/MS_CRT_Monster_Boss_Signals.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 10.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 5.0,
+          "bCanFireInMove": false,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1000.0
+            }
+          },
+          "BestAttackDistance": 2000.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": null
+        },
+        "MovementSpeed": {
+          "Combat": 600.0,
+          "NonCombat": 300.0
+        },
+        "bProjectOnGroundWhenSpawned": false,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Boss'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/HTN/Blackboards/BB_Boss.0"
+        },
+        "HTNAsset": {
+          "ObjectName": "HTN'HTN_AbstractionStartBehavior'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Boss/HTN_AbstractionStartBehavior.0"
+        }
+      },
+      "Spitter": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C3A92F1F45F19F41565BC1AF03BB2737",
+          "SourceString": "Spitter",
+          "LocalizedString": "Spitter"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Spitter"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 60.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 1200.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Spitter'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype/BB_Spitter.0"
+        },
+        "HTNAsset": null
+      },
+      "Vomiter": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "B687592B44691BB98298E9A17BFAF5FA",
+          "SourceString": "Vomiter",
+          "LocalizedString": "Vomiter"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Vomiter"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 80.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 500.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Spitter'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype/BB_Spitter.0"
+        },
+        "HTNAsset": null
+      },
+      "SpitterVomiter": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "9DB71C22495984D0B24B5898936C4F59",
+          "SourceString": "Spitter Vomiter",
+          "LocalizedString": "Spitter Vomiter"
+        },
+        "ID": {
+          "TagName": "NPC.Class.SpitterVomiter"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 60.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 1200.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Spitter'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype/BB_Spitter.0"
+        },
+        "HTNAsset": null
+      },
+      "Spike": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "ECD38D8847E09C8804DAB88C79D2A8A2",
+          "SourceString": "Spike",
+          "LocalizedString": "Spike"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Spike"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 70.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 1200.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Spiker'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype2/BB_Spiker.0"
+        },
+        "HTNAsset": null
+      },
+      "SpikeSpecial": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "8C372C81499363C94D6FA580D2E9B112",
+          "SourceString": "Advanced Spike",
+          "LocalizedString": "Advanced Spike"
+        },
+        "ID": {
+          "TagName": "NPC.Class.SpikeAdvanced"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 100.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 1200.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Spiker'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype2/BB_Spiker.0"
+        },
+        "HTNAsset": null
+      },
+      "Jellyfish": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "09BC2D95436EA1D645A631B3A9D9C4B9",
+          "SourceString": "Jellyfish",
+          "LocalizedString": "Jellyfish"
+        },
+        "ID": {
+          "TagName": "NPC.Class.Jellyfish"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 60.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 1200.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Jelly'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype3/BB_Jelly.0"
+        },
+        "HTNAsset": null
+      },
+      "JellyfishBig": {
+        "NPCName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "3F1055514C0ABAC49C8F5991F348AEBC",
+          "SourceString": "Big Jellyfish",
+          "LocalizedString": "Big Jellyfish"
+        },
+        "ID": {
+          "TagName": "NPC.Class.JellyfishBig"
+        },
+        "ActorClass": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "StimuliIgnored": [],
+        "SightData": {
+          "CentralVision": {
+            "Idle": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "Combat": {
+              "ZoneDistance": 5000.0,
+              "HorizontalAngle": 30.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 1.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "PeripheralVision": {
+            "MainZoneIdle": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 6.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "MainZoneCombat": {
+              "ZoneDistance": 4000.0,
+              "HorizontalAngle": 65.0,
+              "VerticalAngle": 30.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 2.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneIdle": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 8.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            },
+            "SideZoneCombat": {
+              "ZoneDistance": 2000.0,
+              "HorizontalAngle": 88.0,
+              "VerticalAngle": 55.0,
+              "ZoneDetectTime": {
+                "Min": 0.0,
+                "Max": 3.0
+              },
+              "DetectTimeCurve": {
+                "ObjectName": "CurveFloat'CURVE_SightTargetDetect'",
+                "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_SightTargetDetect.0"
+              }
+            }
+          },
+          "SightPointOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "FriendDeathSpotDistModifier": 0.5,
+          "CrouchTargetSpotDistMultiplier": 0.75,
+          "LightSourceOnDistanceMultiplier": 2.0,
+          "DaytimeVisibilityDistCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilityDistanceCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilityDistanceCurve.0"
+          },
+          "FullBodyTargetSpotTimeMultiplier": 0.5,
+          "MinTracesNumNonBlockedForFullBody": 4,
+          "NoVisibilitySpotTimeMultiplier": 2.0,
+          "LightSourceOnSpotTimeMultiplier": 0.25,
+          "DaytimeVisibilitySpotTimeCurve": {
+            "ObjectName": "CurveFloat'CURVE_DaytimeVisibilitySpotTimeCurve'",
+            "ObjectPath": "/Game/ITR2/BPs/AI/Misc/CURVE_DaytimeVisibilitySpotTimeCurve.0"
+          },
+          "BothInDistortionZoneVisibilityDistanceModifier": 0.0275,
+          "OneInDistortionZoneVisibilityDistanceModifier": 0.015,
+          "BothInDistortionZoneSpotTimeModifier": 1.0,
+          "OneInDistortionZoneSpotTimeModifier": 1.5
+        },
+        "StatsData": {
+          "InitialHealth": 80.0
+        },
+        "IdleStateData": {
+          "RotationRange": {
+            "Min": -20.0,
+            "Max": 20.0
+          },
+          "WaitBetweenRotations": 5.0,
+          "bShouldPatrol": true
+        },
+        "CombatStateData": {
+          "AttackDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 1500.0
+            }
+          },
+          "Damage": 14.0,
+          "LastKnowPositionAttackTime": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 0.0
+            }
+          },
+          "DefensiveDistance": 80000.0,
+          "CrouchWeaponHeight": 10.0,
+          "StandWeaponHeight": 96.0,
+          "CoverRightPeekModifier": 1.0,
+          "CoverLeftPeekModifier": 1.0
+        },
+        "ActionRenderInfo": {
+          "SoundVariationsNumMap": [
+            {
+              "Key": {
+                "TagName": "NPC.Action.CheckSuspicous"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.SuspiciousToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StartSearch"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.AlarmedToIdle"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.StateChange.ToCombat"
+              },
+              "Value": 4
+            },
+            {
+              "Key": {
+                "TagName": "NPC.Action.Attack"
+              },
+              "Value": 4
+            }
+          ],
+          "MetaSoundSource": {
+            "ObjectName": "MetaSoundSource'MS_Creep_Actions'",
+            "ObjectPath": "/Game/Sound/Creatures/Spawn/MS_Creep_Actions.0"
+          },
+          "CooldownTime": 1.5,
+          "RandCooldownTimeDeviation": 0.5
+        },
+        "Firearm": {
+          "FireRateSingleMin": 60.0,
+          "FireRateSingleMax": 60.0,
+          "FireRateBurst": 600.0,
+          "FireDuration": 4.0,
+          "ShotsPerBurstDeviationMax": 2,
+          "ShotsPerBurstMax": 10,
+          "ShotsPerBurstCurve": null,
+          "BurstFireDistThreshold": 0.5,
+          "bIsAutomatic": false,
+          "BrakeBetweenBursts": 0.0,
+          "bCanFireInMove": true,
+          "BulletSpreadHalfAngleMin": 0.5,
+          "BulletSpreadHalfAngleMax": 1.0,
+          "CrouchDistRange": {
+            "LowerBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Exclusive",
+              "Value": 2000.0
+            }
+          },
+          "BestAttackDistance": 1200.0,
+          "OptimalAttackRangeThreshold": 2000.0,
+          "MaxAmmoInClip": 10,
+          "AmmoInClipToReloadRatio": 0.2,
+          "FireSound": {
+            "ObjectName": "MetaSoundSource'A_MS_WP_Enemy_PM_Fire'",
+            "ObjectPath": "/Game/Sound/Weapons/Enemy_Fire/PM/A_MS_WP_Enemy_PM_Fire.0"
+          }
+        },
+        "MovementSpeed": {
+          "Combat": 300.0,
+          "NonCombat": 120.0
+        },
+        "bProjectOnGroundWhenSpawned": true,
+        "BlackboardAsset": {
+          "ObjectName": "BlackboardData'BB_Jelly'",
+          "ObjectPath": "/Game/ITR2/BPs/AI/Enemies/Spitter/Prototype3/BB_Jelly.0"
+        },
+        "HTNAsset": null
+      }
+    }
+  }
+]

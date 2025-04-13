@@ -6,7 +6,7 @@ local Callables = {
 local levelSubsystem = nil
 
 ---@return string?
-function Callables.Level.getCurrentLevelName()
+function Callables.Level.getCurrentName()
     if levelSubsystem == nil or not levelSubsystem:IsValid() then
         levelSubsystem = FindFirstOf("RadiusLevelSubsystem")
         if levelSubsystem == nil or not levelSubsystem:IsValid() then
@@ -22,7 +22,7 @@ end
 --     TagName = FName("Level.Radius.Peninsula")
 -- }
 ---@param levelTag LevelTag
-function Callables.Level.loadLevel(levelTag)
+function Callables.Level.load(levelTag)
     if levelSubsystem == nil or not levelSubsystem:IsValid() then
         levelSubsystem = FindFirstOf("RadiusLevelSubsystem")
         if levelSubsystem == nil or not levelSubsystem:IsValid() then
@@ -35,7 +35,7 @@ end
 
 ---@param tagName string
 ---@return string
-function Callables.Enemy.enemyTagToName(tagName)
+function Callables.Enemy.tagToName(tagName)
     local npcName = ""
 
     for value in string.gmatch(tagName, "[^%.]+") do
