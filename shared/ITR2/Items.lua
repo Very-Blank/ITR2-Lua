@@ -509,7 +509,6 @@ local Items = {
 				Module_MagPouchPistol_NoMolle_Camo_CH = "/Game/ITR2/BPs/Items/Equipment/Modules/Camo/BP_Module_MagPouchPistol_NoMolle_Camo_CH.BP_Module_MagPouchPistol_NoMolle_Camo_CH_C",
 			},
 		},
-
 	},
 
 	Valuables = {
