@@ -1,7 +1,7 @@
 Events = {
 	Level = {
 		OnLevelLoaded = function(func)
-			RegisterHook("/Script/IntoTheRadius2.RadiusEventsSubsystem:FireOnFinishLoadLevel", func)
+			RegisterHook("/Script/IntoTheRadius2.RadiusGameMode:OnFinishLoadLevel", func)
 		end,
 	},
 
