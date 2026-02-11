@@ -3,6 +3,7 @@
     "Type": "DataTable",
     "Name": "DT_AmmoContainerInfos",
     "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
     "Properties": {
       "RowStruct": {
         "ObjectName": "Class'AmmoContainerStaticData'",
@@ -42,32 +43,32 @@
         "ItemInstruction": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "22F7F34E401AF0786477F096477EEE0A",
-          "SourceString": "<b>Hold #BTN_Trigger/#</b> to prepare a Probe.\r\n<b>Swing and release Trigger</b> to throw.",
-          "LocalizedString": "<b>Hold #BTN_Trigger/#</b> to prepare a Probe.\r\n<b>Swing and release Trigger</b> to throw."
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> to prepare a Probe.\r\n• <b>Swing and release Trigger</b> to throw.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> to prepare a Probe.\r\n• <b>Swing and release Trigger</b> to throw."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
             "TagName": "Wiki.Categories.Explorers.Tools"
           },
           "Title": {
-            "Namespace": "",
-            "Key": "4B6CF9F1454D0D4AF2AE009173DCAFDC",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "0F5A8E9349A4888127E2BF9B6399AD3A",
+            "SourceString": "ACPF-07 Probe Feeder",
+            "LocalizedString": "Small Probe Pack"
           },
           "Body": {
-            "Namespace": "",
-            "Key": "4E5DF7094648FC0EBEB1389B2A57EBF8",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "0F63220547EF13D9DECA069F53267700",
+            "SourceString": "Probe dispenser for locating or discharging anomalies.",
+            "LocalizedString": "Study the map in the tablet. Visit the living room and pick up the basic standard gear."
           },
           "Instruction": {
-            "Namespace": "",
-            "Key": "634CB62C440F97894FFE5BB7893EACE9",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "22F7F34E401AF0786477F096477EEE0A",
+            "SourceString": "• <b>Hold {BTN_Trigger}</b> to prepare a Probe.\r\n• <b>Swing and release Trigger</b> to throw.",
+            "LocalizedString": "• <b>Hold {BTN_Trigger}</b> to prepare a Probe.\r\n• <b>Swing and release Trigger</b> to throw."
           },
           "ShowItemInfo": false,
           "CustomData": [],
@@ -78,18 +79,18 @@
           "TagName": "Item.ProbePack.Small"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": true,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 50.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_ProbeSack.T_ItemPreview_BP_ProbeSack",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -128,12 +129,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "461F30F949254AFE414315B3F5F41480",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -166,18 +167,18 @@
           "TagName": "Item.Magazine.AK-74.Red"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AK_74_Mag_Red.T_ItemPreview_BP_AK_74_Mag_Red",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -216,12 +217,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "AB71D8814E5F64FCF69628B3400BC73D",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -254,18 +255,18 @@
           "TagName": "Item.Magazine.AK-74.Black"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AK_74_Mag_Black.T_ItemPreview_BP_AK_74_Mag_Black",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -304,12 +305,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "378E388848072DC6502367A4DB5B37A4",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -342,18 +343,18 @@
           "TagName": "Item.Magazine.PM.Short"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 4.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 100.0,
         "ItemSellPrice": 30.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_PM.T_ItemPreview_BP_Mag_PM",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -392,12 +393,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "DF7BF0084D96EA098A5CAD85152AAE89",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -430,18 +431,18 @@
           "TagName": "Item.Magazine.PM.Long"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 250.0,
         "ItemSellPrice": 75.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_PM_Long.T_ItemPreview_BP_Mag_PM_Long",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -540,18 +541,18 @@
           "TagName": "Item.AmmoBox.Small.9x18.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 210.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x18_FMJ.T_ItemPreview_BP_AmmoBox_9x18_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -650,23 +651,111 @@
           "TagName": "Item.AmmoBox.Small.9x18.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 220.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x18_Tracer.T_ItemPreview_BP_AmmoBox_9x18_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_9x18_Tracer.BP_AmmoBox_9x18_Tracer_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Small.9x18.+P": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18.+P"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "D44D50D74FE9D8531AF20396EB274827",
+          "SourceString": "9x18 +P Ammo Box",
+          "LocalizedString": "Ammo Box 9x18 +P"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "F9D3811E4F870678766A04A4A6DD5B4F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "B72F76FE4A900F0BD6DBA7A44AD80FEF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "4378B6424D2E72A02540269A1F32A34B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "65905ABD436771771F2C2BBCF360BCFF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Small.9x18.+P"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 3.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x18_PlusP.T_ItemPreview_BP_AmmoBox_9x18_PlusP",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_9x18_PlusP.BP_AmmoBox_9x18_PlusP_C",
           "SubPathString": ""
         }
       },
@@ -760,18 +849,18 @@
           "TagName": "Item.AmmoBox.Small.9x19.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 300.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x19_FMJ.T_ItemPreview_BP_AmmoBox_9x19_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -870,18 +959,18 @@
           "TagName": "Item.AmmoBox.Small.9x19.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 320.0,
         "ItemSellPrice": 3.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x19_Tracer.T_ItemPreview_BP_AmmoBox_9x19_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -980,18 +1069,18 @@
           "TagName": "Item.AmmoBox.Small.12g.Buckshot"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 255.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_12x70_BuckShot.T_ItemPreview_BP_AmmoBox_12x70_BuckShot",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1090,18 +1179,18 @@
           "TagName": "Item.AmmoBox.Small.12g.Slug"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 300.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_12x70_Slug.T_ItemPreview_BP_AmmoBox_12x70_Slug",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1200,18 +1289,18 @@
           "TagName": "Item.AmmoBox.Small.12g.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 320.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_12x70_SlugTracer.T_ItemPreview_BP_AmmoBox_12x70_SlugTracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1310,18 +1399,18 @@
           "TagName": "Item.AmmoBox.Small.5-45x39.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 420.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_545x39_FMJ.T_ItemPreview_BP_AmmoBox_545x39_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1420,18 +1509,18 @@
           "TagName": "Item.AmmoBox.Small.5-45x39.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 440.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_545x39_Tracer.T_ItemPreview_BP_AmmoBox_545x39_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1530,18 +1619,18 @@
           "TagName": "Item.AmmoBox.Small.5-56x45.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 420.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_5-56x45_FMJ.T_ItemPreview_BP_AmmoBox_5-56x45_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1640,18 +1729,18 @@
           "TagName": "Item.AmmoBox.Small.5-56x45.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 440.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_5-56x45_Tracer.T_ItemPreview_BP_AmmoBox_5-56x45_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1750,18 +1839,18 @@
           "TagName": "Item.AmmoBox.Small.7-62x39.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 480.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x39_FMJ.T_ItemPreview_BP_AmmoBox_7-62x39_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1860,18 +1949,18 @@
           "TagName": "Item.AmmoBox.Small.7-62x39.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 500.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x39_Tracer.T_ItemPreview_BP_AmmoBox_7-62x39_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -1970,18 +2059,18 @@
           "TagName": "Item.AmmoBox.Small.7-62x51.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 540.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x51_FMJ.T_ItemPreview_BP_AmmoBox_7-62x51_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2080,18 +2169,18 @@
           "TagName": "Item.AmmoBox.Small.7-62x51.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 570.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x51_Tracer.T_ItemPreview_BP_AmmoBox_7-62x51_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2190,18 +2279,18 @@
           "TagName": "Item.AmmoBox.Small.7-62x54R.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 540.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x54R_FMJ.T_ItemPreview_BP_AmmoBox_7-62x54R_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2300,18 +2389,18 @@
           "TagName": "Item.AmmoBox.Small.7-62x54R.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 570.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x54R_Tracer.T_ItemPreview_BP_AmmoBox_7-62x54R_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2410,18 +2499,18 @@
           "TagName": "Item.AmmoBox.Small.9x39.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 540.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x39_FMJ.T_ItemPreview_BP_AmmoBox_9x39_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2520,111 +2609,23 @@
           "TagName": "Item.AmmoBox.Small.9x39.Tracer"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 570.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_9x39_Tracer.T_ItemPreview_BP_AmmoBox_9x39_Tracer",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_9x39_Tracer.BP_AmmoBox_9x39_Tracer_C",
-          "SubPathString": ""
-        }
-      },
-      "AmmoBox.Small.9x18.+P": {
-        "IgnoreChamberCountInInspect": false,
-        "Parameters": {
-          "AcceptedAmmoTypes": [
-            {
-              "TagName": "Item.Ammo.9x18.+P"
-            }
-          ],
-          "ChamberCapacity": 0,
-          "HolderCapacity": 30,
-          "MaxVisibleAmmo": -1,
-          "DurabilityDamagePerAmmo": 0.0,
-          "CapacityDurabilityCoefficient": 0.0,
-          "DamageToReliability": 0.0
-        },
-        "PossibleUpgrades": [],
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "D44D50D74FE9D8531AF20396EB274827",
-          "SourceString": "9x18 +P Ammo Box",
-          "LocalizedString": "Ammo Box 9x18 +P"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "Namespace": "",
-          "Key": "F9D3811E4F870678766A04A4A6DD5B4F",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "None"
-          },
-          "Title": {
-            "Namespace": "",
-            "Key": "B72F76FE4A900F0BD6DBA7A44AD80FEF",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Body": {
-            "Namespace": "",
-            "Key": "4378B6424D2E72A02540269A1F32A34B",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Instruction": {
-            "Namespace": "",
-            "Key": "65905ABD436771771F2C2BBCF360BCFF",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.AmmoBox.Small.9x18.+P"
-        },
-        "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
-        "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
-        "DisplayDurability": false,
-        "ItemWeight": 5.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 100.0,
-        "ItemSellPrice": 3.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 0.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_9x18_PlusP.BP_AmmoBox_9x18_PlusP_C",
           "SubPathString": ""
         }
       },
@@ -2696,18 +2697,18 @@
           "TagName": "Item.AmmoBox.Small.5-45x39.BP"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 300.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_545x39_BP.T_ItemPreview_BP_AmmoBox_545x39_BP",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2746,12 +2747,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "BA55058F48D932E67D63FDA0DCFAA783",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -2784,18 +2785,18 @@
           "TagName": "Item.Magazine.Gsh18"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 250.0,
         "ItemSellPrice": 75.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_Gsh18.T_ItemPreview_BP_Mag_Gsh18",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2834,12 +2835,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "DB774C1B40E24C94DD9D46BE24D1BF82",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -2872,18 +2873,18 @@
           "TagName": "Item.Magazine.Beretta.Mag"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 300.0,
         "ItemSellPrice": 90.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_Beretta.T_ItemPreview_BP_Mag_Beretta",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -2922,12 +2923,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "4C35F3734689BA7B7EB753ABB3CFD445",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -2960,18 +2961,18 @@
           "TagName": "Item.Magazine.Glock.Short"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 250.0,
         "ItemSellPrice": 75.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_Glock_18.T_ItemPreview_BP_Mag_Glock_18",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3010,12 +3011,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "3A918ACC42735F5A73D4C0AAA18E8F73",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3048,18 +3049,18 @@
           "TagName": "Item.Magazine.AKM.Short"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 200.0,
         "ItemSellPrice": 60.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_SKS_Mag_Short.T_ItemPreview_BP_SKS_Mag_Short",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3098,12 +3099,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "8B3D8D3548B23C1B708075BF919FFB9F",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3136,18 +3137,18 @@
           "TagName": "Item.Magazine.AKM.Basic"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 130.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AKM_Mag.T_ItemPreview_BP_AKM_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3186,12 +3187,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "FC09D2E34B307D420B334DA189FF2DB9",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3224,18 +3225,18 @@
           "TagName": "Item.Magazine.Groza"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Groza_Mag.T_ItemPreview_BP_Groza_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3274,12 +3275,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "5A0F6F2E4A8C370C02A46FB85FD8713D",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3312,18 +3313,18 @@
           "TagName": "Item.Magazine.Saiga.Short"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 250.0,
         "ItemSellPrice": 75.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Saiga_Mag_Short2.T_ItemPreview_BP_Saiga_Mag_Short2",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3362,12 +3363,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "30B8A80144D00E9BF9D13FBBFFA0B5A0",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3400,18 +3401,18 @@
           "TagName": "Item.Magazine.Saiga.Long"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 12.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 450.0,
         "ItemSellPrice": 135.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Saiga_Mag_Long.T_ItemPreview_BP_Saiga_Mag_Long",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3450,12 +3451,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "7D8539D74C3C9D717871409888F2AC26",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3488,18 +3489,18 @@
           "TagName": "Item.Magazine.AS_Val.Short"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 300.0,
         "ItemSellPrice": 90.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_VSS_Mag_Short1.T_ItemPreview_BP_VSS_Mag_Short1",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3538,12 +3539,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "54BDF6564B97269DAA6BDEA684E7A726",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3576,18 +3577,18 @@
           "TagName": "Item.Magazine.AS_Val.Medium"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 450.0,
         "ItemSellPrice": 135.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AS_Val_Mag_Med1.T_ItemPreview_BP_AS_Val_Mag_Med1",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3615,8 +3616,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "0DA7057945F29EB10F72AFB2D212F6FA",
-          "SourceString": "PP-91 Kedr Magazine",
-          "LocalizedString": "PP-91 Kedr Magazine"
+          "SourceString": "Kedr Magazine",
+          "LocalizedString": "Kedr Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -3626,12 +3627,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "28C9A1564156C6DDB5D374AA9DB495FE",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3664,18 +3665,18 @@
           "TagName": "Item.Magazine.Kedr.Long"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 300.0,
         "ItemSellPrice": 90.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Kedr_Mag1.T_ItemPreview_BP_Kedr_Mag1",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3703,8 +3704,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "554B35234C35D3E807C4B8A7E905C636",
-          "SourceString": "PP-19 Bizon Magazine",
-          "LocalizedString": "PP-19 Bizon Magazine"
+          "SourceString": "Bizon Magazine",
+          "LocalizedString": "Bizon Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -3714,12 +3715,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "960C61B4416EAA95D3E8C994B6AFE101",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3752,18 +3753,18 @@
           "TagName": "Item.Magazine.Bizon"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 18.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 400.0,
-        "ItemSellPrice": 120.0,
+        "ItemPurchasePrice": 350.0,
+        "ItemSellPrice": 105.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Bizon_Mag.T_ItemPreview_BP_Bizon_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3862,18 +3863,18 @@
           "TagName": "Item.AmmoBox.Large.9x18.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1400.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x18_FMJ.T_ItemPreview_BP_AmmoBoxLarge_9x18_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -3972,23 +3973,133 @@
           "TagName": "Item.AmmoBox.Large.9x18.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1470.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x18_TR.T_ItemPreview_BP_AmmoBoxLarge_9x18_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x18_TR.BP_AmmoBoxLarge_9x18_TR_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Large.9x18.PlusP": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18.+P"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 200,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "E546E9C545FD31563A6EC0A6D670D4BB",
+          "SourceString": "9x18 +P Ammo Large Box",
+          "LocalizedString": "9x18 +P Ammo Large Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "DDB02BA043D0699442EFADB30322DABE",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "2FB0FA964284B572BB32D5B1481465AF",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "DE71370F4E1696540D1458B9589BD778",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "67376D1345CBCA4F1A5EE6A898559F85",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.9x18.PlusP"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2000.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x18_FMJ.T_ItemPreview_BP_AmmoBoxLarge_9x18_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_9x18_PlusP.BP_AmmoBoxLarge_9x18_PlusP_C",
           "SubPathString": ""
         }
       },
@@ -4082,18 +4193,18 @@
           "TagName": "Item.AmmoBox.Large.9x19.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2000.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x19_FMJ.T_ItemPreview_BP_AmmoBoxLarge_9x19_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4192,18 +4303,18 @@
           "TagName": "Item.AmmoBox.Large.9x19.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2130.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x19_TR.T_ItemPreview_BP_AmmoBoxLarge_9x19_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4302,18 +4413,18 @@
           "TagName": "Item.AmmoBox.Large.12g.Buckshot"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1700.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_12x70_BuckShot.T_ItemPreview_BP_AmmoBoxLarge_12x70_BuckShot",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4412,18 +4523,18 @@
           "TagName": "Item.AmmoBox.Large.12g.Slug"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2000.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_12x70_Slug.T_ItemPreview_BP_AmmoBoxLarge_12x70_Slug",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4522,18 +4633,18 @@
           "TagName": "Item.AmmoBox.Large.12g.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2130.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_12x70_Slug.T_ItemPreview_BP_AmmoBoxLarge_12x70_Slug",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4632,18 +4743,18 @@
           "TagName": "Item.AmmoBox.Large.5-45x39.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2100.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_5_45x39_FMJ.T_ItemPreview_BP_AmmoBoxLarge_5_45x39_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4742,18 +4853,18 @@
           "TagName": "Item.AmmoBox.Large.5-45x39.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2200.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_5_45x39_TR.T_ItemPreview_BP_AmmoBoxLarge_5_45x39_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4852,18 +4963,18 @@
           "TagName": "Item.AmmoBox.Large.5-56x45.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2100.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_5_56x45_FMJ.T_ItemPreview_BP_AmmoBoxLarge_5_56x45_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -4962,18 +5073,18 @@
           "TagName": "Item.AmmoBox.Large.5-56x45.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2200.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_5_56x45_TR.T_ItemPreview_BP_AmmoBoxLarge_5_56x45_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5072,18 +5183,18 @@
           "TagName": "Item.AmmoBox.Large.7-62x39.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1920.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x39_FMJ.T_ItemPreview_BP_AmmoBoxLarge_7_62x39_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5182,18 +5293,18 @@
           "TagName": "Item.AmmoBox.Large.7-62x39.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 2000.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x39_TR.T_ItemPreview_BP_AmmoBoxLarge_7_62x39_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5292,18 +5403,18 @@
           "TagName": "Item.AmmoBox.Large.7-62x51.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1800.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x51_FMJ.T_ItemPreview_BP_AmmoBoxLarge_7_62x51_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5402,18 +5513,18 @@
           "TagName": "Item.AmmoBox.Large.7-62x51.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1900.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x51_TR.T_ItemPreview_BP_AmmoBoxLarge_7_62x51_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5512,18 +5623,18 @@
           "TagName": "Item.AmmoBox.Large.7-62x54.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1800.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x54_FMJ.T_ItemPreview_BP_AmmoBoxLarge_7_62x54_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5622,18 +5733,18 @@
           "TagName": "Item.AmmoBox.Large.7-62x54.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1900.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x54_TR.T_ItemPreview_BP_AmmoBoxLarge_7_62x54_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5732,18 +5843,18 @@
           "TagName": "Item.AmmoBox.Large.9x39.FMJ"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1800.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x39_FMJ.T_ItemPreview_BP_AmmoBoxLarge_9x39_FMJ",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5842,18 +5953,18 @@
           "TagName": "Item.AmmoBox.Large.9x39.TR"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 30.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 1900.0,
         "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_9x39_TR.T_ItemPreview_BP_AmmoBoxLarge_9x39_TR",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5881,7 +5992,7 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "8D41D8124E509C45109A95981193757C",
-          "SourceString": "Extended AK-74 Magazine",
+          "SourceString": "Extend. AK-74 Magazine",
           "LocalizedString": "Weight: 100 kg"
         },
         "ItemDescription": {
@@ -5892,12 +6003,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "21398DB948F7A75C6D8BC19A0DD91502",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -5930,18 +6041,18 @@
           "TagName": "Item.Magazine.AK-74.Long"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 680.0,
         "ItemSellPrice": 204.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AK_74_Mag_Long.T_ItemPreview_BP_AK_74_Mag_Long",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -5969,7 +6080,7 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "A1D38577429DACA153FBC0A39EFC8C36",
-          "SourceString": "Extended Glock 18C Magazine",
+          "SourceString": "Extend. Glock 18C Magazine",
           "LocalizedString": "Food and Medicine"
         },
         "ItemDescription": {
@@ -5980,12 +6091,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "CAFC7C1F437CC9A64D55A98A6FC24CCE",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6018,18 +6129,18 @@
           "TagName": "Item.Magazine.Glock.Long"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_Glock_18_Long.T_ItemPreview_BP_Mag_Glock_18_Long",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6063,8 +6174,8 @@
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D7DD37AC47FA817A2166F58AA8781706",
-          "SourceString": "Smoking is harmful to your health.",
-          "LocalizedString": "Smoking is harmful to your health."
+          "SourceString": "UNPSC health notice: Smoking is harmful to your health.",
+          "LocalizedString": "UNPSC health notice: Smoking is harmful to your health."
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
@@ -6080,16 +6191,16 @@
             "TagName": "Wiki.Categories.Explorers.Supplies"
           },
           "Title": {
-            "Namespace": "",
-            "Key": "C1B391314B76AC8FE5009CB9EB8F6F79",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "92FD401C43AFEE4A52C566A2F86920C9",
+            "SourceString": "Cigarette Pack",
+            "LocalizedString": "Cigarette Pack"
           },
           "Body": {
-            "Namespace": "",
-            "Key": "D187A3D7487E9A04C33A97A5D1A285C1",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "D7DD37AC47FA817A2166F58AA8781706",
+            "SourceString": "UNPSC health notice: Smoking is harmful to your health.",
+            "LocalizedString": "UNPSC health notice: Smoking is harmful to your health."
           },
           "Instruction": {
             "Namespace": "",
@@ -6106,18 +6217,18 @@
           "TagName": "Item.Consumable.CigPack"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": true,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 150.0,
         "ItemSellPrice": 5.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_1.T_ItemPreview_1",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6156,34 +6267,34 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D4206EF54FB2FE514BB20387DCB13B55",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
             "TagName": "Wiki.Categories.Explorers.Supplies"
           },
           "Title": {
-            "Namespace": "",
-            "Key": "599D659A44DE29057E5999A98671B14A",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "6286F9C64E8AF007FE075CAD348D87C1",
+            "SourceString": "Cracker Pack",
+            "LocalizedString": "Cracker Pack"
           },
           "Body": {
-            "Namespace": "",
-            "Key": "DD2E1F054D0ACF1FCB19F9BEAD250C3C",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "EAF6E0EC40CA034AF8C7978AE5D4FF0A",
+            "SourceString": "A light snack to quench hunger.",
+            "LocalizedString": "A light snack to quench hunger."
           },
           "Instruction": {
-            "Namespace": "",
-            "Key": "655B6F8E4F64AD05651E3381B153A415",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "D4206EF54FB2FE514BB20387DCB13B55",
+            "SourceString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume.",
+            "LocalizedString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume."
           },
           "ShowItemInfo": false,
           "CustomData": [],
@@ -6194,18 +6305,18 @@
           "TagName": "Item.Consumable.CrackerPack"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": true,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 250.0,
-        "ItemSellPrice": 10.0,
+        "ItemPurchasePrice": 325.0,
+        "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_CrackerPack.T_ItemPreview_BP_CrackerPack",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6244,34 +6355,34 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "D473BF6B4A51DB8B982AF897D902D697",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
             "TagName": "Wiki.Categories.Explorers.Supplies"
           },
           "Title": {
-            "Namespace": "",
-            "Key": "3A04F7C84D043D26FA2361A2DFA24C11",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "53BA8DB84A0CA4CA0B84B3B3357F6BB4",
+            "SourceString": "Can of Sprats",
+            "LocalizedString": "Can of Sprats"
           },
           "Body": {
-            "Namespace": "",
-            "Key": "3C6A0BBE4A961E8AF9B0C0A5A84A7DDC",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "E81391EC47A2063C65867593131DDCD5",
+            "SourceString": "A highly-nutritions snack to sufficiently restore your energy.",
+            "LocalizedString": "A highly-nutritions snack to sufficiently restore your energy."
           },
           "Instruction": {
-            "Namespace": "",
-            "Key": "899E092F4630393506EFCD9A954437EA",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
+            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+            "Key": "D473BF6B4A51DB8B982AF897D902D697",
+            "SourceString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume.",
+            "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume."
           },
           "ShowItemInfo": false,
           "CustomData": [],
@@ -6282,18 +6393,18 @@
           "TagName": "Item.Consumable.CannedCan_Fish"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": true,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 450.0,
-        "ItemSellPrice": 20.0,
+        "ItemPurchasePrice": 420.0,
+        "ItemSellPrice": 50.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_CannedCan_Fish.T_ItemPreview_BP_CannedCan_Fish",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6321,7 +6432,7 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "E5ECEFF44868C5B2F1E62B99261C9F27",
-          "SourceString": "STANAG Magazine (M4)",
+          "SourceString": "M4A1 Magazine",
           "LocalizedString": "Grenades"
         },
         "ItemDescription": {
@@ -6332,12 +6443,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "510229054A644858375AA8998DFA0D60",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6370,18 +6481,18 @@
           "TagName": "Item.Magazine.M4A1.30"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_M4A1_Mag.T_ItemPreview_BP_M4A1_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6458,9 +6569,8 @@
           "TagName": "Item.Misc.Black_CheckersPack"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": true,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -6470,6 +6580,7 @@
           "AssetPathName": "",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6546,9 +6657,8 @@
           "TagName": "Item.Misc.White_CheckersPack"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": true,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 15.0,
         "ItemWeightCapacity": 0.0,
@@ -6558,6 +6668,7 @@
           "AssetPathName": "",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6596,12 +6707,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "D9555CAB41954EAB2B175986B05BC6E9",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6634,18 +6745,18 @@
           "TagName": "Item.Magazine.SVD.10"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
-        "ItemWeight": 10.0,
+        "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 400.0,
-        "ItemSellPrice": 120.0,
+        "ItemPurchasePrice": 550.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_SVD_Mag.T_ItemPreview_BP_SVD_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6684,12 +6795,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "C71ECFC844B0B148932E9C9C8A45C2CE",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6722,18 +6833,18 @@
           "TagName": "Item.Magazine.G36.30"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 400.0,
         "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_G36_Mag.T_ItemPreview_BP_G36_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6772,12 +6883,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "E4B525704692C1D9E431D1939CB30592",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6810,18 +6921,18 @@
           "TagName": "Item.Magazine.FORT17.15"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 5.0,
         "ItemWeightCapacity": 0.0,
         "ItemPurchasePrice": 100.0,
         "ItemSellPrice": 30.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_FORT18.T_ItemPreview_BP_Mag_FORT18",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6830,7 +6941,7 @@
           "SubPathString": ""
         }
       },
-      "BinelliM2.Mag.Standart": {
+      "BinelliM2.Mag.6": {
         "IgnoreChamberCountInInspect": false,
         "Parameters": {
           "AcceptedAmmoTypes": [
@@ -6860,12 +6971,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "E29182C44CD0D90F8AF84FA6B4787786",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6898,18 +7009,18 @@
           "TagName": "Item.Magazine.BenelliM2.Standart"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
-        "ItemWeight": 30.0,
+        "ItemWeight": 12.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 2000.0,
-        "ItemSellPrice": 50.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_BenelliM2_6_Mag.T_ItemPreview_BP_BenelliM2_6_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -6918,7 +7029,7 @@
           "SubPathString": ""
         }
       },
-      "BinelliM2.Mag.Extended": {
+      "BinelliM2.Mag.8": {
         "IgnoreChamberCountInInspect": false,
         "Parameters": {
           "AcceptedAmmoTypes": [
@@ -6937,8 +7048,8 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "302572594F49BC67B32C21BFCD8ACDEA",
-          "SourceString": "Benelli M2 Extended Magazine",
-          "LocalizedString": "Benelli M2 Extended Magazine"
+          "SourceString": "Benelli M2 Extend. Magazine",
+          "LocalizedString": "Benelli M2 Extend. Magazine"
         },
         "ItemDescription": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -6948,12 +7059,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "90AE1D68465090D4852D39B11561DC14",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -6986,23 +7097,111 @@
           "TagName": "Item.Magazine.BenelliM2.Large"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
-        "ItemWeight": 30.0,
+        "ItemWeight": 18.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 2000.0,
-        "ItemSellPrice": 50.0,
+        "ItemPurchasePrice": 900.0,
+        "ItemSellPrice": 250.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_BenelliM2_8_Mag.T_ItemPreview_BP_BenelliM2_8_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/BenelliM2/BP_BenelliM2_8_Mag.BP_BenelliM2_8_Mag_C",
+          "SubPathString": ""
+        }
+      },
+      "BinelliM2.Mag.2": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.12g"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 2,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "3E423185425F99A7E3EF59BD4E5819D2",
+          "SourceString": "Benelli M2 Low-Cap Magazine",
+          "LocalizedString": "Benelli M2 Low-Cap Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1654DEEC467C06E367B775B23C9B1035",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "493AE04341ADDB43F83DAA8649E50355",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "5E2CBFD4483306C2A2ED00AC92FE6FB4",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.BenelliM2.2"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_BenelliM2_2_Mag.T_ItemPreview_BP_BenelliM2_2_Mag",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/BenelliM2/BP_BenelliM2_2_Mag.BP_BenelliM2_2_Mag_C",
           "SubPathString": ""
         }
       },
@@ -7036,12 +7235,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "3BA0E6DC40591FCBF1E7D9A05D5E8603",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -7074,18 +7273,18 @@
           "TagName": "Item.Magazine.SR25.20"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
-        "ItemWeight": 10.0,
+        "ItemWeight": 12.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 400.0,
-        "ItemSellPrice": 120.0,
+        "ItemPurchasePrice": 650.0,
+        "ItemSellPrice": 200.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_SR25_Mag.T_ItemPreview_BP_SR25_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -7124,12 +7323,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "D5EA07A24534AF56125495B734B67F60",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -7162,18 +7361,18 @@
           "TagName": "Item.Magazine.MP9.30"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 400.0,
-        "ItemSellPrice": 120.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 100.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_MP9_Mag30.T_ItemPreview_BP_MP9_Mag30",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
@@ -7201,23 +7400,23 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "C43EC19A42686FAE70A802A670CEAAD4",
-          "SourceString": "PP-19 Vityaz Magazine",
-          "LocalizedString": "PP-19 Vityaz Magazine"
+          "SourceString": "Vityaz Magazine",
+          "LocalizedString": "Vityaz Magazine"
         },
         "ItemDescription": {
-          "Namespace": "",
-          "Key": "5594DADB43C9401E5FF07D8E2A233493",
-          "SourceString": "PP19 Vityaz Magazine Description",
-          "LocalizedString": "PP19 Vityaz Magazine Description"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "Namespace": "",
-          "Key": "0821AC2048D46217685502AC1D4BD704",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
           "SourceString": "-undefined-",
           "LocalizedString": "-undefined-"
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -7250,23 +7449,551 @@
           "TagName": "Item.Magazine.PP19_Vityaz.30"
         },
         "ItemDurability": 100.0,
-        "DurabilityIndependentOfDifficulty": false,
         "DamageToDurabilityMultiplier": 0.0,
-        "DestroyOnZeroDurability": false,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
         "ItemWeight": 10.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 400.0,
-        "ItemSellPrice": 120.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 100.0,
         "ItemPreviewImage": {
-          "AssetPathName": "",
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Vityaz_Mag.T_ItemPreview_BP_Vityaz_Mag",
           "SubPathString": ""
         },
+        "bDestroyOnTide": true,
         "DamageResistances": [],
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Vityaz/BP_Vityaz_Mag.BP_Vityaz_Mag_C",
+          "SubPathString": ""
+        }
+      },
+      "KEDR_PP-91_Mag_20": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 20,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0DA7057945F29EB10F72AFB2D212F6FA",
+          "SourceString": "Kedr Magazine",
+          "LocalizedString": "Kedr Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A3DAFA9944D48B69658D4F8876382743",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "F9D273D84AF972DE8B00FBA457925DF1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "91B82D1B4F6D9FA4FAE55CBDAB7CE94D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.KEDR_PP-91.20"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 175.0,
+        "ItemSellPrice": 40.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_KEDR_PP-91_Mag_20.T_ItemPreview_BP_KEDR_PP-91_Mag_20",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/KEDR_PP-91/BP_KEDR_PP-91_Mag_20.BP_KEDR_PP-91_Mag_20_C",
+          "SubPathString": ""
+        }
+      },
+      "KEDR_PP-91_Mag_30": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0DA7057945F29EB10F72AFB2D212F6FA",
+          "SourceString": "Kedr Magazine",
+          "LocalizedString": "Kedr Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A3DAFA9944D48B69658D4F8876382743",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "F9D273D84AF972DE8B00FBA457925DF1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "91B82D1B4F6D9FA4FAE55CBDAB7CE94D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.KEDR_PP-91.30"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 8.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 250.0,
+        "ItemSellPrice": 75.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_KEDR_PP-91_Mag_30.T_ItemPreview_BP_KEDR_PP-91_Mag_30",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/KEDR_PP-91/BP_KEDR_PP-91_Mag_30.BP_KEDR_PP-91_Mag_30_C",
+          "SubPathString": ""
+        }
+      },
+      "KEDR_PP-91_Mag_40": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x18"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 40,
+          "MaxVisibleAmmo": 30,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0DA7057945F29EB10F72AFB2D212F6FA",
+          "SourceString": "Kedr Magazine",
+          "LocalizedString": "Kedr Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "A3DAFA9944D48B69658D4F8876382743",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "F9D273D84AF972DE8B00FBA457925DF1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "91B82D1B4F6D9FA4FAE55CBDAB7CE94D",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.KEDR_PP-91.40"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 450.0,
+        "ItemSellPrice": 100.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_KEDR_PP-91_Mag_40.T_ItemPreview_BP_KEDR_PP-91_Mag_40",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/KEDR_PP-91/BP_KEDR_PP-91_Mag_40.BP_KEDR_PP-91_Mag_40_C",
+          "SubPathString": ""
+        }
+      },
+      "Mosin.Mag.Internal": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x54R"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 5,
+          "MaxVisibleAmmo": 5,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "FF9D7E0840CA321C5CEE2CB32859702A",
+          "SourceString": "Mosin-Nagant Magazine",
+          "LocalizedString": "Strafe Sideways"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.Mosin.Internal"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 6.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 350.0,
+        "ItemSellPrice": 100.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mosin_Mag_Internal.T_ItemPreview_BP_Mosin_Mag_Internal",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Mosin/BP_Mosin_Mag_Internal.BP_Mosin_Mag_Internal_C",
+          "SubPathString": ""
+        }
+      },
+      "Mosin.Clip": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x54R"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 5,
+          "MaxVisibleAmmo": 5,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "46542F2443265AF33C62D68290FA7E0D",
+          "SourceString": "Mosin-Nagant Stripper Clip",
+          "LocalizedString": "Mosin-Nagant Stripper Clip"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "DF52D729408091C324050D9E30DCB7DC",
+          "SourceString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove.",
+          "LocalizedString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.Mosin.Clip"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 3.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 50.0,
+        "ItemSellPrice": 10.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mosin_Clip.T_ItemPreview_BP_Mosin_Clip",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Mosin/BP_Mosin_Clip.BP_Mosin_Clip_C",
+          "SubPathString": ""
+        }
+      },
+      "Mosin.Archangel.Mag": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x54R"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 10,
+          "MaxVisibleAmmo": 10,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "B599E7C24E8F37EB15B6269AC5EEDF8D",
+          "SourceString": "Mosin-Nagant Extend. Magazine",
+          "LocalizedString": "Mosin-Nagant Extend. Magazine"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.Mosin.ArchangelMag10"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mosin_Archangel_Mag.T_ItemPreview_BP_Mosin_Archangel_Mag",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Mosin/BP_Mosin_Mag.BP_Mosin_Mag_C",
           "SubPathString": ""
         }
       }

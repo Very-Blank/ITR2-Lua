@@ -3,6 +3,7 @@
     "Type": "DataTable",
     "Name": "DT_ArtefactNestInfos",
     "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
     "Properties": {
       "RowStruct": {
         "ObjectName": "Class'ArtefactNestInfo'",
@@ -61,6 +62,27 @@
         },
         "NestClass": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_MirrorShardsNest.BP_MirrorShardsNest_C",
+          "SubPathString": ""
+        }
+      },
+      "NewRow_2": {
+        "NestType": {
+          "TagName": "ArtefactNest.Type.Invisible"
+        },
+        "NestName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F31F05A847A008BBF24EBAB5C3D30D5A",
+          "SourceString": "Invisible Nest",
+          "LocalizedString": "Sell all"
+        },
+        "Description": {
+          "Namespace": "",
+          "Key": "08209BD34BB9CD78A609C18B62CEADCA",
+          "SourceString": " - untitled - ",
+          "LocalizedString": " - untitled - "
+        },
+        "NestClass": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_InvisibleNest.BP_InvisibleNest_C",
           "SubPathString": ""
         }
       }

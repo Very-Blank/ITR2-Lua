@@ -96,7 +96,7 @@ def addJsonContents(pathlists: PathList, jsonFile):
             break
 
     if actor == "":
-        raise KeyError("Actor not know")
+        raise KeyError("Actor not known")
 
     for pat in knowPaths:
         try: 
@@ -140,7 +140,11 @@ def main():
         if os.path.isfile(file_path) and filename.endswith(".json"):  # Process only JSON files
             with open(file_path, "r") as f:
                 jsonFile = json.load(f)  # Parse JSON file
-            addJsonContents(pathlists=pathlists, jsonFile=jsonFile)
+            try:
+                addJsonContents(pathlists=pathlists, jsonFile=jsonFile)
+            except Exception as e:
+                print(f"Error: {str(e)}, happened while parsing file {file_path}.")
+                exit()
 
     # Generate the output file
     with open("Items.lua", "w") as finalFile:
