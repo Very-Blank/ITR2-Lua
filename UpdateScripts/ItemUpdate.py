@@ -30,25 +30,32 @@ def add_to_tree(root: PathList, path: list[str], item: str):
     current_node.items.append(item)
 
 def getPathAndName(assetPath : str):
-    start = assetPath.find("/BPs/") + 4
-    end = assetPath.rfind("/", start)
+    print(assetPath)
+    start = assetPath.find("Items")
+    if start <= 0:
+        start = assetPath.find("BPs") + 4
+    end = assetPath.rfind("/")
 
-    if assetPath[end + 1] == '/':
-        end += 1
-    
-    part1 = assetPath[start+1:end].split('/')
-    part2 = ""
+
+    part1 = assetPath[start:end]
+    print("path: " + part1)
+
+    part1 = part1.replace('-', '_')
+    part1 = part1.split("/")
+
+
     if 'BP_' in assetPath:
         part2 = assetPath.split('.')[0].split("BP_")[-1]
     else:
         part2 = assetPath.split('.')[0].split("BPA_")[-1]
+    print("name: " + part2)
+    print("")
 
     if(part2[0].isnumeric()):
         part2 = "_" + part2
 
     part2 = part2.replace('-', '_')
-    for i in range(0, len(part1)):
-        part1[i] = part1[i].replace('-', '_')
+
 
     return part1, part2
 
@@ -89,7 +96,7 @@ def addJsonContents(pathlists: PathList, jsonFile):
             break
 
     if actor == "":
-        raise KeyError("Actor not know")
+        raise KeyError("Actor not known")
 
     for pat in knowPaths:
         try: 
@@ -104,9 +111,10 @@ def addJsonContents(pathlists: PathList, jsonFile):
         raise KeyError("Path not know")
 
     for dictionary in jsonFile[0]["Rows"]:
-        paths, name = getPathAndName(jsonFile[0]["Rows"][dictionary][actor][path])
-        fullname = name + " = \"" + jsonFile[0]["Rows"][dictionary][actor][path] + "\""
-        add_to_tree(pathlists, paths, fullname)
+        if jsonFile[0]["Rows"][dictionary][actor][path] != "":
+            paths, name = getPathAndName(jsonFile[0]["Rows"][dictionary][actor][path])
+            fullname = name + " = \"" + jsonFile[0]["Rows"][dictionary][actor][path] + "\""
+            add_to_tree(pathlists, paths, fullname)
 
 def main():
     # Create the argument parser
@@ -132,7 +140,11 @@ def main():
         if os.path.isfile(file_path) and filename.endswith(".json"):  # Process only JSON files
             with open(file_path, "r") as f:
                 jsonFile = json.load(f)  # Parse JSON file
-            addJsonContents(pathlists=pathlists, jsonFile=jsonFile)
+            try:
+                addJsonContents(pathlists=pathlists, jsonFile=jsonFile)
+            except Exception as e:
+                print(f"Error: {str(e)}, happened while parsing file {file_path}.")
+                exit()
 
     # Generate the output file
     with open("Items.lua", "w") as finalFile:

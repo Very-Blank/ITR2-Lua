@@ -1,0 +1,23 @@
+Tags = {
+    Enemy = {
+        FragmentHollow = "NPC.Class.FragmentHollow",
+        Creep = "NPC.Class.Creep",
+        CreepChaser = "NPC.Class.CreepChaser",
+        MimicPoliceman = "NPC.Class.MimicPoliceman",
+        MimicJaeger = "NPC.Class.MimicJaeger",
+        FragmentResurrective = "NPC.Class.FragmentResurrective",
+        MimicScout = "NPC.Class.MimicScout",
+        FragmentExplosive = "NPC.Class.FragmentExplosive",
+        MimicAssault = "NPC.Class.MimicAssault",
+        MimicMarksman = "NPC.Class.MimicMarksman",
+        MimicHeavy = "NPC.Class.MimicHeavy",
+        Abstraction = "NPC.Class.Abstraction",
+        Spitter = "NPC.Class.Spitter",
+        Vomiter = "NPC.Class.Vomiter",
+        SpitterVomiter = "NPC.Class.SpitterVomiter",
+        Spike = "NPC.Class.Spike",
+        SpikeAdvanced = "NPC.Class.SpikeAdvanced",
+        Jellyfish = "NPC.Class.Jellyfish",
+        JellyfishBig = "NPC.Class.JellyfishBig",
+    },
+}

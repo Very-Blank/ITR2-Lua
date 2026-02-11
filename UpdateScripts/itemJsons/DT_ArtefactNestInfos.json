@@ -3,6 +3,7 @@
     "Type": "DataTable",
     "Name": "DT_ArtefactNestInfos",
     "Class": "UScriptClass'DataTable'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
     "Properties": {
       "RowStruct": {
         "ObjectName": "Class'ArtefactNestInfo'",
@@ -14,10 +15,6 @@
         "NestType": {
           "TagName": "ArtefactNest.Type.Sticky"
         },
-        "NestClass": {
-          "ObjectName": "BlueprintGeneratedClass'BP_StickyNest_C'",
-          "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_StickyNest.0"
-        },
         "NestName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "EEFA6206439820A0EC4913BE1B5EFD2B",
@@ -26,15 +23,15 @@
         },
         "Description": {
           "CultureInvariantString": " - untitled - "
+        },
+        "NestClass": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_StickyNest.BP_StickyNest_C",
+          "SubPathString": ""
         }
       },
       "NewRow_0": {
         "NestType": {
           "TagName": "ArtefactNest.Type.Fragile"
-        },
-        "NestClass": {
-          "ObjectName": "BlueprintGeneratedClass'BP_FragileNest_C'",
-          "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_FragileNest.0"
         },
         "NestName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -44,15 +41,15 @@
         },
         "Description": {
           "CultureInvariantString": " - untitled - "
+        },
+        "NestClass": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_FragileNest.BP_FragileNest_C",
+          "SubPathString": ""
         }
       },
       "NewRow_1": {
         "NestType": {
           "TagName": "ArtefactNest.Type.Mirror"
-        },
-        "NestClass": {
-          "ObjectName": "BlueprintGeneratedClass'BP_MirrorShardsNest_C'",
-          "ObjectPath": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_MirrorShardsNest.1"
         },
         "NestName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -62,6 +59,31 @@
         },
         "Description": {
           "CultureInvariantString": " - untitled - "
+        },
+        "NestClass": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_MirrorShardsNest.BP_MirrorShardsNest_C",
+          "SubPathString": ""
+        }
+      },
+      "NewRow_2": {
+        "NestType": {
+          "TagName": "ArtefactNest.Type.Invisible"
+        },
+        "NestName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F31F05A847A008BBF24EBAB5C3D30D5A",
+          "SourceString": "Invisible Nest",
+          "LocalizedString": "Sell all"
+        },
+        "Description": {
+          "Namespace": "",
+          "Key": "08209BD34BB9CD78A609C18B62CEADCA",
+          "SourceString": " - untitled - ",
+          "LocalizedString": " - untitled - "
+        },
+        "NestClass": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Artefacts/Nests/BP_InvisibleNest.BP_InvisibleNest_C",
+          "SubPathString": ""
         }
       }
     }
