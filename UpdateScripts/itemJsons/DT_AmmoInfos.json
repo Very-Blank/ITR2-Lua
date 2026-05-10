@@ -2938,7 +2938,7 @@
         "AmmoPenetration": 0.03,
         "PenetrableMaterials": [],
         "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 0.8,
+        "AmmoLoudnessModifier": 0.5,
         "AmmoAccuracyModifier": 1.0,
         "AmmoWeaponDurabilityModifier": 1.0,
         "DisplayAmmoReliabilityModifier": 1.0,
@@ -2954,7 +2954,7 @@
           "Z": 1.0
         },
         "AmmoFlatness": 1,
-        "WeaponDurabilityDamage": 0.167,
+        "WeaponDurabilityDamage": 0.08,
         "ItemName": {
           "CultureInvariantString": "9x39"
         },
@@ -3082,7 +3082,7 @@
         "AmmoPenetration": 0.03,
         "PenetrableMaterials": [],
         "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 0.8,
+        "AmmoLoudnessModifier": 0.5,
         "AmmoAccuracyModifier": 1.0,
         "AmmoWeaponDurabilityModifier": 1.0,
         "DisplayAmmoReliabilityModifier": 1.0,
@@ -3098,7 +3098,7 @@
           "Z": 1.0
         },
         "AmmoFlatness": 1,
-        "WeaponDurabilityDamage": 0.167,
+        "WeaponDurabilityDamage": 0.08,
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "AC417D314C9DEADEC68FD781420E5523",
@@ -3315,506 +3315,6 @@
         "NutritionalValue": 500.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cig.BP_Cig_C",
-          "SubPathString": ""
-        }
-      },
-      "Fish": {
-        "AmmoTypeID": {
-          "TagName": "Item.Consumable.Can_Fish"
-        },
-        "AmmoType": {
-          "TagName": "None"
-        },
-        "BulletShellMesh": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "AmmoWholeMesh": {
-          "AssetPathName": "/Game/ITR2/Art/Items/CannedFood/Fish/SM_CannedFood_Fish_01_a.SM_CannedFood_Fish_01_a",
-          "SubPathString": ""
-        },
-        "BulletFleshDamage": 30.0,
-        "AmmoFleshDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletArmorDamage": 0.0,
-        "AmmoArmorDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletInitialVelocity": 750.0,
-        "SpeedDropCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletCritChance": 0.05,
-        "CriticalDamageMultiplier": 4.0,
-        "ArmorIgnoreChance": 0.05,
-        "AmmoPenetration": 1.0,
-        "PenetrableMaterials": [],
-        "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 1.0,
-        "AmmoAccuracyModifier": 1.0,
-        "AmmoWeaponDurabilityModifier": 1.0,
-        "DisplayAmmoReliabilityModifier": 1.0,
-        "AmmoRecoilModifier": {
-          "X": 1.0,
-          "Y": 1.0,
-          "Z": 1.0
-        },
-        "DisplayAmmoRecoilModifier": 1.0,
-        "ShellEjectVelocity": {
-          "X": -1.0,
-          "Y": 0.0,
-          "Z": 1.0
-        },
-        "AmmoFlatness": 0,
-        "WeaponDurabilityDamage": 0.0,
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "867E165E4F08186C6967DBB5F7810FDA",
-          "SourceString": "Canned Sprat",
-          "LocalizedString": "Canned Sprat"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "Namespace": "",
-          "Key": "9651F3AB4C9AE337D10D9F9A606D8DED",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "Wiki.Categories.Explorers.Supplies"
-          },
-          "Title": {
-            "Namespace": "",
-            "Key": "AB69F4E2488EB0A5AEFCF083237EF19D",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Body": {
-            "Namespace": "",
-            "Key": "9902658B4D822076FE871C8F0BD7AD67",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Instruction": {
-            "Namespace": "",
-            "Key": "28EE5AA0400D7F0FB36DEB9003984CDA",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Consumable.Can_Fish"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 1.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 1.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 5.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 14000.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CanFish.BP_CanFish_C",
-          "SubPathString": ""
-        }
-      },
-      "Cracker": {
-        "AmmoTypeID": {
-          "TagName": "Item.Ammo.Cracker"
-        },
-        "AmmoType": {
-          "TagName": "None"
-        },
-        "BulletShellMesh": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "AmmoWholeMesh": {
-          "AssetPathName": "/Game/ITR2/Art/Items/Crackers/SM_Cracker_01_a.SM_Cracker_01_a",
-          "SubPathString": ""
-        },
-        "BulletFleshDamage": 30.0,
-        "AmmoFleshDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletArmorDamage": 0.0,
-        "AmmoArmorDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletInitialVelocity": 750.0,
-        "SpeedDropCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletCritChance": 0.05,
-        "CriticalDamageMultiplier": 4.0,
-        "ArmorIgnoreChance": 0.05,
-        "AmmoPenetration": 1.0,
-        "PenetrableMaterials": [],
-        "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 1.0,
-        "AmmoAccuracyModifier": 1.0,
-        "AmmoWeaponDurabilityModifier": 1.0,
-        "DisplayAmmoReliabilityModifier": 1.0,
-        "AmmoRecoilModifier": {
-          "X": 1.0,
-          "Y": 1.0,
-          "Z": 1.0
-        },
-        "DisplayAmmoRecoilModifier": 1.0,
-        "ShellEjectVelocity": {
-          "X": -1.0,
-          "Y": 0.0,
-          "Z": 1.0
-        },
-        "AmmoFlatness": 0,
-        "WeaponDurabilityDamage": 0.0,
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "E93A0DD04EA478CDEBD2E999C256014A",
-          "SourceString": "Cracker",
-          "LocalizedString": "Cracker"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "Namespace": "",
-          "Key": "6232D3774C098B2C3A67F8A255DCEA66",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "Wiki.Categories.Explorers.Supplies"
-          },
-          "Title": {
-            "Namespace": "",
-            "Key": "4FB388AD41E3FF87E269F283D152BC31",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Body": {
-            "Namespace": "",
-            "Key": "6D797531479355C4EAC4B98B1936022B",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Instruction": {
-            "Namespace": "",
-            "Key": "300D5CA547AC5048A78BE39BAE2461E3",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Ammo.Cracker"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 1.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 0.5,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 1.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 4500.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker.BP_Cracker_C",
-          "SubPathString": ""
-        }
-      },
-      "Cracker_Bitten_1": {
-        "AmmoTypeID": {
-          "TagName": "Item.Ammo.Cracker.Bitten_1"
-        },
-        "AmmoType": {
-          "TagName": "None"
-        },
-        "BulletShellMesh": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "AmmoWholeMesh": {
-          "AssetPathName": "/Game/ITR2/Art/Items/Crackers/SM_Cracker_01_b.SM_Cracker_01_b",
-          "SubPathString": ""
-        },
-        "BulletFleshDamage": 30.0,
-        "AmmoFleshDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletArmorDamage": 0.0,
-        "AmmoArmorDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletInitialVelocity": 750.0,
-        "SpeedDropCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletCritChance": 0.05,
-        "CriticalDamageMultiplier": 4.0,
-        "ArmorIgnoreChance": 0.05,
-        "AmmoPenetration": 1.0,
-        "PenetrableMaterials": [],
-        "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 1.0,
-        "AmmoAccuracyModifier": 1.0,
-        "AmmoWeaponDurabilityModifier": 1.0,
-        "DisplayAmmoReliabilityModifier": 1.0,
-        "AmmoRecoilModifier": {
-          "X": 1.0,
-          "Y": 1.0,
-          "Z": 1.0
-        },
-        "DisplayAmmoRecoilModifier": 1.0,
-        "ShellEjectVelocity": {
-          "X": -1.0,
-          "Y": 0.0,
-          "Z": 1.0
-        },
-        "AmmoFlatness": 0,
-        "WeaponDurabilityDamage": 0.0,
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "E93A0DD04EA478CDEBD2E999C256014A",
-          "SourceString": "Cracker",
-          "LocalizedString": "Cracker"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "Namespace": "",
-          "Key": "8C9581B846117E132265AA96C688923D",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "None"
-          },
-          "Title": {
-            "Namespace": "",
-            "Key": "26C047D44C8DC039F3BC8093B34313D2",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Body": {
-            "Namespace": "",
-            "Key": "7A7184FA4BC405F6DF68E58E6A5C12B3",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Instruction": {
-            "Namespace": "",
-            "Key": "8B0F3B6D4B4D2FCC7C489BAE68187FA0",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Ammo.Cracker.Bitten_1"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 1.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 0.5,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 1.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 3500.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_1.BP_Cracker_bitten_1_C",
-          "SubPathString": ""
-        }
-      },
-      "Cracker_Bitten_2": {
-        "AmmoTypeID": {
-          "TagName": "Item.Ammo.Cracker.Bitten_2"
-        },
-        "AmmoType": {
-          "TagName": "None"
-        },
-        "BulletShellMesh": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "AmmoWholeMesh": {
-          "AssetPathName": "/Game/ITR2/Art/Items/Crackers/SM_Cracker_01_c.SM_Cracker_01_c",
-          "SubPathString": ""
-        },
-        "BulletFleshDamage": 30.0,
-        "AmmoFleshDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletArmorDamage": 0.0,
-        "AmmoArmorDamageCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletInitialVelocity": 750.0,
-        "SpeedDropCurve": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "BulletCritChance": 0.05,
-        "CriticalDamageMultiplier": 4.0,
-        "ArmorIgnoreChance": 0.05,
-        "AmmoPenetration": 1.0,
-        "PenetrableMaterials": [],
-        "BulletBounceMax": 2,
-        "AmmoLoudnessModifier": 1.0,
-        "AmmoAccuracyModifier": 1.0,
-        "AmmoWeaponDurabilityModifier": 1.0,
-        "DisplayAmmoReliabilityModifier": 1.0,
-        "AmmoRecoilModifier": {
-          "X": 1.0,
-          "Y": 1.0,
-          "Z": 1.0
-        },
-        "DisplayAmmoRecoilModifier": 1.0,
-        "ShellEjectVelocity": {
-          "X": -1.0,
-          "Y": 0.0,
-          "Z": 1.0
-        },
-        "AmmoFlatness": 0,
-        "WeaponDurabilityDamage": 0.0,
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "E93A0DD04EA478CDEBD2E999C256014A",
-          "SourceString": "Cracker",
-          "LocalizedString": "Cracker"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "Namespace": "",
-          "Key": "549E0F6B4CAC59573D6FA8A2F40F5106",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "None"
-          },
-          "Title": {
-            "Namespace": "",
-            "Key": "12A9695F43F8423074158DB04CAA8834",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Body": {
-            "Namespace": "",
-            "Key": "FF36E380459D2EA1B1E7AABADBFB56EA",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Instruction": {
-            "Namespace": "",
-            "Key": "BCCD3B454C72AB314D3AF8ADBCC1C320",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Ammo.Cracker.Bitten_2"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 1.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 0.5,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": 1.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 2000.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_Cracker_bitten_2.BP_Cracker_bitten_2_C",
           "SubPathString": ""
         }
       },
@@ -4198,17 +3698,17 @@
           "TagName": "item.ammo.vog"
         },
         "AmmoType": {
-          "TagName": "Weapon.AmmoType.Tracer"
+          "TagName": "Weapon.AmmoType.VOG"
         },
         "BulletShellMesh": {
-          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Rifles/GP34/VOG.VOG",
+          "AssetPathName": "",
           "SubPathString": ""
         },
         "AmmoWholeMesh": {
           "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Rifles/GP34/VOG.VOG",
           "SubPathString": ""
         },
-        "BulletFleshDamage": 30.0,
+        "BulletFleshDamage": 300.0,
         "AmmoFleshDamageCurve": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -4218,9 +3718,9 @@
           "AssetPathName": "",
           "SubPathString": ""
         },
-        "BulletInitialVelocity": 8000.0,
+        "BulletInitialVelocity": 7600.0,
         "SpeedDropCurve": {
-          "AssetPathName": "/Game/ITR2/BPs/Misc/Projectile/AmmoSpeedDrop_Curves/CURVE_AmmoSpeedDrop_Slug.CURVE_AmmoSpeedDrop_Slug",
+          "AssetPathName": "/Game/ITR2/BPs/Misc/Projectile/AmmoSpeedDrop_Curves/CURVE_AmmoSpeedDrop_VOG.CURVE_AmmoSpeedDrop_VOG",
           "SubPathString": ""
         },
         "BulletCritChance": 0.05,
@@ -4240,30 +3740,30 @@
         },
         "DisplayAmmoRecoilModifier": 1.0,
         "ShellEjectVelocity": {
-          "X": -1.0,
+          "X": 0.0,
           "Y": 0.0,
-          "Z": 1.0
+          "Z": 0.0
         },
         "AmmoFlatness": 1,
-        "WeaponDurabilityDamage": 0.3,
+        "WeaponDurabilityDamage": 0.01,
         "ItemName": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "0AED2FCE43F101ED713FD5A75D0A8653",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "VOG-25 Grenade",
+          "LocalizedString": "VOG-25 Grenade"
         },
         "ItemDescription": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "9FEB278A42B4DF1913C92AB965BBFABD",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "High explosive fragmentation grenade.\r\nCan be used with a GP-34 Grenade Launcher only.",
+          "LocalizedString": "High explosive fragmentation grenade.\r\nCan be used with a GP-34 Grenade Launcher only."
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "BE684FA5461B7EA93B2CD8B7C85384B4",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "• Bring to the launcher's muzzle to load it.",
+          "LocalizedString": "• Bring to the launcher's muzzle to load it."
         },
         "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
         "CustomParameters": [],
@@ -4301,10 +3801,154 @@
         "DamageToDurabilityMultiplier": 1.0,
         "DamageFromShotToDurabilityMultiplier": 1.0,
         "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 200.0,
+        "ItemSellPrice": 100.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_VOG.T_ItemPreview_BP_VOG",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_VOG.BP_VOG_C",
+          "SubPathString": ""
+        }
+      },
+      "45ACP.FMJ": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.45ACP.FMJ"
+        },
+        "AmmoType": {
+          "TagName": "Weapon.AmmoType.FMJ"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/45ACP/WP_Ammo_45ACP_Used.WP_Ammo_45ACP_Used",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/45ACP/WP_Ammo_45ACP_Full.WP_Ammo_45ACP_Full",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 50.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 25500.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "/Game/ITR2/BPs/Misc/Projectile/AmmoSpeedDrop_Curves/CURVE_AmmoSpeedDrop_PistolNormal.CURVE_AmmoSpeedDrop_PistolNormal",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.04,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.0,
+        "AmmoPenetration": 0.01,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0.08,
+        "ItemName": {
+          "CultureInvariantString": "45 ACP"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "48C748F34CB77185F2F70491ADD30644",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1B4BC0BC4248B68EFE434E9157D0A0D1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "39DA70C64189576F10F8B1AD533E0050",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "BE2FBD754447BD5EFBEF96B13346B4C5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.45ACP.FMJ"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
         "ItemWeight": 1.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": -1.0,
-        "ItemSellPrice": -1.0,
+        "ItemPurchasePrice": 1.0,
+        "ItemSellPrice": 1.0,
         "ItemPreviewImage": {
           "AssetPathName": "",
           "SubPathString": ""
@@ -4314,7 +3958,439 @@
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_VOG.BP_VOG_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_45ACP_FMJ.BP_45ACP_FMJ_C",
+          "SubPathString": ""
+        }
+      },
+      "45ACP.TR": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.45ACP.TR"
+        },
+        "AmmoType": {
+          "TagName": "Weapon.AmmoType.Tracer"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/45ACP/WP_Ammo_45ACP_Used.WP_Ammo_45ACP_Used",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/45ACP/WP_Ammo_45ACP_Full.WP_Ammo_45ACP_Full",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 50.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 25500.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "/Game/ITR2/BPs/Misc/Projectile/AmmoSpeedDrop_Curves/CURVE_AmmoSpeedDrop_PistolNormal.CURVE_AmmoSpeedDrop_PistolNormal",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.04,
+        "CriticalDamageMultiplier": 4.0,
+        "ArmorIgnoreChance": 0.0,
+        "AmmoPenetration": 0.01,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 2,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 1,
+        "WeaponDurabilityDamage": 0.08,
+        "ItemName": {
+          "CultureInvariantString": "45 ACP"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "48C748F34CB77185F2F70491ADD30644",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1B4BC0BC4248B68EFE434E9157D0A0D1",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "39DA70C64189576F10F8B1AD533E0050",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "BE2FBD754447BD5EFBEF96B13346B4C5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.45ACP.TR"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 1.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1.0,
+        "ItemSellPrice": 1.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_45ACP_TR.BP_45ACP_TR_C",
+          "SubPathString": ""
+        }
+      },
+      "338.FMJ": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.338.FMJ"
+        },
+        "AmmoType": {
+          "TagName": "Weapon.AmmoType.FMJ"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/338_LAPUA_MAGNUM/WP_Ammo_338_LAPUA_MAGNUM_Body.WP_Ammo_338_LAPUA_MAGNUM_Body",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/338_LAPUA_MAGNUM/WP_Ammo_338_LAPUA_MAGNUM.WP_Ammo_338_LAPUA_MAGNUM",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 180.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 90000.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "/Game/ITR2/BPs/Misc/Projectile/AmmoSpeedDrop_Curves/CURVE_AmmoSpeedDrop_SnipersNormal.CURVE_AmmoSpeedDrop_SnipersNormal",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.04,
+        "CriticalDamageMultiplier": 3.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 0.08,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 3,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 3,
+        "WeaponDurabilityDamage": 0.082,
+        "ItemName": {
+          "CultureInvariantString": ".338"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "99BC4FFA41515618A34ABDBE2110FC85",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "C3FEA7A643198B7AEEB1279F1E994D88",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6459F20A42D64F75D417378F488CC5E6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "298776764E40AB09FA24A0B8279FD799",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.338.FMJ"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 2.5,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2.0,
+        "ItemSellPrice": 2.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_338_LAPUA_MAGNUM.BP_338_LAPUA_MAGNUM_C",
+          "SubPathString": ""
+        }
+      },
+      "338.TR": {
+        "AmmoTypeID": {
+          "TagName": "Item.Ammo.338.TR"
+        },
+        "AmmoType": {
+          "TagName": "Weapon.AmmoType.Tracer"
+        },
+        "BulletShellMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/338_LAPUA_MAGNUM/WP_Ammo_338_LAPUA_MAGNUM_Body.WP_Ammo_338_LAPUA_MAGNUM_Body",
+          "SubPathString": ""
+        },
+        "AmmoWholeMesh": {
+          "AssetPathName": "/Game/ITR2/Art/Items/Weapons/Ammo/338_LAPUA_MAGNUM/WP_Ammo_338_LAPUA_MAGNUM.WP_Ammo_338_LAPUA_MAGNUM",
+          "SubPathString": ""
+        },
+        "BulletFleshDamage": 180.0,
+        "AmmoFleshDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletArmorDamage": 0.0,
+        "AmmoArmorDamageCurve": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "BulletInitialVelocity": 90000.0,
+        "SpeedDropCurve": {
+          "AssetPathName": "/Game/ITR2/BPs/Misc/Projectile/AmmoSpeedDrop_Curves/CURVE_AmmoSpeedDrop_SnipersNormal.CURVE_AmmoSpeedDrop_SnipersNormal",
+          "SubPathString": ""
+        },
+        "BulletCritChance": 0.04,
+        "CriticalDamageMultiplier": 3.0,
+        "ArmorIgnoreChance": 0.05,
+        "AmmoPenetration": 0.08,
+        "PenetrableMaterials": [],
+        "BulletBounceMax": 3,
+        "AmmoLoudnessModifier": 1.0,
+        "AmmoAccuracyModifier": 1.0,
+        "AmmoWeaponDurabilityModifier": 1.0,
+        "DisplayAmmoReliabilityModifier": 1.0,
+        "AmmoRecoilModifier": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "DisplayAmmoRecoilModifier": 1.0,
+        "ShellEjectVelocity": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "AmmoFlatness": 3,
+        "WeaponDurabilityDamage": 0.082,
+        "ItemName": {
+          "CultureInvariantString": ".338"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "99BC4FFA41515618A34ABDBE2110FC85",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "C3FEA7A643198B7AEEB1279F1E994D88",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6459F20A42D64F75D417378F488CC5E6",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "298776764E40AB09FA24A0B8279FD799",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Ammo.338.TR"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 2.5,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2.0,
+        "ItemSellPrice": 2.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/Cartridges/BP_338_LAPUA_MAGNUM_TR.BP_338_LAPUA_MAGNUM_TR_C",
           "SubPathString": ""
         }
       }

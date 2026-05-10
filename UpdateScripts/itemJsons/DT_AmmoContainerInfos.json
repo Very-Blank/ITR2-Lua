@@ -20,7 +20,7 @@
             }
           ],
           "ChamberCapacity": 0,
-          "HolderCapacity": 30,
+          "HolderCapacity": 50,
           "MaxVisibleAmmo": -1,
           "DurabilityDamagePerAmmo": 0.0,
           "CapacityDurabilityCoefficient": 0.0,
@@ -59,10 +59,7 @@
             "LocalizedString": "Small Probe Pack"
           },
           "Body": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "0F63220547EF13D9DECA069F53267700",
-            "SourceString": "Probe dispenser for locating or discharging anomalies.",
-            "LocalizedString": "Study the map in the tablet. Visit the living room and pick up the basic standard gear."
+            "CultureInvariantString": null
           },
           "Instruction": {
             "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
@@ -481,12 +478,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -591,12 +588,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "B55C195B472E1DD175C0FAB436959F08",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -701,12 +698,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "F9D3811E4F870678766A04A4A6DD5B4F",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -789,12 +786,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "56D0D0A44438FF34999A6A88AA6E76C4",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -899,12 +896,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "76D4B03B44E41ED4F4CBDABD606A6539",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1009,12 +1006,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "3DB9F7F04767E4A7300A2B9DE3AA83E0",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1119,12 +1116,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "D480AF5746126574946444A09ADC2D58",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1229,12 +1226,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "AFA457DF4CBE5C598BF4229EB20237A7",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1339,12 +1336,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "7796760C4E09A1C6C07B77A6F46A0C2C",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1449,12 +1446,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "1FC2E75F4406D722D57D5998F3EAA356",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1559,12 +1556,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "D6E95CA04D3F3782C91BAB9C50FE5BDA",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1669,12 +1666,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "4C61B133435AF4CE7E4FC49248D674A4",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1779,12 +1776,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "7FFFAFC348EBB67D8E988A9DE302C353",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1889,12 +1886,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "7FBDC70746BF54EE4F0AB0A33F21282A",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -1999,12 +1996,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "814C84034DBF5891F631DC95439C6915",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -2109,12 +2106,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "7478FE6347735695159984B31F4E191E",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -2219,12 +2216,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "140119214AB35FA7AA25B8AAE4C39D58",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -2329,12 +2326,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "54F5E3254FEF5199AD62E8BD5437C501",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -2439,12 +2436,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "4AB45BF54F2DF460109688A3A23111AC",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -2549,12 +2546,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "838E03794C0B404B41D6DCBDB74219AB",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [
           {
             "Icon": {
@@ -2659,12 +2656,12 @@
         },
         "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
         "ItemInstruction": {
-          "Namespace": "",
-          "Key": "8AABE7414F4D8CB8DDBF7E81783A0CE7",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
         },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
         "WikiInfo": {
           "Category": {
@@ -3065,7 +3062,7 @@
         "bCanEvenrUseItem": true,
         "NutritionalValue": 0.0,
         "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS_Mag_Short.BP_SKS_Mag_Short_C",
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/AKM/BP_AKM_Mag_Short.BP_AKM_Mag_Short_C",
           "SubPathString": ""
         }
       },
@@ -3582,8 +3579,8 @@
         "DisplayDurability": false,
         "ItemWeight": 8.0,
         "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 450.0,
-        "ItemSellPrice": 135.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 120.0,
         "ItemPreviewImage": {
           "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AS_Val_Mag_Med1.T_ItemPreview_BP_AS_Val_Mag_Med1",
           "SubPathString": ""
@@ -3594,94 +3591,6 @@
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Val_and_VSS/BP_AS_Val_Mag_Med.BP_AS_Val_Mag_Med_C",
-          "SubPathString": ""
-        }
-      },
-      "Kedr.Mag": {
-        "IgnoreChamberCountInInspect": false,
-        "Parameters": {
-          "AcceptedAmmoTypes": [
-            {
-              "TagName": "Item.Ammo.9x18"
-            }
-          ],
-          "ChamberCapacity": 0,
-          "HolderCapacity": 30,
-          "MaxVisibleAmmo": -1,
-          "DurabilityDamagePerAmmo": 0.0,
-          "CapacityDurabilityCoefficient": 0.0,
-          "DamageToReliability": 0.0
-        },
-        "PossibleUpgrades": [],
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "0DA7057945F29EB10F72AFB2D212F6FA",
-          "SourceString": "Kedr Magazine",
-          "LocalizedString": "Kedr Magazine"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "972553CF475F8C4CDACEBFA121459F56",
-          "SourceString": "-undefined-",
-          "LocalizedString": "-undefined-"
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "378E388848072DC6502367A4DB5B37A4",
-          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
-          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "None"
-          },
-          "Title": {
-            "Namespace": "",
-            "Key": "A3DAFA9944D48B69658D4F8876382743",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Body": {
-            "Namespace": "",
-            "Key": "F9D273D84AF972DE8B00FBA457925DF1",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "Instruction": {
-            "Namespace": "",
-            "Key": "91B82D1B4F6D9FA4FAE55CBDAB7CE94D",
-            "SourceString": "-undefined-",
-            "LocalizedString": "-undefined-"
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Magazine.Kedr.Long"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 0.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 8.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 300.0,
-        "ItemSellPrice": 90.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Kedr_Mag1.T_ItemPreview_BP_Kedr_Mag1",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 0.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Kedr/BP_Kedr_Mag.BP_Kedr_Mag_C",
           "SubPathString": ""
         }
       },
@@ -6237,182 +6146,6 @@
           "SubPathString": ""
         }
       },
-      "CrackerPack": {
-        "IgnoreChamberCountInInspect": false,
-        "Parameters": {
-          "AcceptedAmmoTypes": [
-            {
-              "TagName": "Item.Ammo.Cracker"
-            }
-          ],
-          "ChamberCapacity": 0,
-          "HolderCapacity": 15,
-          "MaxVisibleAmmo": -1,
-          "DurabilityDamagePerAmmo": 0.0,
-          "CapacityDurabilityCoefficient": 0.0,
-          "DamageToReliability": 0.0
-        },
-        "PossibleUpgrades": [],
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "6286F9C64E8AF007FE075CAD348D87C1",
-          "SourceString": "Cracker Pack",
-          "LocalizedString": "Cracker Pack"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "EAF6E0EC40CA034AF8C7978AE5D4FF0A",
-          "SourceString": "A light snack to quench hunger.",
-          "LocalizedString": "A light snack to quench hunger."
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "D4206EF54FB2FE514BB20387DCB13B55",
-          "SourceString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume.",
-          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume."
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "Wiki.Categories.Explorers.Supplies"
-          },
-          "Title": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "6286F9C64E8AF007FE075CAD348D87C1",
-            "SourceString": "Cracker Pack",
-            "LocalizedString": "Cracker Pack"
-          },
-          "Body": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "EAF6E0EC40CA034AF8C7978AE5D4FF0A",
-            "SourceString": "A light snack to quench hunger.",
-            "LocalizedString": "A light snack to quench hunger."
-          },
-          "Instruction": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "D4206EF54FB2FE514BB20387DCB13B55",
-            "SourceString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume.",
-            "LocalizedString": "• <b>Hold {BTN_Trigger}</b> to open and draw out a cracker.\r\n• <b>{BTN_Grip}</b> a cracker with your free hand and bring to your mouth to consume."
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Consumable.CrackerPack"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 0.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 10.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 325.0,
-        "ItemSellPrice": 50.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_CrackerPack.T_ItemPreview_BP_CrackerPack",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 0.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CrackerPack.BP_CrackerPack_C",
-          "SubPathString": ""
-        }
-      },
-      "CannedCan_Fish": {
-        "IgnoreChamberCountInInspect": false,
-        "Parameters": {
-          "AcceptedAmmoTypes": [
-            {
-              "TagName": "Item.Consumable.Can_Fish"
-            }
-          ],
-          "ChamberCapacity": 0,
-          "HolderCapacity": 6,
-          "MaxVisibleAmmo": -1,
-          "DurabilityDamagePerAmmo": 0.0,
-          "CapacityDurabilityCoefficient": 0.0,
-          "DamageToReliability": 0.0
-        },
-        "PossibleUpgrades": [],
-        "ItemName": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "53BA8DB84A0CA4CA0B84B3B3357F6BB4",
-          "SourceString": "Can of Sprats",
-          "LocalizedString": "Can of Sprats"
-        },
-        "ItemDescription": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "E81391EC47A2063C65867593131DDCD5",
-          "SourceString": "A highly-nutritions snack to sufficiently restore your energy.",
-          "LocalizedString": "A highly-nutritions snack to sufficiently restore your energy."
-        },
-        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
-        "ItemInstruction": {
-          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-          "Key": "D473BF6B4A51DB8B982AF897D902D697",
-          "SourceString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume.",
-          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume."
-        },
-        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
-        "CustomParameters": [],
-        "WikiInfo": {
-          "Category": {
-            "TagName": "Wiki.Categories.Explorers.Supplies"
-          },
-          "Title": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "53BA8DB84A0CA4CA0B84B3B3357F6BB4",
-            "SourceString": "Can of Sprats",
-            "LocalizedString": "Can of Sprats"
-          },
-          "Body": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "E81391EC47A2063C65867593131DDCD5",
-            "SourceString": "A highly-nutritions snack to sufficiently restore your energy.",
-            "LocalizedString": "A highly-nutritions snack to sufficiently restore your energy."
-          },
-          "Instruction": {
-            "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
-            "Key": "D473BF6B4A51DB8B982AF897D902D697",
-            "SourceString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume.",
-            "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with your free hand and pull to open the lid.\r\n• <b>Hold {BTN_Trigger}</b> with the hand holding the can, <b>{BTN_Grip}</b> a sprat with your free hand and bring to your mouth to consume."
-          },
-          "ShowItemInfo": false,
-          "CustomData": [],
-          "Screenshots": [],
-          "RelatedLinks": []
-        },
-        "ItemId": {
-          "TagName": "Item.Consumable.CannedCan_Fish"
-        },
-        "ItemDurability": 100.0,
-        "DamageToDurabilityMultiplier": 0.0,
-        "DamageFromShotToDurabilityMultiplier": 1.0,
-        "DisplayDurability": false,
-        "ItemWeight": 10.0,
-        "ItemWeightCapacity": 0.0,
-        "ItemPurchasePrice": 420.0,
-        "ItemSellPrice": 50.0,
-        "ItemPreviewImage": {
-          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_CannedCan_Fish.T_ItemPreview_BP_CannedCan_Fish",
-          "SubPathString": ""
-        },
-        "bDestroyOnTide": true,
-        "DamageResistances": [],
-        "bCanEvenrUseItem": true,
-        "NutritionalValue": 0.0,
-        "ItemActor": {
-          "AssetPathName": "/Game/ITR2/BPs/Items/Consumable/BP_CannedCan_Fish.BP_CannedCan_Fish_C",
-          "SubPathString": ""
-        }
-      },
       "M4A1.Mag.30": {
         "IgnoreChamberCountInInspect": false,
         "Parameters": {
@@ -7752,7 +7485,7 @@
         "ItemName": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "FF9D7E0840CA321C5CEE2CB32859702A",
-          "SourceString": "Mosin-Nagant Magazine",
+          "SourceString": "Mosin-Nagant Fixed Magazine",
           "LocalizedString": "Strafe Sideways"
         },
         "ItemDescription": {
@@ -7853,8 +7586,8 @@
         "ItemInstruction": {
           "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
           "Key": "DF52D729408091C324050D9E30DCB7DC",
-          "SourceString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove.",
-          "LocalizedString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove."
+          "SourceString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into internal magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove.",
+          "LocalizedString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into internal magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove."
         },
         "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
         "CustomParameters": [],
@@ -7994,6 +7727,1590 @@
         "NutritionalValue": 0.0,
         "ItemActor": {
           "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Mosin/BP_Mosin_Mag.BP_Mosin_Mag_C",
+          "SubPathString": ""
+        }
+      },
+      "SKS.Mag.Internal": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x39"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 10,
+          "MaxVisibleAmmo": 10,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "90C8182747FC6C228DB78899D5C2E589",
+          "SourceString": "SKS Fixed Magazine",
+          "LocalizedString": "SKS Fixed Magazine"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.SKS.Internal"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 300.0,
+        "ItemSellPrice": 70.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_SKS_Mag_Internal.T_ItemPreview_BP_SKS_Mag_Internal",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS_Mag_Internal.BP_SKS_Mag_Internal_C",
+          "SubPathString": ""
+        }
+      },
+      "SKS.Clip": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x39"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 10,
+          "MaxVisibleAmmo": 10,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "968B5B16462521EBB6FE939786F58D6F",
+          "SourceString": "SKS Stripper Clip",
+          "LocalizedString": "SKS Stripper Clip"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "DF52D729408091C324050D9E30DCB7DC",
+          "SourceString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into internal magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove.",
+          "LocalizedString": "• Feed loaded clip from the top into Mosin-Nagant rifle and push the cartiridges down to load them into internal magazine.\r\n• <b>{BTN_Grip}</b> with empty hand to remove."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.SKS.Clip"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 3.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 150.0,
+        "ItemSellPrice": 10.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_SKS_Clip.T_ItemPreview_BP_SKS_Clip",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS_Clip.BP_SKS_Clip_C",
+          "SubPathString": ""
+        }
+      },
+      "SKS.Mag_20": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x39"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 20,
+          "MaxVisibleAmmo": 20,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "22325CD6435577BBCA359CA3A9C3D5E4",
+          "SourceString": "SKS Magazine",
+          "LocalizedString": "SKS Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "FE683CFE47BB1BA87050C9B619CE58CE",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "B57A1B844FA9F91FB7ADB38B0D840368",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "C79D8D364B226D04A6FFE5A8675EEC98",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.SKS.Mag_20"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 400.0,
+        "ItemSellPrice": 130.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_SKS_Mag_20.T_ItemPreview_BP_SKS_Mag_20",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/SKS/BP_SKS_Mag_20.BP_SKS_Mag_20_C",
+          "SubPathString": ""
+        }
+      },
+      "G3.Mag.20": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.7-62x51"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 20,
+          "MaxVisibleAmmo": 10,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "04EA47CD4F3972FE4BFCB897A5DF700C",
+          "SourceString": "G3 Magazine",
+          "LocalizedString": "G3 Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "461F30F949254AFE414315B3F5F41480",
+          "SourceString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>{BTN_Grip}</b> with empty hand to remove.\r\n• Knock out with another magazine to remove it.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "1D2524D74288D7669507FE8D4D1A6F32",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "0E0D3D2642353E3D3542EB93444C73AB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "8D1072CB4452FC95BA24E3B279758AD5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.G3.20"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 10.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 400.0,
+        "ItemSellPrice": 120.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AK_74_Mag_Black.T_ItemPreview_BP_AK_74_Mag_Black",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/G3/BP_G3_Mag.BP_G3_Mag_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Large.45ACP.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.45ACP.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 150,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "4729B3FF4F91EE238BAAB4A9285A2ECD",
+          "SourceString": ".45 ACP FMJ Ammo Large Box",
+          "LocalizedString": ".45 ACP FMJ Ammo Large Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "DF34AAB64012579D1B2E56A065C64E63",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "33E3C98D41D19B375D428CB47945AA95",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "AFA01F624110CCE950367EB0ADD99067",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "568D44104B93B1D773B6E492DC62E576",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.45ACP.FMJ"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1800.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_45ACP_FMJ.T_ItemPreview_BP_AmmoBoxLarge_45ACP_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_45ACP_FMJ.BP_AmmoBoxLarge_45ACP_FMJ_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Large.45ACP.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.45ACP.TR"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 150,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "476BB95F44AFD000EDE8E8BF15EA3B77",
+          "SourceString": ".45 ACP Tracer Ammo Large Box",
+          "LocalizedString": ".45 ACP Tracer Ammo Large Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "DF34AAB64012579D1B2E56A065C64E63",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "33E3C98D41D19B375D428CB47945AA95",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "AFA01F624110CCE950367EB0ADD99067",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "568D44104B93B1D773B6E492DC62E576",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.45ACP.TR"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 1890.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_45ACP_TR.T_ItemPreview_BP_AmmoBoxLarge_45ACP_TR",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_45ACP_TR.BP_AmmoBoxLarge_45ACP_TR_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Small.45ACP.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.45ACP.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "DB5615424E878C98059E6C9F00CAD655",
+          "SourceString": ".45 ACP FMJ Ammo Box",
+          "LocalizedString": ".45 ACP FMJ Ammo Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "BEB124B445CAC7E9E6953AB543FA1666",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "0913DCCC447E4AE876B1299650CB82AB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "1837F4C14B2C0A403FF9E393F06D9E66",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Small.45ACP.FMJ"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 360.0,
+        "ItemSellPrice": 3.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_45ACP_FMJ.T_ItemPreview_BP_AmmoBox_45ACP_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_45ACP_FMJ.BP_AmmoBox_45ACP_FMJ_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Small.45ACP.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.45ACP.TR"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "470116AF4414D8788F3668A7314B0A81",
+          "SourceString": ".45 ACP Tracer Ammo Box",
+          "LocalizedString": ".45 ACP Tracer Ammo Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "F49D083541DE8270CF86C49A5B5D72E7",
+              "SourceString": "Low",
+              "LocalizedString": "Dominant Hand"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "BEB124B445CAC7E9E6953AB543FA1666",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "0913DCCC447E4AE876B1299650CB82AB",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "1837F4C14B2C0A403FF9E393F06D9E66",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Small.45ACP.TR"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 380.0,
+        "ItemSellPrice": 3.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_45ACP_TR.T_ItemPreview_BP_AmmoBox_45ACP_TR",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_45ACP_TR.BP_AmmoBox_45ACP_TR_C",
+          "SubPathString": ""
+        }
+      },
+      "Colt1911.Mag_1": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.45ACP"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 7,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "867E165E4F08186C6967DBB5F7810FDA",
+          "SourceString": "M1911 Magazine",
+          "LocalizedString": "M1911 Magazine"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "904A292B4EA89DF50983688A80023F79",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "692840BC45908E97C4960DA22190D9D7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "F1EB6D3C4074D8DCD2536F8D122B5039",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.Colt45ACP.N1"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 100.0,
+        "ItemSellPrice": 30.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_PM.T_ItemPreview_BP_Mag_PM",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/Colt1911/BP_Mag_Colt.BP_Mag_Colt_C",
+          "SubPathString": ""
+        }
+      },
+      "Colt_Mini.Mag_1": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.9x19"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 7,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "2857A9D14EEA1A3CDCE0A58F72E0B5F8",
+          "SourceString": "Compact 9x19 M1911 Magazine",
+          "LocalizedString": "Vasily Pupkin"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "9737209E4BA7D35516FFF29580F1E584",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "6EE39A084BF2751C9D2EE3884C98A727",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "F5678AFA4682C111624B32AEDFFD669B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.Colt9mm.n1"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 5.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 200.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mag_Glock_18.T_ItemPreview_BP_Mag_Glock_18",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Secondary/Colt1911_mini_9mm/BP_Mag_Colt_Mini.BP_Mag_Colt_Mini_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Large.338.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.338.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "0E309EEE4BB621112662C4ADF5FBC5AE",
+          "SourceString": ".338 FMJ Ammo Large Box",
+          "LocalizedString": ".338 FMJ Ammo Large Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "ECC462E94AC4F4E8BE86AB926A6AD6D8",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "7A7CFD554537419AA161C39E0199FE70",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "DACD1FDD4663444E62D4E487852409E5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "223ACD774A3AC5ED05675E8E110DFA0E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.338.FMJ"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2200.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x54_FMJ.T_ItemPreview_BP_AmmoBoxLarge_7_62x54_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_338_FMJ.BP_AmmoBoxLarge_338_FMJ_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Large.338.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.338.TR"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 100,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "F51E60BA48F8BBDD27F496AF54091DAA",
+          "SourceString": ".338 Tracer Ammo Large Box",
+          "LocalizedString": ".338 Tracer Ammo Large Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "Namespace": "",
+          "Key": "ECC462E94AC4F4E8BE86AB926A6AD6D8",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "7A7CFD554537419AA161C39E0199FE70",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "DACD1FDD4663444E62D4E487852409E5",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "223ACD774A3AC5ED05675E8E110DFA0E",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Large.338.TR"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 30.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 2310.0,
+        "ItemSellPrice": 50.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBoxLarge_7_62x54_FMJ.T_ItemPreview_BP_AmmoBoxLarge_7_62x54_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/LargeAmmoBox/BP_AmmoBoxLarge_338_TR.BP_AmmoBoxLarge_338_TR_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Small.338.FMJ": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.338.FMJ"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "98EF519B4CC76884928C58AB512D7F16",
+          "SourceString": ".338 FMJ Ammo Box",
+          "LocalizedString": ".338 FMJ Ammo Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "69837E454BB8A033C380F6AA0D35062B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "DFF0C2C04EFB2FD9A9C534ABA6C92682",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "C218017F491D12A2544818A024108647",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Small.338.FMJ"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 8.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 660.0,
+        "ItemSellPrice": 5.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x54R_FMJ.T_ItemPreview_BP_AmmoBox_7-62x54R_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_338Magnum.BP_AmmoBox_338Magnum_C",
+          "SubPathString": ""
+        }
+      },
+      "AmmoBox.Small.338.TR": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.338.TR"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 30,
+          "MaxVisibleAmmo": -1,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "885F2FEE4B62B8973D4EA98C0D59D342",
+          "SourceString": ".338 Tracer Ammo Box",
+          "LocalizedString": ".338 Tracer Ammo Box"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "972553CF475F8C4CDACEBFA121459F56",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "528E3C3F4B7E87A1B99F7CB07EA0697E",
+          "SourceString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo.",
+          "LocalizedString": "• <b>Hold {BTN_Trigger}</b> with the hand holding the box to draw out a cartridge and move it close either to a magazine or open chamber to be loaded.\r\n• You can load cartridges into other ammo boxes for this kind of ammo."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [
+          {
+            "Icon": {
+              "AssetPathName": "/Game/ITR2/Art/UI/ItemInfo/Technical_Specifications/Icon_AmmoDistance.Icon_AmmoDistance",
+              "SubPathString": ""
+            },
+            "Name": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "31A5D2964ADA287D11C3A9B1E9DA88AF",
+              "SourceString": "Direct Fire Distance",
+              "LocalizedString": "Ash\r\nDeposit"
+            },
+            "Value": {
+              "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+              "Key": "40F563CA453FDFC9286B9A9AC0EE8FE8",
+              "SourceString": "High",
+              "LocalizedString": "Server"
+            },
+            "AdditionalValue": {
+              "CultureInvariantString": null
+            }
+          }
+        ],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "69837E454BB8A033C380F6AA0D35062B",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "DFF0C2C04EFB2FD9A9C534ABA6C92682",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "C218017F491D12A2544818A024108647",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.AmmoBox.Small.338.TR"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 0.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 8.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 690.0,
+        "ItemSellPrice": 5.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_AmmoBox_7-62x54R_FMJ.T_ItemPreview_BP_AmmoBox_7-62x54R_FMJ",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Ammo/AmmoBox/BP_AmmoBox_338Magnum_TR.BP_AmmoBox_338Magnum_TR_C",
+          "SubPathString": ""
+        }
+      },
+      "R700.Mag.5": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.338"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 5,
+          "MaxVisibleAmmo": 5,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "C1B9D09042586B85C37236B3058E68D9",
+          "SourceString": "Remington 700 Magazine",
+          "LocalizedString": "Remington 700 Magazine"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.R700.5"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 12.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mosin_Archangel_Mag.T_ItemPreview_BP_Mosin_Archangel_Mag",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Remington700/BP_R700_Mag_5.BP_R700_Mag_5_C",
+          "SubPathString": ""
+        }
+      },
+      "R700.Mag.10": {
+        "IgnoreChamberCountInInspect": false,
+        "Parameters": {
+          "AcceptedAmmoTypes": [
+            {
+              "TagName": "Item.Ammo.338"
+            }
+          ],
+          "ChamberCapacity": 0,
+          "HolderCapacity": 10,
+          "MaxVisibleAmmo": 10,
+          "DurabilityDamagePerAmmo": 0.0,
+          "CapacityDurabilityCoefficient": 0.0,
+          "DamageToReliability": 0.0
+        },
+        "PossibleUpgrades": [],
+        "ItemName": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "6FA33CD34EB0B08F76E26A8C1015FF23",
+          "SourceString": "Remington 700 Extend. Magazine",
+          "LocalizedString": "Remington 700 Extend. Magazine"
+        },
+        "ItemDescription": {
+          "Namespace": "",
+          "Key": "314D32154790AA1784441C896E34502F",
+          "SourceString": "-undefined-",
+          "LocalizedString": "-undefined-"
+        },
+        "ItemDescriptionDisplay": "ERadiusItemInfoDisplayType::Both",
+        "ItemInstruction": {
+          "TableId": "/Game/ITR2/Configurations/Localization/EnglishSource.EnglishSource",
+          "Key": "378E388848072DC6502367A4DB5B37A4",
+          "SourceString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine.",
+          "LocalizedString": "• <b>Hold {BTN_Bottom}</b> to eject.\r\n• <b>Press {BTN_Bottom}</b> to drop.\r\n• <b>{BTN_Trigger}</b> while holding it to grab another magazine."
+        },
+        "ItemInstructionDisplay": "ERadiusItemInfoDisplayType::Hand",
+        "CustomParameters": [],
+        "WikiInfo": {
+          "Category": {
+            "TagName": "None"
+          },
+          "Title": {
+            "Namespace": "",
+            "Key": "323E3EC3410DF51506DE95A48C2773F7",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Body": {
+            "Namespace": "",
+            "Key": "E808203949898811D5907790D81CB137",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "Instruction": {
+            "Namespace": "",
+            "Key": "2162028A4057DD534CF195B9B564B42F",
+            "SourceString": "-undefined-",
+            "LocalizedString": "-undefined-"
+          },
+          "ShowItemInfo": false,
+          "CustomData": [],
+          "Screenshots": [],
+          "RelatedLinks": []
+        },
+        "ItemId": {
+          "TagName": "Item.Magazine.R700.10"
+        },
+        "ItemDurability": 100.0,
+        "DamageToDurabilityMultiplier": 1.0,
+        "DamageFromShotToDurabilityMultiplier": 1.0,
+        "DisplayDurability": false,
+        "ItemWeight": 18.0,
+        "ItemWeightCapacity": 0.0,
+        "ItemPurchasePrice": 500.0,
+        "ItemSellPrice": 150.0,
+        "ItemPreviewImage": {
+          "AssetPathName": "/Game/ITR2/Art/UI/ItemPreview/T_ItemPreview_BP_Mosin_Archangel_Mag.T_ItemPreview_BP_Mosin_Archangel_Mag",
+          "SubPathString": ""
+        },
+        "bDestroyOnTide": true,
+        "DamageResistances": [],
+        "bCanEvenrUseItem": true,
+        "NutritionalValue": 0.0,
+        "ItemActor": {
+          "AssetPathName": "/Game/ITR2/BPs/Items/Firearms/Primary/Remington700/BP_R700_Mag_10.BP_R700_Mag_10_C",
           "SubPathString": ""
         }
       }
